@@ -1,0 +1,633 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: http://blog.ezyang.com/2020/05/a-brief-taxonomy-of-pytorch-operators-by-shape-behavior/
+Subject: =?utf-8?Q?A=20brief=20taxonomy=20of=20PyTorch=20operators=20by=20shape=20?=
+ =?utf-8?Q?behavior=20:=20ezyang=E2=80=99s=20blog?=
+Date: Wed, 7 Dec 2022 05:57:44 -0000
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--d7QUSk9jyH8gpUo3gJ8lOKE17352Ys7tsss8I9qGJg----"
+
+
+------MultipartBoundary--d7QUSk9jyH8gpUo3gJ8lOKE17352Ys7tsss8I9qGJg----
+Content-Type: text/html
+Content-ID: <frame-7CD2FC779A83737CC4FD0FA3E31BFF70@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://blog.ezyang.com/2020/05/a-brief-taxonomy-of-pytorch-operators-by-shape-behavior/
+
+<!DOCTYPE html><html lang=3D"en-US"><head><meta http-equiv=3D"Content-Type"=
+ content=3D"text/html; charset=3DUTF-8"><link rel=3D"stylesheet" type=3D"te=
+xt/css" href=3D"cid:css-b897be4f-8176-406d-8ed5-73d9fd9508a1@mhtml.blink" /=
+><link rel=3D"stylesheet" type=3D"text/css" href=3D"cid:css-27bdde65-031f-4=
+7f2-8149-dd57a125f3a5@mhtml.blink" />
+ =20
+  <!-- apple-touch-icon? -->
+  <meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=3D=
+1">
+        <title>A brief taxonomy of PyTorch operators by shape behavior :  e=
+zyang=E2=80=99s blog</title>
+
+  <link rel=3D"stylesheet" href=3D"http://blog.ezyang.com/wp-content/themes=
+/Ashley/style.css" type=3D"text/css" media=3D"screen" charset=3D"utf-8">
+  <link href=3D"http://fonts.googleapis.com/css?family=3DGentium+Book+Basic=
+" rel=3D"stylesheet" type=3D"text/css">
+  <link href=3D"http://fonts.googleapis.com/css?family=3DUbuntu+Mono" rel=
+=3D"stylesheet" type=3D"text/css">
+<!--[if lt IE 9]>
+  <script src=3D"http://html5shim.googlecode.com/svn/trunk/html5.js"></scri=
+pt>
+<![endif]-->
+
+  <link rel=3D"alternate" type=3D"application/rss+xml" title=3D"ezyang=E2=
+=80=99s blog RSS Feed" href=3D"http://blog.ezyang.com/feed/">
+  <link rel=3D"alternate" type=3D"application/atom+xml" title=3D"ezyang=E2=
+=80=99s blog Atom Feed" href=3D"http://blog.ezyang.com/feed/atom/">
+
+ =20
+ =20
+  <link rel=3D"pingback" href=3D"http://blog.ezyang.com/xmlrpc.php">
+    <link rel=3D"dns-prefetch" href=3D"http://s.w.org/">
+<link rel=3D"alternate" type=3D"application/rss+xml" title=3D"ezyang=E2=80=
+=99s blog =C2=BB A brief taxonomy of PyTorch operators by shape behavior Co=
+mments Feed" href=3D"http://blog.ezyang.com/2020/05/a-brief-taxonomy-of-pyt=
+orch-operators-by-shape-behavior/feed/">
+	=09
+	=09
+
+
+
+<link rel=3D"https://api.w.org/" href=3D"http://blog.ezyang.com/wp-json/">
+<link rel=3D"EditURI" type=3D"application/rsd+xml" title=3D"RSD" href=3D"ht=
+tp://blog.ezyang.com/xmlrpc.php?rsd">
+<link rel=3D"wlwmanifest" type=3D"application/wlwmanifest+xml" href=3D"http=
+://blog.ezyang.com/wp-includes/wlwmanifest.xml">=20
+<link rel=3D"prev" title=3D"vmap in Haskell" href=3D"http://blog.ezyang.com=
+/2020/01/vmap-in-haskell/">
+<link rel=3D"next" title=3D"Dynamic scoping is an effect, implicit paramete=
+rs are a coeffect" href=3D"http://blog.ezyang.com/2020/08/dynamic-scoping-i=
+s-an-effect-implicit-parameters-are-a-coeffect/">
+<meta name=3D"generator" content=3D"WordPress 4.7.2">
+<link rel=3D"canonical" href=3D"http://blog.ezyang.com/2020/05/a-brief-taxo=
+nomy-of-pytorch-operators-by-shape-behavior/">
+<link rel=3D"shortlink" href=3D"http://blog.ezyang.com/?p=3D10250">
+<link rel=3D"alternate" type=3D"application/json+oembed" href=3D"http://blo=
+g.ezyang.com/wp-json/oembed/1.0/embed?url=3Dhttp%3A%2F%2Fblog.ezyang.com%2F=
+2020%2F05%2Fa-brief-taxonomy-of-pytorch-operators-by-shape-behavior%2F">
+<link rel=3D"alternate" type=3D"text/xml+oembed" href=3D"http://blog.ezyang=
+.com/wp-json/oembed/1.0/embed?url=3Dhttp%3A%2F%2Fblog.ezyang.com%2F2020%2F0=
+5%2Fa-brief-taxonomy-of-pytorch-operators-by-shape-behavior%2F&amp;format=
+=3Dxml">
+
+<!-- Google Analytics Tracking by Google Analyticator 6.5.0: http://www.vid=
+eousermanuals.com/google-analyticator/ -->
+
+
+</head>
+
+<body class=3D"post-template-default single single-post postid-10250 single=
+-format-standard">
+
+<header>
+  <h1 class=3D"vcard author"><a href=3D"http://blog.ezyang.com/" title=3D"H=
+ome">ezyang=E2=80=99s blog</a></h1>
+  <p>
+    the arc of software bends towards understanding    </p><ul class=3D"pag=
+es">
+      <li class=3D"page_item page-item-2"><a href=3D"http://blog.ezyang.com=
+/about/">About</a></li>
+<li class=3D"page_item page-item-21"><a href=3D"http://blog.ezyang.com/arch=
+ives/">Archives</a></li>
+      <li><a href=3D"http://blog.ezyang.com/feed/">Subscribe</a></li>
+    </ul>
+  <p></p>
+</header>
+
+<div class=3D"content wrap">
+<section class=3D"posts">
+      <article class=3D"post">
+      <h2>A brief taxonomy of PyTorch operators by shape behavior</h2>
+      <!--<h4 class=3D"vcard author">by <span class=3D"fn">Edward Z. Yang</=
+span></h4>-->
+     =20
+<div class=3D"document">
+
+
+<!-- -*- mode: rst -*- -->
+<p>I've recently been working on a revamp of how we specify tensor shape fo=
+rmulas in PyTorch. As part of this process, I classified <em>every single o=
+perator</em> in PyTorch by its shaping behavior; yes, that's all 1364 of th=
+em (this includes each variant of an operator; e.g., inplace and <tt class=
+=3D"docutils literal">out=3D</tt> keyword variants). During the process, I =
+tried to come up with categories to help classify what operators did. One o=
+f the surprises from the process was discovering that shaping behaviors tha=
+t I previously thought were uncommon, actually showed up a bit more often t=
+han one might have expected.</p>
+<p>These categories are interesting in their own right and can be used to h=
+elp understand how PyTorch's API fits together. Here are all the categories=
+ I devised.</p>
+<p><strong>TensorIterator</strong> (505, e.g., add, sum) operators are PyTo=
+rch's bread and butter; these operators do pointwise operations and reducti=
+ons and support <a class=3D"reference external" href=3D"https://pytorch.org=
+/docs/stable/notes/broadcasting.html">broadcasting</a> and <a class=3D"refe=
+rence external" href=3D"https://pytorch.org/docs/stable/tensor_attributes.h=
+tml">type promotion</a>.  The name <a class=3D"reference external" href=3D"=
+https://github.com/pytorch/pytorch/blob/master/aten/src/ATen/native/TensorI=
+terator.h">TensorIterator</a> refers to an internal abstraction we have in =
+PyTorch for implementing these operations; you can read more about it on <a=
+ class=3D"reference external" href=3D"https://github.com/pytorch/pytorch/wi=
+ki/How-to-use-TensorIterator">the wiki</a> and in <a class=3D"reference ext=
+ernal" href=3D"https://labs.quansight.org/blog/2020/04/pytorch-tensoriterat=
+or-internals/">this blog post</a>. TensorIterator is a real workhorse in Py=
+Torch: the plurarity (though not majority) of operators are implemented in =
+this way! Note that this category includes some functions that used equival=
+ent, legacy functionality (but did not exactly use TensorIterator).</p>
+<p><strong>Fixed</strong> (273, e.g., convolution, addbmm) operators are op=
+erators which only work on a fixed number of dimensions. This assumption ma=
+kes writing efficient kernels a lot easier, as indexing math is simple with=
+ fixed dimensionality. (For example, <a class=3D"reference external" href=
+=3D"https://github.com/pytorch/pytorch/blob/master/aten/src/ATen/core/Tenso=
+rAccessor.h">TensorAccessor</a> is an internal class which lets you view a =
+tensor at fixed dimensionality known at compile time). Sometimes, the first=
+ dimension is treated as a batch dimension, but not always (unfortunately, =
+I didn't distinguish these cases in my dataset). Some fixed operators actua=
+lly support multiple dimensions, but only a fixed number of them; for examp=
+le, because we only support 1-3D convolutions, this counts as fixed. (Compa=
+re with this FeatureBatched, below!)</p>
+<p><strong>N-Dimensional</strong> (107, e.g., squeeze, index_add, tensordot=
+) operators are operators which work generically on tensors of arbitrary di=
+mensionality. These are the operations for which it is difficult to write g=
+eneric shaping rules for in symbolic form, as you need a language that can =
+talk about list manipulations. An important subclass of N-dimensional opera=
+tors are <strong>Identity</strong> (42, e.g., clone, contiguous; not includ=
+ed in the count above) operators work over arbitrary dimensionality, but th=
+ey always return a tensor with the same size as their input. Another subcla=
+ss are <strong>Flatten</strong> (11, e.g. take, bucketize) operators which =
+accept tensors of any dimensionality, but always treat them as 1D tensors i=
+nternally.</p>
+<p><strong>Composite</strong> (95, e.g., kl_div, isfinite) operators are im=
+plemented in other operators, and don't themselves have shape checking (ins=
+tead, they rely on the operations they call to check shapes). Note this cat=
+egory is probably a bit underreported, as in some cases when it was obvious=
+ what the underlying behavior of an operator was, I classified the operator=
+ as that category, rather than Composite.</p>
+<p><strong>Batched</strong> (94, e.g., nll_loss, adaptive_avg_pool2d) opera=
+tors are like fixed dimensionality operators, except they accept an arbitra=
+ry number of batch dimensions at their beginning. Many fixed operators shou=
+ld be batched operators; others cannot be converted into batched operators =
+without introducing ambiguity as to where the batch dimensions end. Compare=
+ these with <strong>FeatureBatched</strong> (19, e.g., batch_norm, embeddin=
+g) operators, which are like batched operators, but rather than accept batc=
+h dimensions at the beginning, they accept an arbitrary number of feature d=
+imensions at the end.</p>
+<p><strong>Factory</strong> (90, e.g., empty) operators produce new tensors=
+ without having any tensor inputs.</p>
+<p><strong>Trivial</strong> (59, e.g., size, is_floating_point) operators a=
+ren't actual tensor operations, but ways to return non-Tensor information o=
+r access internal data structures</p>
+<p><strong>Sparse</strong> (40) operators are special because their size ca=
+lculations take account of both dense and sparse dimensions.</p>
+<p><strong>Dynamic</strong> (15, e.g., unique) operators produce outputs wh=
+ose shapes depend on the data of their input tensors</p>
+<p><strong>Variadic</strong> (14, e.g., cat) operators take multiple input =
+tensors; similar to n-dimensional operations they are difficult to capture =
+symbolic</p>
+<p>You can take a look at the full data set at <a class=3D"reference extern=
+al" href=3D"https://docs.google.com/spreadsheets/d/e/2PACX-1vQQFW0T_bucT5KZ=
+n0BHYTC1KYhkL6ZMG5ZxQWc6UmAkHUDYpqkpzXnsb59uv2TB0Jgc1Q6qO63bx6WQ/pubhtml">h=
+ttps://docs.google.com/spreadsheets/d/e/2PACX-1vQQFW0T_bucT5KZn0BHYTC1KYhkL=
+6ZMG5ZxQWc6UmAkHUDYpqkpzXnsb59uv2TB0Jgc1Q6qO63bx6WQ/pubhtml</a></p>
+</div>
+      <footer>
+                <ul class=3D"small">
+          <li><abbr class=3D"published" title=3D"2020-05-06T11:56:43-0500">=
+<a href=3D"http://blog.ezyang.com/2020/05/06/">May 6, 2020</a></abbr></li>
+          <li><a href=3D"http://blog.ezyang.com/category/pytorch/" rel=3D"c=
+ategory tag">PyTorch</a></li>
+        </ul>
+              </footer>
+    </article>
+
+    <footer id=3D"comments">
+ =20
+            <form action=3D"http://blog.ezyang.com/wp-comments-post.php" me=
+thod=3D"post" id=3D"commentform">
+        <h3>Leave a Comment</h3>
+                  <p>
+            <label>Name (Optional): <input type=3D"text" name=3D"author" id=
+=3D"author" value=3D""></label>
+          </p>
+                <label>Comment: <textarea name=3D"comment" id=3D"comment" c=
+ols=3D"50" rows=3D"20"></textarea></label>
+        <div id=3D"cancel-comment-reply" class=3D"p reply">
+          <a rel=3D"nofollow" id=3D"cancel-comment-reply-link" href=3D"http=
+://blog.ezyang.com/2020/05/a-brief-taxonomy-of-pytorch-operators-by-shape-b=
+ehavior/#respond" style=3D"display:none;">Cancel Reply</a>        </div>
+        <input type=3D"submit" value=3D"Post Comment">=20
+       =20
+
+        <p style=3D"display: none;"></p><p style=3D"display:none;"><input t=
+ype=3D"text" name=3D"nxts" value=3D"1670385753"><input type=3D"text" name=
+=3D"nxts_signed" value=3D"d5d0eb5251cf6f9b03f309fe24422d1ea9fa9d0f"><input =
+type=3D"text" name=3D"b09a595b22b6cf898b9b58fa" value=3D"8439223d7954fa0"><=
+input type=3D"text" name=3D"604d6fb615e8f492d" value=3D""></p><p style=3D"d=
+isplay: none;"></p>      </form>
+      </footer> <!-- /comments -->
+
+    <div class=3D"pagination p">
+      <span class=3D"previous"><a href=3D"http://blog.ezyang.com/2020/01/vm=
+ap-in-haskell/" rel=3D"prev">=C2=AB Previous Post</a></span>
+      <span class=3D"next"><a href=3D"http://blog.ezyang.com/2020/08/dynami=
+c-scoping-is-an-effect-implicit-parameters-are-a-coeffect/" rel=3D"next">Ne=
+xt Post =C2=BB</a></span>
+    </div>
+  </section></div>
+ <!-- /content -->
+
+<footer class=3D"bottom small wrap">
+    <p class=3D"small">=C2=A9 ezyang=E2=80=99s blog. Powered by <a href=3D"=
+http://wordpress.org/">WordPress</a>, theme based off of <a href=3D"http://=
+jxnblk.com/ashley/">Ashley</a>.</p>
+ =20
+</footer>
+
+
+
+
+
+
+
+</body></html>
+------MultipartBoundary--d7QUSk9jyH8gpUo3gJ8lOKE17352Ys7tsss8I9qGJg----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: cid:css-b897be4f-8176-406d-8ed5-73d9fd9508a1@mhtml.blink
+
+@charset "utf-8";
+
+img.wp-smiley, img.emoji { display: inline !important; border: none !import=
+ant; box-shadow: none !important; height: 1em !important; width: 1em !impor=
+tant; margin: 0px 0.07em !important; vertical-align: -0.1em !important; bac=
+kground: none !important; padding: 0px !important; }
+------MultipartBoundary--d7QUSk9jyH8gpUo3gJ8lOKE17352Ys7tsss8I9qGJg----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: cid:css-27bdde65-031f-47f2-8149-dd57a125f3a5@mhtml.blink
+
+@charset "utf-8";
+
+img.latex { vertical-align: middle; border: none; }
+------MultipartBoundary--d7QUSk9jyH8gpUo3gJ8lOKE17352Ys7tsss8I9qGJg----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://blog.ezyang.com/wp-content/themes/Ashley/style.css
+
+@charset "utf-8";
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, =
+nav, section, summary { display: block; }
+
+audio, canvas, video { display: inline-block; }
+
+audio:not([controls]) { display: none; height: 0px; }
+
+[hidden] { display: none; }
+
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, dl { margin: 0px; padding: 0px; }
+
+a:focus { outline: dotted thin; }
+
+a:active, a:hover { outline: 0px; }
+
+b, strong { font-weight: bold; }
+
+dfn { font-style: italic; }
+
+hr { box-sizing: content-box; height: 0px; }
+
+mark { background: rgb(255, 255, 0); color: rgb(0, 0, 0); }
+
+code, kbd, pre, samp { font-family: "Ubuntu Mono", monospace, serif; font-s=
+ize: 1em; }
+
+q { quotes: "=E2=80=9C" "=E2=80=9D" "=E2=80=98" "=E2=80=99"; }
+
+small { font-size: 80%; }
+
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-ali=
+gn: baseline; }
+
+sup { top: -0.5em; }
+
+sub { bottom: -0.25em; }
+
+img { border: 0px; }
+
+svg:not(:root) { overflow: hidden; }
+
+figure { margin: 0px; }
+
+fieldset { border: 1px solid rgb(192, 192, 192); margin: 0px 2px; padding: =
+0.35em 0.625em 0.75em; }
+
+legend { border: 0px; padding: 0px; }
+
+button, input, select, textarea { font-family: inherit; font-size: 100%; ma=
+rgin: 0px; }
+
+button, input { line-height: normal; }
+
+button, select { text-transform: none; }
+
+button, html input[type=3D"button"], input[type=3D"reset"], input[type=3D"s=
+ubmit"] { appearance: button; cursor: pointer; }
+
+button[disabled], html input[disabled] { cursor: default; }
+
+input[type=3D"checkbox"], input[type=3D"radio"] { box-sizing: border-box; p=
+adding: 0px; }
+
+input[type=3D"search"] { appearance: textfield; box-sizing: content-box; }
+
+input[type=3D"search"]::-webkit-search-cancel-button, input[type=3D"search"=
+]::-webkit-search-decoration { appearance: none; }
+
+textarea { overflow: auto; vertical-align: top; }
+
+table { border-collapse: collapse; border-spacing: 0px; }
+
+body { color: rgb(68, 68, 68); background: rgb(255, 255, 255); font-family:=
+ "Gentium Book Basic script=3Dall rev=3D2", Georgia, serif; font-size: 100%=
+; line-height: 1.5; font-weight: 400; }
+
+h1, h2, .h1, .h2 { font-weight: 400; line-height: 1.25; margin-top: 0.5em; =
+}
+
+h1, .h1 { font-size: 48px; }
+
+h2, .h2 { font-size: 30px; }
+
+.archiveTitle { text-transform: uppercase; text-align: center; margin-top: =
+1em; }
+
+h3, .h3 { font-size: 20px; font-weight: normal; text-decoration: underline;=
+ margin-top: 2em; margin-bottom: -0.6em; }
+
+h4 { font-size: 16px; font-weight: bold; margin-top: 1.5em; margin-bottom: =
+-1.3em; }
+
+h1 + h2 { margin-top: 0px; }
+
+p, .p, ul, ol, blockquote, pre, textarea { font-size: 18px; clear: both; }
+
+small, .small { font-size: 14px; }
+
+strong, .strong { font-weight: 700; }
+
+p, ul, ol { margin-top: 1em; }
+
+@media screen and (min-width: 480px) {
+  h1, .h1 { font-size: 60px; }
+  h2, .h2 { font-size: 32px; }
+  h3, .h3 { font-size: 22px; }
+  p, .p, ul, ol, blockquote, pre, textarea { font-size: 20px; }
+  small, .small { font-size: 16px; }
+}
+
+@media screen and (min-width: 640px) {
+  h1, .h1 { font-size: 80px; }
+  h2, .h2 { font-size: 40px; }
+  h3, .h3 { font-size: 24px; }
+}
+
+.wrap { width: 90%; padding: 0px 5%; max-width: 48em; margin: 0px auto; ove=
+rflow: hidden; }
+
+article { margin-top: 4em; }
+
+.simple li { margin-top: 1em; margin-bottom: 1em; }
+
+a { color: rgb(0, 153, 187); text-decoration: none; }
+
+a:hover { text-decoration: underline; }
+
+header { width: 90%; padding: 2em 5% 0px; max-width: 48em; margin: 0px auto=
+; overflow: hidden; text-align: center; }
+
+.logo { float: left; margin-right: 1em; }
+
+header h1, header p { margin: 0px; }
+
+header a { color: rgb(16, 121, 172); }
+
+a.post-title { color: rgb(68, 68, 68); }
+
+.entry-title a { color: rgb(68, 68, 68); }
+
+a.post-title:hover { text-decoration: none; color: rgb(0, 153, 187); }
+
+header a:hover { text-decoration: none; }
+
+.post img, .photoset, .photoset img, .photoset_row { max-width: 100%; }
+
+.post iframe, .video object { width: 100%; max-width: 100%; }
+
+.post blockquote { padding-left: 1em; border-left: 1px solid rgb(221, 221, =
+221); }
+
+.post ul, .post ol { margin-left: 2em; }
+
+.post footer ul, .post footer ol { margin: 0px; }
+
+.quote blockquote { padding: 0px; border: none; font-style: italic; }
+
+.quote .source { text-align: right; }
+
+.post footer { padding: 0px; margin-top: 1em; color: rgb(170, 170, 170); fo=
+nt-style: italic; }
+
+.post footer a { color: rgb(170, 170, 170); }
+
+.post footer a:hover { color: rgb(153, 153, 153); }
+
+.post footer .source { float: right; margin-right: 0px; }
+
+.post footer ul li { display: inline-block; margin-right: 1em; }
+
+.tags { margin-top: 1em; }
+
+.pagination { margin-top: 4em; text-align: center; line-height: 3em; overfl=
+ow: hidden; }
+
+.pagination a { display: block; height: 3em; padding: 0px 1em; border-radiu=
+s: 0.25em; }
+
+.pagination a:hover { background: rgb(238, 238, 238); text-decoration: none=
+; }
+
+.pagination .previous { float: left; }
+
+.pagination .next { float: right; }
+
+footer.wrap { padding-top: 2em; padding-bottom: 2em; }
+
+ul.pages { list-style: none; margin-top: 0px; }
+
+ul.pages li { display: inline-block; margin-right: 1em; }
+
+ul.pages li a { display: block; }
+
+ul.pages li a:hover { text-decoration: underline; }
+
+aside.notes { margin-top: 4em; }
+
+ol.notes { list-style: none; margin-top: 1em; border: 1px solid rgb(221, 22=
+1, 221); border-radius: 0.25em; }
+
+ol.notes, ol.notes a { color: rgb(170, 170, 170); }
+
+li.note { display: block; line-height: 2em; padding: 0.5em 1em; border-bott=
+om: 1px solid rgb(221, 221, 221); }
+
+.notes .action a { color: rgb(68, 68, 68); }
+
+.action { display: block; margin-left: 3em; }
+
+.notes blockquote { line-height: 1.5; margin-left: 3em; }
+
+abbr.published { border: none; }
+
+abbr.small { color: rgb(170, 170, 170); }
+
+.commentlist { list-style: none; }
+
+.commentlist li:last-child { border: none; }
+
+.comment, .pingback { border-bottom: 1px solid rgb(221, 221, 221); padding-=
+top: 1.5em; padding-bottom: 1.5em; }
+
+.commentlist li:first-child { padding-top: 0.5em; }
+
+.avatar { display: block; float: left; width: 52px; height: 52px; margin-ri=
+ght: 1em; border-radius: 0.25em; }
+
+.comment-body { }
+
+.comment-author { }
+
+.comment-meta { font-style: italic; font-size: 0.8em; line-height: 1em; }
+
+.comment-meta a { color: rgb(170, 170, 170); }
+
+.reply { text-align: right; }
+
+.reply a { color: rgb(170, 170, 170); font-size: 0.8em; font-style: italic;=
+ }
+
+textarea { width: 100%; }
+
+legend { position: relative; display: block; font-size: 1.4em; text-align: =
+left; margin: 0px; padding: 0px 0px 4px; }
+
+#cancel-comment-reply { float: right; }
+
+input[type=3D"submit"] { margin-top: 5px; }
+
+#comments { margin-top: 5em; }
+
+.bottom { text-align: center; }
+
+.postDate { float: right; }
+
+hr { border: 0px; background: url("images/ornament.png") center center no-r=
+epeat; height: 40px; margin: 1em 0px; }
+
+pre { margin-left: 3em; }
+
+.inner-image img { position: relative; left: -50%; margin: 1.5em 0px; }
+
+.outer-image { width: 80%; margin: 0px auto; overflow: visible; }
+
+.inner-image { display: inline-block; position: relative; right: -50%; floa=
+t: left; }
+
+.mahjong { margin-left: 10%; }
+
+.mahjong .outer-image { width: 100%; }
+
+.mahjong .inner-image { right: inherit; }
+
+.center { text-align: center; }
+
+.left { text-align: left; }
+
+.container { margin-bottom: 1.7em; }
+
+.subscribe { font-style: italic; font-size: 1.4em; }
+
+.subscribe a { text-decoration: underline; }
+
+.blank { display: none; }
+
+.single .blank { display: block; margin-top: 25em; margin-bottom: 25em; tex=
+t-align: center; }
+
+td, table, th { border: 0px; }
+
+table { margin-top: 1em; }
+
+.pages { text-transform: lowercase; }
+------MultipartBoundary--d7QUSk9jyH8gpUo3gJ8lOKE17352Ys7tsss8I9qGJg----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://fonts.googleapis.com/css?family=Gentium+Book+Basic
+
+@charset "utf-8";
+
+@font-face { font-family: "Gentium Book Basic"; font-style: normal; font-we=
+ight: 400; src: url("https://fonts.gstatic.com/s/gentiumbookbasic/v16/pe0zM=
+JCbPYBVokB1LHA9bbyaQb8ZGjc4XrF64aXU2Wc9.woff2") format("woff2"); unicode-ra=
+nge: U+100-24F, U+259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+211=
+3, U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: "Gentium Book Basic"; font-style: normal; font-we=
+ight: 400; src: url("https://fonts.gstatic.com/s/gentiumbookbasic/v16/pe0zM=
+JCbPYBVokB1LHA9bbyaQb8ZGjc4ULF64aXU2Q.woff2") format("woff2"); unicode-rang=
+e: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+2000-206F, U=
++2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+------MultipartBoundary--d7QUSk9jyH8gpUo3gJ8lOKE17352Ys7tsss8I9qGJg----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://fonts.googleapis.com/css?family=Ubuntu+Mono
+
+@charset "utf-8";
+
+@font-face { font-family: "Ubuntu Mono"; font-style: normal; font-weight: 4=
+00; src: url("https://fonts.gstatic.com/s/ubuntumono/v15/KFOjCneDtsqEr0keqC=
+MhbCc3CsTYl4BOQ3o.woff2") format("woff2"); unicode-range: U+460-52F, U+1C80=
+-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F; }
+
+@font-face { font-family: "Ubuntu Mono"; font-style: normal; font-weight: 4=
+00; src: url("https://fonts.gstatic.com/s/ubuntumono/v15/KFOjCneDtsqEr0keqC=
+MhbCc-CsTYl4BOQ3o.woff2") format("woff2"); unicode-range: U+301, U+400-45F,=
+ U+490-491, U+4B0-4B1, U+2116; }
+
+@font-face { font-family: "Ubuntu Mono"; font-style: normal; font-weight: 4=
+00; src: url("https://fonts.gstatic.com/s/ubuntumono/v15/KFOjCneDtsqEr0keqC=
+MhbCc2CsTYl4BOQ3o.woff2") format("woff2"); unicode-range: U+1F00-1FFF; }
+
+@font-face { font-family: "Ubuntu Mono"; font-style: normal; font-weight: 4=
+00; src: url("https://fonts.gstatic.com/s/ubuntumono/v15/KFOjCneDtsqEr0keqC=
+MhbCc5CsTYl4BOQ3o.woff2") format("woff2"); unicode-range: U+370-3FF; }
+
+@font-face { font-family: "Ubuntu Mono"; font-style: normal; font-weight: 4=
+00; src: url("https://fonts.gstatic.com/s/ubuntumono/v15/KFOjCneDtsqEr0keqC=
+MhbCc0CsTYl4BOQ3o.woff2") format("woff2"); unicode-range: U+100-24F, U+259,=
+ U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720=
+-A7FF; }
+
+@font-face { font-family: "Ubuntu Mono"; font-style: normal; font-weight: 4=
+00; src: url("https://fonts.gstatic.com/s/ubuntumono/v15/KFOjCneDtsqEr0keqC=
+MhbCc6CsTYl4BO.woff2") format("woff2"); unicode-range: U+0-FF, U+131, U+152=
+-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+2000-206F, U+2074, U+20AC, U+2122, =
+U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+------MultipartBoundary--d7QUSk9jyH8gpUo3gJ8lOKE17352Ys7tsss8I9qGJg------
