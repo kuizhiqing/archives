@@ -1,0 +1,3214 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: https://peps.python.org/pep-0008/
+Subject: =?utf-8?Q?PEP=208=20=E2=80=93=20Style=20Guide=20for=20Python=20Code=20|?=
+ =?utf-8?Q?=20peps.python.org?=
+Date: Fri, 17 Feb 2023 08:09:59 -0000
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--ndKptviwx3LSQcewHFOMPzUmh7bGOF86WVP2wuIFsu----"
+
+
+------MultipartBoundary--ndKptviwx3LSQcewHFOMPzUmh7bGOF86WVP2wuIFsu----
+Content-Type: text/html
+Content-ID: <frame-24A8F41D1FE49C3205E1600EBDC93456@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://peps.python.org/pep-0008/
+
+<!DOCTYPE html><html lang=3D"en" data-colour_scheme=3D"auto"><head><meta ht=
+tp-equiv=3D"Content-Type" content=3D"text/html; charset=3DUTF-8">
+   =20
+    <meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=
+=3D1.0">
+    <meta name=3D"color-scheme" content=3D"light dark">
+    <title>PEP 8 =E2=80=93 Style Guide for Python Code | peps.python.org</t=
+itle>
+    <link rel=3D"shortcut icon" href=3D"https://peps.python.org/_static/py.=
+png">
+    <link rel=3D"canonical" href=3D"https://peps.python.org/pep-0008/">
+    <link rel=3D"stylesheet" href=3D"https://peps.python.org/_static/style.=
+css" type=3D"text/css">
+    <link rel=3D"stylesheet" href=3D"https://peps.python.org/_static/mq.css=
+" type=3D"text/css">
+    <link rel=3D"stylesheet" href=3D"https://peps.python.org/_static/pygmen=
+ts.css" type=3D"text/css" media=3D"(prefers-color-scheme: light)" id=3D"pyg=
+-light">
+    <link rel=3D"stylesheet" href=3D"https://peps.python.org/_static/pygmen=
+ts_dark.css" type=3D"text/css" media=3D"(prefers-color-scheme: dark)" id=3D=
+"pyg-dark">
+    <link rel=3D"alternate" type=3D"application/rss+xml" title=3D"Latest PE=
+Ps" href=3D"https://peps.python.org/peps.rss">
+    <link href=3D"https://fonts.googleapis.com/css2?family=3DSource+Sans+Pr=
+o:ital,wght@0,400;0,700;1,400&amp;display=3Dswap" rel=3D"stylesheet">
+    <meta name=3D"description" content=3D"Python Enhancement Proposals (PEP=
+s)">
+</head>
+<body>
+   =20
+<svg xmlns=3D"http://www.w3.org/2000/svg" style=3D"display: none;">
+  <symbol id=3D"svg-sun-half" viewBox=3D"0 0 24 24" pointer-events=3D"all">
+    <title>Following system colour scheme</title>
+    <svg xmlns=3D"http://www.w3.org/2000/svg" viewBox=3D"0 0 24 24" fill=3D=
+"none" stroke=3D"currentColor" stroke-width=3D"2" stroke-linecap=3D"round" =
+stroke-linejoin=3D"round">
+      <circle cx=3D"12" cy=3D"12" r=3D"9"></circle>
+      <path d=3D"M12 3v18m0-12l4.65-4.65M12 14.3l7.37-7.37M12 19.6l8.85-8.8=
+5"></path>
+    </svg>
+  </symbol>
+  <symbol id=3D"svg-moon" viewBox=3D"0 0 24 24" pointer-events=3D"all">
+    <title>Selected dark colour scheme</title>
+    <svg xmlns=3D"http://www.w3.org/2000/svg" viewBox=3D"0 0 24 24" fill=3D=
+"none" stroke=3D"currentColor" stroke-width=3D"2" stroke-linecap=3D"round" =
+stroke-linejoin=3D"round">
+      <path stroke=3D"none" d=3D"M0 0h24v24H0z" fill=3D"none"></path>
+      <path d=3D"M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0=
+ 1 1 -8.313 -12.454z"></path>
+    </svg>
+  </symbol>
+  <symbol id=3D"svg-sun" viewBox=3D"0 0 24 24" pointer-events=3D"all">
+    <title>Selected light colour scheme</title>
+    <svg xmlns=3D"http://www.w3.org/2000/svg" viewBox=3D"0 0 24 24" fill=3D=
+"none" stroke=3D"currentColor" stroke-width=3D"2" stroke-linecap=3D"round" =
+stroke-linejoin=3D"round">
+      <circle cx=3D"12" cy=3D"12" r=3D"5"></circle>
+      <line x1=3D"12" y1=3D"1" x2=3D"12" y2=3D"3"></line>
+      <line x1=3D"12" y1=3D"21" x2=3D"12" y2=3D"23"></line>
+      <line x1=3D"4.22" y1=3D"4.22" x2=3D"5.64" y2=3D"5.64"></line>
+      <line x1=3D"18.36" y1=3D"18.36" x2=3D"19.78" y2=3D"19.78"></line>
+      <line x1=3D"1" y1=3D"12" x2=3D"3" y2=3D"12"></line>
+      <line x1=3D"21" y1=3D"12" x2=3D"23" y2=3D"12"></line>
+      <line x1=3D"4.22" y1=3D"19.78" x2=3D"5.64" y2=3D"18.36"></line>
+      <line x1=3D"18.36" y1=3D"5.64" x2=3D"19.78" y2=3D"4.22"></line>
+    </svg>
+  </symbol>
+</svg>
+   =20
+    <section id=3D"pep-page-section">
+        <header>
+            <h1>Python Enhancement Proposals</h1>
+            <ul class=3D"breadcrumbs">
+                <li><a href=3D"https://www.python.org/" title=3D"The Python=
+ Programming Language">Python</a> =C2=BB </li>
+                <li><a href=3D"https://peps.python.org/pep-0000/">PEP Index=
+</a> =C2=BB </li>
+                <li>PEP 8</li>
+            </ul>
+            <button id=3D"colour-scheme-cycler">
+                <svg aria-hidden=3D"true" class=3D"colour-scheme-icon-when-=
+auto"><use href=3D"#svg-sun-half"></use></svg>
+                <svg aria-hidden=3D"true" class=3D"colour-scheme-icon-when-=
+dark"><use href=3D"#svg-moon"></use></svg>
+                <svg aria-hidden=3D"true" class=3D"colour-scheme-icon-when-=
+light"><use href=3D"#svg-sun"></use></svg>
+                <span class=3D"visually-hidden">Toggle light / dark / auto =
+colour theme</span>
+            </button>
+        </header>
+        <article>
+            <section id=3D"pep-content">
+<h1 class=3D"page-title">PEP 8 =E2=80=93 Style Guide for Python Code</h1>
+<dl class=3D"rfc2822 field-list simple">
+<dt class=3D"field-odd">Author<span class=3D"colon">:</span></dt>
+<dd class=3D"field-odd">Guido van Rossum &lt;guido at python.org&gt;,
+Barry Warsaw &lt;barry at python.org&gt;,
+Nick Coghlan &lt;ncoghlan at gmail.com&gt;</dd>
+<dt class=3D"field-even">Status<span class=3D"colon">:</span></dt>
+<dd class=3D"field-even"><abbr title=3D"Currently valid informational guida=
+nce, or an in-use process">Active</abbr></dd>
+<dt class=3D"field-odd">Type<span class=3D"colon">:</span></dt>
+<dd class=3D"field-odd"><abbr title=3D"Normative PEP describing or proposin=
+g a change to a Python community process, workflow or governance">Process</=
+abbr></dd>
+<dt class=3D"field-even">Created<span class=3D"colon">:</span></dt>
+<dd class=3D"field-even">05-Jul-2001</dd>
+<dt class=3D"field-odd">Post-History<span class=3D"colon">:</span></dt>
+<dd class=3D"field-odd">05-Jul-2001, 01-Aug-2013</dd>
+</dl>
+<hr class=3D"docutils">
+<section id=3D"contents">
+<details><summary>Table of Contents</summary><ul class=3D"simple">
+<li><a class=3D"reference internal" href=3D"https://peps.python.org/pep-000=
+8/#introduction">Introduction</a></li>
+<li><a class=3D"reference internal" href=3D"https://peps.python.org/pep-000=
+8/#a-foolish-consistency-is-the-hobgoblin-of-little-minds">A Foolish Consis=
+tency is the Hobgoblin of Little Minds</a></li>
+<li><a class=3D"reference internal" href=3D"https://peps.python.org/pep-000=
+8/#code-lay-out">Code Lay-out</a><ul>
+<li><a class=3D"reference internal" href=3D"https://peps.python.org/pep-000=
+8/#indentation">Indentation</a></li>
+<li><a class=3D"reference internal" href=3D"https://peps.python.org/pep-000=
+8/#tabs-or-spaces">Tabs or Spaces?</a></li>
+<li><a class=3D"reference internal" href=3D"https://peps.python.org/pep-000=
+8/#maximum-line-length">Maximum Line Length</a></li>
+<li><a class=3D"reference internal" href=3D"https://peps.python.org/pep-000=
+8/#should-a-line-break-before-or-after-a-binary-operator">Should a Line Bre=
+ak Before or After a Binary Operator?</a></li>
+<li><a class=3D"reference internal" href=3D"https://peps.python.org/pep-000=
+8/#blank-lines">Blank Lines</a></li>
+<li><a class=3D"reference internal" href=3D"https://peps.python.org/pep-000=
+8/#source-file-encoding">Source File Encoding</a></li>
+<li><a class=3D"reference internal" href=3D"https://peps.python.org/pep-000=
+8/#imports">Imports</a></li>
+<li><a class=3D"reference internal" href=3D"https://peps.python.org/pep-000=
+8/#module-level-dunder-names">Module Level Dunder Names</a></li>
+</ul>
+</li>
+<li><a class=3D"reference internal" href=3D"https://peps.python.org/pep-000=
+8/#string-quotes">String Quotes</a></li>
+<li><a class=3D"reference internal" href=3D"https://peps.python.org/pep-000=
+8/#whitespace-in-expressions-and-statements">Whitespace in Expressions and =
+Statements</a><ul>
+<li><a class=3D"reference internal" href=3D"https://peps.python.org/pep-000=
+8/#pet-peeves">Pet Peeves</a></li>
+<li><a class=3D"reference internal" href=3D"https://peps.python.org/pep-000=
+8/#other-recommendations">Other Recommendations</a></li>
+</ul>
+</li>
+<li><a class=3D"reference internal" href=3D"https://peps.python.org/pep-000=
+8/#when-to-use-trailing-commas">When to Use Trailing Commas</a></li>
+<li><a class=3D"reference internal" href=3D"https://peps.python.org/pep-000=
+8/#comments">Comments</a><ul>
+<li><a class=3D"reference internal" href=3D"https://peps.python.org/pep-000=
+8/#block-comments">Block Comments</a></li>
+<li><a class=3D"reference internal" href=3D"https://peps.python.org/pep-000=
+8/#inline-comments">Inline Comments</a></li>
+<li><a class=3D"reference internal" href=3D"https://peps.python.org/pep-000=
+8/#documentation-strings">Documentation Strings</a></li>
+</ul>
+</li>
+<li><a class=3D"reference internal" href=3D"https://peps.python.org/pep-000=
+8/#naming-conventions">Naming Conventions</a><ul>
+<li><a class=3D"reference internal" href=3D"https://peps.python.org/pep-000=
+8/#overriding-principle">Overriding Principle</a></li>
+<li><a class=3D"reference internal" href=3D"https://peps.python.org/pep-000=
+8/#descriptive-naming-styles">Descriptive: Naming Styles</a></li>
+<li><a class=3D"reference internal" href=3D"https://peps.python.org/pep-000=
+8/#prescriptive-naming-conventions">Prescriptive: Naming Conventions</a><ul=
+>
+<li><a class=3D"reference internal" href=3D"https://peps.python.org/pep-000=
+8/#names-to-avoid">Names to Avoid</a></li>
+<li><a class=3D"reference internal" href=3D"https://peps.python.org/pep-000=
+8/#ascii-compatibility">ASCII Compatibility</a></li>
+<li><a class=3D"reference internal" href=3D"https://peps.python.org/pep-000=
+8/#package-and-module-names">Package and Module Names</a></li>
+<li><a class=3D"reference internal" href=3D"https://peps.python.org/pep-000=
+8/#class-names">Class Names</a></li>
+<li><a class=3D"reference internal" href=3D"https://peps.python.org/pep-000=
+8/#type-variable-names">Type Variable Names</a></li>
+<li><a class=3D"reference internal" href=3D"https://peps.python.org/pep-000=
+8/#exception-names">Exception Names</a></li>
+<li><a class=3D"reference internal" href=3D"https://peps.python.org/pep-000=
+8/#global-variable-names">Global Variable Names</a></li>
+<li><a class=3D"reference internal" href=3D"https://peps.python.org/pep-000=
+8/#function-and-variable-names">Function and Variable Names</a></li>
+<li><a class=3D"reference internal" href=3D"https://peps.python.org/pep-000=
+8/#function-and-method-arguments">Function and Method Arguments</a></li>
+<li><a class=3D"reference internal" href=3D"https://peps.python.org/pep-000=
+8/#method-names-and-instance-variables">Method Names and Instance Variables=
+</a></li>
+<li><a class=3D"reference internal" href=3D"https://peps.python.org/pep-000=
+8/#constants">Constants</a></li>
+<li><a class=3D"reference internal" href=3D"https://peps.python.org/pep-000=
+8/#designing-for-inheritance">Designing for Inheritance</a></li>
+</ul>
+</li>
+<li><a class=3D"reference internal" href=3D"https://peps.python.org/pep-000=
+8/#public-and-internal-interfaces">Public and Internal Interfaces</a></li>
+</ul>
+</li>
+<li><a class=3D"reference internal" href=3D"https://peps.python.org/pep-000=
+8/#programming-recommendations">Programming Recommendations</a><ul>
+<li><a class=3D"reference internal" href=3D"https://peps.python.org/pep-000=
+8/#function-annotations">Function Annotations</a></li>
+<li><a class=3D"reference internal" href=3D"https://peps.python.org/pep-000=
+8/#variable-annotations">Variable Annotations</a></li>
+</ul>
+</li>
+<li><a class=3D"reference internal" href=3D"https://peps.python.org/pep-000=
+8/#references">References</a></li>
+<li><a class=3D"reference internal" href=3D"https://peps.python.org/pep-000=
+8/#copyright">Copyright</a></li>
+</ul>
+</details></section>
+<section id=3D"introduction">
+<h2><a class=3D"toc-backref" href=3D"https://peps.python.org/pep-0008/#intr=
+oduction" role=3D"doc-backlink">Introduction</a></h2>
+<p>This document gives coding conventions for the Python code comprising
+the standard library in the main Python distribution.  Please see the
+companion informational PEP describing <a class=3D"pep reference internal" =
+href=3D"https://peps.python.org/pep-0007" title=3D"PEP 7 =E2=80=93 Style Gu=
+ide for C Code">style guidelines for the C code
+in the C implementation of Python</a>.</p>
+<p>This document and <a class=3D"pep reference internal" href=3D"https://pe=
+ps.python.org/pep-0257" title=3D"PEP 257 =E2=80=93 Docstring Conventions">P=
+EP 257</a> (Docstring Conventions) were adapted from
+Guido=E2=80=99s original Python Style Guide essay, with some additions from
+Barry=E2=80=99s style guide <a class=3D"footnote-reference brackets" href=
+=3D"https://peps.python.org/pep-0008/#id6" id=3D"id1">[2]</a>.</p>
+<p>This style guide evolves over time as additional conventions are
+identified and past conventions are rendered obsolete by changes in
+the language itself.</p>
+<p>Many projects have their own coding style guidelines. In the event of an=
+y
+conflicts, such project-specific guides take precedence for that project.</=
+p>
+</section>
+<section id=3D"a-foolish-consistency-is-the-hobgoblin-of-little-minds">
+<h2><a class=3D"toc-backref" href=3D"https://peps.python.org/pep-0008/#a-fo=
+olish-consistency-is-the-hobgoblin-of-little-minds" role=3D"doc-backlink">A=
+ Foolish Consistency is the Hobgoblin of Little Minds</a></h2>
+<p>One of Guido=E2=80=99s key insights is that code is read much more often=
+ than
+it is written.  The guidelines provided here are intended to improve
+the readability of code and make it consistent across the wide
+spectrum of Python code.  As <a class=3D"pep reference internal" href=3D"ht=
+tps://peps.python.org/pep-0020" title=3D"PEP 20 =E2=80=93 The Zen of Python=
+">PEP 20</a> says, =E2=80=9CReadability counts=E2=80=9D.</p>
+<p>A style guide is about consistency.  Consistency with this style guide
+is important.  Consistency within a project is more important.
+Consistency within one module or function is the most important.</p>
+<p>However, know when to be inconsistent =E2=80=93 sometimes style guide
+recommendations just aren=E2=80=99t applicable.  When in doubt, use your be=
+st
+judgment.  Look at other examples and decide what looks best.  And
+don=E2=80=99t hesitate to ask!</p>
+<p>In particular: do not break backwards compatibility just to comply with
+this PEP!</p>
+<p>Some other good reasons to ignore a particular guideline:</p>
+<ol class=3D"arabic simple">
+<li>When applying the guideline would make the code less readable, even
+for someone who is used to reading code that follows this PEP.</li>
+<li>To be consistent with surrounding code that also breaks it (maybe
+for historic reasons) =E2=80=93 although this is also an opportunity to
+clean up someone else=E2=80=99s mess (in true XP style).</li>
+<li>Because the code in question predates the introduction of the
+guideline and there is no other reason to be modifying that code.</li>
+<li>When the code needs to remain compatible with older versions of
+Python that don=E2=80=99t support the feature recommended by the style guid=
+e.</li>
+</ol>
+</section>
+<section id=3D"code-lay-out">
+<h2><a class=3D"toc-backref" href=3D"https://peps.python.org/pep-0008/#code=
+-lay-out" role=3D"doc-backlink">Code Lay-out</a></h2>
+<section id=3D"indentation">
+<h3><a class=3D"toc-backref" href=3D"https://peps.python.org/pep-0008/#inde=
+ntation" role=3D"doc-backlink">Indentation</a></h3>
+<p>Use 4 spaces per indentation level.</p>
+<p>Continuation lines should align wrapped elements either vertically
+using Python=E2=80=99s implicit line joining inside parentheses, brackets a=
+nd
+braces, or using a <em>hanging indent</em> <a class=3D"footnote-reference b=
+rackets" href=3D"https://peps.python.org/pep-0008/#fn-hi" id=3D"id2">[1]</a=
+>.  When using a hanging
+indent the following should be considered; there should be no
+arguments on the first line and further indentation should be used to
+clearly distinguish itself as a continuation line:</p>
+<div class=3D"highlight-default notranslate"><div class=3D"highlight"><pre>=
+<span></span><span class=3D"c1"># Correct:</span>
+
+<span class=3D"c1"># Aligned with opening delimiter.</span>
+<span class=3D"n">foo</span> <span class=3D"o">=3D</span> <span class=3D"n"=
+>long_function_name</span><span class=3D"p">(</span><span class=3D"n">var_o=
+ne</span><span class=3D"p">,</span> <span class=3D"n">var_two</span><span c=
+lass=3D"p">,</span>
+                         <span class=3D"n">var_three</span><span class=3D"p=
+">,</span> <span class=3D"n">var_four</span><span class=3D"p">)</span>
+
+<span class=3D"c1"># Add 4 spaces (an extra level of indentation) to distin=
+guish arguments from the rest.</span>
+<span class=3D"k">def</span> <span class=3D"nf">long_function_name</span><s=
+pan class=3D"p">(</span>
+        <span class=3D"n">var_one</span><span class=3D"p">,</span> <span cl=
+ass=3D"n">var_two</span><span class=3D"p">,</span> <span class=3D"n">var_th=
+ree</span><span class=3D"p">,</span>
+        <span class=3D"n">var_four</span><span class=3D"p">):</span>
+    <span class=3D"nb">print</span><span class=3D"p">(</span><span class=3D=
+"n">var_one</span><span class=3D"p">)</span>
+
+<span class=3D"c1"># Hanging indents should add a level.</span>
+<span class=3D"n">foo</span> <span class=3D"o">=3D</span> <span class=3D"n"=
+>long_function_name</span><span class=3D"p">(</span>
+    <span class=3D"n">var_one</span><span class=3D"p">,</span> <span class=
+=3D"n">var_two</span><span class=3D"p">,</span>
+    <span class=3D"n">var_three</span><span class=3D"p">,</span> <span clas=
+s=3D"n">var_four</span><span class=3D"p">)</span>
+</pre></div>
+</div>
+<div class=3D"highlight-default notranslate"><div class=3D"highlight"><pre>=
+<span></span><span class=3D"c1"># Wrong:</span>
+
+<span class=3D"c1"># Arguments on first line forbidden when not using verti=
+cal alignment.</span>
+<span class=3D"n">foo</span> <span class=3D"o">=3D</span> <span class=3D"n"=
+>long_function_name</span><span class=3D"p">(</span><span class=3D"n">var_o=
+ne</span><span class=3D"p">,</span> <span class=3D"n">var_two</span><span c=
+lass=3D"p">,</span>
+    <span class=3D"n">var_three</span><span class=3D"p">,</span> <span clas=
+s=3D"n">var_four</span><span class=3D"p">)</span>
+
+<span class=3D"c1"># Further indentation required as indentation is not dis=
+tinguishable.</span>
+<span class=3D"k">def</span> <span class=3D"nf">long_function_name</span><s=
+pan class=3D"p">(</span>
+    <span class=3D"n">var_one</span><span class=3D"p">,</span> <span class=
+=3D"n">var_two</span><span class=3D"p">,</span> <span class=3D"n">var_three=
+</span><span class=3D"p">,</span>
+    <span class=3D"n">var_four</span><span class=3D"p">):</span>
+    <span class=3D"nb">print</span><span class=3D"p">(</span><span class=3D=
+"n">var_one</span><span class=3D"p">)</span>
+</pre></div>
+</div>
+<p>The 4-space rule is optional for continuation lines.</p>
+<p>Optional:</p>
+<div class=3D"highlight-default notranslate"><div class=3D"highlight"><pre>=
+<span></span><span class=3D"c1"># Hanging indents *may* be indented to othe=
+r than 4 spaces.</span>
+<span class=3D"n">foo</span> <span class=3D"o">=3D</span> <span class=3D"n"=
+>long_function_name</span><span class=3D"p">(</span>
+  <span class=3D"n">var_one</span><span class=3D"p">,</span> <span class=3D=
+"n">var_two</span><span class=3D"p">,</span>
+  <span class=3D"n">var_three</span><span class=3D"p">,</span> <span class=
+=3D"n">var_four</span><span class=3D"p">)</span>
+</pre></div>
+</div>
+<p id=3D"multiline-if-statements">When the conditional part of an <code cla=
+ss=3D"docutils literal notranslate"><span class=3D"pre">if</span></code>-st=
+atement is long enough to require
+that it be written across multiple lines, it=E2=80=99s worth noting that th=
+e
+combination of a two character keyword (i.e. <code class=3D"docutils litera=
+l notranslate"><span class=3D"pre">if</span></code>), plus a single space,
+plus an opening parenthesis creates a natural 4-space indent for the
+subsequent lines of the multiline conditional.  This can produce a visual
+conflict with the indented suite of code nested inside the <code class=3D"d=
+ocutils literal notranslate"><span class=3D"pre">if</span></code>-statement=
+,
+which would also naturally be indented to 4 spaces.  This PEP takes no
+explicit position on how (or whether) to further visually distinguish such
+conditional lines from the nested suite inside the <code class=3D"docutils =
+literal notranslate"><span class=3D"pre">if</span></code>-statement.
+Acceptable options in this situation include, but are not limited to:</p>
+<div class=3D"highlight-default notranslate"><div class=3D"highlight"><pre>=
+<span></span><span class=3D"c1"># No extra indentation.</span>
+<span class=3D"k">if</span> <span class=3D"p">(</span><span class=3D"n">thi=
+s_is_one_thing</span> <span class=3D"ow">and</span>
+    <span class=3D"n">that_is_another_thing</span><span class=3D"p">):</spa=
+n>
+    <span class=3D"n">do_something</span><span class=3D"p">()</span>
+
+<span class=3D"c1"># Add a comment, which will provide some distinction in =
+editors</span>
+<span class=3D"c1"># supporting syntax highlighting.</span>
+<span class=3D"k">if</span> <span class=3D"p">(</span><span class=3D"n">thi=
+s_is_one_thing</span> <span class=3D"ow">and</span>
+    <span class=3D"n">that_is_another_thing</span><span class=3D"p">):</spa=
+n>
+    <span class=3D"c1"># Since both conditions are true, we can frobnicate.=
+</span>
+    <span class=3D"n">do_something</span><span class=3D"p">()</span>
+
+<span class=3D"c1"># Add some extra indentation on the conditional continua=
+tion line.</span>
+<span class=3D"k">if</span> <span class=3D"p">(</span><span class=3D"n">thi=
+s_is_one_thing</span>
+        <span class=3D"ow">and</span> <span class=3D"n">that_is_another_thi=
+ng</span><span class=3D"p">):</span>
+    <span class=3D"n">do_something</span><span class=3D"p">()</span>
+</pre></div>
+</div>
+<p>(Also see the discussion of whether to break before or after binary
+operators below.)</p>
+<p>The closing brace/bracket/parenthesis on multiline constructs may
+either line up under the first non-whitespace character of the last
+line of list, as in:</p>
+<div class=3D"highlight-default notranslate"><div class=3D"highlight"><pre>=
+<span></span><span class=3D"n">my_list</span> <span class=3D"o">=3D</span> =
+<span class=3D"p">[</span>
+    <span class=3D"mi">1</span><span class=3D"p">,</span> <span class=3D"mi=
+">2</span><span class=3D"p">,</span> <span class=3D"mi">3</span><span class=
+=3D"p">,</span>
+    <span class=3D"mi">4</span><span class=3D"p">,</span> <span class=3D"mi=
+">5</span><span class=3D"p">,</span> <span class=3D"mi">6</span><span class=
+=3D"p">,</span>
+    <span class=3D"p">]</span>
+<span class=3D"n">result</span> <span class=3D"o">=3D</span> <span class=3D=
+"n">some_function_that_takes_arguments</span><span class=3D"p">(</span>
+    <span class=3D"s1">'a'</span><span class=3D"p">,</span> <span class=3D"=
+s1">'b'</span><span class=3D"p">,</span> <span class=3D"s1">'c'</span><span=
+ class=3D"p">,</span>
+    <span class=3D"s1">'d'</span><span class=3D"p">,</span> <span class=3D"=
+s1">'e'</span><span class=3D"p">,</span> <span class=3D"s1">'f'</span><span=
+ class=3D"p">,</span>
+    <span class=3D"p">)</span>
+</pre></div>
+</div>
+<p>or it may be lined up under the first character of the line that
+starts the multiline construct, as in:</p>
+<div class=3D"highlight-default notranslate"><div class=3D"highlight"><pre>=
+<span></span><span class=3D"n">my_list</span> <span class=3D"o">=3D</span> =
+<span class=3D"p">[</span>
+    <span class=3D"mi">1</span><span class=3D"p">,</span> <span class=3D"mi=
+">2</span><span class=3D"p">,</span> <span class=3D"mi">3</span><span class=
+=3D"p">,</span>
+    <span class=3D"mi">4</span><span class=3D"p">,</span> <span class=3D"mi=
+">5</span><span class=3D"p">,</span> <span class=3D"mi">6</span><span class=
+=3D"p">,</span>
+<span class=3D"p">]</span>
+<span class=3D"n">result</span> <span class=3D"o">=3D</span> <span class=3D=
+"n">some_function_that_takes_arguments</span><span class=3D"p">(</span>
+    <span class=3D"s1">'a'</span><span class=3D"p">,</span> <span class=3D"=
+s1">'b'</span><span class=3D"p">,</span> <span class=3D"s1">'c'</span><span=
+ class=3D"p">,</span>
+    <span class=3D"s1">'d'</span><span class=3D"p">,</span> <span class=3D"=
+s1">'e'</span><span class=3D"p">,</span> <span class=3D"s1">'f'</span><span=
+ class=3D"p">,</span>
+<span class=3D"p">)</span>
+</pre></div>
+</div>
+</section>
+<section id=3D"tabs-or-spaces">
+<h3><a class=3D"toc-backref" href=3D"https://peps.python.org/pep-0008/#tabs=
+-or-spaces" role=3D"doc-backlink">Tabs or Spaces?</a></h3>
+<p>Spaces are the preferred indentation method.</p>
+<p>Tabs should be used solely to remain consistent with code that is
+already indented with tabs.</p>
+<p>Python disallows mixing tabs and spaces for indentation.</p>
+</section>
+<section id=3D"maximum-line-length">
+<h3><a class=3D"toc-backref" href=3D"https://peps.python.org/pep-0008/#maxi=
+mum-line-length" role=3D"doc-backlink">Maximum Line Length</a></h3>
+<p>Limit all lines to a maximum of 79 characters.</p>
+<p>For flowing long blocks of text with fewer structural restrictions
+(docstrings or comments), the line length should be limited to 72
+characters.</p>
+<p>Limiting the required editor window width makes it possible to have
+several files open side by side, and works well when using code
+review tools that present the two versions in adjacent columns.</p>
+<p>The default wrapping in most tools disrupts the visual structure of the
+code, making it more difficult to understand. The limits are chosen to
+avoid wrapping in editors with the window width set to 80, even
+if the tool places a marker glyph in the final column when wrapping
+lines. Some web based tools may not offer dynamic line wrapping at all.</p>
+<p>Some teams strongly prefer a longer line length.  For code maintained
+exclusively or primarily by a team that can reach agreement on this
+issue, it is okay to increase the line length limit up to 99 characters,
+provided that comments and docstrings are still wrapped at 72
+characters.</p>
+<p>The Python standard library is conservative and requires limiting
+lines to 79 characters (and docstrings/comments to 72).</p>
+<p>The preferred way of wrapping long lines is by using Python=E2=80=99s im=
+plied
+line continuation inside parentheses, brackets and braces.  Long lines
+can be broken over multiple lines by wrapping expressions in
+parentheses. These should be used in preference to using a backslash
+for line continuation.</p>
+<p>Backslashes may still be appropriate at times.  For example, long,
+multiple <code class=3D"docutils literal notranslate"><span class=3D"pre">w=
+ith</span></code>-statements could not use implicit continuation
+before Python 3.10, so backslashes were acceptable for that case:</p>
+<div class=3D"highlight-default notranslate"><div class=3D"highlight"><pre>=
+<span></span><span class=3D"k">with</span> <span class=3D"nb">open</span><s=
+pan class=3D"p">(</span><span class=3D"s1">'/path/to/some/file/you/want/to/=
+read'</span><span class=3D"p">)</span> <span class=3D"k">as</span> <span cl=
+ass=3D"n">file_1</span><span class=3D"p">,</span> \
+     <span class=3D"nb">open</span><span class=3D"p">(</span><span class=3D=
+"s1">'/path/to/some/file/being/written'</span><span class=3D"p">,</span> <s=
+pan class=3D"s1">'w'</span><span class=3D"p">)</span> <span class=3D"k">as<=
+/span> <span class=3D"n">file_2</span><span class=3D"p">:</span>
+    <span class=3D"n">file_2</span><span class=3D"o">.</span><span class=3D=
+"n">write</span><span class=3D"p">(</span><span class=3D"n">file_1</span><s=
+pan class=3D"o">.</span><span class=3D"n">read</span><span class=3D"p">())<=
+/span>
+</pre></div>
+</div>
+<p>(See the previous discussion on <a class=3D"reference internal" href=3D"=
+https://peps.python.org/pep-0008/#multiline-if-statements">multiline if-sta=
+tements</a> for further
+thoughts on the indentation of such multiline <code class=3D"docutils liter=
+al notranslate"><span class=3D"pre">with</span></code>-statements.)</p>
+<p>Another such case is with <code class=3D"docutils literal notranslate"><=
+span class=3D"pre">assert</span></code> statements.</p>
+<p>Make sure to indent the continued line appropriately.</p>
+</section>
+<section id=3D"should-a-line-break-before-or-after-a-binary-operator">
+<h3><a class=3D"toc-backref" href=3D"https://peps.python.org/pep-0008/#shou=
+ld-a-line-break-before-or-after-a-binary-operator" role=3D"doc-backlink">Sh=
+ould a Line Break Before or After a Binary Operator?</a></h3>
+<p>For decades the recommended style was to break after binary operators.
+But this can hurt readability in two ways: the operators tend to get
+scattered across different columns on the screen, and each operator is
+moved away from its operand and onto the previous line.  Here, the eye
+has to do extra work to tell which items are added and which are
+subtracted:</p>
+<div class=3D"highlight-default notranslate"><div class=3D"highlight"><pre>=
+<span></span><span class=3D"c1"># Wrong:</span>
+<span class=3D"c1"># operators sit far away from their operands</span>
+<span class=3D"n">income</span> <span class=3D"o">=3D</span> <span class=3D=
+"p">(</span><span class=3D"n">gross_wages</span> <span class=3D"o">+</span>
+          <span class=3D"n">taxable_interest</span> <span class=3D"o">+</sp=
+an>
+          <span class=3D"p">(</span><span class=3D"n">dividends</span> <spa=
+n class=3D"o">-</span> <span class=3D"n">qualified_dividends</span><span cl=
+ass=3D"p">)</span> <span class=3D"o">-</span>
+          <span class=3D"n">ira_deduction</span> <span class=3D"o">-</span>
+          <span class=3D"n">student_loan_interest</span><span class=3D"p">)=
+</span>
+</pre></div>
+</div>
+<p>To solve this readability problem, mathematicians and their publishers
+follow the opposite convention.  Donald Knuth explains the traditional
+rule in his <em>Computers and Typesetting</em> series: =E2=80=9CAlthough fo=
+rmulas
+within a paragraph always break after binary operations and relations,
+displayed formulas always break before binary operations=E2=80=9D <a class=
+=3D"footnote-reference brackets" href=3D"https://peps.python.org/pep-0008/#=
+id7" id=3D"id3">[3]</a>.</p>
+<p>Following the tradition from mathematics usually results in more
+readable code:</p>
+<div class=3D"highlight-default notranslate"><div class=3D"highlight"><pre>=
+<span></span><span class=3D"c1"># Correct:</span>
+<span class=3D"c1"># easy to match operators with operands</span>
+<span class=3D"n">income</span> <span class=3D"o">=3D</span> <span class=3D=
+"p">(</span><span class=3D"n">gross_wages</span>
+          <span class=3D"o">+</span> <span class=3D"n">taxable_interest</sp=
+an>
+          <span class=3D"o">+</span> <span class=3D"p">(</span><span class=
+=3D"n">dividends</span> <span class=3D"o">-</span> <span class=3D"n">qualif=
+ied_dividends</span><span class=3D"p">)</span>
+          <span class=3D"o">-</span> <span class=3D"n">ira_deduction</span>
+          <span class=3D"o">-</span> <span class=3D"n">student_loan_interes=
+t</span><span class=3D"p">)</span>
+</pre></div>
+</div>
+<p>In Python code, it is permissible to break before or after a binary
+operator, as long as the convention is consistent locally.  For new
+code Knuth=E2=80=99s style is suggested.</p>
+</section>
+<section id=3D"blank-lines">
+<h3><a class=3D"toc-backref" href=3D"https://peps.python.org/pep-0008/#blan=
+k-lines" role=3D"doc-backlink">Blank Lines</a></h3>
+<p>Surround top-level function and class definitions with two blank
+lines.</p>
+<p>Method definitions inside a class are surrounded by a single blank
+line.</p>
+<p>Extra blank lines may be used (sparingly) to separate groups of
+related functions.  Blank lines may be omitted between a bunch of
+related one-liners (e.g. a set of dummy implementations).</p>
+<p>Use blank lines in functions, sparingly, to indicate logical sections.</=
+p>
+<p>Python accepts the control-L (i.e. ^L) form feed character as
+whitespace; many tools treat these characters as page separators, so
+you may use them to separate pages of related sections of your file.
+Note, some editors and web-based code viewers may not recognize
+control-L as a form feed and will show another glyph in its place.</p>
+</section>
+<section id=3D"source-file-encoding">
+<h3><a class=3D"toc-backref" href=3D"https://peps.python.org/pep-0008/#sour=
+ce-file-encoding" role=3D"doc-backlink">Source File Encoding</a></h3>
+<p>Code in the core Python distribution should always use UTF-8, and should=
+ not
+have an encoding declaration.</p>
+<p>In the standard library, non-UTF-8 encodings should be used only for
+test purposes. Use non-ASCII characters sparingly, preferably only to
+denote places and human names. If using non-ASCII characters as data,
+avoid noisy Unicode characters like z=CD=A1=CC=AF=CC=AFa=CC=A7=CD=8E=CC=BAl=
+=CC=A1=CD=93=CC=ABg=CC=B9=CC=B2o=CC=A1=CC=BC=CC=98 and byte order
+marks.</p>
+<p>All identifiers in the Python standard library MUST use ASCII-only
+identifiers, and SHOULD use English words wherever feasible (in many
+cases, abbreviations and technical terms are used which aren=E2=80=99t
+English).</p>
+<p>Open source projects with a global audience are encouraged to adopt a
+similar policy.</p>
+</section>
+<section id=3D"imports">
+<h3><a class=3D"toc-backref" href=3D"https://peps.python.org/pep-0008/#impo=
+rts" role=3D"doc-backlink">Imports</a></h3>
+<ul>
+<li>Imports should usually be on separate lines:<div class=3D"highlight-def=
+ault notranslate"><div class=3D"highlight"><pre><span></span><span class=3D=
+"c1"># Correct:</span>
+<span class=3D"kn">import</span> <span class=3D"nn">os</span>
+<span class=3D"kn">import</span> <span class=3D"nn">sys</span>
+</pre></div>
+</div>
+<div class=3D"highlight-default notranslate"><div class=3D"highlight"><pre>=
+<span></span><span class=3D"c1"># Wrong:</span>
+<span class=3D"kn">import</span> <span class=3D"nn">sys</span><span class=
+=3D"o">,</span> <span class=3D"nn">os</span>
+</pre></div>
+</div>
+<p>It=E2=80=99s okay to say this though:</p>
+<div class=3D"highlight-default notranslate"><div class=3D"highlight"><pre>=
+<span></span><span class=3D"c1"># Correct:</span>
+<span class=3D"kn">from</span> <span class=3D"nn">subprocess</span> <span c=
+lass=3D"kn">import</span> <span class=3D"n">Popen</span><span class=3D"p">,=
+</span> <span class=3D"n">PIPE</span>
+</pre></div>
+</div>
+</li>
+<li>Imports are always put at the top of the file, just after any module
+comments and docstrings, and before module globals and constants.<p>Imports=
+ should be grouped in the following order:</p>
+<ol class=3D"arabic simple">
+<li>Standard library imports.</li>
+<li>Related third party imports.</li>
+<li>Local application/library specific imports.</li>
+</ol>
+<p>You should put a blank line between each group of imports.</p>
+</li>
+<li>Absolute imports are recommended, as they are usually more readable
+and tend to be better behaved (or at least give better error
+messages) if the import system is incorrectly configured (such as
+when a directory inside a package ends up on <code class=3D"docutils litera=
+l notranslate"><span class=3D"pre">sys.path</span></code>):<div class=3D"hi=
+ghlight-default notranslate"><div class=3D"highlight"><pre><span></span><sp=
+an class=3D"kn">import</span> <span class=3D"nn">mypkg.sibling</span>
+<span class=3D"kn">from</span> <span class=3D"nn">mypkg</span> <span class=
+=3D"kn">import</span> <span class=3D"n">sibling</span>
+<span class=3D"kn">from</span> <span class=3D"nn">mypkg.sibling</span> <spa=
+n class=3D"kn">import</span> <span class=3D"n">example</span>
+</pre></div>
+</div>
+<p>However, explicit relative imports are an acceptable alternative to
+absolute imports, especially when dealing with complex package layouts
+where using absolute imports would be unnecessarily verbose:</p>
+<div class=3D"highlight-default notranslate"><div class=3D"highlight"><pre>=
+<span></span><span class=3D"kn">from</span> <span class=3D"nn">.</span> <sp=
+an class=3D"kn">import</span> <span class=3D"n">sibling</span>
+<span class=3D"kn">from</span> <span class=3D"nn">.sibling</span> <span cla=
+ss=3D"kn">import</span> <span class=3D"n">example</span>
+</pre></div>
+</div>
+<p>Standard library code should avoid complex package layouts and always
+use absolute imports.</p>
+</li>
+<li>When importing a class from a class-containing module, it=E2=80=99s usu=
+ally
+okay to spell this:<div class=3D"highlight-default notranslate"><div class=
+=3D"highlight"><pre><span></span><span class=3D"kn">from</span> <span class=
+=3D"nn">myclass</span> <span class=3D"kn">import</span> <span class=3D"n">M=
+yClass</span>
+<span class=3D"kn">from</span> <span class=3D"nn">foo.bar.yourclass</span> =
+<span class=3D"kn">import</span> <span class=3D"n">YourClass</span>
+</pre></div>
+</div>
+<p>If this spelling causes local name clashes, then spell them explicitly:<=
+/p>
+<div class=3D"highlight-default notranslate"><div class=3D"highlight"><pre>=
+<span></span><span class=3D"kn">import</span> <span class=3D"nn">myclass</s=
+pan>
+<span class=3D"kn">import</span> <span class=3D"nn">foo.bar.yourclass</span=
+>
+</pre></div>
+</div>
+<p>and use =E2=80=9Cmyclass.MyClass=E2=80=9D and =E2=80=9Cfoo.bar.yourclass=
+.YourClass=E2=80=9D.</p>
+</li>
+<li>Wildcard imports (<code class=3D"docutils literal notranslate"><span cl=
+ass=3D"pre">from</span> <span class=3D"pre">&lt;module&gt;</span> <span cla=
+ss=3D"pre">import</span> <span class=3D"pre">*</span></code>) should be avo=
+ided, as
+they make it unclear which names are present in the namespace,
+confusing both readers and many automated tools. There is one
+defensible use case for a wildcard import, which is to republish an
+internal interface as part of a public API (for example, overwriting
+a pure Python implementation of an interface with the definitions
+from an optional accelerator module and exactly which definitions
+will be overwritten isn=E2=80=99t known in advance).<p>When republishing na=
+mes this way, the guidelines below regarding
+public and internal interfaces still apply.</p>
+</li>
+</ul>
+</section>
+<section id=3D"module-level-dunder-names">
+<h3><a class=3D"toc-backref" href=3D"https://peps.python.org/pep-0008/#modu=
+le-level-dunder-names" role=3D"doc-backlink">Module Level Dunder Names</a><=
+/h3>
+<p>Module level =E2=80=9Cdunders=E2=80=9D (i.e. names with two leading and =
+two trailing
+underscores) such as <code class=3D"docutils literal notranslate"><span cla=
+ss=3D"pre">__all__</span></code>, <code class=3D"docutils literal notransla=
+te"><span class=3D"pre">__author__</span></code>, <code class=3D"docutils l=
+iteral notranslate"><span class=3D"pre">__version__</span></code>,
+etc. should be placed after the module docstring but before any import
+statements <em>except</em> <code class=3D"docutils literal notranslate"><sp=
+an class=3D"pre">from</span> <span class=3D"pre">__future__</span></code> i=
+mports.  Python mandates that
+future-imports must appear in the module before any other code except
+docstrings:</p>
+<div class=3D"highlight-default notranslate"><div class=3D"highlight"><pre>=
+<span></span><span class=3D"sd">"""This is the example module.</span>
+
+<span class=3D"sd">This module does stuff.</span>
+<span class=3D"sd">"""</span>
+
+<span class=3D"kn">from</span> <span class=3D"nn">__future__</span> <span c=
+lass=3D"kn">import</span> <span class=3D"n">barry_as_FLUFL</span>
+
+<span class=3D"n">__all__</span> <span class=3D"o">=3D</span> <span class=
+=3D"p">[</span><span class=3D"s1">'a'</span><span class=3D"p">,</span> <spa=
+n class=3D"s1">'b'</span><span class=3D"p">,</span> <span class=3D"s1">'c'<=
+/span><span class=3D"p">]</span>
+<span class=3D"n">__version__</span> <span class=3D"o">=3D</span> <span cla=
+ss=3D"s1">'0.1'</span>
+<span class=3D"n">__author__</span> <span class=3D"o">=3D</span> <span clas=
+s=3D"s1">'Cardinal Biggles'</span>
+
+<span class=3D"kn">import</span> <span class=3D"nn">os</span>
+<span class=3D"kn">import</span> <span class=3D"nn">sys</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id=3D"string-quotes">
+<h2><a class=3D"toc-backref" href=3D"https://peps.python.org/pep-0008/#stri=
+ng-quotes" role=3D"doc-backlink">String Quotes</a></h2>
+<p>In Python, single-quoted strings and double-quoted strings are the
+same.  This PEP does not make a recommendation for this.  Pick a rule
+and stick to it.  When a string contains single or double quote
+characters, however, use the other one to avoid backslashes in the
+string. It improves readability.</p>
+<p>For triple-quoted strings, always use double quote characters to be
+consistent with the docstring convention in <a class=3D"pep reference inter=
+nal" href=3D"https://peps.python.org/pep-0257" title=3D"PEP 257 =E2=80=93 D=
+ocstring Conventions">PEP 257</a>.</p>
+</section>
+<section id=3D"whitespace-in-expressions-and-statements">
+<h2><a class=3D"toc-backref" href=3D"https://peps.python.org/pep-0008/#whit=
+espace-in-expressions-and-statements" role=3D"doc-backlink">Whitespace in E=
+xpressions and Statements</a></h2>
+<section id=3D"pet-peeves">
+<h3><a class=3D"toc-backref" href=3D"https://peps.python.org/pep-0008/#pet-=
+peeves" role=3D"doc-backlink">Pet Peeves</a></h3>
+<p>Avoid extraneous whitespace in the following situations:</p>
+<ul>
+<li>Immediately inside parentheses, brackets or braces:<div class=3D"highli=
+ght-default notranslate"><div class=3D"highlight"><pre><span></span><span c=
+lass=3D"c1"># Correct:</span>
+<span class=3D"n">spam</span><span class=3D"p">(</span><span class=3D"n">ha=
+m</span><span class=3D"p">[</span><span class=3D"mi">1</span><span class=3D=
+"p">],</span> <span class=3D"p">{</span><span class=3D"n">eggs</span><span =
+class=3D"p">:</span> <span class=3D"mi">2</span><span class=3D"p">})</span>
+</pre></div>
+</div>
+<div class=3D"highlight-default notranslate"><div class=3D"highlight"><pre>=
+<span></span><span class=3D"c1"># Wrong:</span>
+<span class=3D"n">spam</span><span class=3D"p">(</span> <span class=3D"n">h=
+am</span><span class=3D"p">[</span> <span class=3D"mi">1</span> <span class=
+=3D"p">],</span> <span class=3D"p">{</span> <span class=3D"n">eggs</span><s=
+pan class=3D"p">:</span> <span class=3D"mi">2</span> <span class=3D"p">}</s=
+pan> <span class=3D"p">)</span>
+</pre></div>
+</div>
+</li>
+<li>Between a trailing comma and a following close parenthesis:<div class=
+=3D"highlight-default notranslate"><div class=3D"highlight"><pre><span></sp=
+an><span class=3D"c1"># Correct:</span>
+<span class=3D"n">foo</span> <span class=3D"o">=3D</span> <span class=3D"p"=
+>(</span><span class=3D"mi">0</span><span class=3D"p">,)</span>
+</pre></div>
+</div>
+<div class=3D"highlight-default notranslate"><div class=3D"highlight"><pre>=
+<span></span><span class=3D"c1"># Wrong:</span>
+<span class=3D"n">bar</span> <span class=3D"o">=3D</span> <span class=3D"p"=
+>(</span><span class=3D"mi">0</span><span class=3D"p">,</span> <span class=
+=3D"p">)</span>
+</pre></div>
+</div>
+</li>
+<li>Immediately before a comma, semicolon, or colon:<div class=3D"highlight=
+-default notranslate"><div class=3D"highlight"><pre><span></span><span clas=
+s=3D"c1"># Correct:</span>
+<span class=3D"k">if</span> <span class=3D"n">x</span> <span class=3D"o">=
+=3D=3D</span> <span class=3D"mi">4</span><span class=3D"p">:</span> <span c=
+lass=3D"nb">print</span><span class=3D"p">(</span><span class=3D"n">x</span=
+><span class=3D"p">,</span> <span class=3D"n">y</span><span class=3D"p">);<=
+/span> <span class=3D"n">x</span><span class=3D"p">,</span> <span class=3D"=
+n">y</span> <span class=3D"o">=3D</span> <span class=3D"n">y</span><span cl=
+ass=3D"p">,</span> <span class=3D"n">x</span>
+</pre></div>
+</div>
+<div class=3D"highlight-default notranslate"><div class=3D"highlight"><pre>=
+<span></span><span class=3D"c1"># Wrong:</span>
+<span class=3D"k">if</span> <span class=3D"n">x</span> <span class=3D"o">=
+=3D=3D</span> <span class=3D"mi">4</span> <span class=3D"p">:</span> <span =
+class=3D"nb">print</span><span class=3D"p">(</span><span class=3D"n">x</spa=
+n> <span class=3D"p">,</span> <span class=3D"n">y</span><span class=3D"p">)=
+</span> <span class=3D"p">;</span> <span class=3D"n">x</span> <span class=
+=3D"p">,</span> <span class=3D"n">y</span> <span class=3D"o">=3D</span> <sp=
+an class=3D"n">y</span> <span class=3D"p">,</span> <span class=3D"n">x</spa=
+n>
+</pre></div>
+</div>
+</li>
+<li>However, in a slice the colon acts like a binary operator, and
+should have equal amounts on either side (treating it as the
+operator with the lowest priority).  In an extended slice, both
+colons must have the same amount of spacing applied.  Exception:
+when a slice parameter is omitted, the space is omitted:<div class=3D"highl=
+ight-default notranslate"><div class=3D"highlight"><pre><span></span><span =
+class=3D"c1"># Correct:</span>
+<span class=3D"n">ham</span><span class=3D"p">[</span><span class=3D"mi">1<=
+/span><span class=3D"p">:</span><span class=3D"mi">9</span><span class=3D"p=
+">],</span> <span class=3D"n">ham</span><span class=3D"p">[</span><span cla=
+ss=3D"mi">1</span><span class=3D"p">:</span><span class=3D"mi">9</span><spa=
+n class=3D"p">:</span><span class=3D"mi">3</span><span class=3D"p">],</span=
+> <span class=3D"n">ham</span><span class=3D"p">[:</span><span class=3D"mi"=
+>9</span><span class=3D"p">:</span><span class=3D"mi">3</span><span class=
+=3D"p">],</span> <span class=3D"n">ham</span><span class=3D"p">[</span><spa=
+n class=3D"mi">1</span><span class=3D"p">::</span><span class=3D"mi">3</spa=
+n><span class=3D"p">],</span> <span class=3D"n">ham</span><span class=3D"p"=
+>[</span><span class=3D"mi">1</span><span class=3D"p">:</span><span class=
+=3D"mi">9</span><span class=3D"p">:]</span>
+<span class=3D"n">ham</span><span class=3D"p">[</span><span class=3D"n">low=
+er</span><span class=3D"p">:</span><span class=3D"n">upper</span><span clas=
+s=3D"p">],</span> <span class=3D"n">ham</span><span class=3D"p">[</span><sp=
+an class=3D"n">lower</span><span class=3D"p">:</span><span class=3D"n">uppe=
+r</span><span class=3D"p">:],</span> <span class=3D"n">ham</span><span clas=
+s=3D"p">[</span><span class=3D"n">lower</span><span class=3D"p">::</span><s=
+pan class=3D"n">step</span><span class=3D"p">]</span>
+<span class=3D"n">ham</span><span class=3D"p">[</span><span class=3D"n">low=
+er</span><span class=3D"o">+</span><span class=3D"n">offset</span> <span cl=
+ass=3D"p">:</span> <span class=3D"n">upper</span><span class=3D"o">+</span>=
+<span class=3D"n">offset</span><span class=3D"p">]</span>
+<span class=3D"n">ham</span><span class=3D"p">[:</span> <span class=3D"n">u=
+pper_fn</span><span class=3D"p">(</span><span class=3D"n">x</span><span cla=
+ss=3D"p">)</span> <span class=3D"p">:</span> <span class=3D"n">step_fn</spa=
+n><span class=3D"p">(</span><span class=3D"n">x</span><span class=3D"p">)],=
+</span> <span class=3D"n">ham</span><span class=3D"p">[::</span> <span clas=
+s=3D"n">step_fn</span><span class=3D"p">(</span><span class=3D"n">x</span><=
+span class=3D"p">)]</span>
+<span class=3D"n">ham</span><span class=3D"p">[</span><span class=3D"n">low=
+er</span> <span class=3D"o">+</span> <span class=3D"n">offset</span> <span =
+class=3D"p">:</span> <span class=3D"n">upper</span> <span class=3D"o">+</sp=
+an> <span class=3D"n">offset</span><span class=3D"p">]</span>
+</pre></div>
+</div>
+<div class=3D"highlight-default notranslate"><div class=3D"highlight"><pre>=
+<span></span><span class=3D"c1"># Wrong:</span>
+<span class=3D"n">ham</span><span class=3D"p">[</span><span class=3D"n">low=
+er</span> <span class=3D"o">+</span> <span class=3D"n">offset</span><span c=
+lass=3D"p">:</span><span class=3D"n">upper</span> <span class=3D"o">+</span=
+> <span class=3D"n">offset</span><span class=3D"p">]</span>
+<span class=3D"n">ham</span><span class=3D"p">[</span><span class=3D"mi">1<=
+/span><span class=3D"p">:</span> <span class=3D"mi">9</span><span class=3D"=
+p">],</span> <span class=3D"n">ham</span><span class=3D"p">[</span><span cl=
+ass=3D"mi">1</span> <span class=3D"p">:</span><span class=3D"mi">9</span><s=
+pan class=3D"p">],</span> <span class=3D"n">ham</span><span class=3D"p">[</=
+span><span class=3D"mi">1</span><span class=3D"p">:</span><span class=3D"mi=
+">9</span> <span class=3D"p">:</span><span class=3D"mi">3</span><span class=
+=3D"p">]</span>
+<span class=3D"n">ham</span><span class=3D"p">[</span><span class=3D"n">low=
+er</span> <span class=3D"p">:</span> <span class=3D"p">:</span> <span class=
+=3D"n">upper</span><span class=3D"p">]</span>
+<span class=3D"n">ham</span><span class=3D"p">[</span> <span class=3D"p">:<=
+/span> <span class=3D"n">upper</span><span class=3D"p">]</span>
+</pre></div>
+</div>
+</li>
+<li>Immediately before the open parenthesis that starts the argument
+list of a function call:<div class=3D"highlight-default notranslate"><div c=
+lass=3D"highlight"><pre><span></span><span class=3D"c1"># Correct:</span>
+<span class=3D"n">spam</span><span class=3D"p">(</span><span class=3D"mi">1=
+</span><span class=3D"p">)</span>
+</pre></div>
+</div>
+<div class=3D"highlight-default notranslate"><div class=3D"highlight"><pre>=
+<span></span><span class=3D"c1"># Wrong:</span>
+<span class=3D"n">spam</span> <span class=3D"p">(</span><span class=3D"mi">=
+1</span><span class=3D"p">)</span>
+</pre></div>
+</div>
+</li>
+<li>Immediately before the open parenthesis that starts an indexing or
+slicing:<div class=3D"highlight-default notranslate"><div class=3D"highligh=
+t"><pre><span></span><span class=3D"c1"># Correct:</span>
+<span class=3D"n">dct</span><span class=3D"p">[</span><span class=3D"s1">'k=
+ey'</span><span class=3D"p">]</span> <span class=3D"o">=3D</span> <span cla=
+ss=3D"n">lst</span><span class=3D"p">[</span><span class=3D"n">index</span>=
+<span class=3D"p">]</span>
+</pre></div>
+</div>
+<div class=3D"highlight-default notranslate"><div class=3D"highlight"><pre>=
+<span></span><span class=3D"c1"># Wrong:</span>
+<span class=3D"n">dct</span> <span class=3D"p">[</span><span class=3D"s1">'=
+key'</span><span class=3D"p">]</span> <span class=3D"o">=3D</span> <span cl=
+ass=3D"n">lst</span> <span class=3D"p">[</span><span class=3D"n">index</spa=
+n><span class=3D"p">]</span>
+</pre></div>
+</div>
+</li>
+<li>More than one space around an assignment (or other) operator to
+align it with another:<div class=3D"highlight-default notranslate"><div cla=
+ss=3D"highlight"><pre><span></span><span class=3D"c1"># Correct:</span>
+<span class=3D"n">x</span> <span class=3D"o">=3D</span> <span class=3D"mi">=
+1</span>
+<span class=3D"n">y</span> <span class=3D"o">=3D</span> <span class=3D"mi">=
+2</span>
+<span class=3D"n">long_variable</span> <span class=3D"o">=3D</span> <span c=
+lass=3D"mi">3</span>
+</pre></div>
+</div>
+<div class=3D"highlight-default notranslate"><div class=3D"highlight"><pre>=
+<span></span><span class=3D"c1"># Wrong:</span>
+<span class=3D"n">x</span>             <span class=3D"o">=3D</span> <span c=
+lass=3D"mi">1</span>
+<span class=3D"n">y</span>             <span class=3D"o">=3D</span> <span c=
+lass=3D"mi">2</span>
+<span class=3D"n">long_variable</span> <span class=3D"o">=3D</span> <span c=
+lass=3D"mi">3</span>
+</pre></div>
+</div>
+</li>
+</ul>
+</section>
+<section id=3D"other-recommendations">
+<h3><a class=3D"toc-backref" href=3D"https://peps.python.org/pep-0008/#othe=
+r-recommendations" role=3D"doc-backlink">Other Recommendations</a></h3>
+<ul>
+<li>Avoid trailing whitespace anywhere.  Because it=E2=80=99s usually invis=
+ible,
+it can be confusing: e.g. a backslash followed by a space and a
+newline does not count as a line continuation marker.  Some editors
+don=E2=80=99t preserve it and many projects (like CPython itself) have
+pre-commit hooks that reject it.</li>
+<li>Always surround these binary operators with a single space on either
+side: assignment (<code class=3D"docutils literal notranslate"><span class=
+=3D"pre">=3D</span></code>), augmented assignment (<code class=3D"docutils =
+literal notranslate"><span class=3D"pre">+=3D</span></code>, <code class=3D=
+"docutils literal notranslate"><span class=3D"pre">-=3D</span></code>
+etc.), comparisons (<code class=3D"docutils literal notranslate"><span clas=
+s=3D"pre">=3D=3D</span></code>, <code class=3D"docutils literal notranslate=
+"><span class=3D"pre">&lt;</span></code>, <code class=3D"docutils literal n=
+otranslate"><span class=3D"pre">&gt;</span></code>, <code class=3D"docutils=
+ literal notranslate"><span class=3D"pre">!=3D</span></code>, <code class=
+=3D"docutils literal notranslate"><span class=3D"pre">&lt;&gt;</span></code=
+>, <code class=3D"docutils literal notranslate"><span class=3D"pre">&lt;=3D=
+</span></code>,
+<code class=3D"docutils literal notranslate"><span class=3D"pre">&gt;=3D</s=
+pan></code>, <code class=3D"docutils literal notranslate"><span class=3D"pr=
+e">in</span></code>, <code class=3D"docutils literal notranslate"><span cla=
+ss=3D"pre">not</span> <span class=3D"pre">in</span></code>, <code class=3D"=
+docutils literal notranslate"><span class=3D"pre">is</span></code>, <code c=
+lass=3D"docutils literal notranslate"><span class=3D"pre">is</span> <span c=
+lass=3D"pre">not</span></code>), Booleans (<code class=3D"docutils literal =
+notranslate"><span class=3D"pre">and</span></code>,
+<code class=3D"docutils literal notranslate"><span class=3D"pre">or</span><=
+/code>, <code class=3D"docutils literal notranslate"><span class=3D"pre">no=
+t</span></code>).</li>
+<li>If operators with different priorities are used, consider adding
+whitespace around the operators with the lowest priority(ies). Use
+your own judgment; however, never use more than one space, and
+always have the same amount of whitespace on both sides of a binary
+operator:<div class=3D"highlight-default notranslate"><div class=3D"highlig=
+ht"><pre><span></span><span class=3D"c1"># Correct:</span>
+<span class=3D"n">i</span> <span class=3D"o">=3D</span> <span class=3D"n">i=
+</span> <span class=3D"o">+</span> <span class=3D"mi">1</span>
+<span class=3D"n">submitted</span> <span class=3D"o">+=3D</span> <span clas=
+s=3D"mi">1</span>
+<span class=3D"n">x</span> <span class=3D"o">=3D</span> <span class=3D"n">x=
+</span><span class=3D"o">*</span><span class=3D"mi">2</span> <span class=3D=
+"o">-</span> <span class=3D"mi">1</span>
+<span class=3D"n">hypot2</span> <span class=3D"o">=3D</span> <span class=3D=
+"n">x</span><span class=3D"o">*</span><span class=3D"n">x</span> <span clas=
+s=3D"o">+</span> <span class=3D"n">y</span><span class=3D"o">*</span><span =
+class=3D"n">y</span>
+<span class=3D"n">c</span> <span class=3D"o">=3D</span> <span class=3D"p">(=
+</span><span class=3D"n">a</span><span class=3D"o">+</span><span class=3D"n=
+">b</span><span class=3D"p">)</span> <span class=3D"o">*</span> <span class=
+=3D"p">(</span><span class=3D"n">a</span><span class=3D"o">-</span><span cl=
+ass=3D"n">b</span><span class=3D"p">)</span>
+</pre></div>
+</div>
+<div class=3D"highlight-default notranslate"><div class=3D"highlight"><pre>=
+<span></span><span class=3D"c1"># Wrong:</span>
+<span class=3D"n">i</span><span class=3D"o">=3D</span><span class=3D"n">i</=
+span><span class=3D"o">+</span><span class=3D"mi">1</span>
+<span class=3D"n">submitted</span> <span class=3D"o">+=3D</span><span class=
+=3D"mi">1</span>
+<span class=3D"n">x</span> <span class=3D"o">=3D</span> <span class=3D"n">x=
+</span> <span class=3D"o">*</span> <span class=3D"mi">2</span> <span class=
+=3D"o">-</span> <span class=3D"mi">1</span>
+<span class=3D"n">hypot2</span> <span class=3D"o">=3D</span> <span class=3D=
+"n">x</span> <span class=3D"o">*</span> <span class=3D"n">x</span> <span cl=
+ass=3D"o">+</span> <span class=3D"n">y</span> <span class=3D"o">*</span> <s=
+pan class=3D"n">y</span>
+<span class=3D"n">c</span> <span class=3D"o">=3D</span> <span class=3D"p">(=
+</span><span class=3D"n">a</span> <span class=3D"o">+</span> <span class=3D=
+"n">b</span><span class=3D"p">)</span> <span class=3D"o">*</span> <span cla=
+ss=3D"p">(</span><span class=3D"n">a</span> <span class=3D"o">-</span> <spa=
+n class=3D"n">b</span><span class=3D"p">)</span>
+</pre></div>
+</div>
+</li>
+<li>Function annotations should use the normal rules for colons and
+always have spaces around the <code class=3D"docutils literal notranslate">=
+<span class=3D"pre">-&gt;</span></code> arrow if present.  (See
+<a class=3D"reference internal" href=3D"https://peps.python.org/pep-0008/#f=
+unction-annotations">Function Annotations</a> below for more about function=
+ annotations.):<div class=3D"highlight-default notranslate"><div class=3D"h=
+ighlight"><pre><span></span><span class=3D"c1"># Correct:</span>
+<span class=3D"k">def</span> <span class=3D"nf">munge</span><span class=3D"=
+p">(</span><span class=3D"nb">input</span><span class=3D"p">:</span> <span =
+class=3D"n">AnyStr</span><span class=3D"p">):</span> <span class=3D"o">...<=
+/span>
+<span class=3D"k">def</span> <span class=3D"nf">munge</span><span class=3D"=
+p">()</span> <span class=3D"o">-&gt;</span> <span class=3D"n">PosInt</span>=
+<span class=3D"p">:</span> <span class=3D"o">...</span>
+</pre></div>
+</div>
+<div class=3D"highlight-default notranslate"><div class=3D"highlight"><pre>=
+<span></span><span class=3D"c1"># Wrong:</span>
+<span class=3D"k">def</span> <span class=3D"nf">munge</span><span class=3D"=
+p">(</span><span class=3D"nb">input</span><span class=3D"p">:</span><span c=
+lass=3D"n">AnyStr</span><span class=3D"p">):</span> <span class=3D"o">...</=
+span>
+<span class=3D"k">def</span> <span class=3D"nf">munge</span><span class=3D"=
+p">()</span><span class=3D"o">-&gt;</span><span class=3D"n">PosInt</span><s=
+pan class=3D"p">:</span> <span class=3D"o">...</span>
+</pre></div>
+</div>
+</li>
+<li>Don=E2=80=99t use spaces around the <code class=3D"docutils literal not=
+ranslate"><span class=3D"pre">=3D</span></code> sign when used to indicate =
+a
+keyword argument, or when used to indicate a default value for an
+<em>unannotated</em> function parameter:<div class=3D"highlight-default not=
+ranslate"><div class=3D"highlight"><pre><span></span><span class=3D"c1"># C=
+orrect:</span>
+<span class=3D"k">def</span> <span class=3D"nf">complex</span><span class=
+=3D"p">(</span><span class=3D"n">real</span><span class=3D"p">,</span> <spa=
+n class=3D"n">imag</span><span class=3D"o">=3D</span><span class=3D"mf">0.0=
+</span><span class=3D"p">):</span>
+    <span class=3D"k">return</span> <span class=3D"n">magic</span><span cla=
+ss=3D"p">(</span><span class=3D"n">r</span><span class=3D"o">=3D</span><spa=
+n class=3D"n">real</span><span class=3D"p">,</span> <span class=3D"n">i</sp=
+an><span class=3D"o">=3D</span><span class=3D"n">imag</span><span class=3D"=
+p">)</span>
+</pre></div>
+</div>
+<div class=3D"highlight-default notranslate"><div class=3D"highlight"><pre>=
+<span></span><span class=3D"c1"># Wrong:</span>
+<span class=3D"k">def</span> <span class=3D"nf">complex</span><span class=
+=3D"p">(</span><span class=3D"n">real</span><span class=3D"p">,</span> <spa=
+n class=3D"n">imag</span> <span class=3D"o">=3D</span> <span class=3D"mf">0=
+.0</span><span class=3D"p">):</span>
+    <span class=3D"k">return</span> <span class=3D"n">magic</span><span cla=
+ss=3D"p">(</span><span class=3D"n">r</span> <span class=3D"o">=3D</span> <s=
+pan class=3D"n">real</span><span class=3D"p">,</span> <span class=3D"n">i</=
+span> <span class=3D"o">=3D</span> <span class=3D"n">imag</span><span class=
+=3D"p">)</span>
+</pre></div>
+</div>
+<p>When combining an argument annotation with a default value, however, do =
+use
+spaces around the <code class=3D"docutils literal notranslate"><span class=
+=3D"pre">=3D</span></code> sign:</p>
+<div class=3D"highlight-default notranslate"><div class=3D"highlight"><pre>=
+<span></span><span class=3D"c1"># Correct:</span>
+<span class=3D"k">def</span> <span class=3D"nf">munge</span><span class=3D"=
+p">(</span><span class=3D"n">sep</span><span class=3D"p">:</span> <span cla=
+ss=3D"n">AnyStr</span> <span class=3D"o">=3D</span> <span class=3D"kc">None=
+</span><span class=3D"p">):</span> <span class=3D"o">...</span>
+<span class=3D"k">def</span> <span class=3D"nf">munge</span><span class=3D"=
+p">(</span><span class=3D"nb">input</span><span class=3D"p">:</span> <span =
+class=3D"n">AnyStr</span><span class=3D"p">,</span> <span class=3D"n">sep</=
+span><span class=3D"p">:</span> <span class=3D"n">AnyStr</span> <span class=
+=3D"o">=3D</span> <span class=3D"kc">None</span><span class=3D"p">,</span> =
+<span class=3D"n">limit</span><span class=3D"o">=3D</span><span class=3D"mi=
+">1000</span><span class=3D"p">):</span> <span class=3D"o">...</span>
+</pre></div>
+</div>
+<div class=3D"highlight-default notranslate"><div class=3D"highlight"><pre>=
+<span></span><span class=3D"c1"># Wrong:</span>
+<span class=3D"k">def</span> <span class=3D"nf">munge</span><span class=3D"=
+p">(</span><span class=3D"nb">input</span><span class=3D"p">:</span> <span =
+class=3D"n">AnyStr</span><span class=3D"o">=3D</span><span class=3D"kc">Non=
+e</span><span class=3D"p">):</span> <span class=3D"o">...</span>
+<span class=3D"k">def</span> <span class=3D"nf">munge</span><span class=3D"=
+p">(</span><span class=3D"nb">input</span><span class=3D"p">:</span> <span =
+class=3D"n">AnyStr</span><span class=3D"p">,</span> <span class=3D"n">limit=
+</span> <span class=3D"o">=3D</span> <span class=3D"mi">1000</span><span cl=
+ass=3D"p">):</span> <span class=3D"o">...</span>
+</pre></div>
+</div>
+</li>
+<li>Compound statements (multiple statements on the same line) are
+generally discouraged:<div class=3D"highlight-default notranslate"><div cla=
+ss=3D"highlight"><pre><span></span><span class=3D"c1"># Correct:</span>
+<span class=3D"k">if</span> <span class=3D"n">foo</span> <span class=3D"o">=
+=3D=3D</span> <span class=3D"s1">'blah'</span><span class=3D"p">:</span>
+    <span class=3D"n">do_blah_thing</span><span class=3D"p">()</span>
+<span class=3D"n">do_one</span><span class=3D"p">()</span>
+<span class=3D"n">do_two</span><span class=3D"p">()</span>
+<span class=3D"n">do_three</span><span class=3D"p">()</span>
+</pre></div>
+</div>
+<p>Rather not:</p>
+<div class=3D"highlight-default notranslate"><div class=3D"highlight"><pre>=
+<span></span><span class=3D"c1"># Wrong:</span>
+<span class=3D"k">if</span> <span class=3D"n">foo</span> <span class=3D"o">=
+=3D=3D</span> <span class=3D"s1">'blah'</span><span class=3D"p">:</span> <s=
+pan class=3D"n">do_blah_thing</span><span class=3D"p">()</span>
+<span class=3D"n">do_one</span><span class=3D"p">();</span> <span class=3D"=
+n">do_two</span><span class=3D"p">();</span> <span class=3D"n">do_three</sp=
+an><span class=3D"p">()</span>
+</pre></div>
+</div>
+</li>
+<li>While sometimes it=E2=80=99s okay to put an if/for/while with a small b=
+ody
+on the same line, never do this for multi-clause statements.  Also
+avoid folding such long lines!<p>Rather not:</p>
+<div class=3D"highlight-default notranslate"><div class=3D"highlight"><pre>=
+<span></span><span class=3D"c1"># Wrong:</span>
+<span class=3D"k">if</span> <span class=3D"n">foo</span> <span class=3D"o">=
+=3D=3D</span> <span class=3D"s1">'blah'</span><span class=3D"p">:</span> <s=
+pan class=3D"n">do_blah_thing</span><span class=3D"p">()</span>
+<span class=3D"k">for</span> <span class=3D"n">x</span> <span class=3D"ow">=
+in</span> <span class=3D"n">lst</span><span class=3D"p">:</span> <span clas=
+s=3D"n">total</span> <span class=3D"o">+=3D</span> <span class=3D"n">x</spa=
+n>
+<span class=3D"k">while</span> <span class=3D"n">t</span> <span class=3D"o"=
+>&lt;</span> <span class=3D"mi">10</span><span class=3D"p">:</span> <span c=
+lass=3D"n">t</span> <span class=3D"o">=3D</span> <span class=3D"n">delay</s=
+pan><span class=3D"p">()</span>
+</pre></div>
+</div>
+<p>Definitely not:</p>
+<div class=3D"highlight-default notranslate"><div class=3D"highlight"><pre>=
+<span></span><span class=3D"c1"># Wrong:</span>
+<span class=3D"k">if</span> <span class=3D"n">foo</span> <span class=3D"o">=
+=3D=3D</span> <span class=3D"s1">'blah'</span><span class=3D"p">:</span> <s=
+pan class=3D"n">do_blah_thing</span><span class=3D"p">()</span>
+<span class=3D"k">else</span><span class=3D"p">:</span> <span class=3D"n">d=
+o_non_blah_thing</span><span class=3D"p">()</span>
+
+<span class=3D"k">try</span><span class=3D"p">:</span> <span class=3D"n">so=
+mething</span><span class=3D"p">()</span>
+<span class=3D"k">finally</span><span class=3D"p">:</span> <span class=3D"n=
+">cleanup</span><span class=3D"p">()</span>
+
+<span class=3D"n">do_one</span><span class=3D"p">();</span> <span class=3D"=
+n">do_two</span><span class=3D"p">();</span> <span class=3D"n">do_three</sp=
+an><span class=3D"p">(</span><span class=3D"n">long</span><span class=3D"p"=
+>,</span> <span class=3D"n">argument</span><span class=3D"p">,</span>
+                             <span class=3D"nb">list</span><span class=3D"p=
+">,</span> <span class=3D"n">like</span><span class=3D"p">,</span> <span cl=
+ass=3D"n">this</span><span class=3D"p">)</span>
+
+<span class=3D"k">if</span> <span class=3D"n">foo</span> <span class=3D"o">=
+=3D=3D</span> <span class=3D"s1">'blah'</span><span class=3D"p">:</span> <s=
+pan class=3D"n">one</span><span class=3D"p">();</span> <span class=3D"n">tw=
+o</span><span class=3D"p">();</span> <span class=3D"n">three</span><span cl=
+ass=3D"p">()</span>
+</pre></div>
+</div>
+</li>
+</ul>
+</section>
+</section>
+<section id=3D"when-to-use-trailing-commas">
+<h2><a class=3D"toc-backref" href=3D"https://peps.python.org/pep-0008/#when=
+-to-use-trailing-commas" role=3D"doc-backlink">When to Use Trailing Commas<=
+/a></h2>
+<p>Trailing commas are usually optional, except they are mandatory when
+making a tuple of one element.  For clarity, it is recommended to
+surround the latter in (technically redundant) parentheses:</p>
+<div class=3D"highlight-default notranslate"><div class=3D"highlight"><pre>=
+<span></span><span class=3D"c1"># Correct:</span>
+<span class=3D"n">FILES</span> <span class=3D"o">=3D</span> <span class=3D"=
+p">(</span><span class=3D"s1">'setup.cfg'</span><span class=3D"p">,)</span>
+</pre></div>
+</div>
+<div class=3D"highlight-default notranslate"><div class=3D"highlight"><pre>=
+<span></span><span class=3D"c1"># Wrong:</span>
+<span class=3D"n">FILES</span> <span class=3D"o">=3D</span> <span class=3D"=
+s1">'setup.cfg'</span><span class=3D"p">,</span>
+</pre></div>
+</div>
+<p>When trailing commas are redundant, they are often helpful when a
+version control system is used, when a list of values, arguments or
+imported items is expected to be extended over time.  The pattern is
+to put each value (etc.) on a line by itself, always adding a trailing
+comma, and add the close parenthesis/bracket/brace on the next line.
+However it does not make sense to have a trailing comma on the same
+line as the closing delimiter (except in the above case of singleton
+tuples):</p>
+<div class=3D"highlight-default notranslate"><div class=3D"highlight"><pre>=
+<span></span><span class=3D"c1"># Correct:</span>
+<span class=3D"n">FILES</span> <span class=3D"o">=3D</span> <span class=3D"=
+p">[</span>
+    <span class=3D"s1">'setup.cfg'</span><span class=3D"p">,</span>
+    <span class=3D"s1">'tox.ini'</span><span class=3D"p">,</span>
+    <span class=3D"p">]</span>
+<span class=3D"n">initialize</span><span class=3D"p">(</span><span class=3D=
+"n">FILES</span><span class=3D"p">,</span>
+           <span class=3D"n">error</span><span class=3D"o">=3D</span><span =
+class=3D"kc">True</span><span class=3D"p">,</span>
+           <span class=3D"p">)</span>
+</pre></div>
+</div>
+<div class=3D"highlight-default notranslate"><div class=3D"highlight"><pre>=
+<span></span><span class=3D"c1"># Wrong:</span>
+<span class=3D"n">FILES</span> <span class=3D"o">=3D</span> <span class=3D"=
+p">[</span><span class=3D"s1">'setup.cfg'</span><span class=3D"p">,</span> =
+<span class=3D"s1">'tox.ini'</span><span class=3D"p">,]</span>
+<span class=3D"n">initialize</span><span class=3D"p">(</span><span class=3D=
+"n">FILES</span><span class=3D"p">,</span> <span class=3D"n">error</span><s=
+pan class=3D"o">=3D</span><span class=3D"kc">True</span><span class=3D"p">,=
+)</span>
+</pre></div>
+</div>
+</section>
+<section id=3D"comments">
+<h2><a class=3D"toc-backref" href=3D"https://peps.python.org/pep-0008/#comm=
+ents" role=3D"doc-backlink">Comments</a></h2>
+<p>Comments that contradict the code are worse than no comments.  Always
+make a priority of keeping the comments up-to-date when the code
+changes!</p>
+<p>Comments should be complete sentences.  The first word should be
+capitalized, unless it is an identifier that begins with a lower case
+letter (never alter the case of identifiers!).</p>
+<p>Block comments generally consist of one or more paragraphs built out of
+complete sentences, with each sentence ending in a period.</p>
+<p>You should use two spaces after a sentence-ending period in multi-
+sentence comments, except after the final sentence.</p>
+<p>Ensure that your comments are clear and easily understandable to other
+speakers of the language you are writing in.</p>
+<p>Python coders from non-English speaking countries: please write your
+comments in English, unless you are 120% sure that the code will never
+be read by people who don=E2=80=99t speak your language.</p>
+<section id=3D"block-comments">
+<h3><a class=3D"toc-backref" href=3D"https://peps.python.org/pep-0008/#bloc=
+k-comments" role=3D"doc-backlink">Block Comments</a></h3>
+<p>Block comments generally apply to some (or all) code that follows
+them, and are indented to the same level as that code.  Each line of a
+block comment starts with a <code class=3D"docutils literal notranslate"><s=
+pan class=3D"pre">#</span></code> and a single space (unless it is
+indented text inside the comment).</p>
+<p>Paragraphs inside a block comment are separated by a line containing a
+single <code class=3D"docutils literal notranslate"><span class=3D"pre">#</=
+span></code>.</p>
+</section>
+<section id=3D"inline-comments">
+<h3><a class=3D"toc-backref" href=3D"https://peps.python.org/pep-0008/#inli=
+ne-comments" role=3D"doc-backlink">Inline Comments</a></h3>
+<p>Use inline comments sparingly.</p>
+<p>An inline comment is a comment on the same line as a statement.
+Inline comments should be separated by at least two spaces from the
+statement.  They should start with a # and a single space.</p>
+<p>Inline comments are unnecessary and in fact distracting if they state
+the obvious.  Don=E2=80=99t do this:</p>
+<div class=3D"highlight-default notranslate"><div class=3D"highlight"><pre>=
+<span></span><span class=3D"n">x</span> <span class=3D"o">=3D</span> <span =
+class=3D"n">x</span> <span class=3D"o">+</span> <span class=3D"mi">1</span>=
+                 <span class=3D"c1"># Increment x</span>
+</pre></div>
+</div>
+<p>But sometimes, this is useful:</p>
+<div class=3D"highlight-default notranslate"><div class=3D"highlight"><pre>=
+<span></span><span class=3D"n">x</span> <span class=3D"o">=3D</span> <span =
+class=3D"n">x</span> <span class=3D"o">+</span> <span class=3D"mi">1</span>=
+                 <span class=3D"c1"># Compensate for border</span>
+</pre></div>
+</div>
+</section>
+<section id=3D"documentation-strings">
+<h3><a class=3D"toc-backref" href=3D"https://peps.python.org/pep-0008/#docu=
+mentation-strings" role=3D"doc-backlink">Documentation Strings</a></h3>
+<p>Conventions for writing good documentation strings
+(a.k.a. =E2=80=9Cdocstrings=E2=80=9D) are immortalized in <a class=3D"pep r=
+eference internal" href=3D"https://peps.python.org/pep-0257" title=3D"PEP 2=
+57 =E2=80=93 Docstring Conventions">PEP 257</a>.</p>
+<ul>
+<li>Write docstrings for all public modules, functions, classes, and
+methods.  Docstrings are not necessary for non-public methods, but
+you should have a comment that describes what the method does.  This
+comment should appear after the <code class=3D"docutils literal notranslate=
+"><span class=3D"pre">def</span></code> line.</li>
+<li><a class=3D"pep reference internal" href=3D"https://peps.python.org/pep=
+-0257" title=3D"PEP 257 =E2=80=93 Docstring Conventions">PEP 257</a> descri=
+bes good docstring conventions.  Note that most
+importantly, the <code class=3D"docutils literal notranslate"><span class=
+=3D"pre">"""</span></code> that ends a multiline docstring should be
+on a line by itself:<div class=3D"highlight-default notranslate"><div class=
+=3D"highlight"><pre><span></span><span class=3D"sd">"""Return a foobang</sp=
+an>
+
+<span class=3D"sd">Optional plotz says to frobnicate the bizbaz first.</spa=
+n>
+<span class=3D"sd">"""</span>
+</pre></div>
+</div>
+</li>
+<li>For one liner docstrings, please keep the closing <code class=3D"docuti=
+ls literal notranslate"><span class=3D"pre">"""</span></code> on
+the same line:<div class=3D"highlight-default notranslate"><div class=3D"hi=
+ghlight"><pre><span></span><span class=3D"sd">"""Return an ex-parrot."""</s=
+pan>
+</pre></div>
+</div>
+</li>
+</ul>
+</section>
+</section>
+<section id=3D"naming-conventions">
+<h2><a class=3D"toc-backref" href=3D"https://peps.python.org/pep-0008/#nami=
+ng-conventions" role=3D"doc-backlink">Naming Conventions</a></h2>
+<p>The naming conventions of Python=E2=80=99s library are a bit of a mess, =
+so
+we=E2=80=99ll never get this completely consistent =E2=80=93 nevertheless, =
+here are
+the currently recommended naming standards.  New modules and packages
+(including third party frameworks) should be written to these
+standards, but where an existing library has a different style,
+internal consistency is preferred.</p>
+<section id=3D"overriding-principle">
+<h3><a class=3D"toc-backref" href=3D"https://peps.python.org/pep-0008/#over=
+riding-principle" role=3D"doc-backlink">Overriding Principle</a></h3>
+<p>Names that are visible to the user as public parts of the API should
+follow conventions that reflect usage rather than implementation.</p>
+</section>
+<section id=3D"descriptive-naming-styles">
+<h3><a class=3D"toc-backref" href=3D"https://peps.python.org/pep-0008/#desc=
+riptive-naming-styles" role=3D"doc-backlink">Descriptive: Naming Styles</a>=
+</h3>
+<p>There are a lot of different naming styles.  It helps to be able to
+recognize what naming style is being used, independently from what
+they are used for.</p>
+<p>The following naming styles are commonly distinguished:</p>
+<ul>
+<li><code class=3D"docutils literal notranslate"><span class=3D"pre">b</spa=
+n></code> (single lowercase letter)</li>
+<li><code class=3D"docutils literal notranslate"><span class=3D"pre">B</spa=
+n></code> (single uppercase letter)</li>
+<li><code class=3D"docutils literal notranslate"><span class=3D"pre">lowerc=
+ase</span></code></li>
+<li><code class=3D"docutils literal notranslate"><span class=3D"pre">lower_=
+case_with_underscores</span></code></li>
+<li><code class=3D"docutils literal notranslate"><span class=3D"pre">UPPERC=
+ASE</span></code></li>
+<li><code class=3D"docutils literal notranslate"><span class=3D"pre">UPPER_=
+CASE_WITH_UNDERSCORES</span></code></li>
+<li><code class=3D"docutils literal notranslate"><span class=3D"pre">Capita=
+lizedWords</span></code> (or CapWords, or CamelCase =E2=80=93 so named beca=
+use
+of the bumpy look of its letters <a class=3D"footnote-reference brackets" h=
+ref=3D"https://peps.python.org/pep-0008/#id8" id=3D"id4">[4]</a>).  This is=
+ also sometimes known
+as StudlyCaps.<p>Note: When using acronyms in CapWords, capitalize all the
+letters of the acronym.  Thus HTTPServerError is better than
+HttpServerError.</p>
+</li>
+<li><code class=3D"docutils literal notranslate"><span class=3D"pre">mixedC=
+ase</span></code> (differs from CapitalizedWords by initial lowercase
+character!)</li>
+<li><code class=3D"docutils literal notranslate"><span class=3D"pre">Capita=
+lized_Words_With_Underscores</span></code> (ugly!)</li>
+</ul>
+<p>There=E2=80=99s also the style of using a short unique prefix to group r=
+elated
+names together.  This is not used much in Python, but it is mentioned
+for completeness.  For example, the <code class=3D"docutils literal notrans=
+late"><span class=3D"pre">os.stat()</span></code> function returns a
+tuple whose items traditionally have names like <code class=3D"docutils lit=
+eral notranslate"><span class=3D"pre">st_mode</span></code>,
+<code class=3D"docutils literal notranslate"><span class=3D"pre">st_size</s=
+pan></code>, <code class=3D"docutils literal notranslate"><span class=3D"pr=
+e">st_mtime</span></code> and so on.  (This is done to emphasize the
+correspondence with the fields of the POSIX system call struct, which
+helps programmers familiar with that.)</p>
+<p>The X11 library uses a leading X for all its public functions.  In
+Python, this style is generally deemed unnecessary because attribute
+and method names are prefixed with an object, and function names are
+prefixed with a module name.</p>
+<p>In addition, the following special forms using leading or trailing
+underscores are recognized (these can generally be combined with any
+case convention):</p>
+<ul>
+<li><code class=3D"docutils literal notranslate"><span class=3D"pre">_singl=
+e_leading_underscore</span></code>: weak =E2=80=9Cinternal use=E2=80=9D ind=
+icator.
+E.g. <code class=3D"docutils literal notranslate"><span class=3D"pre">from<=
+/span> <span class=3D"pre">M</span> <span class=3D"pre">import</span> <span=
+ class=3D"pre">*</span></code> does not import objects whose names start
+with an underscore.</li>
+<li><code class=3D"docutils literal notranslate"><span class=3D"pre">single=
+_trailing_underscore_</span></code>: used by convention to avoid
+conflicts with Python keyword, e.g.<div class=3D"highlight-default notransl=
+ate"><div class=3D"highlight"><pre><span></span><span class=3D"n">tkinter</=
+span><span class=3D"o">.</span><span class=3D"n">Toplevel</span><span class=
+=3D"p">(</span><span class=3D"n">master</span><span class=3D"p">,</span> <s=
+pan class=3D"n">class_</span><span class=3D"o">=3D</span><span class=3D"s1"=
+>'ClassName'</span><span class=3D"p">)</span>
+</pre></div>
+</div>
+</li>
+<li><code class=3D"docutils literal notranslate"><span class=3D"pre">__doub=
+le_leading_underscore</span></code>: when naming a class attribute,
+invokes name mangling (inside class FooBar, <code class=3D"docutils literal=
+ notranslate"><span class=3D"pre">__boo</span></code> becomes
+<code class=3D"docutils literal notranslate"><span class=3D"pre">_FooBar__b=
+oo</span></code>; see below).</li>
+<li><code class=3D"docutils literal notranslate"><span class=3D"pre">__doub=
+le_leading_and_trailing_underscore__</span></code>: =E2=80=9Cmagic=E2=80=9D=
+ objects or
+attributes that live in user-controlled namespaces.
+E.g. <code class=3D"docutils literal notranslate"><span class=3D"pre">__ini=
+t__</span></code>, <code class=3D"docutils literal notranslate"><span class=
+=3D"pre">__import__</span></code> or <code class=3D"docutils literal notran=
+slate"><span class=3D"pre">__file__</span></code>.  Never invent
+such names; only use them as documented.</li>
+</ul>
+</section>
+<section id=3D"prescriptive-naming-conventions">
+<h3><a class=3D"toc-backref" href=3D"https://peps.python.org/pep-0008/#pres=
+criptive-naming-conventions" role=3D"doc-backlink">Prescriptive: Naming Con=
+ventions</a></h3>
+<section id=3D"names-to-avoid">
+<h4><a class=3D"toc-backref" href=3D"https://peps.python.org/pep-0008/#name=
+s-to-avoid" role=3D"doc-backlink">Names to Avoid</a></h4>
+<p>Never use the characters =E2=80=98l=E2=80=99 (lowercase letter el), =E2=
+=80=98O=E2=80=99 (uppercase
+letter oh), or =E2=80=98I=E2=80=99 (uppercase letter eye) as single charact=
+er variable
+names.</p>
+<p>In some fonts, these characters are indistinguishable from the
+numerals one and zero.  When tempted to use =E2=80=98l=E2=80=99, use =E2=80=
+=98L=E2=80=99 instead.</p>
+</section>
+<section id=3D"ascii-compatibility">
+<h4><a class=3D"toc-backref" href=3D"https://peps.python.org/pep-0008/#asci=
+i-compatibility" role=3D"doc-backlink">ASCII Compatibility</a></h4>
+<p>Identifiers used in the standard library must be ASCII compatible
+as described in the
+<a class=3D"pep reference internal" href=3D"https://peps.python.org/pep-313=
+1#policy-specification" title=3D"PEP 3131 =E2=80=93 Supporting Non-ASCII Id=
+entifiers =C2=A7 Policy Specification">policy section</a>
+of <a class=3D"pep reference internal" href=3D"https://peps.python.org/pep-=
+3131" title=3D"PEP 3131 =E2=80=93 Supporting Non-ASCII Identifiers">PEP 313=
+1</a>.</p>
+</section>
+<section id=3D"package-and-module-names">
+<h4><a class=3D"toc-backref" href=3D"https://peps.python.org/pep-0008/#pack=
+age-and-module-names" role=3D"doc-backlink">Package and Module Names</a></h=
+4>
+<p>Modules should have short, all-lowercase names.  Underscores can be
+used in the module name if it improves readability.  Python packages
+should also have short, all-lowercase names, although the use of
+underscores is discouraged.</p>
+<p>When an extension module written in C or C++ has an accompanying
+Python module that provides a higher level (e.g. more object oriented)
+interface, the C/C++ module has a leading underscore
+(e.g. <code class=3D"docutils literal notranslate"><span class=3D"pre">_soc=
+ket</span></code>).</p>
+</section>
+<section id=3D"class-names">
+<h4><a class=3D"toc-backref" href=3D"https://peps.python.org/pep-0008/#clas=
+s-names" role=3D"doc-backlink">Class Names</a></h4>
+<p>Class names should normally use the CapWords convention.</p>
+<p>The naming convention for functions may be used instead in cases where
+the interface is documented and used primarily as a callable.</p>
+<p>Note that there is a separate convention for builtin names: most builtin
+names are single words (or two words run together), with the CapWords
+convention used only for exception names and builtin constants.</p>
+</section>
+<section id=3D"type-variable-names">
+<h4><a class=3D"toc-backref" href=3D"https://peps.python.org/pep-0008/#type=
+-variable-names" role=3D"doc-backlink">Type Variable Names</a></h4>
+<p>Names of type variables introduced in <a class=3D"pep reference internal=
+" href=3D"https://peps.python.org/pep-0484" title=3D"PEP 484 =E2=80=93 Type=
+ Hints">PEP 484</a> should normally use CapWords
+preferring short names: <code class=3D"docutils literal notranslate"><span =
+class=3D"pre">T</span></code>, <code class=3D"docutils literal notranslate"=
+><span class=3D"pre">AnyStr</span></code>, <code class=3D"docutils literal =
+notranslate"><span class=3D"pre">Num</span></code>. It is recommended to ad=
+d
+suffixes <code class=3D"docutils literal notranslate"><span class=3D"pre">_=
+co</span></code> or <code class=3D"docutils literal notranslate"><span clas=
+s=3D"pre">_contra</span></code> to the variables used to declare covariant
+or contravariant behavior correspondingly:</p>
+<div class=3D"highlight-default notranslate"><div class=3D"highlight"><pre>=
+<span></span><span class=3D"kn">from</span> <span class=3D"nn">typing</span=
+> <span class=3D"kn">import</span> <span class=3D"n">TypeVar</span>
+
+<span class=3D"n">VT_co</span> <span class=3D"o">=3D</span> <span class=3D"=
+n">TypeVar</span><span class=3D"p">(</span><span class=3D"s1">'VT_co'</span=
+><span class=3D"p">,</span> <span class=3D"n">covariant</span><span class=
+=3D"o">=3D</span><span class=3D"kc">True</span><span class=3D"p">)</span>
+<span class=3D"n">KT_contra</span> <span class=3D"o">=3D</span> <span class=
+=3D"n">TypeVar</span><span class=3D"p">(</span><span class=3D"s1">'KT_contr=
+a'</span><span class=3D"p">,</span> <span class=3D"n">contravariant</span><=
+span class=3D"o">=3D</span><span class=3D"kc">True</span><span class=3D"p">=
+)</span>
+</pre></div>
+</div>
+</section>
+<section id=3D"exception-names">
+<h4><a class=3D"toc-backref" href=3D"https://peps.python.org/pep-0008/#exce=
+ption-names" role=3D"doc-backlink">Exception Names</a></h4>
+<p>Because exceptions should be classes, the class naming convention
+applies here.  However, you should use the suffix =E2=80=9CError=E2=80=9D o=
+n your
+exception names (if the exception actually is an error).</p>
+</section>
+<section id=3D"global-variable-names">
+<h4><a class=3D"toc-backref" href=3D"https://peps.python.org/pep-0008/#glob=
+al-variable-names" role=3D"doc-backlink">Global Variable Names</a></h4>
+<p>(Let=E2=80=99s hope that these variables are meant for use inside one mo=
+dule
+only.)  The conventions are about the same as those for functions.</p>
+<p>Modules that are designed for use via <code class=3D"docutils literal no=
+translate"><span class=3D"pre">from</span> <span class=3D"pre">M</span> <sp=
+an class=3D"pre">import</span> <span class=3D"pre">*</span></code> should u=
+se
+the <code class=3D"docutils literal notranslate"><span class=3D"pre">__all_=
+_</span></code> mechanism to prevent exporting globals, or use the
+older convention of prefixing such globals with an underscore (which
+you might want to do to indicate these globals are =E2=80=9Cmodule
+non-public=E2=80=9D).</p>
+</section>
+<section id=3D"function-and-variable-names">
+<h4><a class=3D"toc-backref" href=3D"https://peps.python.org/pep-0008/#func=
+tion-and-variable-names" role=3D"doc-backlink">Function and Variable Names<=
+/a></h4>
+<p>Function names should be lowercase, with words separated by
+underscores as necessary to improve readability.</p>
+<p>Variable names follow the same convention as function names.</p>
+<p>mixedCase is allowed only in contexts where that=E2=80=99s already the
+prevailing style (e.g. threading.py), to retain backwards
+compatibility.</p>
+</section>
+<section id=3D"function-and-method-arguments">
+<h4><a class=3D"toc-backref" href=3D"https://peps.python.org/pep-0008/#func=
+tion-and-method-arguments" role=3D"doc-backlink">Function and Method Argume=
+nts</a></h4>
+<p>Always use <code class=3D"docutils literal notranslate"><span class=3D"p=
+re">self</span></code> for the first argument to instance methods.</p>
+<p>Always use <code class=3D"docutils literal notranslate"><span class=3D"p=
+re">cls</span></code> for the first argument to class methods.</p>
+<p>If a function argument=E2=80=99s name clashes with a reserved keyword, i=
+t is
+generally better to append a single trailing underscore rather than
+use an abbreviation or spelling corruption.  Thus <code class=3D"docutils l=
+iteral notranslate"><span class=3D"pre">class_</span></code> is better
+than <code class=3D"docutils literal notranslate"><span class=3D"pre">clss<=
+/span></code>.  (Perhaps better is to avoid such clashes by using a
+synonym.)</p>
+</section>
+<section id=3D"method-names-and-instance-variables">
+<h4><a class=3D"toc-backref" href=3D"https://peps.python.org/pep-0008/#meth=
+od-names-and-instance-variables" role=3D"doc-backlink">Method Names and Ins=
+tance Variables</a></h4>
+<p>Use the function naming rules: lowercase with words separated by
+underscores as necessary to improve readability.</p>
+<p>Use one leading underscore only for non-public methods and instance
+variables.</p>
+<p>To avoid name clashes with subclasses, use two leading underscores to
+invoke Python=E2=80=99s name mangling rules.</p>
+<p>Python mangles these names with the class name: if class Foo has an
+attribute named <code class=3D"docutils literal notranslate"><span class=3D=
+"pre">__a</span></code>, it cannot be accessed by <code class=3D"docutils l=
+iteral notranslate"><span class=3D"pre">Foo.__a</span></code>.  (An
+insistent user could still gain access by calling <code class=3D"docutils l=
+iteral notranslate"><span class=3D"pre">Foo._Foo__a</span></code>.)
+Generally, double leading underscores should be used only to avoid
+name conflicts with attributes in classes designed to be subclassed.</p>
+<p>Note: there is some controversy about the use of __names (see below).</p=
+>
+</section>
+<section id=3D"constants">
+<h4><a class=3D"toc-backref" href=3D"https://peps.python.org/pep-0008/#cons=
+tants" role=3D"doc-backlink">Constants</a></h4>
+<p>Constants are usually defined on a module level and written in all
+capital letters with underscores separating words.  Examples include
+<code class=3D"docutils literal notranslate"><span class=3D"pre">MAX_OVERFL=
+OW</span></code> and <code class=3D"docutils literal notranslate"><span cla=
+ss=3D"pre">TOTAL</span></code>.</p>
+</section>
+<section id=3D"designing-for-inheritance">
+<h4><a class=3D"toc-backref" href=3D"https://peps.python.org/pep-0008/#desi=
+gning-for-inheritance" role=3D"doc-backlink">Designing for Inheritance</a><=
+/h4>
+<p>Always decide whether a class=E2=80=99s methods and instance variables
+(collectively: =E2=80=9Cattributes=E2=80=9D) should be public or non-public=
+.  If in
+doubt, choose non-public; it=E2=80=99s easier to make it public later than =
+to
+make a public attribute non-public.</p>
+<p>Public attributes are those that you expect unrelated clients of your
+class to use, with your commitment to avoid backwards incompatible
+changes.  Non-public attributes are those that are not intended to be
+used by third parties; you make no guarantees that non-public
+attributes won=E2=80=99t change or even be removed.</p>
+<p>We don=E2=80=99t use the term =E2=80=9Cprivate=E2=80=9D here, since no a=
+ttribute is really
+private in Python (without a generally unnecessary amount of work).</p>
+<p>Another category of attributes are those that are part of the
+=E2=80=9Csubclass API=E2=80=9D (often called =E2=80=9Cprotected=E2=80=9D in=
+ other languages).  Some
+classes are designed to be inherited from, either to extend or modify
+aspects of the class=E2=80=99s behavior.  When designing such a class, take
+care to make explicit decisions about which attributes are public,
+which are part of the subclass API, and which are truly only to be
+used by your base class.</p>
+<p>With this in mind, here are the Pythonic guidelines:</p>
+<ul>
+<li>Public attributes should have no leading underscores.</li>
+<li>If your public attribute name collides with a reserved keyword,
+append a single trailing underscore to your attribute name.  This is
+preferable to an abbreviation or corrupted spelling.  (However,
+notwithstanding this rule, =E2=80=98cls=E2=80=99 is the preferred spelling =
+for any
+variable or argument which is known to be a class, especially the
+first argument to a class method.)<p>Note 1: See the argument name recommen=
+dation above for class methods.</p>
+</li>
+<li>For simple public data attributes, it is best to expose just the
+attribute name, without complicated accessor/mutator methods.  Keep
+in mind that Python provides an easy path to future enhancement,
+should you find that a simple data attribute needs to grow
+functional behavior.  In that case, use properties to hide
+functional implementation behind simple data attribute access
+syntax.<p>Note 1: Try to keep the functional behavior side-effect free,
+although side-effects such as caching are generally fine.</p>
+<p>Note 2: Avoid using properties for computationally expensive
+operations; the attribute notation makes the caller believe that
+access is (relatively) cheap.</p>
+</li>
+<li>If your class is intended to be subclassed, and you have attributes
+that you do not want subclasses to use, consider naming them with
+double leading underscores and no trailing underscores.  This
+invokes Python=E2=80=99s name mangling algorithm, where the name of the
+class is mangled into the attribute name.  This helps avoid
+attribute name collisions should subclasses inadvertently contain
+attributes with the same name.<p>Note 1: Note that only the simple class na=
+me is used in the mangled
+name, so if a subclass chooses both the same class name and attribute
+name, you can still get name collisions.</p>
+<p>Note 2: Name mangling can make certain uses, such as debugging and
+<code class=3D"docutils literal notranslate"><span class=3D"pre">__getattr_=
+_()</span></code>, less convenient.  However the name mangling
+algorithm is well documented and easy to perform manually.</p>
+<p>Note 3: Not everyone likes name mangling.  Try to balance the
+need to avoid accidental name clashes with potential use by
+advanced callers.</p>
+</li>
+</ul>
+</section>
+</section>
+<section id=3D"public-and-internal-interfaces">
+<h3><a class=3D"toc-backref" href=3D"https://peps.python.org/pep-0008/#publ=
+ic-and-internal-interfaces" role=3D"doc-backlink">Public and Internal Inter=
+faces</a></h3>
+<p>Any backwards compatibility guarantees apply only to public interfaces.
+Accordingly, it is important that users be able to clearly distinguish
+between public and internal interfaces.</p>
+<p>Documented interfaces are considered public, unless the documentation
+explicitly declares them to be provisional or internal interfaces exempt
+from the usual backwards compatibility guarantees. All undocumented
+interfaces should be assumed to be internal.</p>
+<p>To better support introspection, modules should explicitly declare the
+names in their public API using the <code class=3D"docutils literal notrans=
+late"><span class=3D"pre">__all__</span></code> attribute. Setting
+<code class=3D"docutils literal notranslate"><span class=3D"pre">__all__</s=
+pan></code> to an empty list indicates that the module has no public API.</=
+p>
+<p>Even with <code class=3D"docutils literal notranslate"><span class=3D"pr=
+e">__all__</span></code> set appropriately, internal interfaces (packages,
+modules, classes, functions, attributes or other names) should still be
+prefixed with a single leading underscore.</p>
+<p>An interface is also considered internal if any containing namespace
+(package, module or class) is considered internal.</p>
+<p>Imported names should always be considered an implementation detail.
+Other modules must not rely on indirect access to such imported names
+unless they are an explicitly documented part of the containing module=E2=
+=80=99s
+API, such as <code class=3D"docutils literal notranslate"><span class=3D"pr=
+e">os.path</span></code> or a package=E2=80=99s <code class=3D"docutils lit=
+eral notranslate"><span class=3D"pre">__init__</span></code> module that ex=
+poses
+functionality from submodules.</p>
+</section>
+</section>
+<section id=3D"programming-recommendations">
+<h2><a class=3D"toc-backref" href=3D"https://peps.python.org/pep-0008/#prog=
+ramming-recommendations" role=3D"doc-backlink">Programming Recommendations<=
+/a></h2>
+<ul>
+<li>Code should be written in a way that does not disadvantage other
+implementations of Python (PyPy, Jython, IronPython, Cython, Psyco,
+and such).<p>For example, do not rely on CPython=E2=80=99s efficient implem=
+entation of
+in-place string concatenation for statements in the form <code class=3D"doc=
+utils literal notranslate"><span class=3D"pre">a</span> <span class=3D"pre"=
+>+=3D</span> <span class=3D"pre">b</span></code>
+or <code class=3D"docutils literal notranslate"><span class=3D"pre">a</span=
+> <span class=3D"pre">=3D</span> <span class=3D"pre">a</span> <span class=
+=3D"pre">+</span> <span class=3D"pre">b</span></code>.  This optimization i=
+s fragile even in CPython (it
+only works for some types) and isn=E2=80=99t present at all in implementati=
+ons
+that don=E2=80=99t use refcounting.  In performance sensitive parts of the
+library, the <code class=3D"docutils literal notranslate"><span class=3D"pr=
+e">''.join()</span></code> form should be used instead.  This will
+ensure that concatenation occurs in linear time across various
+implementations.</p>
+</li>
+<li>Comparisons to singletons like None should always be done with
+<code class=3D"docutils literal notranslate"><span class=3D"pre">is</span><=
+/code> or <code class=3D"docutils literal notranslate"><span class=3D"pre">=
+is</span> <span class=3D"pre">not</span></code>, never the equality operato=
+rs.<p>Also, beware of writing <code class=3D"docutils literal notranslate">=
+<span class=3D"pre">if</span> <span class=3D"pre">x</span></code> when you =
+really mean <code class=3D"docutils literal notranslate"><span class=3D"pre=
+">if</span> <span class=3D"pre">x</span> <span class=3D"pre">is</span> <spa=
+n class=3D"pre">not</span>
+<span class=3D"pre">None</span></code> =E2=80=93 e.g. when testing whether =
+a variable or argument that
+defaults to None was set to some other value.  The other value might
+have a type (such as a container) that could be false in a boolean
+context!</p>
+</li>
+<li>Use <code class=3D"docutils literal notranslate"><span class=3D"pre">is=
+</span> <span class=3D"pre">not</span></code> operator rather than <code cl=
+ass=3D"docutils literal notranslate"><span class=3D"pre">not</span> <span c=
+lass=3D"pre">...</span> <span class=3D"pre">is</span></code>.  While both
+expressions are functionally identical, the former is more readable
+and preferred:<div class=3D"highlight-default notranslate"><div class=3D"hi=
+ghlight"><pre><span></span><span class=3D"c1"># Correct:</span>
+<span class=3D"k">if</span> <span class=3D"n">foo</span> <span class=3D"ow"=
+>is</span> <span class=3D"ow">not</span> <span class=3D"kc">None</span><spa=
+n class=3D"p">:</span>
+</pre></div>
+</div>
+<div class=3D"highlight-default notranslate"><div class=3D"highlight"><pre>=
+<span></span><span class=3D"c1"># Wrong:</span>
+<span class=3D"k">if</span> <span class=3D"ow">not</span> <span class=3D"n"=
+>foo</span> <span class=3D"ow">is</span> <span class=3D"kc">None</span><spa=
+n class=3D"p">:</span>
+</pre></div>
+</div>
+</li>
+<li>When implementing ordering operations with rich comparisons, it is
+best to implement all six operations (<code class=3D"docutils literal notra=
+nslate"><span class=3D"pre">__eq__</span></code>, <code class=3D"docutils l=
+iteral notranslate"><span class=3D"pre">__ne__</span></code>,
+<code class=3D"docutils literal notranslate"><span class=3D"pre">__lt__</sp=
+an></code>, <code class=3D"docutils literal notranslate"><span class=3D"pre=
+">__le__</span></code>, <code class=3D"docutils literal notranslate"><span =
+class=3D"pre">__gt__</span></code>, <code class=3D"docutils literal notrans=
+late"><span class=3D"pre">__ge__</span></code>) rather than relying
+on other code to only exercise a particular comparison.<p>To minimize the e=
+ffort involved, the <code class=3D"docutils literal notranslate"><span clas=
+s=3D"pre">functools.total_ordering()</span></code>
+decorator provides a tool to generate missing comparison methods.</p>
+<p><a class=3D"pep reference internal" href=3D"https://peps.python.org/pep-=
+0207" title=3D"PEP 207 =E2=80=93 Rich Comparisons">PEP 207</a> indicates th=
+at reflexivity rules <em>are</em> assumed by Python.
+Thus, the interpreter may swap <code class=3D"docutils literal notranslate"=
+><span class=3D"pre">y</span> <span class=3D"pre">&gt;</span> <span class=
+=3D"pre">x</span></code> with <code class=3D"docutils literal notranslate">=
+<span class=3D"pre">x</span> <span class=3D"pre">&lt;</span> <span class=3D=
+"pre">y</span></code>, <code class=3D"docutils literal notranslate"><span c=
+lass=3D"pre">y</span> <span class=3D"pre">&gt;=3D</span> <span class=3D"pre=
+">x</span></code>
+with <code class=3D"docutils literal notranslate"><span class=3D"pre">x</sp=
+an> <span class=3D"pre">&lt;=3D</span> <span class=3D"pre">y</span></code>,=
+ and may swap the arguments of <code class=3D"docutils literal notranslate"=
+><span class=3D"pre">x</span> <span class=3D"pre">=3D=3D</span> <span class=
+=3D"pre">y</span></code> and <code class=3D"docutils literal notranslate"><=
+span class=3D"pre">x</span> <span class=3D"pre">!=3D</span>
+<span class=3D"pre">y</span></code>.  The <code class=3D"docutils literal n=
+otranslate"><span class=3D"pre">sort()</span></code> and <code class=3D"doc=
+utils literal notranslate"><span class=3D"pre">min()</span></code> operatio=
+ns are guaranteed to use
+the <code class=3D"docutils literal notranslate"><span class=3D"pre">&lt;</=
+span></code> operator and the <code class=3D"docutils literal notranslate">=
+<span class=3D"pre">max()</span></code> function uses the <code class=3D"do=
+cutils literal notranslate"><span class=3D"pre">&gt;</span></code>
+operator.  However, it is best to implement all six operations so
+that confusion doesn=E2=80=99t arise in other contexts.</p>
+</li>
+<li>Always use a def statement instead of an assignment statement that bind=
+s
+a lambda expression directly to an identifier:<div class=3D"highlight-defau=
+lt notranslate"><div class=3D"highlight"><pre><span></span><span class=3D"c=
+1"># Correct:</span>
+<span class=3D"k">def</span> <span class=3D"nf">f</span><span class=3D"p">(=
+</span><span class=3D"n">x</span><span class=3D"p">):</span> <span class=3D=
+"k">return</span> <span class=3D"mi">2</span><span class=3D"o">*</span><spa=
+n class=3D"n">x</span>
+</pre></div>
+</div>
+<div class=3D"highlight-default notranslate"><div class=3D"highlight"><pre>=
+<span></span><span class=3D"c1"># Wrong:</span>
+<span class=3D"n">f</span> <span class=3D"o">=3D</span> <span class=3D"k">l=
+ambda</span> <span class=3D"n">x</span><span class=3D"p">:</span> <span cla=
+ss=3D"mi">2</span><span class=3D"o">*</span><span class=3D"n">x</span>
+</pre></div>
+</div>
+<p>The first form means that the name of the resulting function object is
+specifically =E2=80=98f=E2=80=99 instead of the generic =E2=80=98&lt;lambda=
+&gt;=E2=80=99. This is more
+useful for tracebacks and string representations in general. The use
+of the assignment statement eliminates the sole benefit a lambda
+expression can offer over an explicit def statement (i.e. that it can
+be embedded inside a larger expression)</p>
+</li>
+<li>Derive exceptions from <code class=3D"docutils literal notranslate"><sp=
+an class=3D"pre">Exception</span></code> rather than <code class=3D"docutil=
+s literal notranslate"><span class=3D"pre">BaseException</span></code>.
+Direct inheritance from <code class=3D"docutils literal notranslate"><span =
+class=3D"pre">BaseException</span></code> is reserved for exceptions
+where catching them is almost always the wrong thing to do.<p>Design except=
+ion hierarchies based on the distinctions that code
+<em>catching</em> the exceptions is likely to need, rather than the locatio=
+ns
+where the exceptions are raised. Aim to answer the question
+=E2=80=9CWhat went wrong?=E2=80=9D programmatically, rather than only stati=
+ng that
+=E2=80=9CA problem occurred=E2=80=9D (see <a class=3D"pep reference interna=
+l" href=3D"https://peps.python.org/pep-3151" title=3D"PEP 3151 =E2=80=93 Re=
+working the OS and IO exception hierarchy">PEP 3151</a> for an example of t=
+his lesson being
+learned for the builtin exception hierarchy)</p>
+<p>Class naming conventions apply here, although you should add the
+suffix =E2=80=9CError=E2=80=9D to your exception classes if the exception i=
+s an
+error.  Non-error exceptions that are used for non-local flow control
+or other forms of signaling need no special suffix.</p>
+</li>
+<li>Use exception chaining appropriately. <code class=3D"docutils literal n=
+otranslate"><span class=3D"pre">raise</span> <span class=3D"pre">X</span> <=
+span class=3D"pre">from</span> <span class=3D"pre">Y</span></code>
+should be used to indicate explicit replacement without losing the
+original traceback.<p>When deliberately replacing an inner exception (using=
+ <code class=3D"docutils literal notranslate"><span class=3D"pre">raise</sp=
+an> <span class=3D"pre">X</span> <span class=3D"pre">from</span>
+<span class=3D"pre">None</span></code>), ensure that relevant details are t=
+ransferred to the new
+exception (such as preserving the attribute name when converting
+KeyError to AttributeError, or embedding the text of the original
+exception in the new exception message).</p>
+</li>
+<li>When catching exceptions, mention specific exceptions whenever
+possible instead of using a bare <code class=3D"docutils literal notranslat=
+e"><span class=3D"pre">except:</span></code> clause:<div class=3D"highlight=
+-default notranslate"><div class=3D"highlight"><pre><span></span><span clas=
+s=3D"k">try</span><span class=3D"p">:</span>
+    <span class=3D"kn">import</span> <span class=3D"nn">platform_specific_m=
+odule</span>
+<span class=3D"k">except</span> <span class=3D"ne">ImportError</span><span =
+class=3D"p">:</span>
+    <span class=3D"n">platform_specific_module</span> <span class=3D"o">=3D=
+</span> <span class=3D"kc">None</span>
+</pre></div>
+</div>
+<p>A bare <code class=3D"docutils literal notranslate"><span class=3D"pre">=
+except:</span></code> clause will catch SystemExit and
+KeyboardInterrupt exceptions, making it harder to interrupt a
+program with Control-C, and can disguise other problems.  If you
+want to catch all exceptions that signal program errors, use
+<code class=3D"docutils literal notranslate"><span class=3D"pre">except</sp=
+an> <span class=3D"pre">Exception:</span></code> (bare except is equivalent=
+ to <code class=3D"docutils literal notranslate"><span class=3D"pre">except=
+</span>
+<span class=3D"pre">BaseException:</span></code>).</p>
+<p>A good rule of thumb is to limit use of bare =E2=80=98except=E2=80=99 cl=
+auses to two
+cases:</p>
+<ol class=3D"arabic simple">
+<li>If the exception handler will be printing out or logging the
+traceback; at least the user will be aware that an error has
+occurred.</li>
+<li>If the code needs to do some cleanup work, but then lets the
+exception propagate upwards with <code class=3D"docutils literal notranslat=
+e"><span class=3D"pre">raise</span></code>.  <code class=3D"docutils litera=
+l notranslate"><span class=3D"pre">try...finally</span></code>
+can be a better way to handle this case.</li>
+</ol>
+</li>
+<li>When catching operating system errors, prefer the explicit exception
+hierarchy introduced in Python 3.3 over introspection of <code class=3D"doc=
+utils literal notranslate"><span class=3D"pre">errno</span></code>
+values.</li>
+<li>Additionally, for all try/except clauses, limit the <code class=3D"docu=
+tils literal notranslate"><span class=3D"pre">try</span></code> clause
+to the absolute minimum amount of code necessary.  Again, this
+avoids masking bugs:<div class=3D"highlight-default notranslate"><div class=
+=3D"highlight"><pre><span></span><span class=3D"c1"># Correct:</span>
+<span class=3D"k">try</span><span class=3D"p">:</span>
+    <span class=3D"n">value</span> <span class=3D"o">=3D</span> <span class=
+=3D"n">collection</span><span class=3D"p">[</span><span class=3D"n">key</sp=
+an><span class=3D"p">]</span>
+<span class=3D"k">except</span> <span class=3D"ne">KeyError</span><span cla=
+ss=3D"p">:</span>
+    <span class=3D"k">return</span> <span class=3D"n">key_not_found</span><=
+span class=3D"p">(</span><span class=3D"n">key</span><span class=3D"p">)</s=
+pan>
+<span class=3D"k">else</span><span class=3D"p">:</span>
+    <span class=3D"k">return</span> <span class=3D"n">handle_value</span><s=
+pan class=3D"p">(</span><span class=3D"n">value</span><span class=3D"p">)</=
+span>
+</pre></div>
+</div>
+<div class=3D"highlight-default notranslate"><div class=3D"highlight"><pre>=
+<span></span><span class=3D"c1"># Wrong:</span>
+<span class=3D"k">try</span><span class=3D"p">:</span>
+    <span class=3D"c1"># Too broad!</span>
+    <span class=3D"k">return</span> <span class=3D"n">handle_value</span><s=
+pan class=3D"p">(</span><span class=3D"n">collection</span><span class=3D"p=
+">[</span><span class=3D"n">key</span><span class=3D"p">])</span>
+<span class=3D"k">except</span> <span class=3D"ne">KeyError</span><span cla=
+ss=3D"p">:</span>
+    <span class=3D"c1"># Will also catch KeyError raised by handle_value()<=
+/span>
+    <span class=3D"k">return</span> <span class=3D"n">key_not_found</span><=
+span class=3D"p">(</span><span class=3D"n">key</span><span class=3D"p">)</s=
+pan>
+</pre></div>
+</div>
+</li>
+<li>When a resource is local to a particular section of code, use a
+<code class=3D"docutils literal notranslate"><span class=3D"pre">with</span=
+></code> statement to ensure it is cleaned up promptly and reliably
+after use. A try/finally statement is also acceptable.</li>
+<li>Context managers should be invoked through separate functions or method=
+s
+whenever they do something other than acquire and release resources:<div cl=
+ass=3D"highlight-default notranslate"><div class=3D"highlight"><pre><span><=
+/span><span class=3D"c1"># Correct:</span>
+<span class=3D"k">with</span> <span class=3D"n">conn</span><span class=3D"o=
+">.</span><span class=3D"n">begin_transaction</span><span class=3D"p">():</=
+span>
+    <span class=3D"n">do_stuff_in_transaction</span><span class=3D"p">(</sp=
+an><span class=3D"n">conn</span><span class=3D"p">)</span>
+</pre></div>
+</div>
+<div class=3D"highlight-default notranslate"><div class=3D"highlight"><pre>=
+<span></span><span class=3D"c1"># Wrong:</span>
+<span class=3D"k">with</span> <span class=3D"n">conn</span><span class=3D"p=
+">:</span>
+    <span class=3D"n">do_stuff_in_transaction</span><span class=3D"p">(</sp=
+an><span class=3D"n">conn</span><span class=3D"p">)</span>
+</pre></div>
+</div>
+<p>The latter example doesn=E2=80=99t provide any information to indicate t=
+hat
+the <code class=3D"docutils literal notranslate"><span class=3D"pre">__ente=
+r__</span></code> and <code class=3D"docutils literal notranslate"><span cl=
+ass=3D"pre">__exit__</span></code> methods are doing something other
+than closing the connection after a transaction.  Being explicit is
+important in this case.</p>
+</li>
+<li>Be consistent in return statements.  Either all return statements in
+a function should return an expression, or none of them should.  If
+any return statement returns an expression, any return statements
+where no value is returned should explicitly state this as <code class=3D"d=
+ocutils literal notranslate"><span class=3D"pre">return</span>
+<span class=3D"pre">None</span></code>, and an explicit return statement sh=
+ould be present at the
+end of the function (if reachable):<div class=3D"highlight-default notransl=
+ate"><div class=3D"highlight"><pre><span></span><span class=3D"c1"># Correc=
+t:</span>
+
+<span class=3D"k">def</span> <span class=3D"nf">foo</span><span class=3D"p"=
+>(</span><span class=3D"n">x</span><span class=3D"p">):</span>
+    <span class=3D"k">if</span> <span class=3D"n">x</span> <span class=3D"o=
+">&gt;=3D</span> <span class=3D"mi">0</span><span class=3D"p">:</span>
+        <span class=3D"k">return</span> <span class=3D"n">math</span><span =
+class=3D"o">.</span><span class=3D"n">sqrt</span><span class=3D"p">(</span>=
+<span class=3D"n">x</span><span class=3D"p">)</span>
+    <span class=3D"k">else</span><span class=3D"p">:</span>
+        <span class=3D"k">return</span> <span class=3D"kc">None</span>
+
+<span class=3D"k">def</span> <span class=3D"nf">bar</span><span class=3D"p"=
+>(</span><span class=3D"n">x</span><span class=3D"p">):</span>
+    <span class=3D"k">if</span> <span class=3D"n">x</span> <span class=3D"o=
+">&lt;</span> <span class=3D"mi">0</span><span class=3D"p">:</span>
+        <span class=3D"k">return</span> <span class=3D"kc">None</span>
+    <span class=3D"k">return</span> <span class=3D"n">math</span><span clas=
+s=3D"o">.</span><span class=3D"n">sqrt</span><span class=3D"p">(</span><spa=
+n class=3D"n">x</span><span class=3D"p">)</span>
+</pre></div>
+</div>
+<div class=3D"highlight-default notranslate"><div class=3D"highlight"><pre>=
+<span></span><span class=3D"c1"># Wrong:</span>
+
+<span class=3D"k">def</span> <span class=3D"nf">foo</span><span class=3D"p"=
+>(</span><span class=3D"n">x</span><span class=3D"p">):</span>
+    <span class=3D"k">if</span> <span class=3D"n">x</span> <span class=3D"o=
+">&gt;=3D</span> <span class=3D"mi">0</span><span class=3D"p">:</span>
+        <span class=3D"k">return</span> <span class=3D"n">math</span><span =
+class=3D"o">.</span><span class=3D"n">sqrt</span><span class=3D"p">(</span>=
+<span class=3D"n">x</span><span class=3D"p">)</span>
+
+<span class=3D"k">def</span> <span class=3D"nf">bar</span><span class=3D"p"=
+>(</span><span class=3D"n">x</span><span class=3D"p">):</span>
+    <span class=3D"k">if</span> <span class=3D"n">x</span> <span class=3D"o=
+">&lt;</span> <span class=3D"mi">0</span><span class=3D"p">:</span>
+        <span class=3D"k">return</span>
+    <span class=3D"k">return</span> <span class=3D"n">math</span><span clas=
+s=3D"o">.</span><span class=3D"n">sqrt</span><span class=3D"p">(</span><spa=
+n class=3D"n">x</span><span class=3D"p">)</span>
+</pre></div>
+</div>
+</li>
+<li>Use <code class=3D"docutils literal notranslate"><span class=3D"pre">''=
+.startswith()</span></code> and <code class=3D"docutils literal notranslate=
+"><span class=3D"pre">''.endswith()</span></code> instead of string
+slicing to check for prefixes or suffixes.<p>startswith() and endswith() ar=
+e cleaner and less error prone:</p>
+<div class=3D"highlight-default notranslate"><div class=3D"highlight"><pre>=
+<span></span><span class=3D"c1"># Correct:</span>
+<span class=3D"k">if</span> <span class=3D"n">foo</span><span class=3D"o">.=
+</span><span class=3D"n">startswith</span><span class=3D"p">(</span><span c=
+lass=3D"s1">'bar'</span><span class=3D"p">):</span>
+</pre></div>
+</div>
+<div class=3D"highlight-default notranslate"><div class=3D"highlight"><pre>=
+<span></span><span class=3D"c1"># Wrong:</span>
+<span class=3D"k">if</span> <span class=3D"n">foo</span><span class=3D"p">[=
+:</span><span class=3D"mi">3</span><span class=3D"p">]</span> <span class=
+=3D"o">=3D=3D</span> <span class=3D"s1">'bar'</span><span class=3D"p">:</sp=
+an>
+</pre></div>
+</div>
+</li>
+<li>Object type comparisons should always use isinstance() instead of
+comparing types directly:<div class=3D"highlight-default notranslate"><div =
+class=3D"highlight"><pre><span></span><span class=3D"c1"># Correct:</span>
+<span class=3D"k">if</span> <span class=3D"nb">isinstance</span><span class=
+=3D"p">(</span><span class=3D"n">obj</span><span class=3D"p">,</span> <span=
+ class=3D"nb">int</span><span class=3D"p">):</span>
+</pre></div>
+</div>
+<div class=3D"highlight-default notranslate"><div class=3D"highlight"><pre>=
+<span></span><span class=3D"c1"># Wrong:</span>
+<span class=3D"k">if</span> <span class=3D"nb">type</span><span class=3D"p"=
+>(</span><span class=3D"n">obj</span><span class=3D"p">)</span> <span class=
+=3D"ow">is</span> <span class=3D"nb">type</span><span class=3D"p">(</span><=
+span class=3D"mi">1</span><span class=3D"p">):</span>
+</pre></div>
+</div>
+</li>
+<li>For sequences, (strings, lists, tuples), use the fact that empty
+sequences are false:<div class=3D"highlight-default notranslate"><div class=
+=3D"highlight"><pre><span></span><span class=3D"c1"># Correct:</span>
+<span class=3D"k">if</span> <span class=3D"ow">not</span> <span class=3D"n"=
+>seq</span><span class=3D"p">:</span>
+<span class=3D"k">if</span> <span class=3D"n">seq</span><span class=3D"p">:=
+</span>
+</pre></div>
+</div>
+<div class=3D"highlight-default notranslate"><div class=3D"highlight"><pre>=
+<span></span><span class=3D"c1"># Wrong:</span>
+<span class=3D"k">if</span> <span class=3D"nb">len</span><span class=3D"p">=
+(</span><span class=3D"n">seq</span><span class=3D"p">):</span>
+<span class=3D"k">if</span> <span class=3D"ow">not</span> <span class=3D"nb=
+">len</span><span class=3D"p">(</span><span class=3D"n">seq</span><span cla=
+ss=3D"p">):</span>
+</pre></div>
+</div>
+</li>
+<li>Don=E2=80=99t write string literals that rely on significant trailing
+whitespace.  Such trailing whitespace is visually indistinguishable
+and some editors (or more recently, reindent.py) will trim them.</li>
+<li>Don=E2=80=99t compare boolean values to True or False using <code class=
+=3D"docutils literal notranslate"><span class=3D"pre">=3D=3D</span></code>:=
+<div class=3D"highlight-default notranslate"><div class=3D"highlight"><pre>=
+<span></span><span class=3D"c1"># Correct:</span>
+<span class=3D"k">if</span> <span class=3D"n">greeting</span><span class=3D=
+"p">:</span>
+</pre></div>
+</div>
+<div class=3D"highlight-default notranslate"><div class=3D"highlight"><pre>=
+<span></span><span class=3D"c1"># Wrong:</span>
+<span class=3D"k">if</span> <span class=3D"n">greeting</span> <span class=
+=3D"o">=3D=3D</span> <span class=3D"kc">True</span><span class=3D"p">:</spa=
+n>
+</pre></div>
+</div>
+<p>Worse:</p>
+<div class=3D"highlight-default notranslate"><div class=3D"highlight"><pre>=
+<span></span><span class=3D"c1"># Wrong:</span>
+<span class=3D"k">if</span> <span class=3D"n">greeting</span> <span class=
+=3D"ow">is</span> <span class=3D"kc">True</span><span class=3D"p">:</span>
+</pre></div>
+</div>
+</li>
+<li>Use of the flow control statements <code class=3D"docutils literal notr=
+anslate"><span class=3D"pre">return</span></code>/<code class=3D"docutils l=
+iteral notranslate"><span class=3D"pre">break</span></code>/<code class=3D"=
+docutils literal notranslate"><span class=3D"pre">continue</span></code>
+within the finally suite of a <code class=3D"docutils literal notranslate">=
+<span class=3D"pre">try...finally</span></code>, where the flow control
+statement would jump outside the finally suite, is discouraged.  This
+is because such statements will implicitly cancel any active exception
+that is propagating through the finally suite:<div class=3D"highlight-defau=
+lt notranslate"><div class=3D"highlight"><pre><span></span><span class=3D"c=
+1"># Wrong:</span>
+<span class=3D"k">def</span> <span class=3D"nf">foo</span><span class=3D"p"=
+>():</span>
+    <span class=3D"k">try</span><span class=3D"p">:</span>
+        <span class=3D"mi">1</span> <span class=3D"o">/</span> <span class=
+=3D"mi">0</span>
+    <span class=3D"k">finally</span><span class=3D"p">:</span>
+        <span class=3D"k">return</span> <span class=3D"mi">42</span>
+</pre></div>
+</div>
+</li>
+</ul>
+<section id=3D"function-annotations">
+<h3><a class=3D"toc-backref" href=3D"https://peps.python.org/pep-0008/#func=
+tion-annotations" role=3D"doc-backlink">Function Annotations</a></h3>
+<p>With the acceptance of <a class=3D"pep reference internal" href=3D"https=
+://peps.python.org/pep-0484" title=3D"PEP 484 =E2=80=93 Type Hints">PEP 484=
+</a>, the style rules for function
+annotations have changed.</p>
+<ul>
+<li>Function annotations should use <a class=3D"pep reference internal" hre=
+f=3D"https://peps.python.org/pep-0484" title=3D"PEP 484 =E2=80=93 Type Hint=
+s">PEP 484</a> syntax (there are some
+formatting recommendations for annotations in the previous section).</li>
+<li>The experimentation with annotation styles that was recommended
+previously in this PEP is no longer encouraged.</li>
+<li>However, outside the stdlib, experiments within the rules of <a class=
+=3D"pep reference internal" href=3D"https://peps.python.org/pep-0484" title=
+=3D"PEP 484 =E2=80=93 Type Hints">PEP 484</a>
+are now encouraged.  For example, marking up a large third party
+library or application with <a class=3D"pep reference internal" href=3D"htt=
+ps://peps.python.org/pep-0484" title=3D"PEP 484 =E2=80=93 Type Hints">PEP 4=
+84</a> style type annotations,
+reviewing how easy it was to add those annotations, and observing
+whether their presence increases code understandability.</li>
+<li>The Python standard library should be conservative in adopting such
+annotations, but their use is allowed for new code and for big
+refactorings.</li>
+<li>For code that wants to make a different use of function annotations
+it is recommended to put a comment of the form:<div class=3D"highlight-defa=
+ult notranslate"><div class=3D"highlight"><pre><span></span><span class=3D"=
+c1"># type: ignore</span>
+</pre></div>
+</div>
+<p>near the top of the file; this tells type checkers to ignore all
+annotations.  (More fine-grained ways of disabling complaints from
+type checkers can be found in <a class=3D"pep reference internal" href=3D"h=
+ttps://peps.python.org/pep-0484" title=3D"PEP 484 =E2=80=93 Type Hints">PEP=
+ 484</a>.)</p>
+</li>
+<li>Like linters, type checkers are optional, separate tools.  Python
+interpreters by default should not issue any messages due to type
+checking and should not alter their behavior based on annotations.</li>
+<li>Users who don=E2=80=99t want to use type checkers are free to ignore th=
+em.
+However, it is expected that users of third party library packages
+may want to run type checkers over those packages.  For this purpose
+<a class=3D"pep reference internal" href=3D"https://peps.python.org/pep-048=
+4" title=3D"PEP 484 =E2=80=93 Type Hints">PEP 484</a> recommends the use of=
+ stub files: .pyi files that are read
+by the type checker in preference of the corresponding .py files.
+Stub files can be distributed with a library, or separately (with
+the library author=E2=80=99s permission) through the typeshed repo <a class=
+=3D"footnote-reference brackets" href=3D"https://peps.python.org/pep-0008/#=
+id9" id=3D"id5">[5]</a>.</li>
+</ul>
+</section>
+<section id=3D"variable-annotations">
+<h3><a class=3D"toc-backref" href=3D"https://peps.python.org/pep-0008/#vari=
+able-annotations" role=3D"doc-backlink">Variable Annotations</a></h3>
+<p><a class=3D"pep reference internal" href=3D"https://peps.python.org/pep-=
+0526" title=3D"PEP 526 =E2=80=93 Syntax for Variable Annotations">PEP 526</=
+a> introduced variable annotations. The style recommendations for them are
+similar to those on function annotations described above:</p>
+<ul>
+<li>Annotations for module level variables, class and instance variables,
+and local variables should have a single space after the colon.</li>
+<li>There should be no space before the colon.</li>
+<li>If an assignment has a right hand side, then the equality sign should h=
+ave
+exactly one space on both sides:<div class=3D"highlight-default notranslate=
+"><div class=3D"highlight"><pre><span></span><span class=3D"c1"># Correct:<=
+/span>
+
+<span class=3D"n">code</span><span class=3D"p">:</span> <span class=3D"nb">=
+int</span>
+
+<span class=3D"k">class</span> <span class=3D"nc">Point</span><span class=
+=3D"p">:</span>
+    <span class=3D"n">coords</span><span class=3D"p">:</span> <span class=
+=3D"n">Tuple</span><span class=3D"p">[</span><span class=3D"nb">int</span><=
+span class=3D"p">,</span> <span class=3D"nb">int</span><span class=3D"p">]<=
+/span>
+    <span class=3D"n">label</span><span class=3D"p">:</span> <span class=3D=
+"nb">str</span> <span class=3D"o">=3D</span> <span class=3D"s1">'&lt;unknow=
+n&gt;'</span>
+</pre></div>
+</div>
+<div class=3D"highlight-default notranslate"><div class=3D"highlight"><pre>=
+<span></span><span class=3D"c1"># Wrong:</span>
+
+<span class=3D"n">code</span><span class=3D"p">:</span><span class=3D"nb">i=
+nt</span>  <span class=3D"c1"># No space after colon</span>
+<span class=3D"n">code</span> <span class=3D"p">:</span> <span class=3D"nb"=
+>int</span>  <span class=3D"c1"># Space before colon</span>
+
+<span class=3D"k">class</span> <span class=3D"nc">Test</span><span class=3D=
+"p">:</span>
+    <span class=3D"n">result</span><span class=3D"p">:</span> <span class=
+=3D"nb">int</span><span class=3D"o">=3D</span><span class=3D"mi">0</span>  =
+<span class=3D"c1"># No spaces around equality sign</span>
+</pre></div>
+</div>
+</li>
+<li>Although the <a class=3D"pep reference internal" href=3D"https://peps.p=
+ython.org/pep-0526" title=3D"PEP 526 =E2=80=93 Syntax for Variable Annotati=
+ons">PEP 526</a> is accepted for Python 3.6, the variable annotation
+syntax is the preferred syntax for stub files on all versions of Python
+(see <a class=3D"pep reference internal" href=3D"https://peps.python.org/pe=
+p-0484" title=3D"PEP 484 =E2=80=93 Type Hints">PEP 484</a> for details).</l=
+i>
+</ul>
+<p class=3D"rubric">Footnotes</p>
+<aside class=3D"footnote-list brackets">
+<aside class=3D"footnote brackets" id=3D"fn-hi" role=3D"note">
+<dt class=3D"label" id=3D"fn-hi">[<a href=3D"https://peps.python.org/pep-00=
+08/#id2">1</a>]</dt>
+<dd><em>Hanging indentation</em> is a type-setting style where all
+the lines in a paragraph are indented except the first line.  In
+the context of Python, the term is used to describe a style where
+the opening parenthesis of a parenthesized statement is the last
+non-whitespace character of the line, with subsequent lines being
+indented until the closing parenthesis.</dd></aside>
+</aside>
+</section>
+</section>
+<section id=3D"references">
+<h2><a class=3D"toc-backref" href=3D"https://peps.python.org/pep-0008/#refe=
+rences" role=3D"doc-backlink">References</a></h2>
+<aside class=3D"footnote-list brackets">
+<aside class=3D"footnote brackets" id=3D"id6" role=3D"note">
+<dt class=3D"label" id=3D"id6">[<a href=3D"https://peps.python.org/pep-0008=
+/#id1">2</a>]</dt>
+<dd>Barry=E2=80=99s GNU Mailman style guide
+<a class=3D"reference external" href=3D"http://barry.warsaw.us/software/STY=
+LEGUIDE.txt">http://barry.warsaw.us/software/STYLEGUIDE.txt</a></dd></aside=
+>
+<aside class=3D"footnote brackets" id=3D"id7" role=3D"note">
+<dt class=3D"label" id=3D"id7">[<a href=3D"https://peps.python.org/pep-0008=
+/#id3">3</a>]</dt>
+<dd>Donald Knuth=E2=80=99s <em>The TeXBook</em>, pages 195 and 196.</dd></a=
+side>
+<aside class=3D"footnote brackets" id=3D"id8" role=3D"note">
+<dt class=3D"label" id=3D"id8">[<a href=3D"https://peps.python.org/pep-0008=
+/#id4">4</a>]</dt>
+<dd><a class=3D"reference external" href=3D"http://www.wikipedia.com/wiki/C=
+amelCase">http://www.wikipedia.com/wiki/CamelCase</a></dd></aside>
+<aside class=3D"footnote brackets" id=3D"id9" role=3D"note">
+<dt class=3D"label" id=3D"id9">[<a href=3D"https://peps.python.org/pep-0008=
+/#id5">5</a>]</dt>
+<dd>Typeshed repo
+<a class=3D"reference external" href=3D"https://github.com/python/typeshed"=
+>https://github.com/python/typeshed</a></dd></aside>
+</aside>
+</section>
+<section id=3D"copyright">
+<h2><a class=3D"toc-backref" href=3D"https://peps.python.org/pep-0008/#copy=
+right" role=3D"doc-backlink">Copyright</a></h2>
+<p>This document has been placed in the public domain.</p>
+</section>
+</section>
+<hr class=3D"docutils">
+<p>Source: <a class=3D"reference external" href=3D"https://github.com/pytho=
+n/peps/blob/main/pep-0008.txt">https://github.com/python/peps/blob/main/pep=
+-0008.txt</a></p>
+<p>Last modified: <a class=3D"reference external" href=3D"https://github.co=
+m/python/peps/commits/main/pep-0008.txt">2022-05-11 17:45:05 GMT</a></p>
+
+        </article>
+        <nav id=3D"pep-sidebar">
+            <h2>Contents</h2>
+            <ul>
+<li><a class=3D"reference internal" href=3D"https://peps.python.org/pep-000=
+8/#introduction">Introduction</a></li>
+<li><a class=3D"reference internal" href=3D"https://peps.python.org/pep-000=
+8/#a-foolish-consistency-is-the-hobgoblin-of-little-minds">A Foolish Consis=
+tency is the Hobgoblin of Little Minds</a></li>
+<li><a class=3D"reference internal" href=3D"https://peps.python.org/pep-000=
+8/#code-lay-out">Code Lay-out</a><ul>
+<li><a class=3D"reference internal" href=3D"https://peps.python.org/pep-000=
+8/#indentation">Indentation</a></li>
+<li><a class=3D"reference internal" href=3D"https://peps.python.org/pep-000=
+8/#tabs-or-spaces">Tabs or Spaces?</a></li>
+<li><a class=3D"reference internal" href=3D"https://peps.python.org/pep-000=
+8/#maximum-line-length">Maximum Line Length</a></li>
+<li><a class=3D"reference internal" href=3D"https://peps.python.org/pep-000=
+8/#should-a-line-break-before-or-after-a-binary-operator">Should a Line Bre=
+ak Before or After a Binary Operator?</a></li>
+<li><a class=3D"reference internal" href=3D"https://peps.python.org/pep-000=
+8/#blank-lines">Blank Lines</a></li>
+<li><a class=3D"reference internal" href=3D"https://peps.python.org/pep-000=
+8/#source-file-encoding">Source File Encoding</a></li>
+<li><a class=3D"reference internal" href=3D"https://peps.python.org/pep-000=
+8/#imports">Imports</a></li>
+<li><a class=3D"reference internal" href=3D"https://peps.python.org/pep-000=
+8/#module-level-dunder-names">Module Level Dunder Names</a></li>
+</ul>
+</li>
+<li><a class=3D"reference internal" href=3D"https://peps.python.org/pep-000=
+8/#string-quotes">String Quotes</a></li>
+<li><a class=3D"reference internal" href=3D"https://peps.python.org/pep-000=
+8/#whitespace-in-expressions-and-statements">Whitespace in Expressions and =
+Statements</a><ul>
+<li><a class=3D"reference internal" href=3D"https://peps.python.org/pep-000=
+8/#pet-peeves">Pet Peeves</a></li>
+<li><a class=3D"reference internal" href=3D"https://peps.python.org/pep-000=
+8/#other-recommendations">Other Recommendations</a></li>
+</ul>
+</li>
+<li><a class=3D"reference internal" href=3D"https://peps.python.org/pep-000=
+8/#when-to-use-trailing-commas">When to Use Trailing Commas</a></li>
+<li><a class=3D"reference internal" href=3D"https://peps.python.org/pep-000=
+8/#comments">Comments</a><ul>
+<li><a class=3D"reference internal" href=3D"https://peps.python.org/pep-000=
+8/#block-comments">Block Comments</a></li>
+<li><a class=3D"reference internal" href=3D"https://peps.python.org/pep-000=
+8/#inline-comments">Inline Comments</a></li>
+<li><a class=3D"reference internal" href=3D"https://peps.python.org/pep-000=
+8/#documentation-strings">Documentation Strings</a></li>
+</ul>
+</li>
+<li><a class=3D"reference internal" href=3D"https://peps.python.org/pep-000=
+8/#naming-conventions">Naming Conventions</a><ul>
+<li><a class=3D"reference internal" href=3D"https://peps.python.org/pep-000=
+8/#overriding-principle">Overriding Principle</a></li>
+<li><a class=3D"reference internal" href=3D"https://peps.python.org/pep-000=
+8/#descriptive-naming-styles">Descriptive: Naming Styles</a></li>
+<li><a class=3D"reference internal" href=3D"https://peps.python.org/pep-000=
+8/#prescriptive-naming-conventions">Prescriptive: Naming Conventions</a><ul=
+>
+<li><a class=3D"reference internal" href=3D"https://peps.python.org/pep-000=
+8/#names-to-avoid">Names to Avoid</a></li>
+<li><a class=3D"reference internal" href=3D"https://peps.python.org/pep-000=
+8/#ascii-compatibility">ASCII Compatibility</a></li>
+<li><a class=3D"reference internal" href=3D"https://peps.python.org/pep-000=
+8/#package-and-module-names">Package and Module Names</a></li>
+<li><a class=3D"reference internal" href=3D"https://peps.python.org/pep-000=
+8/#class-names">Class Names</a></li>
+<li><a class=3D"reference internal" href=3D"https://peps.python.org/pep-000=
+8/#type-variable-names">Type Variable Names</a></li>
+<li><a class=3D"reference internal" href=3D"https://peps.python.org/pep-000=
+8/#exception-names">Exception Names</a></li>
+<li><a class=3D"reference internal" href=3D"https://peps.python.org/pep-000=
+8/#global-variable-names">Global Variable Names</a></li>
+<li><a class=3D"reference internal" href=3D"https://peps.python.org/pep-000=
+8/#function-and-variable-names">Function and Variable Names</a></li>
+<li><a class=3D"reference internal" href=3D"https://peps.python.org/pep-000=
+8/#function-and-method-arguments">Function and Method Arguments</a></li>
+<li><a class=3D"reference internal" href=3D"https://peps.python.org/pep-000=
+8/#method-names-and-instance-variables">Method Names and Instance Variables=
+</a></li>
+<li><a class=3D"reference internal" href=3D"https://peps.python.org/pep-000=
+8/#constants">Constants</a></li>
+<li><a class=3D"reference internal" href=3D"https://peps.python.org/pep-000=
+8/#designing-for-inheritance">Designing for Inheritance</a></li>
+</ul>
+</li>
+<li><a class=3D"reference internal" href=3D"https://peps.python.org/pep-000=
+8/#public-and-internal-interfaces">Public and Internal Interfaces</a></li>
+</ul>
+</li>
+<li><a class=3D"reference internal" href=3D"https://peps.python.org/pep-000=
+8/#programming-recommendations">Programming Recommendations</a><ul>
+<li><a class=3D"reference internal" href=3D"https://peps.python.org/pep-000=
+8/#function-annotations">Function Annotations</a></li>
+<li><a class=3D"reference internal" href=3D"https://peps.python.org/pep-000=
+8/#variable-annotations">Variable Annotations</a></li>
+</ul>
+</li>
+<li><a class=3D"reference internal" href=3D"https://peps.python.org/pep-000=
+8/#references">References</a></li>
+<li><a class=3D"reference internal" href=3D"https://peps.python.org/pep-000=
+8/#copyright">Copyright</a></li>
+</ul>
+
+            <br>
+            <a id=3D"source" href=3D"https://github.com/python/peps/blob/ma=
+in/pep-0008.txt">Page Source (GitHub)</a>
+        </nav>
+    </section>
+   =20
+   =20
+
+</body></html>
+------MultipartBoundary--ndKptviwx3LSQcewHFOMPzUmh7bGOF86WVP2wuIFsu----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://peps.python.org/_static/style.css
+
+@charset "utf-8";
+
+@media (prefers-color-scheme: dark) {
+  :root { --light: ; --dark: initial; }
+}
+
+@media (prefers-color-scheme: light) {
+  :root { --dark: ; --light: initial; }
+}
+
+:root[data-colour_scheme=3D"dark"] { --light: ; --dark: initial; }
+
+:root[data-colour_scheme=3D"light"] { --dark: ; --light: initial; }
+
+:root { --colour-background: var(--light, white) var(--dark, #111); --colou=
+r-background-accent-strong: var(--light, #ccc) var(--dark, #444); --colour-=
+background-accent-medium: var(--light, #ddd) var(--dark, #333); --colour-ba=
+ckground-accent-light: var(--light, #eee) var(--dark, #222); --colour-text:=
+ var(--light, #333) var(--dark, #ccc); --colour-text-strong: var(--light, #=
+222) var(--dark, #ddd); --colour-links: var(--light, #069) var(--dark, #8bf=
+); --colour-links-light: var(--light, #057) var(--dark, #acf); --colour-scr=
+ollbar: var(--light, #ccc) var(--dark, #333); --colour-rule-strong: var(--l=
+ight, #888) var(--dark, #777); --colour-rule-light: var(--light, #ddd) var(=
+--dark, #222); --colour-inline-code-bg: var(--light, #eee) var(--dark, #333=
+); --colour-inline-code-text: var(--light, #222) var(--dark, #ccc); --colou=
+r-error: var(--light, #faa) var(--dark, #800); --colour-warning: var(--ligh=
+t, #fca) var(--dark, #840); --colour-caution: var(--light, #ffa) var(--dark=
+, #550); --colour-attention: var(--light, #bdf) var(--dark, #045); --colour=
+-tip: var(--light, #bfc) var(--dark, #041); }
+
+img.invert-in-dark-mode { filter: var(--dark, invert(1) hue-rotate(0.5turn)=
+); }
+
+* { box-sizing: border-box; }
+
+:root { color-scheme: light dark; }
+
+html { overflow-y: scroll; margin: 0px; line-height: 1.4; font-weight: norm=
+al; font-size: 1rem; font-family: "Source Sans Pro", Arial, sans-serif; }
+
+body { margin: 0px; color: var(--colour-text); background-color: var(--colo=
+ur-background); }
+
+section#pep-page-section { padding: 0.25rem; }
+
+p { margin: 0.5rem 0px; }
+
+h1 { font-size: 2rem; font-weight: bold; margin-top: 1.25rem; margin-bottom=
+: 1rem; }
+
+h2 { font-size: 1.6rem; font-weight: bold; margin-top: 1rem; margin-bottom:=
+ 0.5rem; }
+
+h3 { font-size: 1.4rem; font-weight: normal; margin-top: 1rem; margin-botto=
+m: 0.5rem; }
+
+h4 { font-size: 1.2rem; font-weight: normal; margin-top: 0.5rem; margin-bot=
+tom: 0px; }
+
+h5, h6 { font-size: 1rem; font-weight: bold; margin-top: 0px; margin-bottom=
+: 0px; }
+
+a, a:active, a:visited { color: var(--colour-links); display: inline; overf=
+low-wrap: anywhere; text-decoration-color: var(--colour-background-accent-s=
+trong); }
+
+a:hover, a:focus { text-decoration-color: var(--colour-rule-strong); }
+
+blockquote { font-style: italic; border-left: 1px solid var(--colour-rule-s=
+trong); margin: 0.5rem; padding: 0.5rem 1rem; }
+
+blockquote em { font-style: normal; }
+
+cite { font-style: italic; }
+
+code, pre { font-family: ui-monospace, "Cascadia Mono", "Segoe UI Mono", "D=
+ejaVu Sans Mono", Consolas, monospace; font-size: 0.875rem; hyphens: none; =
+}
+
+code { overflow-wrap: anywhere; }
+
+code.literal { background-color: var(--colour-inline-code-bg); color: var(-=
+-colour-inline-code-text); font-size: 0.8em; padding: 1px 2px; }
+
+pre { overflow-x: auto; padding: 0.5rem 0.75rem; white-space: pre; }
+
+details > summary { cursor: pointer; font-size: 1.6rem; font-weight: bold; =
+margin-bottom: 1em; }
+
+details > summary:hover { text-decoration: underline; }
+
+dl dt { font-weight: bold; }
+
+dl dd { margin-bottom: 0.5rem; }
+
+hr { border-right: 0px; border-bottom: 0px; border-left: 0px; border-image:=
+ initial; border-top: 1px solid var(--colour-rule-light); margin: 0px; }
+
+img { max-width: 100%; }
+
+a img { display: block; margin: 0px auto; }
+
+ul, ol { padding: 0px; margin: 0px 0px 0px 1.5rem; }
+
+ul { list-style: square; }
+
+ol.arabic { list-style: decimal; }
+
+ol.loweralpha { list-style: lower-alpha; }
+
+ol.upperalpha { list-style: upper-alpha; }
+
+ol.lowerroman { list-style: lower-roman; }
+
+ol.upperroman { list-style: upper-roman; }
+
+sub, sup { font-size: 0.75em; line-height: 0; position: relative; vertical-=
+align: baseline; }
+
+sup { top: -0.5em; }
+
+sub { bottom: -0.25em; }
+
+div.table-wrapper { overflow-x: auto; }
+
+table { width: 100%; border-collapse: collapse; border: 1px solid var(--col=
+our-background-accent-strong); }
+
+table caption { margin: 1rem 0px 0.75rem; }
+
+table thead tr { background-color: var(--colour-background-accent-medium); =
+color: var(--colour-text-strong); }
+
+table tbody tr { border-top: 1px solid var(--colour-background-accent-stron=
+g); }
+
+table th, table td { text-align: left; padding: 0.25rem 0.5rem 0.2rem; }
+
+table.pep-zero-table tr td:nth-child(1), table.pep-zero-table tr td:nth-chi=
+ld(2) { white-space: nowrap; }
+
+table th + th, table td + td { border-left: 1px solid var(--colour-backgrou=
+nd-accent-strong); }
+
+section#pep-page-section > header { border-bottom: 1px solid var(--colour-r=
+ule-light); }
+
+section#pep-page-section > header > h1 { font-size: 1.1rem; line-height: 1.=
+4; margin: 0px; display: inline-block; padding-right: 0.6rem; border-right:=
+ 1px solid var(--colour-rule-strong); }
+
+ul.breadcrumbs { margin: 0px; padding: 0.5rem 0px 0.5rem 0.4rem; list-style=
+: none; display: inline-block; }
+
+ul.breadcrumbs li { display: inline; }
+
+ul.breadcrumbs a { text-decoration: none; }
+
+#colour-scheme-cycler { background: transparent; border: none; padding: 0px=
+; cursor: pointer; width: 1.2rem; height: 1.2rem; float: right; transform: =
+translate(0px, 50%); }
+
+#colour-scheme-cycler svg { color: var(--colour-rule-strong); height: 1.2re=
+m; width: 1.2rem; display: none; }
+
+:root[data-colour_scheme=3D"auto"] #colour-scheme-cycler svg.colour-scheme-=
+icon-when-auto { display: initial; }
+
+:root[data-colour_scheme=3D"dark"] #colour-scheme-cycler svg.colour-scheme-=
+icon-when-dark { display: initial; }
+
+:root[data-colour_scheme=3D"light"] #colour-scheme-cycler svg.colour-scheme=
+-icon-when-light { display: initial; }
+
+div.admonition { background-color: var(--colour-background-accent-medium); =
+margin-bottom: 1rem; margin-top: 1rem; padding: 0.5rem 0.75rem; }
+
+div.admonition a { color: var(--colour-links-light); }
+
+div.danger, div.error { background-color: var(--colour-error); }
+
+div.warning { background-color: var(--colour-warning); }
+
+div.caution { background-color: var(--colour-caution); }
+
+div.attention, div.important { background-color: var(--colour-attention); }
+
+div.hint, div.tip { background-color: var(--colour-tip); }
+
+p.admonition-title { font-weight: bold; }
+
+dl.rfc2822, dl.footnote { display: grid; grid-template-columns: fit-content=
+(30%) auto; width: 100%; }
+
+dl.footnote { border-top: 1px solid var(--colour-rule-strong); line-height:=
+ 1.875; }
+
+dl.rfc2822 > dt, dl.rfc2822 > dd { padding: 0.1rem 0.3rem; }
+
+dl.footnote > dt, dl.footnote > dd { padding: 0.25rem 0.5rem 0.2rem; border=
+-bottom: 1px solid var(--colour-rule-strong); }
+
+dl.rfc2822 > dt { text-align: right; }
+
+dl.footnote > dt { font-weight: normal; border-right: 1px solid var(--colou=
+r-background); }
+
+dl.rfc2822 > dd, dl.footnote > dd { margin: 0px; }
+
+#pep-sidebar { overflow-y: auto; position: sticky; top: 0px; height: 100vh;=
+ }
+
+#pep-sidebar > h2 { font-size: 1.4rem; }
+
+#pep-sidebar ul { margin-left: 1rem; }
+
+#pep-sidebar ul a { text-decoration: none; }
+
+#source { padding-bottom: 2rem; font-weight: bold; }
+
+.reference.external > strong { font-weight: normal; }
+
+.visually-hidden { position: absolute !important; width: 1px !important; he=
+ight: 1px !important; padding: 0px !important; margin: -1px !important; ove=
+rflow: hidden !important; clip-path: polygon(0px 0px, 0px 0px, 0px 0px, 0px=
+ 0px) !important; white-space: nowrap !important; border: 0px !important; }
+------MultipartBoundary--ndKptviwx3LSQcewHFOMPzUmh7bGOF86WVP2wuIFsu----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://peps.python.org/_static/mq.css
+
+@charset "utf-8";
+
+@media (max-width: 32em) {
+  section#pep-page-section { padding: 0.25rem; }
+  dl.footnote > dt, dl.footnote > dd { padding-left: 0px; padding-right: 0p=
+x; }
+  pre { font-size: 0.75rem; }
+}
+
+@media (max-width: 40em) {
+  section#pep-page-section { padding: 0.5rem; }
+  section#pep-page-section > header > h1 { padding-right: 0px; border-right=
+: none; }
+  ul.breadcrumbs { padding: 0px 0px 0.5rem; }
+  nav#pep-sidebar { display: none; }
+  pre { font-size: 0.8175rem; }
+  table th, table td { padding: 0px 0.1rem; }
+}
+
+@media (min-width: 40em) {
+  section#pep-page-section { display: table; margin: 0px auto; max-width: 7=
+5em; padding: 0.5rem 1rem 0px; width: 100%; }
+  section#pep-page-section > article { max-width: 37em; width: 74%; float: =
+right; margin-right: 0px; font-size: 1rem; }
+  nav#pep-sidebar { width: 24%; float: left; margin-right: 2%; }
+  details > summary { font-size: 1rem; width: max-content; }
+}
+
+@media (min-width: 60em) {
+  section#pep-page-section > article { max-width: 56em; padding-left: 3.2%;=
+ padding-right: 3.2%; }
+}
+
+@media print {
+  *, ::before, ::after { color: rgb(0, 0, 0) !important; }
+  body { font-size: 10pt; line-height: 1.67; }
+  [role=3D"main"] a[href]::after { content: " (" attr(href) ")"; font-size:=
+ 0.75rem; }
+  pre, blockquote { break-inside: avoid; }
+  thead { display: table-header-group; }
+  tr, img { break-inside: avoid; }
+  img { max-width: 100% !important; }
+  @page { margin: 0.5cm; }
+  p, h2, h3 { orphans: 3; widows: 3; }
+  h1, h2, h3 { break-after: avoid; }
+}
+------MultipartBoundary--ndKptviwx3LSQcewHFOMPzUmh7bGOF86WVP2wuIFsu----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://peps.python.org/_static/pygments.css
+
+@charset "utf-8";
+
+pre { line-height: 125%; }
+
+td.linenos .normal { color: inherit; background-color: transparent; padding=
+-left: 5px; padding-right: 5px; }
+
+span.linenos { color: inherit; background-color: transparent; padding-left:=
+ 5px; padding-right: 5px; }
+
+td.linenos .special { color: rgb(0, 0, 0); background-color: rgb(255, 255, =
+192); padding-left: 5px; padding-right: 5px; }
+
+span.linenos.special { color: rgb(0, 0, 0); background-color: rgb(255, 255,=
+ 192); padding-left: 5px; padding-right: 5px; }
+
+.highlight .hll { background-color: rgb(255, 255, 204); }
+
+.highlight { background: rgb(248, 248, 248); }
+
+.highlight .c { color: rgb(143, 89, 2); font-style: italic; }
+
+.highlight .err { color: rgb(164, 0, 0); border: 1px solid rgb(239, 41, 41)=
+; }
+
+.highlight .g { color: rgb(0, 0, 0); }
+
+.highlight .k { color: rgb(32, 74, 135); font-weight: bold; }
+
+.highlight .l { color: rgb(0, 0, 0); }
+
+.highlight .n { color: rgb(0, 0, 0); }
+
+.highlight .o { color: rgb(206, 92, 0); font-weight: bold; }
+
+.highlight .x { color: rgb(0, 0, 0); }
+
+.highlight .p { color: rgb(0, 0, 0); font-weight: bold; }
+
+.highlight .ch { color: rgb(143, 89, 2); font-style: italic; }
+
+.highlight .cm { color: rgb(143, 89, 2); font-style: italic; }
+
+.highlight .cp { color: rgb(143, 89, 2); font-style: italic; }
+
+.highlight .cpf { color: rgb(143, 89, 2); font-style: italic; }
+
+.highlight .c1 { color: rgb(143, 89, 2); font-style: italic; }
+
+.highlight .cs { color: rgb(143, 89, 2); font-style: italic; }
+
+.highlight .gd { color: rgb(164, 0, 0); }
+
+.highlight .ge { color: rgb(0, 0, 0); font-style: italic; }
+
+.highlight .gr { color: rgb(239, 41, 41); }
+
+.highlight .gh { color: rgb(0, 0, 128); font-weight: bold; }
+
+.highlight .gi { color: rgb(0, 160, 0); }
+
+.highlight .go { color: rgb(0, 0, 0); font-style: italic; }
+
+.highlight .gp { color: rgb(143, 89, 2); }
+
+.highlight .gs { color: rgb(0, 0, 0); font-weight: bold; }
+
+.highlight .gu { color: rgb(128, 0, 128); font-weight: bold; }
+
+.highlight .gt { color: rgb(164, 0, 0); font-weight: bold; }
+
+.highlight .kc { color: rgb(32, 74, 135); font-weight: bold; }
+
+.highlight .kd { color: rgb(32, 74, 135); font-weight: bold; }
+
+.highlight .kn { color: rgb(32, 74, 135); font-weight: bold; }
+
+.highlight .kp { color: rgb(32, 74, 135); font-weight: bold; }
+
+.highlight .kr { color: rgb(32, 74, 135); font-weight: bold; }
+
+.highlight .kt { color: rgb(32, 74, 135); font-weight: bold; }
+
+.highlight .ld { color: rgb(0, 0, 0); }
+
+.highlight .m { color: rgb(0, 0, 207); font-weight: bold; }
+
+.highlight .s { color: rgb(78, 154, 6); }
+
+.highlight .na { color: rgb(196, 160, 0); }
+
+.highlight .nb { color: rgb(32, 74, 135); }
+
+.highlight .nc { color: rgb(0, 0, 0); }
+
+.highlight .no { color: rgb(0, 0, 0); }
+
+.highlight .nd { color: rgb(92, 53, 204); font-weight: bold; }
+
+.highlight .ni { color: rgb(206, 92, 0); }
+
+.highlight .ne { color: rgb(204, 0, 0); font-weight: bold; }
+
+.highlight .nf { color: rgb(0, 0, 0); }
+
+.highlight .nl { color: rgb(245, 121, 0); }
+
+.highlight .nn { color: rgb(0, 0, 0); }
+
+.highlight .nx { color: rgb(0, 0, 0); }
+
+.highlight .py { color: rgb(0, 0, 0); }
+
+.highlight .nt { color: rgb(32, 74, 135); font-weight: bold; }
+
+.highlight .nv { color: rgb(0, 0, 0); }
+
+.highlight .ow { color: rgb(32, 74, 135); font-weight: bold; }
+
+.highlight .pm { color: rgb(0, 0, 0); font-weight: bold; }
+
+.highlight .w { color: rgb(248, 248, 248); }
+
+.highlight .mb { color: rgb(0, 0, 207); font-weight: bold; }
+
+.highlight .mf { color: rgb(0, 0, 207); font-weight: bold; }
+
+.highlight .mh { color: rgb(0, 0, 207); font-weight: bold; }
+
+.highlight .mi { color: rgb(0, 0, 207); font-weight: bold; }
+
+.highlight .mo { color: rgb(0, 0, 207); font-weight: bold; }
+
+.highlight .sa { color: rgb(78, 154, 6); }
+
+.highlight .sb { color: rgb(78, 154, 6); }
+
+.highlight .sc { color: rgb(78, 154, 6); }
+
+.highlight .dl { color: rgb(78, 154, 6); }
+
+.highlight .sd { color: rgb(143, 89, 2); font-style: italic; }
+
+.highlight .s2 { color: rgb(78, 154, 6); }
+
+.highlight .se { color: rgb(78, 154, 6); }
+
+.highlight .sh { color: rgb(78, 154, 6); }
+
+.highlight .si { color: rgb(78, 154, 6); }
+
+.highlight .sx { color: rgb(78, 154, 6); }
+
+.highlight .sr { color: rgb(78, 154, 6); }
+
+.highlight .s1 { color: rgb(78, 154, 6); }
+
+.highlight .ss { color: rgb(78, 154, 6); }
+
+.highlight .bp { color: rgb(52, 101, 164); }
+
+.highlight .fm { color: rgb(0, 0, 0); }
+
+.highlight .vc { color: rgb(0, 0, 0); }
+
+.highlight .vg { color: rgb(0, 0, 0); }
+
+.highlight .vi { color: rgb(0, 0, 0); }
+
+.highlight .vm { color: rgb(0, 0, 0); }
+
+.highlight .il { color: rgb(0, 0, 207); font-weight: bold; }
+------MultipartBoundary--ndKptviwx3LSQcewHFOMPzUmh7bGOF86WVP2wuIFsu----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://peps.python.org/_static/pygments_dark.css
+
+@charset "utf-8";
+
+pre { line-height: 125%; }
+
+td.linenos .normal { color: rgb(170, 170, 170); background-color: transpare=
+nt; padding-left: 5px; padding-right: 5px; }
+
+span.linenos { color: rgb(170, 170, 170); background-color: transparent; pa=
+dding-left: 5px; padding-right: 5px; }
+
+td.linenos .special { color: rgb(0, 0, 0); background-color: rgb(255, 255, =
+192); padding-left: 5px; padding-right: 5px; }
+
+span.linenos.special { color: rgb(0, 0, 0); background-color: rgb(255, 255,=
+ 192); padding-left: 5px; padding-right: 5px; }
+
+.highlight .hll { background-color: rgb(64, 64, 64); }
+
+.highlight { background: rgb(32, 32, 32); color: rgb(208, 208, 208); }
+
+.highlight .c { color: rgb(171, 171, 171); font-style: italic; }
+
+.highlight .err { color: rgb(166, 23, 23); background-color: rgb(227, 210, =
+210); }
+
+.highlight .esc { color: rgb(208, 208, 208); }
+
+.highlight .g { color: rgb(208, 208, 208); }
+
+.highlight .k { color: rgb(110, 191, 38); font-weight: bold; }
+
+.highlight .l { color: rgb(208, 208, 208); }
+
+.highlight .n { color: rgb(208, 208, 208); }
+
+.highlight .o { color: rgb(208, 208, 208); }
+
+.highlight .x { color: rgb(208, 208, 208); }
+
+.highlight .p { color: rgb(208, 208, 208); }
+
+.highlight .ch { color: rgb(171, 171, 171); font-style: italic; }
+
+.highlight .cm { color: rgb(171, 171, 171); font-style: italic; }
+
+.highlight .cp { color: rgb(205, 40, 40); font-weight: bold; }
+
+.highlight .cpf { color: rgb(171, 171, 171); font-style: italic; }
+
+.highlight .c1 { color: rgb(171, 171, 171); font-style: italic; }
+
+.highlight .cs { color: rgb(229, 8, 8); font-weight: bold; background-color=
+: rgb(82, 0, 0); }
+
+.highlight .gd { color: rgb(210, 35, 35); }
+
+.highlight .ge { color: rgb(208, 208, 208); font-style: italic; }
+
+.highlight .gr { color: rgb(210, 35, 35); }
+
+.highlight .gh { color: rgb(255, 255, 255); font-weight: bold; }
+
+.highlight .gi { color: rgb(88, 152, 25); }
+
+.highlight .go { color: rgb(204, 204, 204); }
+
+.highlight .gp { color: rgb(170, 170, 170); }
+
+.highlight .gs { color: rgb(208, 208, 208); font-weight: bold; }
+
+.highlight .gu { color: rgb(255, 255, 255); text-decoration: underline; }
+
+.highlight .gt { color: rgb(210, 35, 35); }
+
+.highlight .kc { color: rgb(110, 191, 38); font-weight: bold; }
+
+.highlight .kd { color: rgb(110, 191, 38); font-weight: bold; }
+
+.highlight .kn { color: rgb(110, 191, 38); font-weight: bold; }
+
+.highlight .kp { color: rgb(110, 191, 38); }
+
+.highlight .kr { color: rgb(110, 191, 38); font-weight: bold; }
+
+.highlight .kt { color: rgb(110, 191, 38); font-weight: bold; }
+
+.highlight .ld { color: rgb(208, 208, 208); }
+
+.highlight .m { color: rgb(81, 178, 253); }
+
+.highlight .s { color: rgb(237, 157, 19); }
+
+.highlight .na { color: rgb(187, 187, 187); }
+
+.highlight .nb { color: rgb(47, 188, 205); }
+
+.highlight .nc { color: rgb(113, 173, 255); text-decoration: underline; }
+
+.highlight .no { color: rgb(64, 255, 255); }
+
+.highlight .nd { color: rgb(255, 165, 0); }
+
+.highlight .ni { color: rgb(208, 208, 208); }
+
+.highlight .ne { color: rgb(187, 187, 187); }
+
+.highlight .nf { color: rgb(113, 173, 255); }
+
+.highlight .nl { color: rgb(208, 208, 208); }
+
+.highlight .nn { color: rgb(113, 173, 255); text-decoration: underline; }
+
+.highlight .nx { color: rgb(208, 208, 208); }
+
+.highlight .py { color: rgb(208, 208, 208); }
+
+.highlight .nt { color: rgb(110, 191, 38); font-weight: bold; }
+
+.highlight .nv { color: rgb(64, 255, 255); }
+
+.highlight .ow { color: rgb(110, 191, 38); font-weight: bold; }
+
+.highlight .pm { color: rgb(208, 208, 208); }
+
+.highlight .w { color: rgb(102, 102, 102); }
+
+.highlight .mb { color: rgb(81, 178, 253); }
+
+.highlight .mf { color: rgb(81, 178, 253); }
+
+.highlight .mh { color: rgb(81, 178, 253); }
+
+.highlight .mi { color: rgb(81, 178, 253); }
+
+.highlight .mo { color: rgb(81, 178, 253); }
+
+.highlight .sa { color: rgb(237, 157, 19); }
+
+.highlight .sb { color: rgb(237, 157, 19); }
+
+.highlight .sc { color: rgb(237, 157, 19); }
+
+.highlight .dl { color: rgb(237, 157, 19); }
+
+.highlight .sd { color: rgb(237, 157, 19); }
+
+.highlight .s2 { color: rgb(237, 157, 19); }
+
+.highlight .se { color: rgb(237, 157, 19); }
+
+.highlight .sh { color: rgb(237, 157, 19); }
+
+.highlight .si { color: rgb(237, 157, 19); }
+
+.highlight .sx { color: rgb(255, 165, 0); }
+
+.highlight .sr { color: rgb(237, 157, 19); }
+
+.highlight .s1 { color: rgb(237, 157, 19); }
+
+.highlight .ss { color: rgb(237, 157, 19); }
+
+.highlight .bp { color: rgb(47, 188, 205); }
+
+.highlight .fm { color: rgb(113, 173, 255); }
+
+.highlight .vc { color: rgb(64, 255, 255); }
+
+.highlight .vg { color: rgb(64, 255, 255); }
+
+.highlight .vi { color: rgb(64, 255, 255); }
+
+.highlight .vm { color: rgb(64, 255, 255); }
+
+.highlight .il { color: rgb(81, 178, 253); }
+------MultipartBoundary--ndKptviwx3LSQcewHFOMPzUmh7bGOF86WVP2wuIFsu----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400&display=swap
+
+@charset "utf-8";
+
+@font-face { font-family: "Source Sans Pro"; font-style: italic; font-weigh=
+t: 400; font-display: swap; src: url("https://fonts.gstatic.com/s/sourcesan=
+spro/v21/6xK1dSBYKcSV-LCoeQqfX1RYOo3qPZ7qsDJB9cme_xc.woff2") format("woff2"=
+); unicode-range: U+460-52F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F,=
+ U+FE2E-FE2F; }
+
+@font-face { font-family: "Source Sans Pro"; font-style: italic; font-weigh=
+t: 400; font-display: swap; src: url("https://fonts.gstatic.com/s/sourcesan=
+spro/v21/6xK1dSBYKcSV-LCoeQqfX1RYOo3qPZ7jsDJB9cme_xc.woff2") format("woff2"=
+); unicode-range: U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116; }
+
+@font-face { font-family: "Source Sans Pro"; font-style: italic; font-weigh=
+t: 400; font-display: swap; src: url("https://fonts.gstatic.com/s/sourcesan=
+spro/v21/6xK1dSBYKcSV-LCoeQqfX1RYOo3qPZ7rsDJB9cme_xc.woff2") format("woff2"=
+); unicode-range: U+1F00-1FFF; }
+
+@font-face { font-family: "Source Sans Pro"; font-style: italic; font-weigh=
+t: 400; font-display: swap; src: url("https://fonts.gstatic.com/s/sourcesan=
+spro/v21/6xK1dSBYKcSV-LCoeQqfX1RYOo3qPZ7ksDJB9cme_xc.woff2") format("woff2"=
+); unicode-range: U+370-3FF; }
+
+@font-face { font-family: "Source Sans Pro"; font-style: italic; font-weigh=
+t: 400; font-display: swap; src: url("https://fonts.gstatic.com/s/sourcesan=
+spro/v21/6xK1dSBYKcSV-LCoeQqfX1RYOo3qPZ7osDJB9cme_xc.woff2") format("woff2"=
+); unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+=
+1AF-1B0, U+1EA0-1EF9, U+20AB; }
+
+@font-face { font-family: "Source Sans Pro"; font-style: italic; font-weigh=
+t: 400; font-display: swap; src: url("https://fonts.gstatic.com/s/sourcesan=
+spro/v21/6xK1dSBYKcSV-LCoeQqfX1RYOo3qPZ7psDJB9cme_xc.woff2") format("woff2"=
+); unicode-range: U+100-24F, U+259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20A=
+D-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: "Source Sans Pro"; font-style: italic; font-weigh=
+t: 400; font-display: swap; src: url("https://fonts.gstatic.com/s/sourcesan=
+spro/v21/6xK1dSBYKcSV-LCoeQqfX1RYOo3qPZ7nsDJB9cme.woff2") format("woff2"); =
+unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+=
+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, =
+U+FFFD; }
+
+@font-face { font-family: "Source Sans Pro"; font-style: normal; font-weigh=
+t: 400; font-display: swap; src: url("https://fonts.gstatic.com/s/sourcesan=
+spro/v21/6xK3dSBYKcSV-LCoeQqfX1RYOo3qNa7lujVj9_mf.woff2") format("woff2"); =
+unicode-range: U+460-52F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+=
+FE2E-FE2F; }
+
+@font-face { font-family: "Source Sans Pro"; font-style: normal; font-weigh=
+t: 400; font-display: swap; src: url("https://fonts.gstatic.com/s/sourcesan=
+spro/v21/6xK3dSBYKcSV-LCoeQqfX1RYOo3qPK7lujVj9_mf.woff2") format("woff2"); =
+unicode-range: U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116; }
+
+@font-face { font-family: "Source Sans Pro"; font-style: normal; font-weigh=
+t: 400; font-display: swap; src: url("https://fonts.gstatic.com/s/sourcesan=
+spro/v21/6xK3dSBYKcSV-LCoeQqfX1RYOo3qNK7lujVj9_mf.woff2") format("woff2"); =
+unicode-range: U+1F00-1FFF; }
+
+@font-face { font-family: "Source Sans Pro"; font-style: normal; font-weigh=
+t: 400; font-display: swap; src: url("https://fonts.gstatic.com/s/sourcesan=
+spro/v21/6xK3dSBYKcSV-LCoeQqfX1RYOo3qO67lujVj9_mf.woff2") format("woff2"); =
+unicode-range: U+370-3FF; }
+
+@font-face { font-family: "Source Sans Pro"; font-style: normal; font-weigh=
+t: 400; font-display: swap; src: url("https://fonts.gstatic.com/s/sourcesan=
+spro/v21/6xK3dSBYKcSV-LCoeQqfX1RYOo3qN67lujVj9_mf.woff2") format("woff2"); =
+unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF=
+-1B0, U+1EA0-1EF9, U+20AB; }
+
+@font-face { font-family: "Source Sans Pro"; font-style: normal; font-weigh=
+t: 400; font-display: swap; src: url("https://fonts.gstatic.com/s/sourcesan=
+spro/v21/6xK3dSBYKcSV-LCoeQqfX1RYOo3qNq7lujVj9_mf.woff2") format("woff2"); =
+unicode-range: U+100-24F, U+259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-2=
+0CF, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: "Source Sans Pro"; font-style: normal; font-weigh=
+t: 400; font-display: swap; src: url("https://fonts.gstatic.com/s/sourcesan=
+spro/v21/6xK3dSBYKcSV-LCoeQqfX1RYOo3qOK7lujVj9w.woff2") format("woff2"); un=
+icode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+20=
+00-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+=
+FFFD; }
+
+@font-face { font-family: "Source Sans Pro"; font-style: normal; font-weigh=
+t: 700; font-display: swap; src: url("https://fonts.gstatic.com/s/sourcesan=
+spro/v21/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwmhdu3cOWxy40.woff2") format("woff2=
+"); unicode-range: U+460-52F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F=
+, U+FE2E-FE2F; }
+
+@font-face { font-family: "Source Sans Pro"; font-style: normal; font-weigh=
+t: 700; font-display: swap; src: url("https://fonts.gstatic.com/s/sourcesan=
+spro/v21/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwkxdu3cOWxy40.woff2") format("woff2=
+"); unicode-range: U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116; }
+
+@font-face { font-family: "Source Sans Pro"; font-style: normal; font-weigh=
+t: 700; font-display: swap; src: url("https://fonts.gstatic.com/s/sourcesan=
+spro/v21/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwmxdu3cOWxy40.woff2") format("woff2=
+"); unicode-range: U+1F00-1FFF; }
+
+@font-face { font-family: "Source Sans Pro"; font-style: normal; font-weigh=
+t: 700; font-display: swap; src: url("https://fonts.gstatic.com/s/sourcesan=
+spro/v21/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwlBdu3cOWxy40.woff2") format("woff2=
+"); unicode-range: U+370-3FF; }
+
+@font-face { font-family: "Source Sans Pro"; font-style: normal; font-weigh=
+t: 700; font-display: swap; src: url("https://fonts.gstatic.com/s/sourcesan=
+spro/v21/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwmBdu3cOWxy40.woff2") format("woff2=
+"); unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U=
++1AF-1B0, U+1EA0-1EF9, U+20AB; }
+
+@font-face { font-family: "Source Sans Pro"; font-style: normal; font-weigh=
+t: 700; font-display: swap; src: url("https://fonts.gstatic.com/s/sourcesan=
+spro/v21/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwmRdu3cOWxy40.woff2") format("woff2=
+"); unicode-range: U+100-24F, U+259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20=
+AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: "Source Sans Pro"; font-style: normal; font-weigh=
+t: 700; font-display: swap; src: url("https://fonts.gstatic.com/s/sourcesan=
+spro/v21/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwlxdu3cOWxw.woff2") format("woff2")=
+; unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, =
+U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF=
+, U+FFFD; }
+------MultipartBoundary--ndKptviwx3LSQcewHFOMPzUmh7bGOF86WVP2wuIFsu------
