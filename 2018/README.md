@@ -1,0 +1,11 @@
+## Links
+* [变分自编码器 = 最小化先验分布 + 最大化互信息 - 科学空间_Scientific Spaces.mhtml](https://kexue.fm/archives/6088)
+* [变分自编码器（二）：从贝叶斯观点出发 - 科学空间_Scientific Spaces.mhtml](https://kexue.fm/archives/5343)
+* [用变分推断统一理解生成模型（VAE、GAN、AAE、ALI） - 科学空间_Scientific Spaces.mhtml](https://spaces.ac.cn/archives/5716)
+* [深度学习的互信息：无监督提取特征 - 科学空间_Scientific Spaces.mhtml](https://kexue.fm/archives/6024)
+* [《Attention is All You Need》浅读（简介+代码） - 科学空间_Scientific Spaces.mhtml](https://kexue.fm/archives/4765)
+* [从变分编码、信息瓶颈到正态分布：论遗忘的重要性 - 科学空间_Scientific Spaces.mhtml](https://spaces.ac.cn/archives/6181)
+* [最小熵原理（一）：无监督学习的原理 - 科学空间_Scientific Spaces.mhtml](https://spaces.ac.cn/archives/5448)
+* [变分自编码器（三）：这样做为什么能成？ - 科学空间_Scientific Spaces.mhtml](https://spaces.ac.cn/archives/5383)
+* [变分自编码器（一）：原来是这么一回事 - 科学空间_Scientific Spaces.mhtml](https://kexue.fm/archives/5253)
+* [变分自编码器（四）：一步到位的聚类方案 - 科学空间_Scientific Spaces.mhtml](https://kexue.fm/archives/5887)

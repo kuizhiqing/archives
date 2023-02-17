@@ -1,0 +1,34 @@
+name: Update links
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "disable"
+
+jobs:
+  resources:
+    name: Update resources
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+
+      - uses: actions/setup-node@v1
+
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Generate resources
+        run: python generate_readme.py
+
+      - name: Update resources
+        uses: test-room-7/action-update-file@v1
+        with:
+          file-path: |
+            'links.md'
+            '*/*.md'
+          commit-msg: Update links
+          allow-removing: true
+          github-token: ${{ secrets.GITHUB_TOKEN }}

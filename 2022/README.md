@@ -1,0 +1,12 @@
+## Links
+* [logsumexp运算的几个不等式 - 科学空间_Scientific Spaces.mhtml](https://kexue.fm/archives/9070)
+* [用热传导方程来指导自监督学习 - 科学空间_Scientific Spaces.mhtml](https://spaces.ac.cn/archives/9359)
+* [FLASH：可能是近来最有意思的高效Transformer设计 - 科学空间_Scientific Spaces.mhtml](https://kexue.fm/archives/8934)
+* [Generative AI_ A Creative New World _ Sequoia Capital US_Europe.mhtml](https://www.sequoiacap.com/article/generative-ai-a-creative-new-world/)
+* [Field Theory Fundamentals in 20 Minutes — Physics with Elliot.mhtml](https://www.physicswithelliot.com/fields-mini-notes)
+* [熵不变性Softmax的一个快速推导 - 科学空间_Scientific Spaces.mhtml](https://spaces.ac.cn/archives/9034)
+* [Transformer升级之路：6、旋转位置编码的完备性分析 - 科学空间_Scientific Spaces.mhtml](https://kexue.fm/archives/9403)
+* [Discovering the Fourier Transform Through Quantum Mechanics — Physics with Elliot.mhtml](https://www.physicswithelliot.com/fourier-mini-notes)
+* [听说Attention与Softmax更配哦～ - 科学空间_Scientific Spaces.mhtml](https://kexue.fm/archives/9019)
+* [Learning PyTorch with Examples — PyTorch Tutorials 1.13.0+cu117 documentation.mht](https://pytorch.org/tutorials/beginner/pytorch_with_examples.html#examples-download)
+* [MLOps Is a Mess But That's to be Expected - Mihail Eric.mhtml](https://www.mihaileric.com/posts/mlops-is-a-mess/)
