@@ -5,6 +5,7 @@
 * [深度学习的互信息：无监督提取特征 - 科学空间_Scientific Spaces.mhtml](https://kexue.fm/archives/6024)
 * [《Attention is All You Need》浅读（简介+代码） - 科学空间_Scientific Spaces.mhtml](https://kexue.fm/archives/4765)
 * [从变分编码、信息瓶颈到正态分布：论遗忘的重要性 - 科学空间_Scientific Spaces.mhtml](https://spaces.ac.cn/archives/6181)
+* [A gentle journey from linear regression to neural networks _ by Joseph Rocca _ Towards Data Science.mhtml](https://towardsdatascience.com/a-gentle-journey-from-linear-regression-to-neural-networks-68881590760e)
 * [最小熵原理（一）：无监督学习的原理 - 科学空间_Scientific Spaces.mhtml](https://spaces.ac.cn/archives/5448)
 * [变分自编码器（三）：这样做为什么能成？ - 科学空间_Scientific Spaces.mhtml](https://spaces.ac.cn/archives/5383)
 * [变分自编码器（一）：原来是这么一回事 - 科学空间_Scientific Spaces.mhtml](https://kexue.fm/archives/5253)
