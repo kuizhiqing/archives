@@ -1,0 +1,4 @@
+# Chronicles
+
+## 2023 Oct
+* [From Machine Learning to Autonomous Intelligence – AI-Talk by Prof. Dr. Yann LeCun](https://www.youtube.com/watch?v=pd0JmT6rYcI)
