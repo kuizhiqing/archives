@@ -1,0 +1,105 @@
+
+Terry Tao's generals
+
+My examiners were Stein, Kleinermann and Rudnick.  (Kleinermann came in
+about five minutes late).
+
+The first questions asked were about Harmonic analysis.  They asked me what
+I knew, and I said basically singular integrals and functional analysis -
+no real harmonic theory at all.  So they examined me on singular integrals
+instead, essentially.
+
+Give examples of singular integrals (Calderon-Zygmund).  What theorems do
+you know about them, how to prove boundnedness.  (I stated a T(b) theorem,
+which nobody seemed very acquainted with, and said with some brief
+explanation that knowing boundedness on L^2 - L^2 was sufficient to prove
+L^p-L^p for 1<p<\infty).
+
+Since my T(b) theorem was martingale based, Stein asked me to give a
+definition of Martingales.  I gave the sigma algebra, purely measure
+theoretic version, but stumbled a bit on the definition of conditional
+expectation.  I think Stein was satisfied by my explanation of conditional
+expectation at the end, though.
+
+Stein then asked me what other boundedness theorems I knew.  I couldn't
+think of any concrete ones off hand, but I mumbled about a convolution
+operator being bounded if its Fourier transform was bounded and had some
+smoothness condition, but I couldn't recall any details.
+
+Some questions about the boundedness of the Hilbert operator, an easy way
+of proof.  I said the Fourier transform was bounded, and that should do it
+for L^2 - L^2.  They seemed to be hinting at generalizations, and
+eventually I clicked on to Riesz potentials, but again I didn't know enough
+results, only that they were bounded.  (For example: if \Delta u = f and f
+is in L^2, what do you know about u?  I guessed it was in some sort of
+Sobolev space).  I did state though that all second derivatives of u would
+have L^p norms bounded by that of the Laplacian.  Kleinermann asked me for
+an elementary explanation of this, but I couldn't think of one.
+
+A couple definitions of H^1.  I got the atomic definition right, and the
+Riesz potentials, but got the limit of harmonic-functions definition wrong.
+And I had no idea how to prove any of them were equivalent.. so they
+abandoned this after a while, but not until they made me realize that the
+latter definition I had gave was actually that of L^1, not H^1.
+
+Then they asked me about fundamental solutions.  I sluffed the exponents in
+the denominator a few times, so they began asking me about homogeneity.
+Eventually, with a lot of prodding, I got the exponents of the Newtonian
+and Cauchy potentials correctly.
+
+Kleinermann asked me about the connections between PDE's and singular
+integrals, but I didn't know any more than vague generalities.
+
+Then they switched to Analytic number theory.  Surprisingly, I fared much
+better on this topic!
+
+Rudnick (mainly) asked: give several forms of the Zeta function, give one
+that allows analytic continuation (I used theta functions), prove the
+modularity of the theta function, and thus derive (give or take a number of
+pi's and Gammas) the functional equation.  What do you know about the
+poles, zeroes.  (I gave the De Vallee-Pouisson (sic?) zero-free region).
+State a form of the prime number theorem.  Why li(x) instead of x/logx?
+Give an explicit formula for \psi(x).  Throughout, I didn't have to back up
+anything with messy calculations: Rudnick always stopped me when I tried.
+
+Talk about primes in arithmetic progressions.  Give an elementary proof of
+the infinitude of primes of the form 4n - 3.  What algebraic tools are used
+in Dirichlet's proof of infinitude of primes in arithmetic progressions?
+(It took a while before I understood, "Oh, you want me to talk about
+characters.")  I gave the basic run-through of how it is sufficient to
+prove L(1,\chi) is non-zero.  (With Rudnick's help, this was very smooth.)
+Then they asked how Dirichlet got an explicit formula for this when \chi
+was a real character.  I was going to write a messy (but finite) expression 
+involving sines and logs, but then I realized that they were talking about 
+the class number formula.  (I said carelessly though that "this was a 
+disgusting way to do it", since I was still thinking about the sine-log
+formulas.  Then they made a comment that "This would put thousands of
+people out of work", or something like that.)  Anyway, I stated what the
+class number was (vaguely), but didn't give out an explicit equation (again
+Rudnick waved me off when I tried this), and they seemed satisfied.
+
+They asked me what else I had prepared, and I said some stuff on the circle
+method and the large sieve.  So Rudnick asked me a few desultory questions
+on the sieve, and I stated one formulation, but didn't know of any useful
+applications.
+
+Then Rudnick asked a few algebra questions only and it was over.  Talk
+about Galois theory.. construct a field extension of order S_n.
+(polynomials over symmetric polynomials).  Construct one of order A_n.  I
+got the index and the order mixed up, but Rudnick corrected me, and so
+eventually it came down to finding a non-symmetric polynomial whose square
+was symmetric.  I couldn't guess it, so Rudnick said "product of
+differences", and I said, "Oh, the Pfaffian" and they were satisfied.
+
+"What else do you know about A_n?" (I said it was simple for n>=5).  What
+other simple groups do you know.  (The monster?  But I backed down quickly,
+saying I knew not how to define it.)  Then the discussion meandered a bit
+as the professors talked among themselves whether the group of order 168
+(which I mentioned) was sporadic.
+
+After this, they decided to pass me, though they said that my harmonic
+analysis was far from satisfactory. :(  They didn't ask any real or complex
+analysis, but I guess from my handling of the special topics they decided
+that wasn't necessary.  Besides, we were almost getting snowed in.
+
+The exam lasted 2 hours.
