@@ -1,0 +1,969 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: https://semver.org/
+Subject: Semantic Versioning 2.0.0 | Semantic Versioning
+Date: Fri, 18 Aug 2023 15:50:48 -0000
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--hWLZRvb1cHMi8HUAvfsXbag53ZMuPKqiPto0j69u5c----"
+
+
+------MultipartBoundary--hWLZRvb1cHMi8HUAvfsXbag53ZMuPKqiPto0j69u5c----
+Content-Type: text/html
+Content-ID: <frame-CFCB7A648CB25A9578EEDE1818A62517@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://semver.org/
+
+<!DOCTYPE html><html lang=3D"en" dir=3D"ltr"><head><meta http-equiv=3D"Cont=
+ent-Type" content=3D"text/html; charset=3DUTF-8">
+   =20
+    <link rel=3D"stylesheet" href=3D"https://semver.org/css/main.css">
+   =20
+    <meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=
+=3D1.0, maximum-scale=3D1.0, minimum-scale=3D1.0">
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Semantic Versioning 2.0.0 | Semantic Versioning</title>
+<meta name=3D"generator" content=3D"Jekyll v3.9.3">
+<meta property=3D"og:title" content=3D"Semantic Versioning 2.0.0">
+<meta name=3D"author" content=3D"Tom Preston-Werner">
+<meta property=3D"og:locale" content=3D"en_US">
+<meta name=3D"description" content=3D"Semantic Versioning spec and website"=
+>
+<meta property=3D"og:description" content=3D"Semantic Versioning spec and w=
+ebsite">
+<link rel=3D"canonical" href=3D"https://semver.org/">
+<meta property=3D"og:url" content=3D"https://semver.org/">
+<meta property=3D"og:site_name" content=3D"Semantic Versioning">
+<meta property=3D"og:type" content=3D"website">
+<meta name=3D"twitter:card" content=3D"summary">
+<meta property=3D"twitter:title" content=3D"Semantic Versioning 2.0.0">
+
+<!-- End Jekyll SEO tag -->
+
+  </head>
+  <body>
+    <ul class=3D"nav lang" dir=3D"ltr">
+     =20
+     =20
+        <li class=3D"language language-ar">
+          <a rel=3D"alternate" lang=3D"ar" hreflang=3D"ar" href=3D"https://=
+semver.org/lang/ar/">=D8=A7=D9=84=D8=B9=D8=B1=D8=A8=D9=8A=D8=A9 (ar)</a>
+        </li>
+     =20
+        <li class=3D"language language-bg">
+          <a rel=3D"alternate" lang=3D"bg" hreflang=3D"bg" href=3D"https://=
+semver.org/lang/bg/">=D0=91=D1=8A=D0=BB=D0=B3=D0=B0=D1=80=D1=81=D0=BA=D0=B8=
+ (bg)</a>
+        </li>
+     =20
+        <li class=3D"language language-ca">
+          <a rel=3D"alternate" lang=3D"ca" hreflang=3D"ca" href=3D"https://=
+semver.org/lang/ca/">catal=C3=A0 (ca)</a>
+        </li>
+     =20
+        <li class=3D"language language-cs">
+          <a rel=3D"alternate" lang=3D"cs" hreflang=3D"cs" href=3D"https://=
+semver.org/lang/cs/">=C4=8De=C5=A1tina (cs)</a>
+        </li>
+     =20
+        <li class=3D"language language-da">
+          <a rel=3D"alternate" lang=3D"da" hreflang=3D"da" href=3D"https://=
+semver.org/lang/da/">Dansk (da)</a>
+        </li>
+     =20
+        <li class=3D"language language-de">
+          <a rel=3D"alternate" lang=3D"de" hreflang=3D"de" href=3D"https://=
+semver.org/lang/de/">Deutsch (de)</a>
+        </li>
+     =20
+        <li class=3D"language language-el">
+          <a rel=3D"alternate" lang=3D"el" hreflang=3D"el" href=3D"https://=
+semver.org/lang/el/">=CE=95=CE=BB=CE=BB=CE=B7=CE=BD=CE=B9=CE=BA=CE=AC (el)<=
+/a>
+        </li>
+     =20
+        <li class=3D"language language-en">
+          <a rel=3D"alternate" lang=3D"en" hreflang=3D"en" href=3D"https://=
+semver.org/">English (en)</a>
+        </li>
+     =20
+        <li class=3D"language language-es">
+          <a rel=3D"alternate" lang=3D"es" hreflang=3D"es" href=3D"https://=
+semver.org/lang/es/">espa=C3=B1ol (es)</a>
+        </li>
+     =20
+        <li class=3D"language language-fa">
+          <a rel=3D"alternate" lang=3D"fa" hreflang=3D"fa" href=3D"https://=
+semver.org/lang/fa/">=D9=81=D8=A7=D8=B1=D8=B3=DB=8C (fa)</a>
+        </li>
+     =20
+        <li class=3D"language language-fr">
+          <a rel=3D"alternate" lang=3D"fr" hreflang=3D"fr" href=3D"https://=
+semver.org/lang/fr/">fran=C3=A7ais (fr)</a>
+        </li>
+     =20
+        <li class=3D"language language-he">
+          <a rel=3D"alternate" lang=3D"he" hreflang=3D"he" href=3D"https://=
+semver.org/lang/he/">=D7=A2=D7=91=D7=A8=D7=99=D7=AA (he)</a>
+        </li>
+     =20
+        <li class=3D"language language-hin">
+          <a rel=3D"alternate" lang=3D"hin" hreflang=3D"hin" href=3D"https:=
+//semver.org/lang/hin/">=E0=A4=B9=E0=A4=BF=E0=A4=A8=E0=A5=8D=E0=A4=A6=E0=A5=
+=80 (hin)</a>
+        </li>
+     =20
+        <li class=3D"language language-hr">
+          <a rel=3D"alternate" lang=3D"hr" hreflang=3D"hr" href=3D"https://=
+semver.org/lang/hr/">hrvatski (hr)</a>
+        </li>
+     =20
+        <li class=3D"language language-hu">
+          <a rel=3D"alternate" lang=3D"hu" hreflang=3D"hu" href=3D"https://=
+semver.org/lang/hu/">magyar (hu)</a>
+        </li>
+     =20
+        <li class=3D"language language-hy">
+          <a rel=3D"alternate" lang=3D"hy" hreflang=3D"hy" href=3D"https://=
+semver.org/lang/hy/">=D5=80=D5=A1=D5=B5=D5=A5=D6=80=D5=A5=D5=B6 (hy)</a>
+        </li>
+     =20
+        <li class=3D"language language-id">
+          <a rel=3D"alternate" lang=3D"id" hreflang=3D"id" href=3D"https://=
+semver.org/lang/id/">Bahasa Indonesia (id)</a>
+        </li>
+     =20
+        <li class=3D"language language-it">
+          <a rel=3D"alternate" lang=3D"it" hreflang=3D"it" href=3D"https://=
+semver.org/lang/it/">italiano (it)</a>
+        </li>
+     =20
+        <li class=3D"language language-ja">
+          <a rel=3D"alternate" lang=3D"ja" hreflang=3D"ja" href=3D"https://=
+semver.org/lang/ja/">=E6=97=A5=E6=9C=AC=E8=AA=9E (ja)</a>
+        </li>
+     =20
+        <li class=3D"language language-ka">
+          <a rel=3D"alternate" lang=3D"ka" hreflang=3D"ka" href=3D"https://=
+semver.org/lang/ka/">=E1=83=A5=E1=83=90=E1=83=A0=E1=83=97=E1=83=A3=E1=83=9A=
+=E1=83=98 (ka)</a>
+        </li>
+     =20
+        <li class=3D"language language-kab">
+          <a rel=3D"alternate" lang=3D"kab" hreflang=3D"kab" href=3D"https:=
+//semver.org/lang/kab/">taqbaylit (kab)</a>
+        </li>
+     =20
+        <li class=3D"language language-ko">
+          <a rel=3D"alternate" lang=3D"ko" hreflang=3D"ko" href=3D"https://=
+semver.org/lang/ko/">=ED=95=9C=EA=B5=AD=EC=96=B4 (ko)</a>
+        </li>
+     =20
+        <li class=3D"language language-nl">
+          <a rel=3D"alternate" lang=3D"nl" hreflang=3D"nl" href=3D"https://=
+semver.org/lang/nl/">Nederlands (nl)</a>
+        </li>
+     =20
+        <li class=3D"language language-pl">
+          <a rel=3D"alternate" lang=3D"pl" hreflang=3D"pl" href=3D"https://=
+semver.org/lang/pl/">polski (pl)</a>
+        </li>
+     =20
+        <li class=3D"language language-pt-BR">
+          <a rel=3D"alternate" lang=3D"pt-BR" hreflang=3D"pt-BR" href=3D"ht=
+tps://semver.org/lang/pt-BR/">portugu=C3=AAs brasileiro (pt-BR)</a>
+        </li>
+     =20
+        <li class=3D"language language-ro">
+          <a rel=3D"alternate" lang=3D"ro" hreflang=3D"ro" href=3D"https://=
+semver.org/lang/ro/">Rom=C3=A2n=C4=83 (ro)</a>
+        </li>
+     =20
+        <li class=3D"language language-ru">
+          <a rel=3D"alternate" lang=3D"ru" hreflang=3D"ru" href=3D"https://=
+semver.org/lang/ru/">pycc=D0=BA=D0=B8=D0=B9 (ru)</a>
+        </li>
+     =20
+        <li class=3D"language language-sk">
+          <a rel=3D"alternate" lang=3D"sk" hreflang=3D"sk" href=3D"https://=
+semver.org/lang/sk/">slovensky (sk)</a>
+        </li>
+     =20
+        <li class=3D"language language-sl">
+          <a rel=3D"alternate" lang=3D"sl" hreflang=3D"sl" href=3D"https://=
+semver.org/lang/sl/">sloven=C5=A1=C4=8Dina (sl)</a>
+        </li>
+     =20
+        <li class=3D"language language-sr">
+          <a rel=3D"alternate" lang=3D"sr" hreflang=3D"sr" href=3D"https://=
+semver.org/lang/sr/">srpski (sr)</a>
+        </li>
+     =20
+        <li class=3D"language language-sv">
+          <a rel=3D"alternate" lang=3D"sv" hreflang=3D"sv" href=3D"https://=
+semver.org/lang/sv/">svenska (sv)</a>
+        </li>
+     =20
+        <li class=3D"language language-tr">
+          <a rel=3D"alternate" lang=3D"tr" hreflang=3D"tr" href=3D"https://=
+semver.org/lang/tr/">T=C3=BCrk=C3=A7e (tr)</a>
+        </li>
+     =20
+        <li class=3D"language language-uk">
+          <a rel=3D"alternate" lang=3D"uk" hreflang=3D"uk" href=3D"https://=
+semver.org/lang/uk/">=D1=83=D0=BA=D1=80=D0=B0=D1=97=D0=BD=D1=81=D1=8C=D0=BA=
+=D0=B0 (uk)</a>
+        </li>
+     =20
+        <li class=3D"language language-vi">
+          <a rel=3D"alternate" lang=3D"vi" hreflang=3D"vi" href=3D"https://=
+semver.org/lang/vi/">Ti=E1=BA=BFng Vi=E1=BB=87t (vi)</a>
+        </li>
+     =20
+        <li class=3D"language language-zh-CN">
+          <a rel=3D"alternate" lang=3D"zh-CN" hreflang=3D"zh-CN" href=3D"ht=
+tps://semver.org/lang/zh-CN/">=E7=AE=80=E4=BD=93=E4=B8=AD=E6=96=87 (zh-CN)<=
+/a>
+        </li>
+     =20
+        <li class=3D"language language-zh-TW">
+          <a rel=3D"alternate" lang=3D"zh-TW" hreflang=3D"zh-TW" href=3D"ht=
+tps://semver.org/lang/zh-TW/">=E7=B9=81=E9=AB=94=E4=B8=AD=E6=96=87 (zh-TW)<=
+/a>
+        </li>
+     =20
+    </ul>
+    <ul class=3D"nav">
+     =20
+     =20
+       =20
+       =20
+       =20
+          <li class=3D"version version-2.0.0">
+            <a href=3D"https://semver.org/spec/v2.0.0.html">2.0.0</a>
+          </li>
+       =20
+     =20
+       =20
+       =20
+       =20
+          <li class=3D"version version-2.0.0-rc.2">
+            <a href=3D"https://semver.org/spec/v2.0.0-rc.2.html">2.0.0-rc.2=
+</a>
+          </li>
+       =20
+     =20
+       =20
+       =20
+       =20
+          <li class=3D"version version-2.0.0-rc.1">
+            <a href=3D"https://semver.org/spec/v2.0.0-rc.1.html">2.0.0-rc.1=
+</a>
+          </li>
+       =20
+     =20
+       =20
+       =20
+       =20
+          <li class=3D"version version-1.0.0">
+            <a href=3D"https://semver.org/spec/v1.0.0.html">1.0.0</a>
+          </li>
+       =20
+     =20
+       =20
+       =20
+       =20
+          <li class=3D"version version-1.0.0-beta">
+            <a href=3D"https://semver.org/spec/v1.0.0-beta.html">1.0.0-beta=
+</a>
+          </li>
+       =20
+     =20
+    </ul>
+    <div id=3D"spec">
+      <h1 id=3D"semantic-versioning-200"><a class=3D"anchor-link" href=3D"h=
+ttps://semver.org/#semantic-versioning-200"></a>Semantic Versioning 2.0.0</=
+h1>
+
+<h2 id=3D"summary"><a class=3D"anchor-link" href=3D"https://semver.org/#sum=
+mary"></a>Summary</h2>
+
+<p>Given a version number MAJOR.MINOR.PATCH, increment the:</p>
+
+<ol>
+  <li>MAJOR version when you make incompatible API changes</li>
+  <li>MINOR version when you add functionality in a backward compatible
+manner</li>
+  <li>PATCH version when you make backward compatible bug fixes</li>
+</ol>
+
+<p>Additional labels for pre-release and build metadata are available as ex=
+tensions
+to the MAJOR.MINOR.PATCH format.</p>
+
+<h2 id=3D"introduction"><a class=3D"anchor-link" href=3D"https://semver.org=
+/#introduction"></a>Introduction</h2>
+
+<p>In the world of software management there exists a dreaded place called
+=E2=80=9Cdependency hell.=E2=80=9D The bigger your system grows and the mor=
+e packages you
+integrate into your software, the more likely you are to find yourself, one
+day, in this pit of despair.</p>
+
+<p>In systems with many dependencies, releasing new package versions can qu=
+ickly
+become a nightmare. If the dependency specifications are too tight, you are=
+ in
+danger of version lock (the inability to upgrade a package without having t=
+o
+release new versions of every dependent package). If dependencies are
+specified too loosely, you will inevitably be bitten by version promiscuity
+(assuming compatibility with more future versions than is reasonable).
+Dependency hell is where you are when version lock and/or version promiscui=
+ty
+prevent you from easily and safely moving your project forward.</p>
+
+<p>As a solution to this problem, we propose a simple set of rules and
+requirements that dictate how version numbers are assigned and incremented.
+These rules are based on but not necessarily limited to pre-existing
+widespread common practices in use in both closed and open-source software.
+For this system to work, you first need to declare a public API. This may
+consist of documentation or be enforced by the code itself. Regardless, it =
+is
+important that this API be clear and precise. Once you identify your public
+API, you communicate changes to it with specific increments to your version
+number. Consider a version format of X.Y.Z (Major.Minor.Patch). Bug fixes n=
+ot
+affecting the API increment the patch version, backward compatible API
+additions/changes increment the minor version, and backward incompatible AP=
+I
+changes increment the major version.</p>
+
+<p>We call this system =E2=80=9CSemantic Versioning.=E2=80=9D Under this sc=
+heme, version numbers
+and the way they change convey meaning about the underlying code and what h=
+as
+been modified from one version to the next.</p>
+
+<h2 id=3D"semantic-versioning-specification-semver"><a class=3D"anchor-link=
+" href=3D"https://semver.org/#semantic-versioning-specification-semver"></a=
+>Semantic Versioning Specification (SemVer)</h2>
+
+<p>The key words =E2=80=9CMUST=E2=80=9D, =E2=80=9CMUST NOT=E2=80=9D, =E2=80=
+=9CREQUIRED=E2=80=9D, =E2=80=9CSHALL=E2=80=9D, =E2=80=9CSHALL NOT=E2=80=9D,=
+ =E2=80=9CSHOULD=E2=80=9D,
+=E2=80=9CSHOULD NOT=E2=80=9D, =E2=80=9CRECOMMENDED=E2=80=9D, =E2=80=9CMAY=
+=E2=80=9D, and =E2=80=9COPTIONAL=E2=80=9D in this document are to be
+interpreted as described in <a href=3D"https://tools.ietf.org/html/rfc2119"=
+>RFC 2119</a>.</p>
+
+<ol>
+  <li id=3D"spec-item-1">
+    <a class=3D"anchor-link" href=3D"https://semver.org/#spec-item-1"></a><=
+p>Software using Semantic Versioning MUST declare a public API. This API
+could be declared in the code itself or exist strictly in documentation.
+However it is done, it SHOULD be precise and comprehensive.</p>
+  </li>
+  <li id=3D"spec-item-2">
+    <a class=3D"anchor-link" href=3D"https://semver.org/#spec-item-2"></a><=
+p>A normal version number MUST take the form X.Y.Z where X, Y, and Z are
+non-negative integers, and MUST NOT contain leading zeroes. X is the
+major version, Y is the minor version, and Z is the patch version.
+Each element MUST increase numerically. For instance: 1.9.0 -&gt; 1.10.0 -&=
+gt; 1.11.0.</p>
+  </li>
+  <li id=3D"spec-item-3">
+    <a class=3D"anchor-link" href=3D"https://semver.org/#spec-item-3"></a><=
+p>Once a versioned package has been released, the contents of that version
+MUST NOT be modified. Any modifications MUST be released as a new version.<=
+/p>
+  </li>
+  <li id=3D"spec-item-4">
+    <a class=3D"anchor-link" href=3D"https://semver.org/#spec-item-4"></a><=
+p>Major version zero (0.y.z) is for initial development. Anything MAY chang=
+e
+at any time. The public API SHOULD NOT be considered stable.</p>
+  </li>
+  <li id=3D"spec-item-5">
+    <a class=3D"anchor-link" href=3D"https://semver.org/#spec-item-5"></a><=
+p>Version 1.0.0 defines the public API. The way in which the version number
+is incremented after this release is dependent on this public API and how i=
+t
+changes.</p>
+  </li>
+  <li id=3D"spec-item-6">
+    <a class=3D"anchor-link" href=3D"https://semver.org/#spec-item-6"></a><=
+p>Patch version Z (x.y.Z | x &gt; 0) MUST be incremented if only backward
+compatible bug fixes are introduced. A bug fix is defined as an internal
+change that fixes incorrect behavior.</p>
+  </li>
+  <li id=3D"spec-item-7">
+    <a class=3D"anchor-link" href=3D"https://semver.org/#spec-item-7"></a><=
+p>Minor version Y (x.Y.z | x &gt; 0) MUST be incremented if new, backward
+compatible functionality is introduced to the public API. It MUST be
+incremented if any public API functionality is marked as deprecated. It MAY=
+ be
+incremented if substantial new functionality or improvements are introduced
+within the private code. It MAY include patch level changes. Patch version
+MUST be reset to 0 when minor version is incremented.</p>
+  </li>
+  <li id=3D"spec-item-8">
+    <a class=3D"anchor-link" href=3D"https://semver.org/#spec-item-8"></a><=
+p>Major version X (X.y.z | X &gt; 0) MUST be incremented if any backward
+incompatible changes are introduced to the public API. It MAY also include =
+minor
+and patch level changes. Patch and minor versions MUST be reset to 0 when m=
+ajor
+version is incremented.</p>
+  </li>
+  <li id=3D"spec-item-9">
+    <a class=3D"anchor-link" href=3D"https://semver.org/#spec-item-9"></a><=
+p>A pre-release version MAY be denoted by appending a hyphen and a
+series of dot separated identifiers immediately following the patch
+version. Identifiers MUST comprise only ASCII alphanumerics and hyphens
+[0-9A-Za-z-]. Identifiers MUST NOT be empty. Numeric identifiers MUST
+NOT include leading zeroes. Pre-release versions have a lower
+precedence than the associated normal version. A pre-release version
+indicates that the version is unstable and might not satisfy the
+intended compatibility requirements as denoted by its associated
+normal version. Examples: 1.0.0-alpha, 1.0.0-alpha.1, 1.0.0-0.3.7,
+1.0.0-x.7.z.92, 1.0.0-x-y-z.--.</p>
+  </li>
+  <li id=3D"spec-item-10">
+    <a class=3D"anchor-link" href=3D"https://semver.org/#spec-item-10"></a>=
+<p>Build metadata MAY be denoted by appending a plus sign and a series of d=
+ot
+separated identifiers immediately following the patch or pre-release versio=
+n.
+Identifiers MUST comprise only ASCII alphanumerics and hyphens [0-9A-Za-z-]=
+.
+Identifiers MUST NOT be empty. Build metadata MUST be ignored when determin=
+ing
+version precedence. Thus two versions that differ only in the build metadat=
+a,
+have the same precedence. Examples: 1.0.0-alpha+001, 1.0.0+20130313144700,
+1.0.0-beta+exp.sha.5114f85, 1.0.0+21AF26D3----117B344092BD.</p>
+  </li>
+  <li id=3D"spec-item-11">
+    <a class=3D"anchor-link" href=3D"https://semver.org/#spec-item-11"></a>=
+<p>Precedence refers to how versions are compared to each other when ordere=
+d.</p>
+
+    <ol>
+      <li>
+        <p>Precedence MUST be calculated by separating the version into maj=
+or,
+minor, patch and pre-release identifiers in that order (Build metadata
+does not figure into precedence).</p>
+      </li>
+      <li>
+        <p>Precedence is determined by the first difference when comparing =
+each of
+these identifiers from left to right as follows: Major, minor, and patch
+versions are always compared numerically.</p>
+
+        <p>Example: 1.0.0 &lt; 2.0.0 &lt; 2.1.0 &lt; 2.1.1.</p>
+      </li>
+      <li>
+        <p>When major, minor, and patch are equal, a pre-release version ha=
+s lower
+precedence than a normal version:</p>
+
+        <p>Example: 1.0.0-alpha &lt; 1.0.0.</p>
+      </li>
+      <li>
+        <p>Precedence for two pre-release versions with the same major, min=
+or, and
+patch version MUST be determined by comparing each dot separated identifier
+from left to right until a difference is found as follows:</p>
+
+        <ol>
+          <li>
+            <p>Identifiers consisting of only digits are compared numerical=
+ly.</p>
+          </li>
+          <li>
+            <p>Identifiers with letters or hyphens are compared lexically i=
+n ASCII
+sort order.</p>
+          </li>
+          <li>
+            <p>Numeric identifiers always have lower precedence than non-nu=
+meric
+identifiers.</p>
+          </li>
+          <li>
+            <p>A larger set of pre-release fields has a higher precedence t=
+han a
+smaller set, if all of the preceding identifiers are equal.</p>
+          </li>
+        </ol>
+
+        <p>Example: 1.0.0-alpha &lt; 1.0.0-alpha.1 &lt; 1.0.0-alpha.beta &l=
+t; 1.0.0-beta &lt;=20
+1.0.0-beta.2 &lt; 1.0.0-beta.11 &lt; 1.0.0-rc.1 &lt; 1.0.0.</p>
+      </li>
+    </ol>
+  </li>
+</ol>
+
+<h2 id=3D"backusnaur-form-grammar-for-valid-semver-versions"><a class=3D"an=
+chor-link" href=3D"https://semver.org/#backusnaur-form-grammar-for-valid-se=
+mver-versions"></a>Backus=E2=80=93Naur Form Grammar for Valid SemVer Versio=
+ns</h2>
+<div class=3D"language-plaintext highlighter-rouge"><div class=3D"highlight=
+"><pre class=3D"highlight"><code>&lt;valid semver&gt; ::=3D &lt;version cor=
+e&gt;
+                 | &lt;version core&gt; "-" &lt;pre-release&gt;
+                 | &lt;version core&gt; "+" &lt;build&gt;
+                 | &lt;version core&gt; "-" &lt;pre-release&gt; "+" &lt;bui=
+ld&gt;
+
+&lt;version core&gt; ::=3D &lt;major&gt; "." &lt;minor&gt; "." &lt;patch&gt=
+;
+
+&lt;major&gt; ::=3D &lt;numeric identifier&gt;
+
+&lt;minor&gt; ::=3D &lt;numeric identifier&gt;
+
+&lt;patch&gt; ::=3D &lt;numeric identifier&gt;
+
+&lt;pre-release&gt; ::=3D &lt;dot-separated pre-release identifiers&gt;
+
+&lt;dot-separated pre-release identifiers&gt; ::=3D &lt;pre-release identif=
+ier&gt;
+                                          | &lt;pre-release identifier&gt; =
+"." &lt;dot-separated pre-release identifiers&gt;
+
+&lt;build&gt; ::=3D &lt;dot-separated build identifiers&gt;
+
+&lt;dot-separated build identifiers&gt; ::=3D &lt;build identifier&gt;
+                                    | &lt;build identifier&gt; "." &lt;dot-=
+separated build identifiers&gt;
+
+&lt;pre-release identifier&gt; ::=3D &lt;alphanumeric identifier&gt;
+                           | &lt;numeric identifier&gt;
+
+&lt;build identifier&gt; ::=3D &lt;alphanumeric identifier&gt;
+                     | &lt;digits&gt;
+
+&lt;alphanumeric identifier&gt; ::=3D &lt;non-digit&gt;
+                            | &lt;non-digit&gt; &lt;identifier characters&g=
+t;
+                            | &lt;identifier characters&gt; &lt;non-digit&g=
+t;
+                            | &lt;identifier characters&gt; &lt;non-digit&g=
+t; &lt;identifier characters&gt;
+
+&lt;numeric identifier&gt; ::=3D "0"
+                       | &lt;positive digit&gt;
+                       | &lt;positive digit&gt; &lt;digits&gt;
+
+&lt;identifier characters&gt; ::=3D &lt;identifier character&gt;
+                          | &lt;identifier character&gt; &lt;identifier cha=
+racters&gt;
+
+&lt;identifier character&gt; ::=3D &lt;digit&gt;
+                         | &lt;non-digit&gt;
+
+&lt;non-digit&gt; ::=3D &lt;letter&gt;
+              | "-"
+
+&lt;digits&gt; ::=3D &lt;digit&gt;
+           | &lt;digit&gt; &lt;digits&gt;
+
+&lt;digit&gt; ::=3D "0"
+          | &lt;positive digit&gt;
+
+&lt;positive digit&gt; ::=3D "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" =
+| "9"
+
+&lt;letter&gt; ::=3D "A" | "B" | "C" | "D" | "E" | "F" | "G" | "H" | "I" | =
+"J"
+           | "K" | "L" | "M" | "N" | "O" | "P" | "Q" | "R" | "S" | "T"
+           | "U" | "V" | "W" | "X" | "Y" | "Z" | "a" | "b" | "c" | "d"
+           | "e" | "f" | "g" | "h" | "i" | "j" | "k" | "l" | "m" | "n"
+           | "o" | "p" | "q" | "r" | "s" | "t" | "u" | "v" | "w" | "x"
+           | "y" | "z"
+</code></pre></div></div>
+
+<h2 id=3D"why-use-semantic-versioning"><a class=3D"anchor-link" href=3D"htt=
+ps://semver.org/#why-use-semantic-versioning"></a>Why Use Semantic Versioni=
+ng?</h2>
+
+<p>This is not a new or revolutionary idea. In fact, you probably do someth=
+ing
+close to this already. The problem is that =E2=80=9Cclose=E2=80=9D isn=E2=
+=80=99t good enough. Without
+compliance to some sort of formal specification, version numbers are
+essentially useless for dependency management. By giving a name and clear
+definition to the above ideas, it becomes easy to communicate your intentio=
+ns
+to the users of your software. Once these intentions are clear, flexible (b=
+ut
+not too flexible) dependency specifications can finally be made.</p>
+
+<p>A simple example will demonstrate how Semantic Versioning can make depen=
+dency
+hell a thing of the past. Consider a library called =E2=80=9CFiretruck.=E2=
+=80=9D It requires a
+Semantically Versioned package named =E2=80=9CLadder.=E2=80=9D At the time =
+that Firetruck is
+created, Ladder is at version 3.1.0. Since Firetruck uses some functionalit=
+y
+that was first introduced in 3.1.0, you can safely specify the Ladder
+dependency as greater than or equal to 3.1.0 but less than 4.0.0. Now, when
+Ladder version 3.1.1 and 3.2.0 become available, you can release them to yo=
+ur
+package management system and know that they will be compatible with existi=
+ng
+dependent software.</p>
+
+<p>As a responsible developer you will, of course, want to verify that any
+package upgrades function as advertised. The real world is a messy place;
+there=E2=80=99s nothing we can do about that but be vigilant. What you can =
+do is let
+Semantic Versioning provide you with a sane way to release and upgrade
+packages without having to roll new versions of dependent packages, saving =
+you
+time and hassle.</p>
+
+<p>If all of this sounds desirable, all you need to do to start using Seman=
+tic
+Versioning is to declare that you are doing so and then follow the rules. L=
+ink
+to this website from your README so others know the rules and can benefit f=
+rom
+them.</p>
+
+<h2 id=3D"faq"><a class=3D"anchor-link" href=3D"https://semver.org/#faq"></=
+a>FAQ</h2>
+
+<h3 id=3D"how-should-i-deal-with-revisions-in-the-0yz-initial-development-p=
+hase"><a class=3D"anchor-link" href=3D"https://semver.org/#how-should-i-dea=
+l-with-revisions-in-the-0yz-initial-development-phase"></a>How should I dea=
+l with revisions in the 0.y.z initial development phase?</h3>
+
+<p>The simplest thing to do is start your initial development release at 0.=
+1.0
+and then increment the minor version for each subsequent release.</p>
+
+<h3 id=3D"how-do-i-know-when-to-release-100"><a class=3D"anchor-link" href=
+=3D"https://semver.org/#how-do-i-know-when-to-release-100"></a>How do I kno=
+w when to release 1.0.0?</h3>
+
+<p>If your software is being used in production, it should probably already=
+ be
+1.0.0. If you have a stable API on which users have come to depend, you sho=
+uld
+be 1.0.0. If you=E2=80=99re worrying a lot about backward compatibility, yo=
+u should
+probably already be 1.0.0.</p>
+
+<h3 id=3D"doesnt-this-discourage-rapid-development-and-fast-iteration"><a c=
+lass=3D"anchor-link" href=3D"https://semver.org/#doesnt-this-discourage-rap=
+id-development-and-fast-iteration"></a>Doesn=E2=80=99t this discourage rapi=
+d development and fast iteration?</h3>
+
+<p>Major version zero is all about rapid development. If you=E2=80=99re cha=
+nging the API
+every day you should either still be in version 0.y.z or on a separate
+development branch working on the next major version.</p>
+
+<h3 id=3D"if-even-the-tiniest-backward-incompatible-changes-to-the-public-a=
+pi-require-a-major-version-bump-wont-i-end-up-at-version-4200-very-rapidly"=
+><a class=3D"anchor-link" href=3D"https://semver.org/#if-even-the-tiniest-b=
+ackward-incompatible-changes-to-the-public-api-require-a-major-version-bump=
+-wont-i-end-up-at-version-4200-very-rapidly"></a>If even the tiniest backwa=
+rd incompatible changes to the public API require a major version bump, won=
+=E2=80=99t I end up at version 42.0.0 very rapidly?</h3>
+
+<p>This is a question of responsible development and foresight. Incompatibl=
+e
+changes should not be introduced lightly to software that has a lot of
+dependent code. The cost that must be incurred to upgrade can be significan=
+t.
+Having to bump major versions to release incompatible changes means you=E2=
+=80=99ll
+think through the impact of your changes, and evaluate the cost/benefit rat=
+io
+involved.</p>
+
+<h3 id=3D"documenting-the-entire-public-api-is-too-much-work"><a class=3D"a=
+nchor-link" href=3D"https://semver.org/#documenting-the-entire-public-api-i=
+s-too-much-work"></a>Documenting the entire public API is too much work!</h=
+3>
+
+<p>It is your responsibility as a professional developer to properly docume=
+nt
+software that is intended for use by others. Managing software complexity i=
+s a
+hugely important part of keeping a project efficient, and that=E2=80=99s ha=
+rd to do if
+nobody knows how to use your software, or what methods are safe to call. In
+the long run, Semantic Versioning, and the insistence on a well defined pub=
+lic
+API can keep everyone and everything running smoothly.</p>
+
+<h3 id=3D"what-do-i-do-if-i-accidentally-release-a-backward-incompatible-ch=
+ange-as-a-minor-version"><a class=3D"anchor-link" href=3D"https://semver.or=
+g/#what-do-i-do-if-i-accidentally-release-a-backward-incompatible-change-as=
+-a-minor-version"></a>What do I do if I accidentally release a backward inc=
+ompatible change as a minor version?</h3>
+
+<p>As soon as you realize that you=E2=80=99ve broken the Semantic Versionin=
+g spec, fix
+the problem and release a new minor version that corrects the problem and
+restores backward compatibility. Even under this circumstance, it is
+unacceptable to modify versioned releases. If it=E2=80=99s appropriate,
+document the offending version and inform your users of the problem so that
+they are aware of the offending version.</p>
+
+<h3 id=3D"what-should-i-do-if-i-update-my-own-dependencies-without-changing=
+-the-public-api"><a class=3D"anchor-link" href=3D"https://semver.org/#what-=
+should-i-do-if-i-update-my-own-dependencies-without-changing-the-public-api=
+"></a>What should I do if I update my own dependencies without changing the=
+ public API?</h3>
+
+<p>That would be considered compatible since it does not affect the public =
+API.
+Software that explicitly depends on the same dependencies as your package
+should have their own dependency specifications and the author will notice =
+any
+conflicts. Determining whether the change is a patch level or minor level
+modification depends on whether you updated your dependencies in order to f=
+ix
+a bug or introduce new functionality. We would usually expect additional co=
+de
+for the latter instance, in which case it=E2=80=99s obviously a minor level=
+ increment.</p>
+
+<h3 id=3D"what-if-i-inadvertently-alter-the-public-api-in-a-way-that-is-not=
+-compliant-with-the-version-number-change-ie-the-code-incorrectly-introduce=
+s-a-major-breaking-change-in-a-patch-release"><a class=3D"anchor-link" href=
+=3D"https://semver.org/#what-if-i-inadvertently-alter-the-public-api-in-a-w=
+ay-that-is-not-compliant-with-the-version-number-change-ie-the-code-incorre=
+ctly-introduces-a-major-breaking-change-in-a-patch-release"></a>What if I i=
+nadvertently alter the public API in a way that is not compliant with the v=
+ersion number change (i.e. the code incorrectly introduces a major breaking=
+ change in a patch release)?</h3>
+
+<p>Use your best judgment. If you have a huge audience that will be drastic=
+ally
+impacted by changing the behavior back to what the public API intended, the=
+n
+it may be best to perform a major version release, even though the fix coul=
+d
+strictly be considered a patch release. Remember, Semantic Versioning is al=
+l
+about conveying meaning by how the version number changes. If these changes
+are important to your users, use the version number to inform them.</p>
+
+<h3 id=3D"how-should-i-handle-deprecating-functionality"><a class=3D"anchor=
+-link" href=3D"https://semver.org/#how-should-i-handle-deprecating-function=
+ality"></a>How should I handle deprecating functionality?</h3>
+
+<p>Deprecating existing functionality is a normal part of software developm=
+ent and
+is often required to make forward progress. When you deprecate part of your
+public API, you should do two things: (1) update your documentation to let
+users know about the change, (2) issue a new minor release with the depreca=
+tion
+in place. Before you completely remove the functionality in a new major rel=
+ease
+there should be at least one minor release that contains the deprecation so
+that users can smoothly transition to the new API.</p>
+
+<h3 id=3D"does-semver-have-a-size-limit-on-the-version-string"><a class=3D"=
+anchor-link" href=3D"https://semver.org/#does-semver-have-a-size-limit-on-t=
+he-version-string"></a>Does SemVer have a size limit on the version string?=
+</h3>
+
+<p>No, but use good judgment. A 255 character version string is probably ov=
+erkill,
+for example. Also, specific systems may impose their own limits on the size=
+ of
+the string.</p>
+
+<h3 id=3D"is-v123-a-semantic-version"><a class=3D"anchor-link" href=3D"http=
+s://semver.org/#is-v123-a-semantic-version"></a>Is =E2=80=9Cv1.2.3=E2=80=9D=
+ a semantic version?</h3>
+
+<p>No, =E2=80=9Cv1.2.3=E2=80=9D is not a semantic version. However, prefixi=
+ng a semantic version
+with a =E2=80=9Cv=E2=80=9D is a common way (in English) to indicate it is a=
+ version number.
+Abbreviating =E2=80=9Cversion=E2=80=9D as =E2=80=9Cv=E2=80=9D is often seen=
+ with version control. Example:
+<code class=3D"language-plaintext highlighter-rouge">git tag v1.2.3 -m "Rel=
+ease version 1.2.3"</code>, in which case =E2=80=9Cv1.2.3=E2=80=9D is a tag
+name and the semantic version is =E2=80=9C1.2.3=E2=80=9D.</p>
+
+<h3 id=3D"is-there-a-suggested-regular-expression-regex-to-check-a-semver-s=
+tring"><a class=3D"anchor-link" href=3D"https://semver.org/#is-there-a-sugg=
+ested-regular-expression-regex-to-check-a-semver-string"></a>Is there a sug=
+gested regular expression (RegEx) to check a SemVer string?</h3>
+
+<p>There are two. One with named groups for those systems that support them
+(PCRE [Perl Compatible Regular Expressions, i.e. Perl, PHP and R], Python
+and Go).</p>
+
+<p>See: <a href=3D"https://regex101.com/r/Ly7O1x/3/">https://regex101.com/r=
+/Ly7O1x/3/</a></p>
+
+<div class=3D"language-plaintext highlighter-rouge"><div class=3D"highlight=
+"><pre class=3D"highlight"><code>^(?P&lt;major&gt;0|[1-9]\d*)\.(?P&lt;minor=
+&gt;0|[1-9]\d*)\.(?P&lt;patch&gt;0|[1-9]\d*)(?:-(?P&lt;prerelease&gt;(?:0|[=
+1-9]\d*|\d*[a-zA-Z-][0-9a-zA-Z-]*)(?:\.(?:0|[1-9]\d*|\d*[a-zA-Z-][0-9a-zA-Z=
+-]*))*))?(?:\+(?P&lt;buildmetadata&gt;[0-9a-zA-Z-]+(?:\.[0-9a-zA-Z-]+)*))?$
+</code></pre></div></div>
+
+<p>And one with numbered capture groups instead (so cg1 =3D major, cg2 =3D =
+minor,
+cg3 =3D patch, cg4 =3D prerelease and cg5 =3D buildmetadata) that is compat=
+ible
+with ECMA Script (JavaScript), PCRE (Perl Compatible Regular Expressions,
+i.e. Perl, PHP and R), Python and Go.</p>
+
+<p>See: <a href=3D"https://regex101.com/r/vkijKf/1/">https://regex101.com/r=
+/vkijKf/1/</a></p>
+
+<div class=3D"language-plaintext highlighter-rouge"><div class=3D"highlight=
+"><pre class=3D"highlight"><code>^(0|[1-9]\d*)\.(0|[1-9]\d*)\.(0|[1-9]\d*)(=
+?:-((?:0|[1-9]\d*|\d*[a-zA-Z-][0-9a-zA-Z-]*)(?:\.(?:0|[1-9]\d*|\d*[a-zA-Z-]=
+[0-9a-zA-Z-]*))*))?(?:\+([0-9a-zA-Z-]+(?:\.[0-9a-zA-Z-]+)*))?$
+</code></pre></div></div>
+
+<h2 id=3D"about"><a class=3D"anchor-link" href=3D"https://semver.org/#about=
+"></a>About</h2>
+
+<p>The Semantic Versioning specification was originally authored by <a href=
+=3D"https://tom.preston-werner.com/">Tom
+Preston-Werner</a>, inventor of Gravatar and
+cofounder of GitHub.</p>
+
+<p>If you=E2=80=99d like to leave feedback, please <a href=3D"https://githu=
+b.com/semver/semver/issues">open an issue on
+GitHub</a>.</p>
+
+<h2 id=3D"license"><a class=3D"anchor-link" href=3D"https://semver.org/#lic=
+ense"></a>License</h2>
+
+<p><a href=3D"https://creativecommons.org/licenses/by/3.0/">Creative Common=
+s =E2=80=95 CC BY 3.0</a></p>
+
+    </div>
+   =20
+ =20
+
+</body></html>
+------MultipartBoundary--hWLZRvb1cHMi8HUAvfsXbag53ZMuPKqiPto0j69u5c----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://semver.org/css/main.css
+
+@charset "utf-8";
+
+h1, h2, ol, ul { margin: 0px; padding: 0px; }
+
+html { font: 14.4px / 1.5 Helvetica, Arial, sans-serif; }
+
+body { margin: 0px auto; padding: 0px 10%; max-width: 710px; color: rgb(0, =
+0, 0); background-color: rgb(255, 255, 255); }
+
+pre { overflow: auto; }
+
+html { text-size-adjust: 100%; }
+
+h1, h2, h3 { text-align: center; }
+
+h1 { font-size: 43px; margin: 1.1em 0px 0.7em; }
+
+h2 { margin: 2.1em 0px 0.7em; font-size: 24px; }
+
+h3 { text-align: left; font-size: 15.8px; margin-bottom: 0.6em; }
+
+html[dir=3D"rtl"] h3 { text-align: right; }
+
+a { color: rgb(0, 0, 153); }
+
+a:hover, a:focus { color: rgb(0, 0, 0); }
+
+ol, ul { padding-left: 1.5em; }
+
+html[dir=3D"rtl"] ol, html[dir=3D"rtl"] ul { padding-left: 0px; padding-rig=
+ht: 1.5em; }
+
+p { margin: 0px 0px 1em; }
+
+@media print {
+  body { width: 100%; }
+  h1, h2, h3 { font-weight: bold; }
+  a::after { content: " <" attr(href) ">"; font-size: 90%; }
+}
+
+ul.nav { background-color: rgb(51, 51, 51); list-style-type: none; margin: =
+0px; padding: 0.5em 0px; overflow: hidden; }
+
+ul.nav li { display: inline; font-weight: bold; margin: 0px 0.5em; white-sp=
+ace: nowrap; }
+
+ul.nav li a { color: white; }
+
+ul.lang { background-color: white; display: flex; flex-wrap: wrap; justify-=
+content: space-between; }
+
+ul.lang li a { color: black; }
+
+#spec a.anchor-link { opacity: 0; background: url("data:image/svg+xml;base6=
+4,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+C=
+jxzdmcgd2lkdGg9IjIwcHgiIGhlaWdodD0iMTBweCIgdmlld0JveD0iMCAwIDIwIDEwIiB2ZXJz=
+aW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms=
+9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPGRlZnM+PC9kZWZzPgogICAgPG=
+cgaWQ9IlBhZ2UtMSIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiI=
+GZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGcgaWQ9ImxpbmsiIGZpbGw9IiNGRjUyMzEi=
+PgogICAgICAgICAgICA8cGF0aCBkPSJNMTUsMCBMMTIuMzA0Njg3NSwwIEMxMy4yNDIxODc1LDA=
+uNjI1IDE0LjEyMTA5MzgsMS43MzgyODEyNSAxNC4zOTQ1MzEyLDIuNSBMMTQuOTgwNDY4OCwyLj=
+UgQzE2LjI1LDIuNSAxNy40ODA0Njg4LDMuNzUgMTcuNDgwNDY4OCw1IEMxNy40ODA0Njg4LDYuM=
+jUgMTYuMjEwOTM3NSw3LjUgMTQuOTgwNDY4OCw3LjUgTDExLjIzMDQ2ODgsNy41IEMxMCw3LjUg=
+OC43MzA0Njg3NSw2LjI1IDguNzMwNDY4NzUsNSBDOC43MzA0Njg3NSw0LjU1MDc4MTI1IDguODY=
+3MTg3NSw0LjEyMTA5Mzc1IDkuMDgyMDMxMjUsMy43NSBMNi40MDYyNSwzLjc1IEM2LjMwODU5Mz=
+c1LDQuMTYwMTU2MjUgNi4yNSw0LjU3MDMxMjUgNi4yNSw1IEM2LjI1LDcuNSA4LjczMDQ2ODc1L=
+DEwIDExLjIzMDQ2ODgsMTAgTDE1LDEwIEMxNy41LDEwIDIwLDcuNSAyMCw1IEMyMCwyLjUgMTcu=
+NSwwIDE1LDAgTDE1LDAgWiBNNS42MDU0Njg3NSw3LjUgTDUuMDE5NTMxMjUsNy41IEMzLjc1LDc=
+uNSAyLjUxOTUzMTI1LDYuMjUgMi41MTk1MzEyNSw1IEMyLjUxOTUzMTI1LDMuNzUgMy43ODkwNj=
+I1LDIuNSA1LjAxOTUzMTI1LDIuNSBMOC43Njk1MzEyNSwyLjUgQzEwLDIuNSAxMS4yNjk1MzEyL=
+DMuNzUgMTEuMjY5NTMxMiw1IEMxMS4yNjk1MzEyLDUuNDQ5MjE4NzUgMTEuMTMyODEyNSw1Ljg3=
+ODkwNjI1IDEwLjkxNzk2ODgsNi4yNSBMMTMuNTkzNzUsNi4yNSBDMTMuNjkxNDA2Miw1LjgzOTg=
+0Mzc1IDEzLjc1LDUuNDI5Njg3NSAxMy43NSw1IEMxMy43NSwyLjUgMTEuMjY5NTMxMiwwIDguNz=
+Y5NTMxMjUsMCBMNSwwIEMyLjUsMCAwLDIuNSAwLDUgQzAsNy41IDIuNSwxMCA1LDEwIEw3LjY5N=
+TMxMjUsMTAgQzYuNzU3ODEyNSw5LjM3NSA1Ljg3ODkwNjI1LDguMjYxNzE4NzUgNS42MDU0Njg3=
+NSw3LjUgTDUuNjA1NDY4NzUsNy41IFoiIGlkPSJTaGFwZSI+PC9wYXRoPgogICAgICAgIDwvZz4=
+KICAgIDwvZz4KPC9zdmc+") center center no-repeat; position: absolute; margin=
+-left: -1em; height: 1em; width: 20px; text-decoration: none; }
+
+html[dir=3D"rtl"] #spec a.anchor-link { background-position-x: 100%; margin=
+-left: 0px; margin-right: -1em; padding-right: 0px; padding-left: 0.5em; }
+
+#spec h1 a.anchor-link, #spec h2 a.anchor-link, #spec h3 a.anchor-link { he=
+ight: calc(1.5em); }
+
+#spec h1 a.anchor-link { margin-left: -0.6em; }
+
+html[dir=3D"rtl"] #spec h1 a.anchor-link { margin-right: -0.6em; margin-lef=
+t: 0px; }
+
+#spec h3 a.anchor-link { margin-left: -1.5em; }
+
+html[dir=3D"rtl"] #spec h3 a.anchor-link { margin-left: 0px; margin-right: =
+-1.5em; }
+
+#spec li a.anchor-link { margin-top: 0.1em; margin-left: -3em; }
+
+html[dir=3D"rtl"] #spec li a.anchor-link { margin-left: 0px; margin-right: =
+-3em; }
+
+#spec [id] { position: relative; }
+
+#spec [id]:hover > .anchor-link, .anchor-link:focus { opacity: 1; }
+------MultipartBoundary--hWLZRvb1cHMi8HUAvfsXbag53ZMuPKqiPto0j69u5c------
