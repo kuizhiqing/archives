@@ -1,0 +1,3258 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: https://www.open-mpi.org/faq/?category=tuning
+Subject: FAQ: General run-time tuning
+Date: Mon, 22 Jan 2024 13:38:08 +0800
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--SKTECRLA4kS5daPK4it3G79vbshDyD7rkJjmll6aJf----"
+
+
+------MultipartBoundary--SKTECRLA4kS5daPK4it3G79vbshDyD7rkJjmll6aJf----
+Content-Type: text/html
+Content-ID: <frame-31145A6B46EB44D693E436800D72EBD6@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://www.open-mpi.org/faq/?category=tuning
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/htm=
+l4/strict.dtd"><html><head><meta http-equiv=3D"Content-Type" content=3D"tex=
+t/html; charset=3DUTF-8"><link rel=3D"stylesheet" type=3D"text/css" href=3D=
+"cid:css-61c115ca-dcd5-4528-8ba4-a42fb402c955@mhtml.blink" />
+ =20
+<meta name=3D"keywords" content=3D"MPI, Open MPI, Open-MPI, OpenMPI, parall=
+el computing, HPC, high performance computing, beowulf, linux, cluster, par=
+allel, distributed">
+  <link rel=3D"shortcut icon" href=3D"https://www.open-mpi.org/favicon.ico"=
+>
+
+  <title>FAQ:
+General run-time tuning</title>
+<meta name=3D"google-site-verification" content=3D"Mo383nPcTIxtCpIPubkJdwBN=
+mCY8iwPIrkxy4n9qBwY">
+</head><body><bogus not_found=3D"1">
+
+
+
+<a name=3D"top"></a>
+
+<!-- START MAIN TABLE -->
+<table width=3D"98%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<colgroup>
+  <col width=3D"10%">
+  <col>
+
+  <!-- Title area -->
+  </colgroup><tbody><tr>
+    <td class=3D"logobox" valign=3D"center" align=3D"center" rowspan=3D"2" =
+width=3D"10%">
+      <a href=3D"https://www.open-mpi.org/"><img src=3D"https://www.open-mp=
+i.org/images/open-mpi-logo.png" width=3D"129" height=3D"128" alt=3D"Open MP=
+I logo" border=3D"0"></a>
+    </td>
+    <td valign=3D"center" width=3D"90%">
+      <h1 class=3D"doctitle">FAQ:<br>
+General run-time tuning</h1>
+    </td>
+  </tr>
+
+  <!-- Quick bar -->
+  <tr>
+    <!-- one td taken by logo -->
+    <td height=3D"1" valign=3D"BOTTOM" width=3D"90%">
+    <table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+    <tbody><tr>
+
+    <td class=3D"quickbar" valign=3D"top" align=3D"left" height=3D"16" widt=
+h=3D"1">
+     <img src=3D"https://www.open-mpi.org/images/left-e0-2.gif">
+    </td>
+
+    <td>
+    <table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"5">
+      <tbody><tr>
+        <form action=3D"https://www.open-mpi.org/includes/do-search.php" to=
+purl=3D".." method=3D"post"></form>
+        <td class=3D"quickbar" valign=3D"center" align=3D"right">
+	<span class=3D"divider">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+	<a href=3D"https://www.open-mpi.org/" class=3D"quickbar">Home</a>
+	<span class=3D"divider">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+	<a href=3D"https://www.open-mpi.org/community/help/" class=3D"quickbar"><f=
+ont color=3D"red">Support</font></a>
+	<span class=3D"divider">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+	<a href=3D"https://www.open-mpi.org/faq/" class=3D"quickbar">FAQ</a>
+	<span class=3D"divider">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+=09
+<input name=3D"data" type=3D"text" class=3D"medium" size=3D"10" value=3D"Se=
+arch">
+<input type=3D"radio" name=3D"restrict" value=3D"all">all&nbsp;<input type=
+=3D"radio" name=3D"restrict" value=3D"/faq/" checked=3D"">just the FAQ
+<input id=3D"searchbttn" type=3D"submit" border=3D"0" class=3D"buttonred" v=
+alue=3D"&nbsp;=C2=BB&nbsp;">
+       </td>
+      =20
+      </tr>
+    </tbody></table>
+    </td>
+
+    <td class=3D"quickbar" valign=3D"top" align=3D"right" height=3D"16" wid=
+th=3D"1">
+     <img src=3D"https://www.open-mpi.org/images/right-e0-2.gif">
+    </td>
+
+    </tr>
+    </tbody></table>
+    </td>
+  </tr>
+
+  <!-- Main row -->
+  <tr>
+    <!-- Navigation bar -->
+    <td valign=3D"top" class=3D"navbarbox" width=3D"10%">
+      <table width=3D"100%" border=3D"0" cellpadding=3D"1" cellspacing=3D"0=
+">
+        <tbody><tr>
+          <td class=3D"navbarbox">
+            <table width=3D"168px" border=3D"0" cellpadding=3D"1" cellspaci=
+ng=3D"1">
+
+<tbody><tr><td class=3D"buttonbox">&nbsp;About</td></tr>
+
+              <tr>
+                <td class=3D"navbarsub">
+                  &nbsp;&nbsp;<a href=3D"https://www.open-mpi.org/papers/" =
+class=3D"navbarsub">Presentations</a>
+                </td>
+              </tr>
+              <tr>
+                <td class=3D"navbarsub">
+                  &nbsp;&nbsp;<a href=3D"https://www.open-mpi.org/about/mem=
+bers/" class=3D"navbarsub">Open MPI Team</a>
+                </td>
+              </tr>
+              <tr>
+                <td class=3D"navbarsub">
+                  &nbsp;&nbsp;<a href=3D"https://www.open-mpi.org/faq/" cla=
+ss=3D"navbarsub">FAQ</a>
+                </td>
+              </tr>
+              <tr>
+                <td class=3D"navbarsub2">
+                  &nbsp;&nbsp;&nbsp;&nbsp;<a href=3D"https://www.open-mpi.o=
+rg/faq/?category=3Dall" class=3D"navbarsub2">Rollup/ALL</a>
+                </td>
+              </tr>
+              <tr>
+                <td class=3D"navbarsub2b">
+                  &nbsp;&nbsp;&nbsp;&nbsp;General information
+                </td>
+              </tr>
+              <tr>
+                <td class=3D"navbarsub3">
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=
+=3D"https://www.open-mpi.org/faq/?category=3Dgeneral" class=3D"navbarsub3">=
+General information</a>
+                </td>
+              </tr>
+              <tr>
+                <td class=3D"navbarsub3">
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=
+=3D"https://www.open-mpi.org/faq/?category=3Dsupported-systems" class=3D"na=
+vbarsub3">Supported systems</a>
+                </td>
+              </tr>
+              <tr>
+                <td class=3D"navbarsub3">
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=
+=3D"https://www.open-mpi.org/faq/?category=3Dcontributing" class=3D"navbars=
+ub3">Contributing</a>
+                </td>
+              </tr>
+              <tr>
+                <td class=3D"navbarsub3">
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=
+=3D"https://www.open-mpi.org/faq/?category=3Ddevelopers" class=3D"navbarsub=
+3">Developer information</a>
+                </td>
+              </tr>
+              <tr>
+                <td class=3D"navbarsub3">
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=
+=3D"https://www.open-mpi.org/faq/?category=3Dsysadmin" class=3D"navbarsub3"=
+>Sysadmin information</a>
+                </td>
+              </tr>
+              <tr>
+                <td class=3D"navbarsub3">
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=
+=3D"https://www.open-mpi.org/faq/?category=3Dft" class=3D"navbarsub3">Fault=
+ Tolerance</a>
+                </td>
+              </tr>
+              <tr>
+                <td class=3D"navbarsub2b">
+                  &nbsp;&nbsp;&nbsp;&nbsp;Building
+                </td>
+              </tr>
+              <tr>
+                <td class=3D"navbarsub3">
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=
+=3D"https://www.open-mpi.org/faq/?category=3Dbuilding" class=3D"navbarsub3"=
+>Building Open MPI</a>
+                </td>
+              </tr>
+              <tr>
+                <td class=3D"navbarsub3">
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=
+=3D"https://www.open-mpi.org/faq/?category=3Dmpi-removed" class=3D"navbarsu=
+b3">Removed MPI constructs</a>
+                </td>
+              </tr>
+              <tr>
+                <td class=3D"navbarsub3">
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=
+=3D"https://www.open-mpi.org/faq/?category=3Dmpi-apps" class=3D"navbarsub3"=
+>Compiling MPI apps</a>
+                </td>
+              </tr>
+              <tr>
+                <td class=3D"navbarsub2b">
+                  &nbsp;&nbsp;&nbsp;&nbsp;Running Jobs
+                </td>
+              </tr>
+              <tr>
+                <td class=3D"navbarsub3">
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=
+=3D"https://www.open-mpi.org/faq/?category=3Drunning" class=3D"navbarsub3">=
+Running MPI jobs</a>
+                </td>
+              </tr>
+              <tr>
+                <td class=3D"navbarsub3">
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=
+=3D"https://www.open-mpi.org/faq/?category=3Dtroubleshooting" class=3D"navb=
+arsub3">Troubleshooting</a>
+                </td>
+              </tr>
+              <tr>
+                <td class=3D"navbarsub3">
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=
+=3D"https://www.open-mpi.org/faq/?category=3Ddebugging" class=3D"navbarsub3=
+">Parallel debugging</a>
+                </td>
+              </tr>
+              <tr>
+                <td class=3D"navbarsub3">
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=
+=3D"https://www.open-mpi.org/faq/?category=3Drsh" class=3D"navbarsub3">rsh/=
+ssh</a>
+                </td>
+              </tr>
+              <tr>
+                <td class=3D"navbarsub3">
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=
+=3D"https://www.open-mpi.org/faq/?category=3Dbproc" class=3D"navbarsub3">BP=
+roc</a>
+                </td>
+              </tr>
+              <tr>
+                <td class=3D"navbarsub3">
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=
+=3D"https://www.open-mpi.org/faq/?category=3Dtm" class=3D"navbarsub3">Torqu=
+e / PBS Pro</a>
+                </td>
+              </tr>
+              <tr>
+                <td class=3D"navbarsub3">
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=
+=3D"https://www.open-mpi.org/faq/?category=3Dslurm" class=3D"navbarsub3">Sl=
+urm</a>
+                </td>
+              </tr>
+              <tr>
+                <td class=3D"navbarsub3">
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=
+=3D"https://www.open-mpi.org/faq/?category=3Dsge" class=3D"navbarsub3">SGE<=
+/a>
+                </td>
+              </tr>
+              <tr>
+                <td class=3D"navbarsub3">
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=
+=3D"https://www.open-mpi.org/faq/?category=3Dlarge-clusters" class=3D"navba=
+rsub3">Large clusters</a>
+                </td>
+              </tr>
+              <tr>
+                <td class=3D"navbarsub2b">
+                  &nbsp;&nbsp;&nbsp;&nbsp;Tuning
+                </td>
+              </tr>
+              <tr>
+                <td class=3D"navbarsub3">
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=
+=3D"https://www.open-mpi.org/faq/?category=3Dtuning" class=3D"navbarsub3">G=
+eneral tuning</a>
+                </td>
+              </tr>
+              <tr>
+                <td class=3D"navbarsub3">
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=
+=3D"https://www.open-mpi.org/faq/?category=3Dsm" class=3D"navbarsub3">Share=
+d memory (Vader)</a>
+                </td>
+              </tr>
+              <tr>
+                <td class=3D"navbarsub3">
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=
+=3D"https://www.open-mpi.org/faq/?category=3Dtcp" class=3D"navbarsub3">TCP<=
+/a>
+                </td>
+              </tr>
+              <tr>
+                <td class=3D"navbarsub3">
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=
+=3D"https://www.open-mpi.org/faq/?category=3Dopenfabrics" class=3D"navbarsu=
+b3">IB, RoCE, iWARP</a>
+                </td>
+              </tr>
+              <tr>
+                <td class=3D"navbarsub3">
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=
+=3D"https://www.open-mpi.org/faq/?category=3Dopa" class=3D"navbarsub3">Omni=
+-Path</a>
+                </td>
+              </tr>
+              <tr>
+                <td class=3D"navbarsub3">
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=
+=3D"https://www.open-mpi.org/faq/?category=3Dperftools" class=3D"navbarsub3=
+">Performance tools</a>
+                </td>
+              </tr>
+              <tr>
+                <td class=3D"navbarsub3">
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=
+=3D"https://www.open-mpi.org/faq/?category=3Dompio" class=3D"navbarsub3">OM=
+PIO</a>
+                </td>
+              </tr>
+              <tr>
+                <td class=3D"navbarsub3">
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=
+=3D"https://www.open-mpi.org/faq/?category=3Dudapl" class=3D"navbarsub3">UD=
+APL</a>
+                </td>
+              </tr>
+              <tr>
+                <td class=3D"navbarsub3">
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=
+=3D"https://www.open-mpi.org/faq/?category=3Dmyrinet" class=3D"navbarsub3">=
+Myrinet</a>
+                </td>
+              </tr>
+              <tr>
+                <td class=3D"navbarsub2b">
+                  &nbsp;&nbsp;&nbsp;&nbsp;Platform
+                </td>
+              </tr>
+              <tr>
+                <td class=3D"navbarsub3">
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=
+=3D"https://www.open-mpi.org/faq/?category=3Dosx" class=3D"navbarsub3">OS X=
+</a>
+                </td>
+              </tr>
+              <tr>
+                <td class=3D"navbarsub3">
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=
+=3D"https://www.open-mpi.org/faq/?category=3Daix" class=3D"navbarsub3">AIX =
+(unsupported)</a>
+                </td>
+              </tr>
+              <tr>
+                <td class=3D"navbarsub2b">
+                  &nbsp;&nbsp;&nbsp;&nbsp;Contrib
+                </td>
+              </tr>
+              <tr>
+                <td class=3D"navbarsub3">
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=
+=3D"https://www.open-mpi.org/faq/?category=3Dvampirtrace" class=3D"navbarsu=
+b3">VampirTrace</a>
+                </td>
+              </tr>
+              <tr>
+                <td class=3D"navbarsub2b">
+                  &nbsp;&nbsp;&nbsp;&nbsp;Languages
+                </td>
+              </tr>
+              <tr>
+                <td class=3D"navbarsub3">
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=
+=3D"https://www.open-mpi.org/faq/?category=3Djava" class=3D"navbarsub3">Jav=
+a</a>
+                </td>
+              </tr>
+              <tr>
+                <td class=3D"navbarsub2b">
+                  &nbsp;&nbsp;&nbsp;&nbsp;CUDA-aware
+                </td>
+              </tr>
+              <tr>
+                <td class=3D"navbarsub3">
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=
+=3D"https://www.open-mpi.org/faq/?category=3Dbuildcuda" class=3D"navbarsub3=
+">Building CUDA-aware</a>
+                </td>
+              </tr>
+              <tr>
+                <td class=3D"navbarsub3">
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=
+=3D"https://www.open-mpi.org/faq/?category=3Druncuda" class=3D"navbarsub3">=
+Running CUDA-aware</a>
+                </td>
+              </tr>
+              <tr>
+                <td class=3D"navbarsub">
+                  &nbsp;&nbsp;<a href=3D"https://www.open-mpi.org/video/" c=
+lass=3D"navbarsub">Videos</a>
+                </td>
+              </tr>
+              <tr>
+                <td class=3D"navbarsub">
+                  &nbsp;&nbsp;<a href=3D"https://www.open-mpi.org/performan=
+ce/" class=3D"navbarsub">Performance</a>
+                </td>
+              </tr>
+<tr><td class=3D"buttonbox">&nbsp;Open MPI Software</td></tr>
+
+              <tr>
+                <td class=3D"navbarsub">
+                  &nbsp;&nbsp;<a href=3D"https://www.open-mpi.org/software/=
+" class=3D"navbarsub">Download</a>
+                </td>
+              </tr>
+              <tr>
+                <td class=3D"navbarsub">
+                  &nbsp;&nbsp;<a href=3D"https://www.open-mpi.org/doc/" cla=
+ss=3D"navbarsub">Documentation</a>
+                </td>
+              </tr>
+              <tr>
+                <td class=3D"navbarsub">
+                  &nbsp;&nbsp;<a href=3D"https://www.open-mpi.org/source/" =
+class=3D"navbarsub">Source Code Access</a>
+                </td>
+              </tr>
+              <tr>
+                <td class=3D"navbarsub">
+                  &nbsp;&nbsp;<a href=3D"https://github.com/open-mpi/ompi/i=
+ssues" class=3D"navbarsub">Bug Tracking</a>
+                </td>
+              </tr>
+              <tr>
+                <td class=3D"navbarsub">
+                  &nbsp;&nbsp;<a href=3D"https://mtt.open-mpi.org/" class=
+=3D"navbarsub">Regression Testing</a>
+                </td>
+              </tr>
+              <tr>
+                <td class=3D"navbarsub">
+                  &nbsp;&nbsp;<a href=3D"https://docs.open-mpi.org/en/main/=
+version-numbering.html" class=3D"navbarsub">Version Information</a>
+                </td>
+              </tr>
+<tr><td class=3D"buttonbox">&nbsp;Sub-Projects</td></tr>
+
+              <tr>
+                <td class=3D"navbarsub">
+                  &nbsp;&nbsp;<a href=3D"https://www.open-mpi.org/projects/=
+hwloc/" class=3D"navbarsub">Hardware Locality</a>
+                </td>
+              </tr>
+              <tr>
+                <td class=3D"navbarsub">
+                  &nbsp;&nbsp;<a href=3D"https://www.open-mpi.org/projects/=
+netloc/" class=3D"navbarsub">Network Locality</a>
+                </td>
+              </tr>
+              <tr>
+                <td class=3D"navbarsub">
+                  &nbsp;&nbsp;<a href=3D"https://www.open-mpi.org/projects/=
+mtt/" class=3D"navbarsub">MPI Testing Tool</a>
+                </td>
+              </tr>
+              <tr>
+                <td class=3D"navbarsub">
+                  &nbsp;&nbsp;<a href=3D"https://www.open-mpi.org/projects/=
+otpo/" class=3D"navbarsub">Open Tool for Parameter Optimization</a>
+                </td>
+              </tr>
+<tr><td class=3D"buttonbox">&nbsp;Community</td></tr>
+
+              <tr>
+                <td class=3D"navbarsub">
+                  &nbsp;&nbsp;<a href=3D"https://www.open-mpi.org/community=
+/lists/" class=3D"navbarsub">Mailing Lists</a>
+                </td>
+              </tr>
+              <tr>
+                <td class=3D"navbarsub">
+                  &nbsp;&nbsp;<a href=3D"https://docs.open-mpi.org/en/main/=
+getting-help.html" class=3D"navbarsub"><font color=3D"red">Getting Help/Sup=
+port</font></a>
+                </td>
+              </tr>
+              <tr>
+                <td class=3D"navbarsub">
+                  &nbsp;&nbsp;<a href=3D"https://www.open-mpi.org/community=
+/contribute/" class=3D"navbarsub">Contribute</a>
+                </td>
+              </tr>
+              <tr>
+                <td class=3D"navbarsub">
+                  &nbsp;&nbsp;<a href=3D"https://www.open-mpi.org/community=
+/contact.php" class=3D"navbarsub">Contact</a>
+                </td>
+              </tr>
+              <tr>
+                <td class=3D"navbarsub">
+                  &nbsp;&nbsp;<a href=3D"https://www.open-mpi.org/community=
+/license.php" class=3D"navbarsub">License</a>
+                </td>
+              </tr>
+<tr><td class=3D"buttonbox">&nbsp;</td></tr>
+
+            </tbody></table>
+          </td>
+       =20
+      </tr></tbody></table>
+    </td>
+
+    <!-- Main text box -->
+    <td valign=3D"top" width=3D"90%">
+      <table width=3D"100%" border=3D"0" cellpadding=3D"6" cellspacing=3D"0=
+">
+        <tbody><tr>
+          <td>
+      <table width=3D"100%" border=3D"0" cellpadding=3D"4" cellspacing=3D"0=
+">
+      <colgroup>
+      <col>
+        </colgroup><tbody><tr>
+          <td>
+          <!-- BEGIN MAIN TEXT -->
+
+<a href=3D"mailto:bogus@example.com" _trackevent",=3D"" "mails",=3D"" "clic=
+k",=3D"" "bogus@example.com"])"=3D""></a><p>Table of contents:</p>
+<p>
+</p><ol>
+<li><a href=3D"https://www.open-mpi.org/faq/?category=3Dtuning#mca-def">Wha=
+t is the Modular Component Architecture (MCA)?</a>
+</li><li><a href=3D"https://www.open-mpi.org/faq/?category=3Dtuning#mca-par=
+ams">What are MCA parameters?</a>
+</li><li><a href=3D"https://www.open-mpi.org/faq/?category=3Dtuning#framewo=
+rks">What frameworks are in Open MPI?</a>
+</li><li><a href=3D"https://www.open-mpi.org/faq/?category=3Dtuning#framewo=
+rks-v1.2-and-prior">What frameworks are in Open MPI v1.2 (and prior)?</a>
+</li><li><a href=3D"https://www.open-mpi.org/faq/?category=3Dtuning#framewo=
+rks-v1.3">What frameworks are in Open MPI v1.3?</a>
+</li><li><a href=3D"https://www.open-mpi.org/faq/?category=3Dtuning#framewo=
+rks-v1.4-and-later">What frameworks are in Open MPI v1.4 (and later)?</a>
+</li><li><a href=3D"https://www.open-mpi.org/faq/?category=3Dtuning#compone=
+nts">How do I know what components are in my Open MPI installation?</a>
+</li><li><a href=3D"https://www.open-mpi.org/faq/?category=3Dtuning#install=
+-components">How do I install my own components into an Open MPI installati=
+on?</a>
+</li><li><a href=3D"https://www.open-mpi.org/faq/?category=3Dtuning#availab=
+le-mca-params">How do I know what MCA parameters are available?</a>
+</li><li><a href=3D"https://www.open-mpi.org/faq/?category=3Dtuning#setting=
+-mca-params">How do I set the value of MCA parameters?</a>
+</li><li><a href=3D"https://www.open-mpi.org/faq/?category=3Dtuning#amca-pa=
+ram-files">What are Aggregate MCA (AMCA) parameter files?</a>
+</li><li><a href=3D"https://www.open-mpi.org/faq/?category=3Dtuning#tune-pa=
+ram-files">How do I set application specific environment variables in globa=
+l
+parameter files?</a>
+</li><li><a href=3D"https://www.open-mpi.org/faq/?category=3Dtuning#selecti=
+ng-components">How do I select which components are used?</a>
+</li><li><a href=3D"https://www.open-mpi.org/faq/?category=3Dtuning#paffini=
+ty-defs">What is processor affinity?  Does Open MPI support it?</a>
+</li><li><a href=3D"https://www.open-mpi.org/faq/?category=3Dtuning#maffini=
+ty-defs">What is memory affinity?  Does Open MPI support it?</a>
+</li><li><a href=3D"https://www.open-mpi.org/faq/?category=3Dtuning#using-p=
+affinity">How do I tell Open MPI to use processor and/or memory affinity?</=
+a>
+</li><li><a href=3D"https://www.open-mpi.org/faq/?category=3Dtuning#using-p=
+affinity-v1.2">How do I tell Open MPI to use processor and/or memory affini=
+ty
+in Open MPI v1.2.x?  (What is <tt>mpi_paffinity_alone</tt>?)</a>
+</li><li><a href=3D"https://www.open-mpi.org/faq/?category=3Dtuning#using-p=
+affinity-v1.3">How do I tell Open MPI to use processor and/or memory affini=
+ty
+in Open MPI v1.3.x?  (What are rank files?)</a>
+</li><li><a href=3D"https://www.open-mpi.org/faq/?category=3Dtuning#using-p=
+affinity-v1.4">How do I tell Open MPI to use processor and/or memory affini=
+ty
+in Open MPI v1.4.x?  (How do I use the <tt>--by*</tt> and <tt>--bind-to-*</=
+tt> options?)</a>
+</li><li><a href=3D"https://www.open-mpi.org/faq/?category=3Dtuning#using-p=
+affinity-v1.5">How do I tell Open MPI to use processor and/or memory affini=
+ty
+in Open MPI v1.5.x?</a>
+</li><li><a href=3D"https://www.open-mpi.org/faq/?category=3Dtuning#using-p=
+affinity-v1.6">How do I tell Open MPI to use processor and/or memory affini=
+ty
+in Open MPI v1.6 (and beyond)?</a>
+</li><li><a href=3D"https://www.open-mpi.org/faq/?category=3Dtuning#fork-wa=
+rning">Does Open MPI support calling fork(), system(), or popen() in MPI pr=
+ocesses?</a>
+</li><li><a href=3D"https://www.open-mpi.org/faq/?category=3Dtuning#running=
+-perf-numbers">I want to run some performance benchmarks with Open MPI.  Ho=
+w do I do that?</a>
+</li><li><a href=3D"https://www.open-mpi.org/faq/?category=3Dtuning#imb-win=
+-free-error">I am getting a MPI_Win_free error from IMB-EXT =E2=80=94 what =
+do I do?</a>
+</li></ol>
+<p></p>
+
+<!--------------------------------------- -->
+<a name=3D"mca-def"></a>
+<p></p><hr><p></p>
+
+<table width=3D"100%" cellpadding=3D"5" border=3D"0">
+<tbody><tr><td class=3D"faq_question">1. What is the Modular Component Arch=
+itecture (MCA)?</td></tr>
+</tbody></table>
+<p></p>
+
+<p>The Modular Component Architecture (MCA) is the backbone for
+much of Open MPI's functionality.  It is a series of <em>frameworks</em>,
+<em>components</em>, and <em>modules</em> that are assembled at run-time to=
+ create
+an MPI implementation.
+
+</p><p><strong>Frameworks:</strong> An MCA framework manages zero or more c=
+omponents at run-time
+and is targeted at a specific task (e.g., providing MPI collective
+operation functionality).  Each MCA framework supports a single
+component type, but may support multiple versions of that type.  The
+framework uses the services from the MCA base functionality to find
+and/or load components.
+
+</p><p><strong>Components:</strong> An MCA component is an implementation o=
+f a framework's
+interface.  It is a standalone collection of code that can be bundled
+into a plugin that can be inserted into the Open MPI code base,
+either at run-time and/or compile-time.
+
+</p><p><strong>Modules:</strong> An MCA module is an instance of a componen=
+t (in the C++
+sense of the word "instance"; an MCA component is analogous to a C++
+class).  For example, if a node running an Open MPI application has
+multiple ethernet NICs, the Open MPI application will contain one TCP
+MPI point-to-point <em>component</em>, but two TCP point-to-point <em>modul=
+es</em>.
+
+</p><p>Frameworks, components, and modules can be dynamic or static.  That
+is, they can be available as plugins or they may be compiled statically
+into libraries (e.g., libmpi).
+</p>
+
+<!--------------------------------------- -->
+<a name=3D"mca-params"></a>
+<p></p><hr><p></p>
+
+<table width=3D"100%" cellpadding=3D"5" border=3D"0">
+<tbody><tr><td class=3D"faq_question">2. What are MCA parameters?</td></tr>
+</tbody></table>
+<p></p>
+
+<p>MCA parameters are the basic unit of run-time tuning for Open
+MPI.  They are simple "key =3D value" pairs that are used extensively
+throughout the code base.  The general rules of thumb that the
+developers use are:
+
+</p><p></p><ul>
+<li>Instead of using a constant for an important value, make it an MCA
+parameter.</li>
+<li>If a task can be implemented in multiple, user-discernible ways,
+implement as many as possible and make choosing between them be an MCA
+parameter.</li>
+</ul>
+
+<p>For example, an easy MCA parameter to describe is the boundary between
+short and long messages in TCP wire-line transmissions.  "Short"
+messages are sent eagerly whereas "long" messages use a rendezvous
+protocol.  The decision point between these two protocols is the
+overall size of the message (in bytes).  By making this value an MCA
+parameter, it can be changed at run-time by the user or system
+administrator to use a sensible value for a particular environment or
+set of hardware (e.g., a value suitable for 100 Mbps Ethernet is
+probably not suitable for Gigabit Ethernet, and may require a
+different value for 10 Gigabit Ethernet).
+
+</p><p>Note that MCA parameters may be set in several different ways
+(described in another FAQ entry).  This allows, for example, system
+administrators to fine-tune the Open MPI installation for their
+hardware / environment such that normal users can simply use the
+default values.
+
+</p><p>More specifically, HPC environments =E2=80=94 and the applications t=
+hat run
+on them =E2=80=94 tend to be unique.  Providing extensive run-time tuning
+capabilities through MCA parameters allows the customization of Open
+MPI to each system's / user's / application's particular needs.</p>
+
+<!--------------------------------------- -->
+<a name=3D"frameworks"></a>
+<p></p><hr><p></p>
+
+<table width=3D"100%" cellpadding=3D"5" border=3D"0">
+<tbody><tr><td class=3D"faq_question">3. What frameworks are in Open MPI?</=
+td></tr>
+</tbody></table>
+<p></p>
+
+<p>There are three types of frameworks in Open MPI: those in the
+MPI layer (OMPI), those in the run-time layer (ORTE), and those in the
+operating system / platform layer (OPAL).
+
+</p><p>The specific list of frameworks varies between each major release
+series of Open MPI.  See the links below to FAQ entries for specific
+versions of Open MPI:
+
+</p><p></p><ul>
+<li> <a href=3D"https://www.open-mpi.org/faq/?category=3Dtuning#frameworks-=
+v1.2-and-prior">The Open MPI v1.2 series
+(and prior)</a></li>
+<li> <a href=3D"https://www.open-mpi.org/faq/?category=3Dtuning#frameworks-=
+v1.3">The Open MPI v1.3 series</a></li>
+<li> <a href=3D"https://www.open-mpi.org/faq/?category=3Dtuning#frameworks-=
+v1.4-and-later">The Open MPI v1.4 series (and later)</a></li>
+</ul><p></p>
+
+<!--------------------------------------- -->
+<a name=3D"frameworks-v1.2-and-prior"></a>
+<p></p><hr><p></p>
+
+<table width=3D"100%" cellpadding=3D"5" border=3D"0">
+<tbody><tr><td class=3D"faq_question">4. What frameworks are in Open MPI v1=
+.2 (and prior)?</td></tr>
+</tbody></table>
+<p></p>
+
+<p>The comprehensive list of frameworks in Open MPI is
+continually being augmented.  As of August 2005, here is the current
+list:
+
+</p><p><strong>OMPI frameworks</strong>
+</p><ul>
+<li> <strong>allocator:</strong> Memory allocator
+</li><li> <strong>bml:</strong> BTL management layer (managing multiple dev=
+ices)</li>
+<li> <strong>btl:</strong> Byte transfer layer (point-to-point byte movemen=
+t)</li>
+<li> <strong>coll:</strong> MPI collective algorithms</li>
+<li> <strong>io:</strong> MPI-2 I/O functionality</li>
+<li> <strong>mpool:</strong> Memory pool management</li>
+<li> <strong>pml:</strong> Point-to-point management layer (fragmenting, re=
+assembly,
+top-layer protocols, etc.)</li>
+<li> <strong>osc</strong>: MPI-2 one-sided communication</li>
+<li> <strong>ptl:</strong> (outdated / deprecated) MPI point-to-point trans=
+port layer
+</li><li> <strong>rcache:</strong> Memory registration management</li>
+<li> <strong>topo:</strong> MPI topology information</li>
+</ul>
+
+<p><strong>ORTE frameworks</strong>
+
+</p><p></p><ul>
+<li> <strong>errmgr:</strong> Error manager</li>
+<li> <strong>gpr:</strong> General purpose registry</li>
+<li> <strong>iof:</strong> I/O forwarding</li>
+<li> <strong>ns:</strong> Name server</li>
+<li> <strong>oob:</strong> Out-of-band communication</li>
+<li> <strong>pls:</strong> Process launch subsystem</li>
+<li> <strong>ras:</strong> Resource allocation subsystem</li>
+<li> <strong>rds:</strong> Resource discovery subsystem</li>
+<li> <strong>rmaps:</strong> Resource mapping subsystem</li>
+<li> <strong>rmgr:</strong> Resource manager (upper meta layer for all othe=
+r Resource
+frameworks)</li>
+<li> <strong>rml:</strong> Remote messaging layer (routing of OOB messages)=
+</li>
+<li> <strong>schema:</strong> Name schemas</li>
+<li> <strong>sds:</strong> Startup discovery services</li>
+<li> <strong>soh:</strong> State of health</li>
+</ul>
+
+<p><strong>OPAL frameworks</strong>
+
+</p><p></p><ul>
+<li> <strong>maffinity:</strong> Memory affinity</li>
+<li> <strong>memory:</strong> Memory hooks</li>
+<li> <strong>paffinity:</strong> Processor affinity</li>
+<li> <strong>timer:</strong> High-resolution timers</li>
+</ul>
+<p></p>
+
+<!--------------------------------------- -->
+<a name=3D"frameworks-v1.3"></a>
+<p></p><hr><p></p>
+
+<table width=3D"100%" cellpadding=3D"5" border=3D"0">
+<tbody><tr><td class=3D"faq_question">5. What frameworks are in Open MPI v1=
+.3?</td></tr>
+</tbody></table>
+<p></p>
+
+<p>The comprehensive list of frameworks in Open MPI is
+continually being augmented.  As of November 2008, here is the current
+list in the Open MPI v1.3 series:
+
+</p><p><strong>OMPI frameworks</strong>
+</p><ul>
+<li> <strong>allocator:</strong> Memory allocator</li>
+<li> <strong>bml:</strong> BTL management layer</li>
+<li> <strong>btl:</strong> MPI point-to-point Byte Transfer Layer, used for=
+ MPI
+            point-to-point messages on some types of networks</li>
+<li> <strong>coll:</strong> MPI collective algorithms</li>
+<li> <strong>crcp:</strong> Checkpoint/restart coordination protocol</li>
+<li> <strong>dpm:</strong> MPI-2 dynamic process management</li>
+<li> <strong>io:</strong> MPI-2 I/O</li>
+<li> <strong>mpool:</strong> Memory pooling</li>
+<li> <strong>mtl:</strong> Matching transport layer, used for MPI point-to-=
+point
+           messages MPI-2 one-sided communications</li>
+<li> <strong>pml:</strong> MPI point-to-point management layer</li>
+<li> <strong>pubsub:</strong> MPI-2 publish/subscribe management</li>
+<li> <strong>rcache:</strong> Memory registration cache</li>
+<li> <strong>topo:</strong> MPI topology routines</li>
+</ul>
+
+<p><strong>ORTE frameworks</strong>
+
+</p><p></p><ul>
+<li> <strong>errmgr:</strong> RTE error manager</li>
+<li> <strong>ess:</strong> RTE environment-specific services</li>
+<li> <strong>filem:</strong> Remote file management</li>
+<li> <strong>grpcomm:</strong> RTE group communications</li>
+<li> <strong>iof:</strong> I/O forwarding</li>
+<li> <strong>odls:</strong> OpenRTE daemon local launch subsystem</li>
+<li> <strong>oob:</strong> Out of band messaging</li>
+<li> <strong>plm:</strong> Process lifecycle management</li>
+<li> <strong>ras:</strong> Resource allocation system</li>
+<li> <strong>rmaps:</strong> Resource mapping system</li>
+<li> <strong>rml:</strong> RTE message layer</li>
+<li> <strong>routed:</strong> Routing table for the RML</li>
+<li> <strong>snapc:</strong> Snapshot coordination</li>
+</ul>
+
+<p><strong>OPAL frameworks</strong>
+
+</p><p></p><ul>
+<li> <strong>backtrace:</strong> Debugging call stack backtrace support</li=
+>
+<li> <strong>carto:</strong> Cartography (host/network mapping) support</li=
+>
+<li> <strong>crs:</strong> Checkpoint and restart service</li>
+<li> <strong>installdirs:</strong> Installation directory relocation servic=
+es</li>
+<li> <strong>maffinity:</strong> Memory affinity</li>
+<li> <strong>memchecker:</strong> Run-time memory checking</li>
+<li> <strong>memcpy:</strong> Memcpy copy support</li>
+<li> <strong>memory:</strong> Memory management hooks</li>
+<li> <strong>paffinity:</strong> Processor affinity</li>
+<li> <strong>timer:</strong> High-resolution timers</li>
+</ul><p></p>
+
+<!--------------------------------------- -->
+<a name=3D"frameworks-v1.4-and-later"></a>
+<p></p><hr><p></p>
+
+<table width=3D"100%" cellpadding=3D"5" border=3D"0">
+<tbody><tr><td class=3D"faq_question">6. What frameworks are in Open MPI v1=
+.4 (and later)?</td></tr>
+</tbody></table>
+<p></p>
+
+<p>The comprehensive list of frameworks in Open MPI tends to
+change over time.  The README file in each Open MPI version maintains
+a list of the frameworks that are contained in that version.
+
+</p><p>It is best to consult that README file; it is kept up to date.</p>
+
+<!--------------------------------------- -->
+<a name=3D"components"></a>
+<p></p><hr><p></p>
+
+<table width=3D"100%" cellpadding=3D"5" border=3D"0">
+<tbody><tr><td class=3D"faq_question">7. How do I know what components are =
+in my Open MPI installation?</td></tr>
+</tbody></table>
+<p></p>
+
+<p>The <code>ompi_info</code> command, in addition to providing a wealth of
+configuration information about your Open MPI installation, will list
+all components (and the frameworks that they belong to) that are
+available.  These include system-provided components as well as
+user-provided components.
+
+</p><p>Please note that starting with Open MPI v1.8, <code>ompi_info</code>=
+ categorizes its
+parameter parameters in so-called levels, as defined by the MPI_T
+interface.  You will need to specify <code>--level 9</code> (or
+<code>--all</code>) to show <em>all</em> MCA parameters.  See
+<a href=3D"http://blogs.cisco.com/performance/open-mpi-and-the-mpi-3-mpi_t-=
+interface/">
+Jeff Squyres' Blog</a> for further information.</p>
+
+<!--------------------------------------- -->
+<a name=3D"install-components"></a>
+<p></p><hr><p></p>
+
+<table width=3D"100%" cellpadding=3D"5" border=3D"0">
+<tbody><tr><td class=3D"faq_question">8. How do I install my own components=
+ into an Open MPI installation?</td></tr>
+</tbody></table>
+<p></p>
+
+<p>By default, Open MPI looks in two places for components at
+run-time (in order):
+
+</p><p></p><ol>
+<li> <strong>$prefix/lib/openmpi/:</strong> This is the system-provided com=
+ponents
+directory, part of the installation tree of Open MPI itself.</li>
+<li> <strong>$HOME/.openmpi/components/:</strong> This is where users can d=
+rop their
+own components that will automatically be "seen" by Open MPI at
+run-time.  This is ideal for developmental, private, or otherwise
+unstable components.</li>
+</ol>
+
+<p>Note that the directories and search ordering used for finding
+components in Open MPI is, itself, an MCA parameter.  Setting the
+<code>mca_component_path</code> changes this value (a colon-delimited list =
+of
+directories).
+
+</p><p>Note also that components are only used on nodes where they are
+"visible". Hence, if your <code>$prefix/lib/openmpi/</code> is a directory =
+on a
+local disk that is not shared via a network filesystem to other nodes
+where you run MPI jobs, then components that are installed to that
+directory will <strong>only</strong> be used by MPI jobs running on the loc=
+al node.
+
+</p><p>More specifically: components have the same visibility as normal
+files.  If you need a component to be available to all nodes where you
+run MPI jobs, then you need to ensure that it is visible on all nodes
+(typically either by installing it on all nodes for non-networked
+filesystem installs, or by installing them in a directory that is
+visibile to all nodes via a networked filesystem).  Open MPI does not
+automatically send components to remote nodes when MPI jobs are run.</p>
+
+<!--------------------------------------- -->
+<a name=3D"available-mca-params"></a>
+<p></p><hr><p></p>
+
+<table width=3D"100%" cellpadding=3D"5" border=3D"0">
+<tbody><tr><td class=3D"faq_question">9. How do I know what MCA parameters =
+are available?</td></tr>
+</tbody></table>
+<p></p>
+
+<p>The <code>ompi_info</code> command can list the parameters for a given
+component, all the parameters for a specific framework, or all
+parameters.  Most parameters contain a description of the parameter;
+all will show the parameter's current value.
+
+</p><p>For example:
+
+</p><div class=3D"geshicode"><table class=3D"bash"><tbody><tr class=3D"li1"=
+><td class=3D"ln"><pre class=3D"de1">1
+2
+3
+4
+5
+6
+7
+</pre></td><td class=3D"de1"><pre class=3D"de1"><span class=3D"co0"># Start=
+ing with Open MPI v1.7, you must use "--level 9" to see</span>
+<span class=3D"co0"># all the MCA parameters (the default is "--level 1"):<=
+/span>
+<span class=3D"co4">shell$ </span><span class=3D"kw2">ompi_info</span> <spa=
+n class=3D"re5">--param</span> all all <span class=3D"re5">--level</span> <=
+span class=3D"nu0">9</span>
+&nbsp;
+<span class=3D"co0"># Before Open MPI v1.7, the "--level" command line opti=
+ons</span>
+<span class=3D"co0"># did not exist; do not use it.</span>
+<span class=3D"co4">shell$ </span><span class=3D"kw2">ompi_info</span> <spa=
+n class=3D"sy0"></span>--param all all<span class=3D"sy0"></span></pre></td=
+></tr></tbody></table></div>
+
+<p>Shows all the MCA parameters for all components that <code>ompi_info</co=
+de>
+finds, whereas:
+
+</p><div class=3D"geshicode"><table class=3D"bash"><tbody><tr class=3D"li1"=
+><td class=3D"ln"><pre class=3D"de1">1
+2
+3
+</pre></td><td class=3D"de1"><pre class=3D"de1"><span class=3D"co0"># All r=
+emaining examples assume Open MPI v1.7 or later (i.e.,</span>
+<span class=3D"co0"># they assume the use of the "--level" command line opt=
+ion)</span>
+<span class=3D"co4">shell$ </span><span class=3D"kw2">ompi_info</span> <spa=
+n class=3D"sy0"></span>--param btl all <span class=3D"re5">--level</span> <=
+span class=3D"nu0">9</span><span class=3D"sy0"></span></pre></td></tr></tbo=
+dy></table></div>
+
+<p>Shows all the MCA parameters for all BTL components that <code>ompi_info=
+</code>
+finds.  Finally:
+
+</p><div class=3D"geshicode"><table class=3D"bash"><tbody><tr class=3D"li1"=
+><td class=3D"ln"><pre class=3D"de1">1
+</pre></td><td class=3D"de1"><pre class=3D"de1"><span class=3D"co4">shell$ =
+</span><span class=3D"kw2">ompi_info</span> <span class=3D"sy0"></span>--pa=
+ram btl tcp <span class=3D"re5">--level</span> <span class=3D"nu0">9</span>=
+<span class=3D"sy0"></span></pre></td></tr></tbody></table></div>
+
+<p>Shows all the MCA parameters for the TCP BTL component.</p>
+
+<!--------------------------------------- -->
+<a name=3D"setting-mca-params"></a>
+<p></p><hr><p></p>
+
+<table width=3D"100%" cellpadding=3D"5" border=3D"0">
+<tbody><tr><td class=3D"faq_question">10. How do I set the value of MCA par=
+ameters?</td></tr>
+</tbody></table>
+<p></p>
+
+<p>There are three main ways to set MCA parameters, each of which
+are searched in order.
+
+</p><p></p><ol>
+<li> <strong>Command line:</strong> The highest-precedence method is settin=
+g MCA
+parameters on the command line.  For example:
+
+<div class=3D"geshicode"><table class=3D"bash"><tbody><tr class=3D"li1"><td=
+ class=3D"ln"><pre class=3D"de1">1
+</pre></td><td class=3D"de1"><pre class=3D"de1"><span class=3D"co4">shell$ =
+</span><span class=3D"kw2">mpirun</span> <span class=3D"re5">--mca</span> m=
+pi_show_handle_leaks <span class=3D"nu0">1</span> <span class=3D"re5">-np</=
+span> <span class=3D"nu0">4</span> a.out</pre></td></tr></tbody></table></d=
+iv>
+
+<p>This sets the MCA parameter <code>mpi_show_handle_leaks</code> to the va=
+lue of 1
+before running <code>a.out</code> with four processes.  In general, the for=
+mat
+used on the command line is "<code>--mca &lt;param_name&gt;
+&lt;value&gt;</code>".
+
+</p><p>Note that when setting multi-word values, you need to use quotes to =
+ensure that the shell and Open MPI understand that they are a single value.=
+  For example:
+
+</p><div class=3D"geshicode"><table class=3D"bash"><tbody><tr class=3D"li1"=
+><td class=3D"ln"><pre class=3D"de1">1
+</pre></td><td class=3D"de1"><pre class=3D"de1"><span class=3D"co4">shell$ =
+</span><span class=3D"kw2">mpirun</span> <span class=3D"re5">--mca</span> p=
+aram <span class=3D"st0">"value with multiple words"</span> ...</pre></td><=
+/tr></tbody></table></div></li>
+
+<p></p><li> <strong>Environment variable:</strong> Next, environment variab=
+les are searched.
+Any environment variable named <code>OMPI_MCA_&lt;param_name&gt;</code> wil=
+l be
+used.  For example, the following has the same effect as the previous
+example (for sh-flavored shells):
+
+<div class=3D"geshicode"><table class=3D"bash"><tbody><tr class=3D"li1"><td=
+ class=3D"ln"><pre class=3D"de1">1
+2
+3
+</pre></td><td class=3D"de1"><pre class=3D"de1"><span class=3D"co4">shell$ =
+</span><span class=3D"re2">OMPI_MCA_mpi_show_handle_leaks</span>=3D<span cl=
+ass=3D"nu0">1</span>
+<span class=3D"co4">shell$ </span><span class=3D"kw3">export</span> OMPI_MC=
+A_mpi_show_handle_leaks
+<span class=3D"co4">shell$ </span><span class=3D"kw2">mpirun</span> <span c=
+lass=3D"re5">-np</span> <span class=3D"nu0">4</span> a.out</pre></td></tr><=
+/tbody></table></div>
+
+<p>Or, for csh-flavored shells:
+
+</p><div class=3D"geshicode"><table class=3D"bash"><tbody><tr class=3D"li1"=
+><td class=3D"ln"><pre class=3D"de1">1
+2
+</pre></td><td class=3D"de1"><pre class=3D"de1">shell<span class=3D"sy0">%<=
+/span> setenv OMPI_MCA_mpi_show_handle_leaks <span class=3D"nu0">1</span>
+shell<span class=3D"sy0">%</span> <span class=3D"kw2">mpirun</span> <span c=
+lass=3D"re5">-np</span> <span class=3D"nu0">4</span> a.out</pre></td></tr><=
+/tbody></table></div>
+
+<p>Note that setting environment variables to values with multiple words
+requires quoting, such as:
+
+</p><div class=3D"geshicode"><table class=3D"bash"><tbody><tr class=3D"li1"=
+><td class=3D"ln"><pre class=3D"de1">1
+2
+3
+4
+5
+</pre></td><td class=3D"de1"><pre class=3D"de1"><span class=3D"co0"># sh-fl=
+avored shells</span>
+<span class=3D"co4">shell$ </span><span class=3D"re2">OMPI_MCA_param</span>=
+=3D<span class=3D"st0">"value with multiple words"</span>
+&nbsp;
+<span class=3D"co0"># csh-flavored shells</span>
+shell<span class=3D"sy0">%</span> setenv OMPI_MCA_param <span class=3D"st0"=
+>"value with multiple words"</span></pre></td></tr></tbody></table></div>
+
+<p></p></li><li> <strong>Aggregate MCA parameter files:</strong> Simple tex=
+t files can be used to
+set MCA parameter values for a specific application.  See <a href=3D"https:=
+//www.open-mpi.org/faq/?category=3Dtuning#amca-param-files">this FAQ entry<=
+/a> (Open MPI version 1.3
+and higher).</li>
+
+<p></p><li> <strong>Files:</strong> Finally, simple text files can be used =
+to set MCA
+parameter values.  Parameters are set one per line (comments are
+permitted).  For example:
+
+<div class=3D"geshicode"><table class=3D"make"><tbody><tr class=3D"li1"><td=
+ class=3D"ln"><pre class=3D"de1">1
+2
+3
+</pre></td><td class=3D"de1"><pre class=3D"de1"><span class=3D"co1"># This =
+is a comment</span>
+<span class=3D"co1"># Set the same MCA parameter as in previous examples</s=
+pan>
+mpi_show_handle_leaks <span class=3D"sy0">=3D</span> <span class=3D"nu0">1<=
+/span></pre></td></tr></tbody></table></div>
+
+<p>Note that quotes are <strong>not</strong> necessary for setting multi-wo=
+rd values in
+MCA parameter files.  Indeed, if you use quotes in the MCA parameter
+file, they will be used as part of the value itself.  For example:
+
+</p><div class=3D"geshicode"><table class=3D"make"><tbody><tr class=3D"li1"=
+><td class=3D"ln"><pre class=3D"de1">1
+2
+3
+</pre></td><td class=3D"de1"><pre class=3D"de1"><span class=3D"co1"># The f=
+ollowing two values are different:</span>
+param1 <span class=3D"sy0">=3D</span> value with multiple words
+param2 <span class=3D"sy0">=3D</span> <span class=3D"st0">"value with multi=
+ple words"</span></pre></td></tr></tbody></table></div>
+
+<p>By default, two files are searched (in order):
+
+</p><p></p><ol>
+<li> <strong>$HOME/.openmpi/mca-params.conf:</strong> The user-supplied set=
+ of
+values takes the highest precedence.</li>
+<li> <strong>$prefix/etc/openmpi-mca-params.conf:</strong> The system-suppl=
+ied set
+of values has a lower precedence.</li>
+</ol>
+
+<p>More specifically, the MCA parameter <code>mca_param_files</code> specif=
+ies a
+colon-delimited path of files to search for MCA parameters.  Files to
+the left have lower precedence; files to the right are higher
+precedence.
+
+</p><p>Keep in mind that, just like components, these parameter files are
+<strong>only</strong> relevant where they are "visible" (see <a href=3D"htt=
+ps://www.open-mpi.org/faq/?category=3Dtuning#install-components">this FAQ e=
+ntry</a>).  Specifically,
+Open MPI does not read all the values from these files during startup
+and then send them to all nodes in the job =E2=80=94 the files are read on
+each node during each process' startup.  This is intended behavior: it
+allows for per-node customization, which is especially relevant in
+heterogeneous environments.</p></li>
+</ol><p></p>
+
+<!--------------------------------------- -->
+<a name=3D"amca-param-files"></a>
+<p></p><hr><p></p>
+
+<table width=3D"100%" cellpadding=3D"5" border=3D"0">
+<tbody><tr><td class=3D"faq_question">11. What are Aggregate MCA (AMCA) par=
+ameter files?</td></tr>
+</tbody></table>
+<p></p>
+
+<p>Starting with version 1.3, aggregate MCA (AMCA) parameter
+files contain MCA parameter key/value pairs similar to the
+<code>$HOME/.openmpi/mca-params.conf</code> file described in <a href=3D"ht=
+tps://www.open-mpi.org/faq/?category=3Dtuning#setting-mca-params">this FAQ =
+entry</a>.
+
+</p><p>The motivation behind AMCA parameter sets came from the realization
+that for certain applications a large number of MCA parameters are
+required for the application to run well and/or as the user
+expects. Since these MCA parameters are application specific (or even
+application run specific) they should not be set in a global manner,
+but only pulled in as determined by the user.
+
+</p><p>MCA parameters set in AMCA parameter files will override any MCA
+parameters supplied in global parameter files (e.g.,
+<code>$HOME/.openmpi/mca-params.conf</code>), but not command line or envir=
+onment
+parameters.
+
+</p><p>AMCA parameter files are typically supplied on the command line via
+the <code>--am</code> option.
+
+</p><p>For example, consider an AMCA parameter file called <code>foo.conf</=
+code>
+placed in the same directory as the application <code>a.out</code>. A user
+will typically run the application as:
+
+</p><div class=3D"geshicode"><table class=3D"bash"><tbody><tr class=3D"li1"=
+><td class=3D"ln"><pre class=3D"de1">1
+</pre></td><td class=3D"de1"><pre class=3D"de1"><span class=3D"co4">shell$ =
+</span><span class=3D"kw2">mpirun</span> <span class=3D"re5">-np</span> <sp=
+an class=3D"nu0">2</span> a.out</pre></td></tr></tbody></table></div>
+
+<p>To use the <code>foo.conf</code> AMCA parameter file this command line
+changes to:
+
+</p><div class=3D"geshicode"><table class=3D"bash"><tbody><tr class=3D"li1"=
+><td class=3D"ln"><pre class=3D"de1">1
+</pre></td><td class=3D"de1"><pre class=3D"de1"><span class=3D"co4">shell$ =
+</span><span class=3D"kw2">mpirun</span> <span class=3D"re5">-np</span> <sp=
+an class=3D"nu0">2</span> <span class=3D"re5">--am</span> foo.conf a.out</p=
+re></td></tr></tbody></table></div>
+
+<p>If the user wants to override a parameter set in <code>foo.conf</code> t=
+hey
+can add it to the command line as seen below.
+
+</p><div class=3D"geshicode"><table class=3D"bash"><tbody><tr class=3D"li1"=
+><td class=3D"ln"><pre class=3D"de1">1
+</pre></td><td class=3D"de1"><pre class=3D"de1"><span class=3D"co4">shell$ =
+</span><span class=3D"kw2">mpirun</span> <span class=3D"re5">-np</span> <sp=
+an class=3D"nu0">2</span> <span class=3D"re5">--am</span> foo.conf <span cl=
+ass=3D"re5">-mca</span> btl tcp,self a.out</pre></td></tr></tbody></table><=
+/div>
+
+<p>AMCA parameter files can be coupled if more than one file is to be
+used. If we have another AMCA parameter file called <code>bar.conf</code>
+that we want to use, we add it to the command line as follows:
+
+</p><div class=3D"geshicode"><table class=3D"bash"><tbody><tr class=3D"li1"=
+><td class=3D"ln"><pre class=3D"de1">1
+</pre></td><td class=3D"de1"><pre class=3D"de1"><span class=3D"co4">shell$ =
+</span><span class=3D"kw2">mpirun</span> <span class=3D"re5">-np</span> <sp=
+an class=3D"nu0">2</span> <span class=3D"re5">--am</span> foo.conf:bar.conf=
+ a.out</pre></td></tr></tbody></table></div>
+
+<p>AMCA parameter files are loaded in priority order. This means that
+<code>foo.conf</code> AMCA file has priority over the <code>bar.conf</code>=
+ file. So
+if the <code>bar.conf</code> file sets the MCA parameter
+<code>mpi_leave_pinned=3D0</code> and the <code>foo.conf</code> file sets t=
+his MCA
+parameter to <code>mpi_leave_pinned=3D1</code> then the latter will be used=
+.
+
+</p><p>The location of AMCA parameter files are resolved in a similar way a=
+s
+the shell. If no path operator is provided (i.e., <code>foo.conf</code>) th=
+en
+Open MPI will search the <code>$SYSCONFDIR/amca-param-sets</code> directory=
+, then
+the current working directory. If a relative path is specified, then
+only that path will be searched (e.g., <code>./foo.conf</code>,
+<code>baz/foo.conf</code>). If an absolute path is specified, then only tha=
+t
+path will be searched (e.g., <code>/bip/boop/foo.conf</code>).
+
+</p><p>Though the typical use case for AMCA parameter files is to be
+specified on the command line, they can also be set as MCA parameters
+in the environment. The MCA parameter <code>mca_base_param_file_prefix</cod=
+e>
+contains a ':' separated list of AMCA parameter files exactly as they
+would be passed to the <code>--am</code> command line option. The MCA
+parameter <code>mca_base_param_file_path</code> specifies the path to searc=
+h for
+AMCA files with relative paths. By default this is
+<code>$SYSCONFDIR/amca-param-sets/:$CWD</code>.</p>
+
+<!--------------------------------------- -->
+<a name=3D"tune-param-files"></a>
+<p></p><hr><p></p>
+
+<table width=3D"100%" cellpadding=3D"5" border=3D"0">
+<tbody><tr><td class=3D"faq_question">12. How do I set application specific=
+ environment variables in global
+parameter files?</td></tr>
+</tbody></table>
+<p></p>
+
+<p>Starting with OMPI version 1.9, the <code>--am</code> option to supply
+AMCA parameter files (see <a href=3D"https://www.open-mpi.org/faq/?category=
+=3Dtuning#amca-param-files">this FAQ
+entry</a>) is deprecated. Users should instead use the <code>---tune</code>
+option. This option allows one to specify both mca parameters and
+environment variables from within a file using the same command line
+syntax.
+
+</p><p>The usage of the <code>--tune</code> option is the same as that for =
+the <code>--am</code>
+option except that <code>--tune</code> requires a single file or a comma
+delimited list of files, while a colon delimiter is used with the
+<code>--am</code> option.
+
+</p><p>A valid line in the file may contain zero or many <code>-x</code>, <=
+code>-mca</code>, or
+<code>--mca</code> arguments. If any argument is duplicated in the file, th=
+e
+last value read will be used.
+
+</p><p>Fox example, a file may contain the following line:
+</p><div class=3D"geshicode"><table class=3D"text"><tbody><tr class=3D"li1"=
+><td class=3D"ln"><pre class=3D"de1">1
+</pre></td><td class=3D"de1"><pre class=3D"de1">-x envar1 =3D value1 -mca p=
+aram1 value1 -x envar2 -mca param2 "value2"</pre></td></tr></tbody></table>=
+</div>
+
+<p>To use the <code>foo.conf</code> parameter file in order to run <code>a.=
+out</code>
+the command line looks as the following
+
+</p><div class=3D"geshicode"><table class=3D"bash"><tbody><tr class=3D"li1"=
+><td class=3D"ln"><pre class=3D"de1">1
+</pre></td><td class=3D"de1"><pre class=3D"de1"><span class=3D"co4">shell$ =
+</span><span class=3D"kw2">mpirun</span> <span class=3D"re5">-np</span> <sp=
+an class=3D"nu0">2</span> <span class=3D"re5">--tune</span> foo.conf a.out<=
+/pre></td></tr></tbody></table></div>
+
+<p>Similar to <code>--am</code> option, MCA parameters and environment spec=
+ified on
+the command line have higher precedence than variables specified in
+the file.
+
+</p><p>The <code>--tune</code> option can also be replaced by the MCA param=
+eter
+<code>mca_base_envar_file_prefix</code> which is similar to
+<code>mca_base_param_file_prefix</code> having the same meaning as the <cod=
+e>--am</code>
+option.</p>
+
+<!--------------------------------------- -->
+<a name=3D"selecting-components"></a>
+<p></p><hr><p></p>
+
+<table width=3D"100%" cellpadding=3D"5" border=3D"0">
+<tbody><tr><td class=3D"faq_question">13. How do I select which components =
+are used?</td></tr>
+</tbody></table>
+<p></p>
+
+<p>Each MCA framework has a top-level MCA parameter that helps
+guide which components are selected to be used at run-time.
+Specifically, there is an MCA parameter of the same name as each MCA
+framework that can be used to <em>include</em> or <em>exclude</em> componen=
+ts from a
+given run.
+
+</p><p>For example, the <code>btl</code> MCA parameter is used to control w=
+hich BTL
+components are used (e.g., MPI point-to-point communications; see <a href=
+=3D"https://www.open-mpi.org/faq/?category=3Dtuning#frameworks">this FAQ en=
+try</a> for a full list of MCA
+frameworks).  It can take as a value a comma-separated list of
+components with the optional prefix "<code>^</code>".  For example:
+
+</p><div class=3D"geshicode"><table class=3D"bash"><tbody><tr class=3D"li1"=
+><td class=3D"ln"><pre class=3D"de1">1
+2
+3
+4
+5
+6
+7
+8
+</pre></td><td class=3D"de1"><pre class=3D"de1"><span class=3D"co0"># Tell =
+Open MPI to exclude the tcp and openib BTL components</span>
+<span class=3D"co0"># and implicitly include all the rest</span>
+<span class=3D"co4">shell$ </span><span class=3D"kw2">mpirun</span> <span c=
+lass=3D"sy0"></span>--mca btl ^tcp,openib<span class=3D"sy0"></span> ...
+&nbsp;
+<span class=3D"co0"># Tell Open MPI to include *only* the components listed=
+ here and</span>
+<span class=3D"co0"># implicitly ignore all the rest (i.e., the loopback, s=
+hared memory,</span>
+<span class=3D"co0"># and OpenFabrics (a.k.a., "OpenIB") MPI point-to-point=
+ components):</span>
+<span class=3D"co4">shell$ </span><span class=3D"kw2">mpirun</span> <span c=
+lass=3D"sy0"></span>--mca btl self,sm,openib<span class=3D"sy0"></span> ...=
+</pre></td></tr></tbody></table></div>
+
+<p>Note that <code>^</code> can <em>only</em> be the prefix of the entire v=
+alue because the
+inclusive and exclusive behavior are mutually exclusive.
+Specifically, since the exclusive behavior means "use all components
+<em>except</em> these", it does not make sense to mix it with the inclusive
+behavior of not specifying it (i.e., "use all of these components").
+Hence, something like this:
+
+</p><div class=3D"geshicode"><table class=3D"bash"><tbody><tr class=3D"li1"=
+><td class=3D"ln"><pre class=3D"de1">1
+</pre></td><td class=3D"de1"><pre class=3D"de1"><span class=3D"co4">shell$ =
+</span><span class=3D"kw2">mpirun</span> <span class=3D"sy0"></span>--mca b=
+tl self,sm,openib,^tcp<span class=3D"sy0"></span> ...</pre></td></tr></tbod=
+y></table></div>
+
+<p>does not make sense because it says both "use only the <code>self</code>=
+, <code>sm</code>,
+and <code>openib</code> components" and "use all components except <code>tc=
+p</code>" and
+will result in an error.
+
+</p><p>Just as with all MCA parameters, the <code>btl</code> parameter (and=
+ all
+framework parameters) <a href=3D"https://www.open-mpi.org/faq/?category=3Dt=
+uning#setting-mca-params">can be set in
+multiple different ways</a>.</p>
+
+<!--------------------------------------- -->
+<a name=3D"paffinity-defs"></a>
+<p></p><hr><p></p>
+
+<table width=3D"100%" cellpadding=3D"5" border=3D"0">
+<tbody><tr><td class=3D"faq_question">14. What is processor affinity?  Does=
+ Open MPI support it?</td></tr>
+</tbody></table>
+<p></p>
+
+<p>Open MPI supports processor affinity on a variety of systems
+through process binding, in which each MPI process, along with its
+threads, is "bound" to a specific subset of processing resources
+(cores, sockets, etc.).  That is, the operating system will constrain
+that process to run on only that subset.  (Other processes might be
+allowed on the same resources.)
+
+</p><p>Affinity can improve performance by inhibiting excessive process
+movement =E2=80=94 for example, away from "hot" caches or NUMA memory.
+Judicious bindings can improve performance by reducing resource contention
+(by spreading processes apart from one another) or improving interprocess
+communications (by placing processes close to one another).  Binding can
+also improve performance reproducibility by eliminating variable process
+placement.  Unfortunately, binding can also degrade performance by
+inhibiting the OS capability to balance loads.
+
+</p><p>You can run the <code>ompi_info</code> command and look for <code>hw=
+loc</code>
+components to see if your system is supported (older versions of Open
+MPI used <code>paffinity</code> components).  For example:
+
+</p><div class=3D"geshicode"><table class=3D"bash"><tbody><tr class=3D"li1"=
+><td class=3D"ln"><pre class=3D"de1">1
+2
+</pre></td><td class=3D"de1"><pre class=3D"de1">$ <span class=3D"kw2">ompi_=
+info</span> <span class=3D"sy0">|</span> <span class=3D"kw2">grep</span> hw=
+loc
+&nbsp; &nbsp; &nbsp; MCA hwloc: hwloc191 <span class=3D"br0">(</span>MCA v2=
+.0, API v2.0, Component v1.8.4<span class=3D"br0">)</span></pre></td></tr><=
+/tbody></table></div>
+
+<p>Older versions of Open MPI used <code>paffinity</code> components for pr=
+ocess
+affinity control; if your version of Open MPI does not have an
+<code>hwloc</code> component, see if it has a <code>paffinity</code> compon=
+ent.
+
+</p><p>Note that processor affinity probably should <strong>not</strong> be=
+ used when a node
+is over-subscribed (i.e., more processes are launched than there are
+processors).  This can lead to a serious degradation in performance
+(even more than simply oversubscribing the node).  Open MPI will
+usually detect this situation and automatically disable the use of
+processor affinity (and display run-time warnings to this effect).
+
+</p><p><a href=3D"https://www.open-mpi.org/faq/?category=3Dtuning#using-paf=
+finity">Also see this FAQ entry</a> for how to use
+processor and memory affinity in Open MPI.</p>
+
+<!--------------------------------------- -->
+<a name=3D"maffinity-defs"></a>
+<p></p><hr><p></p>
+
+<table width=3D"100%" cellpadding=3D"5" border=3D"0">
+<tbody><tr><td class=3D"faq_question">15. What is memory affinity?  Does Op=
+en MPI support it?</td></tr>
+</tbody></table>
+<p></p>
+
+<p>Memory affinity is increasingly relevant on modern servers
+because most architectures exhibit Non-Uniform Memory Access (NUMA)
+architectures.  In a NUMA architecture, memory is physically
+distributed throughout the machine even though it is virtually treated
+as a single address space.  That is, memory may be physically local to
+one or more processors =E2=80=94 and therefore remote to other processors.
+
+</p><p>Simply put: some memory will be faster to access (for a given proces=
+s)
+than others.
+
+</p><p>Open MPI supports general and specific memory affinity, meaning that
+it generally tries to allocate all memory local to the processor that
+asked for it.  When shared memory is used for communication, Open MPI
+uses memory affinity to make certain pages local to specific
+processes in order to minimize memory network/bus traffic.
+
+</p><p>Open MPI supports memory affinity on a variety of systems.
+
+</p><p>In recent versions of Open MPI, memory affinity is controlled throug=
+h
+the <code>hwloc</code> component.  In earlier versions of Open MPI, memory
+affinity was controlled through <code>maffinity</code> components.
+
+</p><div class=3D"geshicode"><table class=3D"bash"><tbody><tr class=3D"li1"=
+><td class=3D"ln"><pre class=3D"de1">1
+2
+</pre></td><td class=3D"de1"><pre class=3D"de1">$ <span class=3D"kw2">ompi_=
+info</span> <span class=3D"sy0">|</span> <span class=3D"kw2">grep</span> hw=
+loc
+&nbsp; &nbsp; &nbsp; MCA hwloc: hwloc191 <span class=3D"br0">(</span>MCA v2=
+.0, API v2.0, Component v1.8.4<span class=3D"br0">)</span></pre></td></tr><=
+/tbody></table></div>
+
+<p>Older versions of Open MPI used <code>maffinity</code> components for me=
+mory
+affinity control; if your version of Open MPI does not have an
+<code>hwloc</code> component, see if it has a <code>maffinity</code> compon=
+ent.
+
+</p><p>Note that memory affinity support is enabled
+<em>only when processor affinity is enabled.</em> Specifically: using memor=
+y
+affinity does not make sense if processor affinity is not enabled
+because processes may allocate local memory and then move to a
+different processor, potentially remote from the memory that it just
+allocated.
+
+</p><p><a href=3D"https://www.open-mpi.org/faq/?category=3Dtuning#using-paf=
+finity">Also see this FAQ entry</a> for how to use
+processor and memory affinity in Open MPI.</p>
+
+<!--------------------------------------- -->
+<a name=3D"using-paffinity"></a>
+<p></p><hr><p></p>
+
+<table width=3D"100%" cellpadding=3D"5" border=3D"0">
+<tbody><tr><td class=3D"faq_question">16. How do I tell Open MPI to use pro=
+cessor and/or memory affinity?</td></tr>
+</tbody></table>
+<p></p>
+
+<p>Assuming that your system supports processor and memory
+affinity (check <code>ompi_info</code> for an <code>hwloc</code> component =
+(or, in
+earlier Open MPI versions, <code>paffinity</code> and <code>maffinity</code=
+>
+components)), you can explicitly tell Open MPI to use them when running
+MPI jobs.
+
+</p><p>Note that memory affinity support is enabled
+<em>only when processor affinity is enabled.</em> Specifically: using memor=
+y
+affinity does not make sense if processor affinity is not enabled
+because processes may allocate local memory and then move to a
+different processor, potentially remote from the memory that it just
+allocated.
+
+</p><p>Also note that processor and memory affinity is meaningless (but
+harmless) on uniprocessor machines.
+
+</p><p>The use of processor and memory affinity has greatly evolved over th=
+e
+life of the Open MPI project.  As such, how to enable / use processor
+and memory affinity in Open MPI <strong>strongly</strong> depends on
+which version you are using:
+
+</p><p></p><ul>
+<li><a href=3D"https://www.open-mpi.org/faq/?category=3Dtuning#using-paffin=
+ity-v1.6">Open MPI v1.6 and beyond</a></li>
+<li> <a href=3D"https://www.open-mpi.org/faq/?category=3Dtuning#using-paffi=
+nity-v1.5">Open MPI v1.5.x</a></li>
+<li> <a href=3D"https://www.open-mpi.org/faq/?category=3Dtuning#using-paffi=
+nity-v1.4">Open MPI v1.4.x</a> (contains introduction to <code>--by*</code>=
+ and <code>--bind-to-*</code> options)</li>
+<li> <a href=3D"https://www.open-mpi.org/faq/?category=3Dtuning#using-paffi=
+nity-v1.3">Open MPI v1.3.x</a> (contains introduction to rank files)</li>
+<li> <a href=3D"https://www.open-mpi.org/faq/?category=3Dtuning#using-paffi=
+nity-v1.2">Open MPI v1.2.x</a> (contains introduction to <code>mpi_paffinit=
+y_alone</code>)</li>
+</ul><p></p>
+
+<!--------------------------------------- -->
+<a name=3D"using-paffinity-v1.2"></a>
+<p></p><hr><p></p>
+
+<table width=3D"100%" cellpadding=3D"5" border=3D"0">
+<tbody><tr><td class=3D"faq_question">17. How do I tell Open MPI to use pro=
+cessor and/or memory affinity
+in Open MPI v1.2.x?  (What is <tt>mpi_paffinity_alone</tt>?)</td></tr>
+</tbody></table>
+<p></p>
+
+<p>Open MPI 1.2 offers only crude control, with the MCA
+parameter <code>mpi_paffinity_alone</code>.  For example:
+
+</p><div class=3D"geshicode"><table class=3D"bash"><tbody><tr class=3D"li1"=
+><td class=3D"ln"><pre class=3D"de1">1
+</pre></td><td class=3D"de1"><pre class=3D"de1"><span class=3D"co4">$ </spa=
+n><span class=3D"kw2">mpirun</span> <span class=3D"re5">--mca</span> mpi_pa=
+ffinity_alone <span class=3D"nu0">1</span> <span class=3D"re5">-np</span> <=
+span class=3D"nu0">4</span> a.out</pre></td></tr></tbody></table></div>
+
+<p>(Just like any other MCA parameter, <code>mpi_paffinity_alone</code> can=
+ be set
+<a href=3D"https://www.open-mpi.org/faq/?category=3Dtuning#setting-mca-para=
+ms">via any of the normal MCA parameter
+mechanisms</a>.)
+
+</p><p>On each node where your job is running, your job's MPI processes wil=
+l
+be bound, one-to-one, in the order of their global MPI ranks, to the
+lowest-numbered processing units (for example, cores or hardware threads)
+on the node as identified by the OS.  Further, memory affinity will also
+be enabled if it is supported on the node,
+<a href=3D"https://www.open-mpi.org/faq/?category=3Dtuning#maffinity-defs">=
+as described in a different FAQ entry</a>.
+
+</p><p>If multiple jobs are launched on the same node in this manner, they =
+will
+compete for the same processing units and severe performance degradation
+will likely result.  Therefore, this MCA parameter is best used when you
+know your job will be "alone" on the nodes where it will run.
+
+</p><p>Since each process is bound to a single processing unit, performance=
+ will
+likely suffer catastrophically if processes are multi-threaded.
+
+</p><p>Depending on how processing units on your node are numbered, the bin=
+ding
+pattern may be good, bad, or even disastrous.  For example, performance
+might be best if processes are spread out over all processor sockets on
+the node.  The processor ID numbering, however, might lead to
+<code>mpi_paffinity_alone</code> filling one socket before moving to anothe=
+r.
+Indeed, on nodes with multiple hardware threads per core (e.g.,
+"HyperThreads", "SMT", etc.), the numbering could lead to multiple
+processes being bound to a core before the next core is considered.
+In such cases, you should probably upgrade to a newer version of Open MPI
+or use a different, external mechanism for processor binding.
+
+</p><p>Note that Open MPI will automatically disable processor affinity on
+any node that is oversubscribed (i.e., where more Open MPI processes
+are launched in a single job on a node than it has processors) and
+will print out warnings to that effect.
+
+</p><p>Also note, however, that processor affinity is <em>not</em> exclusio=
+nary with
+Degraded performance mode.  Degraded mode is <em>usually</em> only used whe=
+n
+oversubscribing nodes (i.e., running more processes on a node than it
+has processors =E2=80=94 see <a href=3D"https://www.open-mpi.org/faq/?categ=
+ory=3Drunning#oversubscribing">this FAQ entry</a> for
+more details about oversubscribing, as well as a definition of
+Degraded performance mode).  It is possible manually to select
+Degraded performance mode <em>and</em> use processor affinity as long as yo=
+u
+are not oversubscribing.</p>
+
+<!--------------------------------------- -->
+<a name=3D"using-paffinity-v1.3"></a>
+<p></p><hr><p></p>
+
+<table width=3D"100%" cellpadding=3D"5" border=3D"0">
+<tbody><tr><td class=3D"faq_question">18. How do I tell Open MPI to use pro=
+cessor and/or memory affinity
+in Open MPI v1.3.x?  (What are rank files?)</td></tr>
+</tbody></table>
+<p></p>
+
+<p>Open MPI 1.3 supports the <code>mpi_paffinity_alone</code> MCA parameter
+that is described in <a href=3D"https://www.open-mpi.org/faq/?category=3Dtu=
+ning#using-paffinity-v1.2">this FAQ
+entry.</a>
+
+</p><p>Open MPI 1.3 (and higher) also allows a different binding to be spec=
+ified
+for each process via a <em>rankfile</em>.  Consider the following example:
+
+</p><div class=3D"geshicode"><table class=3D"bash"><tbody><tr class=3D"li1"=
+><td class=3D"ln"><pre class=3D"de1">1
+2
+3
+4
+5
+6
+7
+8
+</pre></td><td class=3D"de1"><pre class=3D"de1"><span class=3D"co4">shell$ =
+</span><span class=3D"kw2">cat</span> rankfile
+rank <span class=3D"nu0">0</span>=3Dhost0 <span class=3D"re2">slot</span>=
+=3D<span class=3D"nu0">2</span>
+rank <span class=3D"nu0">1</span>=3Dhost1 <span class=3D"re2">slot</span>=
+=3D<span class=3D"nu0">4</span>-<span class=3D"nu0">7</span>,<span class=3D=
+"nu0">0</span>
+rank <span class=3D"nu0">2</span>=3Dhost2 <span class=3D"re2">slot</span>=
+=3D<span class=3D"nu0">1</span>:<span class=3D"nu0">0</span>
+rank <span class=3D"nu0">3</span>=3Dhost3 <span class=3D"re2">slot</span>=
+=3D<span class=3D"nu0">1</span>:<span class=3D"nu0">2</span>-<span class=3D=
+"nu0">3</span>
+<span class=3D"co4">shell$ </span><span class=3D"kw2">mpirun</span> <span c=
+lass=3D"re5">-np</span> <span class=3D"nu0">4</span> <span class=3D"re5">-h=
+ostfile</span> hostfile <span class=3D"sy0"></span>--rankfile rankfile<span=
+ class=3D"sy0"></span> .<span class=3D"sy0">/</span>my_mpi_application
+&nbsp; <span class=3D"sy0">&lt;</span>i<span class=3D"sy0">&gt;</span>or<sp=
+an class=3D"sy0">&lt;/</span>i<span class=3D"sy0">&gt;</span>
+<span class=3D"co4">shell$ </span><span class=3D"kw2">mpirun</span> <span c=
+lass=3D"re5">-np</span> <span class=3D"nu0">4</span> <span class=3D"re5">-h=
+ostfile</span> hostfile <span class=3D"sy0"></span>--mca rmaps_rank_file_pa=
+th rankfile<span class=3D"sy0"></span> .<span class=3D"sy0">/</span>my_mpi_=
+application</pre></td></tr></tbody></table></div>
+
+<p>The rank file specifies a host node and <em>slot list</em> binding for e=
+ach
+MPI process in your job.  Note:
+
+</p><p></p><ul>
+<li>Typically, the slot list is a comma-delimited list of ranges.  The
+numbering is OS/BIOS-dependent and refers to the finest grained processing
+units identified by the OS =E2=80=94 for example, cores or hardware threads=
+.</li>
+<li>Alternatively, a colon can be used in the slot list for <em>socket:core=
+</em>
+designations.  For example, <em>1:2-3</em> means cores 2-3 of socket 1.</li=
+>
+<li>It is strongly recommended that you provide a full rankfile when
+using such affinity settings, otherwise there would be a very high
+probability of processor oversubscription and performance degradation.</li>
+<li>The hosts specified in the rankfile must be known to <code>mpirun</code=
+>,
+for example, via a list of hosts in a hostfile or as obtained from a
+resource manager.</li>
+<li>The number of processes <code>np</code> must be provided on the <code>m=
+pirun</code> command
+line.</li>
+<li>If some processing units are not available =E2=80=94 e.g., due to
+unpopulated sockets, idled cores, or BIOS settings =E2=80=94 the syntax ass=
+umes
+a logical numbering in which numbers are contiguous despite the physical
+gaps.  You may refer to actual physical numbers with a "p" prefix.
+For example, <em>rank 4=3Dhost3 slot=3D<font color=3D"red"><strong>p</stron=
+g></font>3:2</em>
+will bind rank4 to the physical socket3 : physical core2 pair.</li>
+</ul>
+
+<p>Rank files are also discussed on the <code>mpirun</code> man page.
+
+</p><p>If you want to use the same slot list binding for each process,
+presumably in cases where there is only one process per node, you can
+specify this slot list on the command line rather than having to use a
+rank file:
+
+</p><div class=3D"geshicode"><table class=3D"bash"><tbody><tr class=3D"li1"=
+><td class=3D"ln"><pre class=3D"de1">1
+</pre></td><td class=3D"de1"><pre class=3D"de1"><span class=3D"co4">shell$ =
+</span><span class=3D"kw2">mpirun</span> <span class=3D"re5">-np</span> <sp=
+an class=3D"nu0">4</span> <span class=3D"re5">-hostfile</span> hostfile <sp=
+an class=3D"sy0"></span>--slot-list <span class=3D"nu0">0</span>:<span clas=
+s=3D"nu0">1</span><span class=3D"sy0"></span> .<span class=3D"sy0">/</span>=
+my_mpi_application</pre></td></tr></tbody></table></div>
+
+<p>Remember, every process will use the same slot list.  If multiple proces=
+ses
+run on the same host, they will bind to the same resources =E2=80=94 in thi=
+s case,
+socket0:core1, presumably oversubscribing that core and ruining performance=
+.
+
+</p><p>Slot lists can be used to bind to multiple slots, which would be hel=
+pful for
+multi-threaded processes.  For example:
+
+</p><p></p><ul>
+<li>Two  threads per process: <tt>rank 0=3Dhost1 slot=3D0,1</tt></li>
+<li>Four threads per process: <tt>rank 0=3Dhost1 slot=3D0,1,2,3</tt></li>
+</ul>
+
+<p>Note that no thread will be bound to a specific slot within the list. OM=
+PI
+only supports <em>process</em> level affinity;  each thread will be bound t=
+o all
+of the slots within the list.</p>
+
+<!--------------------------------------- -->
+<a name=3D"using-paffinity-v1.4"></a>
+<p></p><hr><p></p>
+
+<table width=3D"100%" cellpadding=3D"5" border=3D"0">
+<tbody><tr><td class=3D"faq_question">19. How do I tell Open MPI to use pro=
+cessor and/or memory affinity
+in Open MPI v1.4.x?  (How do I use the <tt>--by*</tt> and <tt>--bind-to-*</=
+tt> options?)</td></tr>
+</tbody></table>
+<p></p>
+
+<p>Open MPI 1.4 supports all the same processor affinity controls
+as <a href=3D"https://www.open-mpi.org/faq/?category=3Dtuning#using-paffini=
+ty-v1.3">Open MPI v1.3</a>, but also
+supports additional command-line binding switches to <code>mpirun</code>:
+
+</p><p></p><ul>
+<li> <code>--bind-to-none</code>: Do not bind processes.
+     <strong><font color=3D"red">(Default)</font></strong> </li>
+<li> <code>--bind-to-core</code>: Bind each MPI process to a core.</li>
+<li> <code>--bind-to-socket</code>: Bind each MPI process to a processor so=
+cket.</li>
+<li> <code>--report-bindings</code>: Report how the launched processes were=
+ bound
+     by Open MPI.</li>
+</ul>
+
+<p>In the case of cores with multiple hardware threads (e.g., "HyperThreads=
+" or
+"SMT"), only the first hardware thread on each core is used with the
+<code>--bind-to-*</code> options.  This will hopefully be fixed in the Open=
+ MPI v1.5 series.
+
+</p><p>The above options are typically most useful when used with the
+following switches that indicate how processes are to be laid out in
+the MPI job.  To be clear: *if the following options are used without
+a <code>--bind-to-*</code> option, they only have the effect of deciding wh=
+ich
+node a process will run on.<strong>  Only the <code>--bind-to-</code></stro=
+ng> options actually
+bind a process to a specific (set of) hardware resource(s).
+
+</p><p></p><ul>
+<li> <code>--byslot</code>: Alias for <code>--bycore</code>.</li>
+<li> <code>--bycore</code>: When laying out processes, put sequential MPI
+     processes on adjacent processor cores.  *<font color=3D"red">(Default)=
+</font>* </li>
+<li> <code>--bysocket</code>: When laying out processes, put sequential MPI
+     processes on adjacent processor sockets.</li>
+<li> <code>--bynode</code>: When laying out processes, put sequential MPI
+     processes on adjacent nodes.</li>
+</ul>
+
+<p>Note that <code>--bycore</code> and <code>--bysocket</code> lay processe=
+s out in terms of the
+actual hardware rather than by some node-dependent numbering, which
+is what <code>mpi_paffinity_alone</code> does as described
+<a href=3D"https://www.open-mpi.org/faq/?category=3Dtuning#using-paffinity-=
+v1.2">in this FAQ entry.</a>
+
+</p><p>Finally, there is a poorly-named "combination" option that effects b=
+oth process
+layout counting and binding: <code>--cpus-per-proc</code> (and an even more=
+ poorly-named
+alias <code>--cpus-per-rank</code>).
+
+</p><p></p><blockquote>
+<em>Editor's note:</em> I feel that these options are poorly named for two
+reasons: 1) "cpu" is not consistently defined (i.e., it may be a
+core, or may be a hardware thread, or it may be something else), and
+2) even though many users use the terms "rank" and "MPI process"
+interchangeably, they are <strong>NOT</strong> the same thing.
+</blockquote>
+
+<p>This option does the following:
+
+</p><p></p><ul>
+<li> Takes an integer argument (<code>ncpus</code>) that indicates how
+many operating system processor IDs (which may be cores or may be
+hardware threads) should be bound to each MPI process.</li>
+<li> Allocates and binds <code>ncpus</code> OS processor IDs to each MPI pr=
+ocess.
+For example, on a machine with 4 processor sockets, each with 4
+processor cores, each with one hardware thread:
+<div class=3D"geshicode"><table class=3D"bash"><tbody><tr class=3D"li1"><td=
+ class=3D"ln"><pre class=3D"de1">1
+</pre></td><td class=3D"de1"><pre class=3D"de1"><span class=3D"co4">shell$ =
+</span><span class=3D"kw2">mpirun</span> <span class=3D"re5">-np</span> <sp=
+an class=3D"nu0">8</span> <span class=3D"re5">--cpus-per-proc</span> <span =
+class=3D"nu0">2</span> my_mpi_process</pre></td></tr></tbody></table></div>
+This command will bind each MPI process to <code>ncpus=3D</code>2
+cores.  All cores on the machine will be used.</li>
+<li> Note that <code>ncpus</code> cannot be more than the number of OS proc=
+essor
+IDs in a single processor socket.  Put loosely: <code>--cpus-per-proc</code=
+> only
+allows binding to multiple cores/threads within a single socket.</li>
+</ul>
+
+<p>The <code>--cpus-per-proc</code> can also be used with the <code>--bind-=
+to-*</code> options
+in some cases, but this code is not well tested and may result in
+unexpected binding behavior.  Test carefully to see where processes
+actually get bound before relying on the behavior for production runs.
+The <code>--cpus-per-proc</code> and other affinity-related command line op=
+tions
+are likely to be revamped some time during the <a href=3D"https://www.open-=
+mpi.org/faq/?category=3Dtuning#using-paffinity-v1.5">Open MPI v1.5 series</=
+a>.</p>
+
+<!--------------------------------------- -->
+<a name=3D"using-paffinity-v1.5"></a>
+<p></p><hr><p></p>
+
+<table width=3D"100%" cellpadding=3D"5" border=3D"0">
+<tbody><tr><td class=3D"faq_question">20. How do I tell Open MPI to use pro=
+cessor and/or memory affinity
+in Open MPI v1.5.x?</td></tr>
+</tbody></table>
+<p></p>
+
+<p>Open MPI 1.5 currently has the same processor affinity
+controls as <a href=3D"https://www.open-mpi.org/faq/?category=3Dtuning#usin=
+g-paffinity-v1.4">Open MPI v1.4</a>.  This
+FAQ entry is a placemarker for future enhancements to the 1.5 series'
+processor and memory affinity features.
+
+</p><p>Stay tuned!</p>
+
+<!--------------------------------------- -->
+<a name=3D"using-paffinity-v1.6"></a>
+<p></p><hr><p></p>
+
+<table width=3D"100%" cellpadding=3D"5" border=3D"0">
+<tbody><tr><td class=3D"faq_question">21. How do I tell Open MPI to use pro=
+cessor and/or memory affinity
+in Open MPI v1.6 (and beyond)?</td></tr>
+</tbody></table>
+<p></p>
+
+<p>The use of processor and memory affinity evolved rapidly,
+starting with Open MPI version 1.6.
+
+</p><p>The <code>mpirun(1)</code> man page for each version of Open MPI con=
+tains a lot of
+information about the use of processor and memory affinity.  You
+should consult the <code>mpirun(1)</code> page for your version of Open MPI=
+ for
+detailed information about processor/memory affinity.
+
+</p><p></p><ul>
+<li> <a href=3D"https://www.open-mpi.org/doc/current/man1/mpirun.1.php">mpi=
+run(1) man page for current Open MPI release</a></li>
+<li> <a href=3D"https://www.open-mpi.org/doc/v4.0/man1/mpirun.1.php">mpirun=
+(1) man page for Open MPI v4.0.x</a></li>
+<li> <a href=3D"https://www.open-mpi.org/doc/v3.1/man1/mpirun.1.php">mpirun=
+(1) man page for Open MPI v3.1.x</a></li>
+<li> <a href=3D"https://www.open-mpi.org/doc/v3.0/man1/mpirun.1.php">mpirun=
+(1) man page for Open MPI v3.0.x</a></li>
+<li> <a href=3D"https://www.open-mpi.org/doc/v2.0/man1/mpirun.1.php">mpirun=
+(1) man page for Open MPI v2.0.x</a></li>
+<li> <a href=3D"https://www.open-mpi.org/doc/v1.10/man1/mpirun.1.php">mpiru=
+n(1) man page for Open MPI v1.10.x</a></li>
+<li> <a href=3D"https://www.open-mpi.org/doc/v1.8/man1/mpirun.1.php">mpirun=
+(1) man page for Open MPI v1.8.x</a></li>
+<li> <a href=3D"https://www.open-mpi.org/doc/v1.7/man1/mpirun.1.php">mpirun=
+(1) man page for Open MPI v1.7.x</a></li>
+<li> <a href=3D"https://www.open-mpi.org/doc/v1.6/man1/mpirun.1.php">mpirun=
+(1) man page for Open MPI v1.6.x</a></li>
+</ul><p></p>
+
+<!--------------------------------------- -->
+<a name=3D"fork-warning"></a>
+<p></p><hr><p></p>
+
+<table width=3D"100%" cellpadding=3D"5" border=3D"0">
+<tbody><tr><td class=3D"faq_question">22. Does Open MPI support calling for=
+k(), system(), or popen() in MPI processes?</td></tr>
+</tbody></table>
+<p></p>
+
+<p>It depends on a lot of factors, including (but not limited to):
+
+</p><p></p><ul>
+<li> The operating system</li>
+<li> The underlying compute hardware</li>
+<li> The network stack (see <a href=3D"https://www.open-mpi.org/faq/?catego=
+ry=3Dopenfabrics#ofa-fork">this FAQ entry</a> for more details)</li>
+<li> Interactions with other middleware in the MPI process</li>
+</ul>
+
+<p>In some cases, Open MPI will determine that it is not safe to
+<code>fork()</code>.  In these cases, Open MPI will register a <code>pthrea=
+d_atfork()</code>
+callback to print a warning when the process forks.
+
+</p><p>This warning is helpful for legacy MPI applications where the curren=
+t
+maintainers are unaware that <code>system()</code> or <code>popen()</code> =
+is being invoked from
+an obscure subroutine nestled deep in millions of lines of Fortran code
+(we've seen this kind of scenario many times).
+
+</p><p>However, this atfork handler can be dangerous because there is no wa=
+y
+to <em>unregister</em> an atfork handler.  Hence, packages that
+dynamically open Open MPI's libraries (e.g., Python bindings for Open
+MPI) may fail if they finalize and unload libmpi, but later call
+fork.  The atfork system will try to invoke Open MPI's atfork handler;
+nothing good can come of that.
+
+</p><p>For such scenarios, or if you simply want to disable printing the
+warning, Open MPI can be set to never register the atfork handler with
+the <code>mpi_warn_on_fork</code> MCA parameter.  For example:
+
+</p><div class=3D"geshicode"><table class=3D"bash"><tbody><tr class=3D"li1"=
+><td class=3D"ln"><pre class=3D"de1">1
+</pre></td><td class=3D"de1"><pre class=3D"de1"><span class=3D"co4">shell$ =
+</span><span class=3D"kw2">mpirun</span> <span class=3D"re5">--mca</span> m=
+pi_warn_on_fork <span class=3D"nu0">0</span> ...</pre></td></tr></tbody></t=
+able></div>
+
+<p>Of course, systems that dlopen libmpi may not use Open MPI's <code>mpiru=
+n</code>,
+and therefore may need to use <a href=3D"https://www.open-mpi.org/faq/?cate=
+gory=3Dtuning#setting-mca-params">a
+different mechanism to set MCA parameters</a>.</p>
+
+<!--------------------------------------- -->
+<a name=3D"running-perf-numbers"></a>
+<p></p><hr><p></p>
+
+<table width=3D"100%" cellpadding=3D"5" border=3D"0">
+<tbody><tr><td class=3D"faq_question">23. I want to run some performance be=
+nchmarks with Open MPI.  How do I do that?</td></tr>
+</tbody></table>
+<p></p>
+
+<p>Running benchmarks is an extremely difficult task to
+do correctly.  There are many, many factors to take into account; it
+is <strong>not</strong> as simple as just compiling and running a stock ben=
+chmark
+application.  This FAQ entry is by no means a definitive guide, but it
+does try to offer some suggestions for generating accurate, meaningful
+benchmarks.
+
+</p><p></p><ol>
+
+<p></p><li> Decide <strong>exactly</strong> what you are benchmarking and s=
+etup your system
+accordingly.  For example, if you are trying to benchmark maximum
+performance, then many of the suggestions listed below are extremely
+relevant (be the only user on the systems and network in question, be
+the only software running, use processor affinity, etc.).  If you're
+trying to benchmark average performance, some of the suggestions below
+may be less relevant.  Regardless, it is critical to <strong>know</strong> =
+exactly
+what you're trying to benchmark, and <strong>know</strong> (not guess) both=
+ your
+system and the benchmark application itself well enough to understand
+what the results mean.
+
+<p>To be specific, many benchmark applications are not well understood
+for exactly what they are testing.  There have been many cases where
+users run a given benchmark application and wrongfully conclude that
+their system's performance is bad =E2=80=94 solely on the basis of a single
+benchmark that they did not understand.  Read the documentation of the
+benchmark carefully, and possibly even look into the code itself to
+see exactly what it is testing.
+
+</p><p>Case in point: not all ping-pong benchmarks are created equal.  Most
+users assume that a ping-pong benchmark is a ping-pong benchmark is a
+ping-pong benchmark.  But this is not true; the common ping-pong
+benchmarks tend to test subtly different things (e.g., NetPIPE, TCP
+bench, IMB, OSU, etc.).  *Make sure you understand what your
+benchmark is actually testing.* </p></li>
+
+<p></p><li> Make sure that you are the <strong>only</strong> user on the sy=
+stems where you
+are running the benchmark to eliminate contention from other
+processes. </li>
+
+<p></p><li> Make sure that you are the <strong>only</strong> user on the en=
+tire network /
+interconnect to eliminate network traffic contention from other
+processes.  This is usually somewhat difficult to do, especially in
+larger, shared systems.  But your most accurate, repeatable results
+will be achieved when you are the only user on the entire
+network. </li>
+
+<p></p><li> Disable all services and daemons that are not being used.  Even
+"harmless" daemons consume system resources (such as RAM) and cause
+"jitter" by occasionally waking up, consuming CPU cycles, reading
+or writing to disk, etc.  The optimum benchmark system has an absolute
+minimum number of system services running. </li>
+
+<p></p><li> Use processor affinity on multi-processor/core machines to
+disallow the operating system from swapping MPI processes between
+processors (and causing unnecessary cache thrashing, for
+example).
+
+<p>On NUMA architectures, having the processes getting bumped from one
+socket to another is more expensive in terms of cache locality (with
+all of the cache coherency overhead that comes with the lack of it)
+than in terms of hypertransport routing (see below).
+
+</p><p>Non-NUMA architectures such as Intel Woodcrest have a flat access
+time to the South Bridge, but cache locality is still important so CPU
+affinity is always a good thing to do.</p></li>
+
+<p></p><li> Be sure to understand your system's architecture, particularly
+with respect to the memory, disk, and network characteristics, and
+test accordingly.  For example, on NUMA architectures, most common
+being Opteron, the South Bridge is connected through a hypertransport
+link to one CPU on one socket.  Which socket depends on the
+motherboard, but it should be described in the motherboard
+documentation (it's not always socket 0!).  If a process on the other
+socket needs to write something to a NIC on a PCIE bus behind the
+South Bridge, it needs to first hop through the first socket.  On
+modern machines (circa late 2006), this hop cost usually something
+like 100ns (i.e., 0.1 us).  If the socket is further away, like in a 4-
+or 8-socket configuration, there could potentially be more hops,
+leading to more latency.</li>
+
+<p></p><li> Compile your benchmark with the appropriate compiler optimizati=
+on
+flags.  With some MPI implementations, the compiler wrappers (like
+<tt>mpicc</tt>, <tt>mpif90</tt>, etc.) add optimization flags automatically=
+.
+Open MPI does not.  Add <tt>-O</tt> or other flags explicitly.
+
+<p></p></li><li> Make sure your benchmark runs for a sufficient amount of t=
+ime.
+Short-running benchmarks are generally less accurate because they take
+fewer samples; longer-running jobs tend to take more samples.
+
+<p></p></li><li> If your benchmark is trying to benchmark extremely short e=
+vents
+(such as the time required for a single ping-pong of messages):
+
+<p></p><ul>
+<li> Perform some "warmup" events first.  Many MPI implementations
+(including Open MPI) =E2=80=94 and other subsystems upon which the MPI uses
+=E2=80=94 may use "lazy" semantics to setup and maintain streams of
+communications.  Hence, the first event (or first few events)
+may well take significantly longer than subsequent events.</li>
+
+<p></p><li> Use a high-resolution timer if possible =E2=80=94 <code>gettime=
+ofday()</code> only
+returns millisecond precision (sometimes on the order of several
+microseconds).</li>
+
+<p></p><li> Run the event many, many times (hundreds or thousands, dependin=
+g
+on the event and the time it takes).  Not only does this provide
+more samples, it may also be necessary, especially when the precision
+of the timer you're using may be several orders of magnitude less
+precise than the event you're trying to benchmark.</li>
+</ul>
+
+<p></p></li><li> Decide whether you are reporting minimum, average, or maxi=
+mum
+numbers, and have good reasons why. </li>
+
+<p></p><li> Accurately label and report all results.  Reproducibility is a
+major goal of benchmarking; benchmark results are effectively useless
+if they are not precisely labeled as to exactly what they are
+reporting.  Keep a log and detailed notes about the <em>exact</em> system
+configuration that you are benchmarking.  Note, for example, all
+hardware and software characteristics (to include hardware, firmware,
+and software versions as appropriate). </li>
+
+<p></p></ol><p></p>
+
+<!--------------------------------------- -->
+<a name=3D"imb-win-free-error"></a>
+<p></p><hr><p></p>
+
+<table width=3D"100%" cellpadding=3D"5" border=3D"0">
+<tbody><tr><td class=3D"faq_question">24. I am getting a MPI_Win_free error=
+ from IMB-EXT =E2=80=94 what do I do?</td></tr>
+</tbody></table>
+<p></p>
+
+<p>
+When you run IMB-EXT with Open MPI, you'll see a
+message like this:
+
+</p><div class=3D"geshicode"><table class=3D"text"><tbody><tr class=3D"li1"=
+><td class=3D"ln"><pre class=3D"de1">1
+2
+3
+4
+</pre></td><td class=3D"de1"><pre class=3D"de1">[node01.example.com:2228] *=
+** An error occurred in MPI_Win_free
+[node01.example.com:2228] *** on win
+[node01.example.com:2228] *** MPI_ERR_RMA_SYNC: error while executing rma s=
+ync
+[node01.example.com:2228] *** MPI_ERRORS_ARE_FATAL (your MPI job will now a=
+bort)</pre></td></tr></tbody></table></div>
+
+<p>This is due to a bug in the Intel MPI Benchmarks, known to be in at
+least versions v3.1 and v3.2.  Intel was notified of this bug in May
+of 2009.  If you have a version after then, it should include this bug
+fix.  If not, here is the fix that you can apply to the IMB-EXT source
+code yourself.
+
+</p><p>Here is a small patch that fixes the bug in IMB v3.2:
+
+</p><div class=3D"geshicode"><table class=3D"diff"><tbody><tr class=3D"li1"=
+><td class=3D"ln"><pre class=3D"de1">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+</pre></td><td class=3D"de1"><pre class=3D"de1">diff -u imb-<span class=3D"=
+nu0">3.2</span>-orig/src/IMB_window.c imb-<span class=3D"nu0">3.2</span>-fi=
+xed/src/IMB_window.c
+<span class=3D"re3">--- imb-3.2-orig/src/IMB_window.c &nbsp; &nbsp; 2008-10=
+-21 04:17:31.000000000 -0400</span>
+<span class=3D"re4">+++ imb-3.2-fixed/src/IMB_window.c &nbsp; &nbsp; &nbsp;=
+2009-07-20 09:02:45.000000000 -0400</span>
+<span class=3D"re6">@@ -140,6 +140,9 @@</span>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp=
+; &nbsp; &nbsp; c_info-&gt;rank, <span class=3D"nu0">0</span>, <span class=
+=3D"nu0">1</span>, c_info-&gt;r_data_type,
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp=
+; &nbsp; &nbsp; c_info-&gt;WIN<span class=3D"br0">)</span>;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;MPI_ERRHAND<span class=3D"br0">(</=
+span>ierr<span class=3D"br0">)</span>;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class=3D"br0">}</span>
+<span class=3D"re8">+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;/* Added a call to =
+MPI_WIN_FENCE, per MPI-2.1 11.2.1 */</span>
+<span class=3D"re8">+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;ierr =3D MPI_Win_fe=
+nce<span class=3D"br0">(</span><span class=3D"nu0">0</span>, c_info-&gt;WIN=
+<span class=3D"br0">)</span>;</span>
+<span class=3D"re8">+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;MPI_ERRHAND<span cl=
+ass=3D"br0">(</span>ierr<span class=3D"br0">)</span>;</span>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;ierr =3D MPI_Win_free<span class=
+=3D"br0">(</span>&amp;c_info-&gt;WIN<span class=3D"br0">)</span>;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;MPI_ERRHAND<span class=3D"br0">(</=
+span>ierr<span class=3D"br0">)</span>;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class=3D"br0">}</span></pre>=
+</td></tr></tbody></table></div>
+
+<p>And here is the corresponding patch for IMB v3.1:
+
+</p><div class=3D"geshicode"><table class=3D"diff"><tbody><tr class=3D"li1"=
+><td class=3D"ln"><pre class=3D"de1">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+</pre></td><td class=3D"de1"><pre class=3D"de1">Index: IMB_3.1/src/IMB_wind=
+ow.c
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D
+<span class=3D"re3">--- IMB_3.1/src/IMB_window.c<span class=3D"br0">(</span=
+>revision 1641<span class=3D"br0">)</span></span>
+<span class=3D"re4">+++ IMB_3.1/src/IMB_window.c<span class=3D"br0">(</span=
+>revision 1642<span class=3D"br0">)</span></span>
+<span class=3D"re6">@@ -140,6 +140,10 @@</span>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp=
+; &nbsp; &nbsp; c_info-&gt;rank, <span class=3D"nu0">0</span>, <span class=
+=3D"nu0">1</span>, c_info-&gt;r_data_type, c_info-&gt;WIN<span class=3D"br0=
+">)</span>;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;MPI_ERRHAND<span class=3D"br0">(</=
+span>ierr<span class=3D"br0">)</span>;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class=3D"br0">}</span>
+<span class=3D"re8">+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;/* Added a call to =
+MPI_WIN_FENCE here, per MPI-2.1</span>
+<span class=3D"re8">+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 11.2.1 */</=
+span>
+<span class=3D"re8">+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;ierr =3D MPI_Win_fe=
+nce<span class=3D"br0">(</span><span class=3D"nu0">0</span>, c_info-&gt;WIN=
+<span class=3D"br0">)</span>;</span>
+<span class=3D"re8">+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;MPI_ERRHAND<span cl=
+ass=3D"br0">(</span>ierr<span class=3D"br0">)</span>;</span>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;ierr =3D MPI_Win_free<span class=
+=3D"br0">(</span>&amp;c_info-&gt;WIN<span class=3D"br0">)</span>;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;MPI_ERRHAND<span class=3D"br0">(</=
+span>ierr<span class=3D"br0">)</span>;
+&nbsp;<span class=3D"br0">}</span></pre></td></tr></tbody></table></div><p>=
+</p>
+
+
+	  <!-- END MAIN TEXT -->
+	  </td>
+        </tr>
+      </tbody></table>
+          </td>
+       =20
+      </tr></tbody></table>
+    </td>
+  </tr>
+
+  <!-- footer row -->
+  <tr>
+  <td colspan=3D"2">
+      <table width=3D"100%" border=3D"0" cellpadding=3D"8" cellspacing=3D"0=
+">
+      <colgroup>
+      <col>
+      <col>
+      <col>
+        </colgroup><tbody><tr>
+          <td class=3D"footer" align=3D"LEFT" height=3D"36" width=3D"33%">
+	  <table><tbody><tr><td class=3D"footer"><a href=3D"http://spi-inc.org/"><=
+img height=3D"35" src=3D"https://www.open-mpi.org/images/spi-logo.svg"></a>=
+</td>
+                 <td class=3D"footer"><a href=3D"http://spi-inc.org/project=
+s/open-mpi/">Open MPI is an Associated
+Project</a><br> of the
+<a href=3D"http://spi-inc.org/">Software in the Public Interest</a>
+non-profit organization</td></tr></tbody></table>
+          </td>
+          <td class=3D"footer" align=3D"CENTER" height=3D"36" width=3D"33%"=
+>
+            <a href=3D"mailto:the-web-maintainer@open-mpi.org" _trackevent"=
+,=3D"" "mails",=3D"" "click",=3D"" "the-web-maintainer@open-mpi.org"])"=3D"=
+">Contact the Open MPI webmaster</a>          </td>
+          <td class=3D"footer" align=3D"RIGHT" height=3D"36" width=3D"33%">
+Page last modified: 20-May-2019<br>
+=C2=A92004-2024 The Open MPI Project
+<br>
+          </td>
+        </tr>
+      </tbody></table>
+
+    <!-- END MAIN table -->
+    </td>
+  </tr>
+</tbody></table>
+<br>
+
+
+</bogus></body></html>
+------MultipartBoundary--SKTECRLA4kS5daPK4it3G79vbshDyD7rkJjmll6aJf----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: cid:css-61c115ca-dcd5-4528-8ba4-a42fb402c955@mhtml.blink
+
+@charset "utf-8";
+
+body { background: white; color: black; font-family: verdana, arial, helvet=
+ica; font-size: 12px; }
+
+td { background-color: white; color: black; font-family: verdana, arial, he=
+lvetica; }
+
+td.buttonbox { font-size: 11px; font-weight: bold; color: white; background=
+: url("../images/open-mpi-button-bg.gif"); }
+
+td.navbarbox { font-size: 11px; font-weight: bold; color: white; background=
+-color: rgb(224, 224, 224); }
+
+td.navbartop { font-size: 11px; font-weight: bold; color: white; background=
+-color: rgb(224, 224, 224); }
+
+td.navbartopabout { height: 17px; font-size: 11px; font-weight: bold; color=
+: white; background-color: rgb(0, 144, 0); background-image: url("../images=
+/green-button.gif"); }
+
+td.navbartopusing { height: 17px; font-size: 11px; font-weight: bold; color=
+: white; background-color: rgb(176, 128, 0); background-image: url("../imag=
+es/yellow-button.gif"); }
+
+td.navbartopinstalling { height: 17px; font-size: 11px; font-weight: bold; =
+color: white; background-color: rgb(160, 0, 0); background-image: url("../i=
+mages/red-button.gif"); }
+
+td.navbartopcommunity { height: 17px; font-size: 11px; font-weight: bold; c=
+olor: white; background-color: rgb(0, 0, 160); background-image: url("../im=
+ages/blue-button.gif"); }
+
+td.glanceitemsysadmin { background-color: rgb(176, 224, 160); }
+
+td.glanceitemprogrammers { background-color: rgb(240, 224, 128); }
+
+td.glanceitemusers { background-color: rgb(255, 160, 128); }
+
+td.glanceitemresearchers { background-color: rgb(160, 176, 255); }
+
+td.glanceitemall { background-color: black; color: rgb(255, 255, 255); }
+
+td.navbarsub { font-size: 11px; color: black; background-color: rgb(248, 24=
+8, 248); }
+
+td.navbarsub2 { font-size: 11px; font-weight: normal; color: black; backgro=
+und-color: rgb(248, 248, 248); }
+
+td.navbarsub2b { font-size: 11px; font-weight: bold; color: black; backgrou=
+nd-color: rgb(248, 248, 248); }
+
+td.navbarsub3 { font-size: 11px; font-weight: normal; color: black; backgro=
+und-color: rgb(248, 248, 248); }
+
+td.quickbar { font-size: 11px; font-weight: bold; color: black; background-=
+color: rgb(224, 224, 224); }
+
+td.footer { font-size: 11px; font-weight: bold; color: black; background-co=
+lor: rgb(224, 224, 224); }
+
+a.navbartop { text-decoration: none; color: white; }
+
+a.glancetitle { text-decoration: none; color: black; }
+
+a.glanceitem { text-decoration: none; color: black; }
+
+a.glancetext { text-decoration: none; color: black; }
+
+a.navbarsub { text-decoration: none; color: black; }
+
+a.navbarsub2 { text-decoration: none; color: black; }
+
+a.navbarsub2b { text-decoration: none; color: black; }
+
+a.navbarsub3 { text-decoration: none; color: black; }
+
+a.quickbar { text-decoration: none; color: black; }
+
+a.glanceitemsysadmin { text-decoration: none; color: black; }
+
+a.glanceitemprogrammers { text-decoration: none; color: black; }
+
+a.glanceitemusers { text-decoration: none; color: black; }
+
+a.glanceitemresearchers { text-decoration: none; color: black; }
+
+a.glanceitemall { text-decoration: none; color: white; }
+
+td.logobox { background: white; color: rgb(255, 34, 34); }
+
+td.titlebox { background: white; color: black; }
+
+td.newsbar { background-color: rgb(224, 224, 224); text-align: center; }
+
+td.newstitle { background-color: rgb(221, 51, 51); color: white; text-align=
+: center; }
+
+td.newstext { font-size: small; color: rgb(51, 51, 51); }
+
+.newstitle { color: rgb(51, 51, 51); font-weight: bold; font-size: 12px; }
+
+.newstext { color: black; font-weight: normal; font-size: 11px; }
+
+.glancetitle { font-size: 14px; font-weight: bold; background-color: rgb(16=
+0, 0, 0); color: black; text-align: center; }
+
+td.glancebox { font-size: 11px; font-weight: bold; color: black; background=
+-color: rgb(248, 248, 248); }
+
+td.glancetitle { font-size: 14px; font-weight: bold; color: black; backgrou=
+nd-color: rgb(248, 248, 248); text-align: left; }
+
+td.glanceitem { font-size: 11px; font-weight: bold; color: black; backgroun=
+d-color: rgb(224, 224, 224); text-align: left; }
+
+td.glancetext { font-size: 11px; font-weight: normal; color: black; backgro=
+und-color: rgb(248, 248, 248); }
+
+p.small { font-size: small; font-family: verdana, arial, helvetica; }
+
+h1.doctitle { text-align: left; }
+
+h3.frontpage { margin-bottom: 6px; margin-top: 6px; font-size: 16px; font-w=
+eight: bold; }
+
+h4.frontpage { margin-bottom: 3px; margin-top: 3px; font-size: 14px; font-w=
+eight: bold; }
+
+td.copyright { font-size: 11px; font-weight: bold; color: rgb(51, 51, 51); =
+background-color: rgb(224, 224, 224); }
+
+td.mirror { font-size: 11px; font-weight: bold; color: rgb(51, 51, 51); bac=
+kground-color: rgb(224, 224, 224); }
+
+td.faq_question { font-weight: bold; color: rgb(51, 51, 51); background-col=
+or: rgb(192, 192, 192); }
+
+.faq_applies { color: rgb(119, 119, 119); font-weight: normal; }
+
+.faq_title { font-weight: normal; color: rgb(51, 51, 51); }
+
+.divider { color: rgb(119, 119, 119); font-family: Verdana, Arial, sans-ser=
+if; font-size: 10px; font-weight: normal; }
+
+input.medium { width: 96px; height: 15px; font-size: 10px; text-align: left=
+; padding-top: 0px; margin-top: 0px; margin-bottom: 0px; }
+
+input.buttonred { background: rgb(192, 192, 192); color: rgb(255, 255, 255)=
+; height: 1.3em; font-weight: bold; padding: 0px; margin: 0px; border: 0px =
+none rgb(0, 0, 0); }
+
+.quotelev1 { color: rgb(153, 0, 153); }
+
+.quotelev2 { color: rgb(255, 119, 0); }
+
+.quotelev3 { color: rgb(0, 119, 153); }
+
+.quotelev4 { color: rgb(149, 197, 0); }
+
+td.example { background-color: rgb(224, 224, 224); }
+
+pre, .geshicode { border: 1px solid rgb(192, 230, 255); background-color: r=
+gb(224, 224, 224); color: rgb(0, 0, 34); margin: 0px; font-size: 12px; widt=
+h: 100%; }
+
+.geshicode pre { border: none; background-color: rgb(224, 224, 224); font-w=
+eight: bold; }
+
+.geshicode .li2 td { background-color: rgb(224, 224, 224); }
+
+.geshicode .li1 td { background-color: rgb(224, 224, 224); }
+
+.geshicode td td { padding: 0px 2px; }
+
+.geshicode td, .geshicode table { width: 100%; }
+
+.geshicode td.ln { border-right: 2px solid rgb(224, 232, 239); }
+
+.geshicode .head { text-align: center; font-weight: bold; }
+
+td.ln { background-color: rgb(224, 224, 224); }
+
+pre.de1 { background-color: rgb(224, 224, 224); }
+
+.bash .de1, .bash .de2 { font: 1em / 1.2em monospace; margin: 0px; padding:=
+ 0px; background: none; vertical-align: top; }
+
+.bash { font-family: monospace; }
+
+.bash .imp { font-weight: bold; color: red; }
+
+.bash li, .bash .li1 { font-weight: normal; vertical-align: top; }
+
+.bash .ln { width: 1px; text-align: right; margin: 0px; padding: 0px 2px; v=
+ertical-align: top; }
+
+.bash .kw1 { color: rgb(0, 0, 0); font-weight: bold; }
+
+.bash .kw2 { color: rgb(194, 12, 185); font-weight: bold; }
+
+.bash .kw3 { color: rgb(122, 8, 116); font-weight: bold; }
+
+.bash .co0 { color: rgb(102, 102, 102); font-style: italic; }
+
+.bash .co1 { color: rgb(128, 0, 0); }
+
+.bash .co2 { color: rgb(204, 0, 0); font-style: italic; }
+
+.bash .co3 { color: rgb(0, 0, 0); font-weight: bold; }
+
+.bash .co4 { color: rgb(102, 102, 102); }
+
+.bash .es1 { color: rgb(0, 0, 153); font-weight: bold; }
+
+.bash .es2 { color: rgb(0, 120, 0); }
+
+.bash .es3 { color: rgb(0, 120, 0); }
+
+.bash .es4 { color: rgb(0, 120, 0); }
+
+.bash .es5 { color: rgb(120, 0, 120); }
+
+.bash .es_h { color: rgb(0, 0, 153); font-weight: bold; }
+
+.bash .br0 { color: rgb(122, 8, 116); font-weight: bold; }
+
+.bash .sy0 { color: rgb(0, 0, 0); font-weight: bold; }
+
+.bash .st0 { color: rgb(255, 0, 0); }
+
+.bash .st_h { color: rgb(255, 0, 0); }
+
+.bash .nu0 { color: rgb(0, 0, 0); }
+
+.bash .re0 { color: rgb(0, 120, 0); }
+
+.bash .re1 { color: rgb(0, 120, 0); }
+
+.bash .re2 { color: rgb(0, 120, 0); }
+
+.bash .re4 { color: rgb(0, 120, 0); }
+
+.bash .re5 { color: rgb(102, 0, 51); }
+
+.bash span.xtra { display: block; }
+
+.c .de1, .c .de2 { font: 1em / 1.2em monospace; margin: 0px; padding: 0px; =
+background: none; vertical-align: top; }
+
+.c { font-family: monospace; }
+
+.c .imp { font-weight: bold; color: red; }
+
+.c li, .c .li1 { font-weight: normal; vertical-align: top; }
+
+.c .ln { width: 1px; text-align: right; margin: 0px; padding: 0px 2px; vert=
+ical-align: top; }
+
+.c .kw1 { color: rgb(177, 177, 0); }
+
+.c .kw2 { color: rgb(0, 0, 0); font-weight: bold; }
+
+.c .kw3 { color: rgb(0, 0, 102); }
+
+.c .kw4 { color: rgb(153, 51, 51); }
+
+.c .co1 { color: rgb(102, 102, 102); font-style: italic; }
+
+.c .co2 { color: rgb(51, 153, 51); }
+
+.c .coMULTI { color: rgb(128, 128, 128); font-style: italic; }
+
+.c .es0 { color: rgb(0, 0, 153); font-weight: bold; }
+
+.c .es1 { color: rgb(0, 0, 153); font-weight: bold; }
+
+.c .es2 { color: rgb(102, 0, 153); font-weight: bold; }
+
+.c .es3 { color: rgb(102, 0, 153); font-weight: bold; }
+
+.c .es4 { color: rgb(102, 0, 153); font-weight: bold; }
+
+.c .es5 { color: rgb(0, 102, 153); font-weight: bold; }
+
+.c .br0 { color: rgb(0, 153, 0); }
+
+.c .sy0 { color: rgb(51, 153, 51); }
+
+.c .st0 { color: rgb(255, 0, 0); }
+
+.c .nu0 { color: rgb(0, 0, 221); }
+
+.c .nu6 { color: rgb(32, 128, 128); }
+
+.c .nu8 { color: rgb(32, 128, 128); }
+
+.c .nu12 { color: rgb(32, 128, 128); }
+
+.c .nu16 { color: rgb(128, 0, 128); }
+
+.c .nu17 { color: rgb(128, 0, 128); }
+
+.c .nu18 { color: rgb(128, 0, 128); }
+
+.c .nu19 { color: rgb(128, 0, 128); }
+
+.c .me1 { color: rgb(32, 32, 32); }
+
+.c .me2 { color: rgb(32, 32, 32); }
+
+.c span.xtra { display: block; }
+
+.make .de1, .make .de2 { font: 1em / 1.2em monospace; margin: 0px; padding:=
+ 0px; background: none; vertical-align: top; }
+
+.make { font-family: monospace; }
+
+.make .imp { font-weight: bold; color: red; }
+
+.make li, .make .li1 { font-weight: normal; vertical-align: top; }
+
+.make .ln { width: 1px; text-align: right; margin: 0px; padding: 0px 2px; v=
+ertical-align: top; }
+
+.make .kw1 { color: rgb(102, 102, 34); font-weight: bold; }
+
+.make .kw2 { color: rgb(153, 0, 0); }
+
+.make .co1 { color: rgb(51, 153, 0); font-style: italic; }
+
+.make .co2 { color: rgb(0, 0, 153); font-weight: bold; }
+
+.make .es0 { color: rgb(0, 0, 153); font-weight: bold; }
+
+.make .br0 { color: rgb(0, 68, 0); }
+
+.make .sy0 { color: rgb(0, 68, 0); }
+
+.make .st0 { color: rgb(204, 34, 0); }
+
+.make .nu0 { color: rgb(204, 34, 0); }
+
+.make .re0 { color: rgb(0, 0, 136); font-weight: bold; }
+
+.make .re1 { color: rgb(0, 0, 204); font-weight: bold; }
+
+.make .re2 { color: rgb(0, 0, 136); }
+
+.make span.xtra { display: block; }
+
+.text .de1, .text .de2 { font: 1em / 1.2em monospace; margin: 0px; padding:=
+ 0px; background: none; vertical-align: top; }
+
+.text { font-family: monospace; }
+
+.text .imp { font-weight: bold; color: red; }
+
+.text li, .text .li1 { font-weight: normal; vertical-align: top; }
+
+.text .ln { width: 1px; text-align: right; margin: 0px; padding: 0px 2px; v=
+ertical-align: top; }
+
+.text span.xtra { display: block; }
+
+.diff .de1, .diff .de2 { font: 1em / 1.2em monospace; margin: 0px; padding:=
+ 0px; background: none; vertical-align: top; }
+
+.diff { font-family: monospace; }
+
+.diff .imp { font-weight: bold; color: red; }
+
+.diff li, .diff .li1 { font-weight: normal; vertical-align: top; }
+
+.diff .ln { width: 1px; text-align: right; margin: 0px; padding: 0px 2px; v=
+ertical-align: top; }
+
+.diff .kw1 { color: rgb(170, 170, 170); font-style: italic; }
+
+.diff .re0 { color: rgb(68, 0, 136); }
+
+.diff .re1 { color: rgb(153, 17, 17); }
+
+.diff .re2 { color: rgb(0, 176, 0); }
+
+.diff .re3 { color: rgb(136, 136, 34); }
+
+.diff .re4 { color: rgb(136, 136, 34); }
+
+.diff .re5 { color: rgb(0, 17, 221); }
+
+.diff .re6 { color: rgb(68, 0, 136); }
+
+.diff .re7 { color: rgb(153, 17, 17); }
+
+.diff .re8 { color: rgb(0, 176, 0); }
+
+.diff .re9 { color: rgb(136, 136, 34); }
+
+.diff span.xtra { display: block; }
+------MultipartBoundary--SKTECRLA4kS5daPK4it3G79vbshDyD7rkJjmll6aJf----
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: https://www.open-mpi.org/images/open-mpi-button-bg.gif
+
+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
+
+------MultipartBoundary--SKTECRLA4kS5daPK4it3G79vbshDyD7rkJjmll6aJf----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: https://www.open-mpi.org/images/open-mpi-logo.png
+
+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
+iAjwRBPNlmYAAAAASUVORK5CYII=
+
+------MultipartBoundary--SKTECRLA4kS5daPK4it3G79vbshDyD7rkJjmll6aJf----
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: https://www.open-mpi.org/images/left-e0-2.gif
+
+R0lGODlhEAAQAKIAAODg4Obm5v///+/v7/f39wAAAAAAAAAAACH5BAQUAP8ALAAAAAAQABAAAAMp
+KLosMwGAxoa8k1p8G4lctxAhN5amAqKSsrGtAGPO3NnXa+vziv9ASQIAOw==
+
+------MultipartBoundary--SKTECRLA4kS5daPK4it3G79vbshDyD7rkJjmll6aJf----
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: https://www.open-mpi.org/images/right-e0-2.gif
+
+R0lGODlhEAAQAKIAAP////f39+/v7+fn59/f3wAAAAAAAAAAACH5BAQUAP8ALAAAAAAQABAAAAMp
+SDQi8DACRYmTsNYrdR1B51VhNpLmqQypaj1uBceKQ1PTbem7PvBAQgIAOw==
+
+------MultipartBoundary--SKTECRLA4kS5daPK4it3G79vbshDyD7rkJjmll6aJf----
+Content-Type: image/svg+xml
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://www.open-mpi.org/images/spi-logo.svg
+
+<?xml version=3D"1.0" encoding=3D"UTF-8" standalone=3D"no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc=3D"http://purl.org/dc/elements/1.1/"
+   xmlns:cc=3D"http://creativecommons.org/ns#"
+   xmlns:rdf=3D"http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg=3D"http://www.w3.org/2000/svg"
+   xmlns=3D"http://www.w3.org/2000/svg"
+   xmlns:xlink=3D"http://www.w3.org/1999/xlink"
+   xmlns:sodipodi=3D"http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape=3D"http://www.inkscape.org/namespaces/inkscape"
+   width=3D"186.26717"
+   height=3D"87.204857"
+   id=3D"svg3200"
+   version=3D"1.1"
+   inkscape:version=3D"0.48.5 r10040"
+   sodipodi:docname=3D"Novo documento 3">
+  <defs
+     id=3D"defs3202">
+    <filter
+       inkscape:collect=3D"always"
+       id=3D"filter5477-4"
+       color-interpolation-filters=3D"sRGB">
+      <feGaussianBlur
+         inkscape:collect=3D"always"
+         stdDeviation=3D"1.6542577"
+         id=3D"feGaussianBlur5479-3" />
+    </filter>
+    <linearGradient
+       inkscape:collect=3D"always"
+       xlink:href=3D"#linearGradient5773-6"
+       id=3D"linearGradient5559-4"
+       gradientUnits=3D"userSpaceOnUse"
+       gradientTransform=3D"matrix(0.76310003,0,0,0.76310003,-148.83714,-19=
+9.20551)"
+       x1=3D"366.54675"
+       y1=3D"332.68219"
+       x2=3D"366.54675"
+       y2=3D"396.92944" />
+    <linearGradient
+       inkscape:collect=3D"always"
+       id=3D"linearGradient5773-6">
+      <stop
+         style=3D"stop-color:#003ab2;stop-opacity:1"
+         offset=3D"0"
+         id=3D"stop5775-47" />
+      <stop
+         id=3D"stop5777-1"
+         offset=3D"0.21037051"
+         style=3D"stop-color:#0a3e97;stop-opacity:1" />
+      <stop
+         style=3D"stop-color:#068ae0;stop-opacity:1"
+         offset=3D"0.36227795"
+         id=3D"stop5779-5" />
+      <stop
+         id=3D"stop5781-9"
+         offset=3D"0.70665133"
+         style=3D"stop-color:#afebc8;stop-opacity:1" />
+      <stop
+         id=3D"stop5783-9"
+         offset=3D"0.77644545"
+         style=3D"stop-color:#def9d4;stop-opacity:1" />
+      <stop
+         style=3D"stop-color:#3b7932;stop-opacity:1"
+         offset=3D"1"
+         id=3D"stop5785-94" />
+    </linearGradient>
+    <clipPath
+       clipPathUnits=3D"userSpaceOnUse"
+       id=3D"clipPath6474-1">
+      <path
+         inkscape:connector-curvature=3D"0"
+         id=3D"path6476-6"
+         d=3D"m 278.24855,83.979541 c -2.03604,5.3e-5 -3.78508,0.447696 -5.=
+24632,1.383119 -1.46127,0.935507 -2.70486,2.480266 -3.72011,4.626294 l -1.3=
+5927,5.103231 28.80703,0 0.0238,-0.0715 8.25101,0 -0.0238,0.0715 c 0.002,-0=
+.0031 0.0219,0.0031 0.0238,0 0.87492,-1.424273 1.85524,-3.018701 2.98086,-4=
+.769375 1.14685,-1.815865 2.46051,-3.922021 3.93474,-6.343269 l -33.67179,0=
+ z m 69.25133,0 -33.69564,0.0715 -2.95701,11.041104 41.01662,0 c 0.43132,-1=
+.609698 0.81074,-2.967192 1.38312,-5.103231 0.13477,-2.146028 -0.28013,-3.6=
+90787 -1.24003,-4.626294 -0.96,-0.935424 -2.47111,-1.383066 -4.50706,-1.383=
+119 z m 9.1572,0.0715 -2.95702,11.041104 13.92658,0 2.98086,-11.041104 z m =
+-91.23815,17.796449 c -0.211,0.76101 -0.44358,1.54453 -0.71541,2.38468 l -0=
+.73925,2.79009 c -0.10352,3.46676 1.86583,5.22248 5.93787,5.22247 l 19.0775=
+,0 -2.59931,9.39566 -22.29683,0 -7.08252,11.30341 23.25071,-0.16692 0.0238,=
+-0.0715 10.6834,-0.16693 c 4.07198,0 6.99745,-1.7319 8.75181,-5.19861 l 5.1=
+5092,-19.24442 -0.16693,0 c 0.0295,-0.11003 0.0659,-0.19989 0.0954,-0.31002=
+ 0.0993,-0.16507 0.16122,-0.31911 0.19078,-0.42924 0.13476,-2.14604 -0.2801=
+5,-3.6908 -1.24004,-4.62629 -0.38616,-0.37628 -0.87055,-0.65741 -1.43081,-0=
+.88233 l -36.89112,0 z m 42.85283,0 -8.29871,30.92939 14.04581,0 2.76624,-1=
+0.30186 -0.0954,0 3.24318,-12.06651 21.53373,0 0.0715,-0.23847 c 1.55942,-0=
+.2751 2.89899,-0.87687 4.03012,-1.81237 1.18609,-0.93543 2.22828,-2.30959 3=
+.10009,-4.12551 0.10316,-0.38516 0.2011,-0.84015 0.33386,-1.33542 0.0607,-0=
+.22637 0.19806,-0.72044 0.28616,-1.04926 l -41.01662,0 z m 42.85284,0 -8.27=
+487,30.85784 13.87889,0 8.32256,-30.85785 z"
+         style=3D"font-size:48.57053375px;font-style:normal;font-variant:no=
+rmal;font-weight:bold;font-stretch:normal;text-indent:0;text-align:start;te=
+xt-decoration:none;line-height:100%;letter-spacing:-0.54239523px;word-spaci=
+ng:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mo=
+de:lr-tb;text-anchor:start;color:#000000;fill:url(#linearGradient6478);fill=
+-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;visibil=
+ity:visible;font-family:Transformers;-inkscape-font-specification:Transform=
+ers Bold"
+         sodipodi:nodetypes=3D"cccccccccccccccccccccccccccccscccccccccccccc=
+ccccccccccccccccccccc" />
+    </clipPath>
+    <filter
+       inkscape:collect=3D"always"
+       id=3D"filter5611-2"
+       color-interpolation-filters=3D"sRGB">
+      <feGaussianBlur
+         inkscape:collect=3D"always"
+         stdDeviation=3D"0.82712887"
+         id=3D"feGaussianBlur5613-0" />
+    </filter>
+  </defs>
+  <sodipodi:namedview
+     id=3D"base"
+     pagecolor=3D"#ffffff"
+     bordercolor=3D"#666666"
+     borderopacity=3D"1.0"
+     inkscape:pageopacity=3D"0.0"
+     inkscape:pageshadow=3D"2"
+     inkscape:zoom=3D"1.979899"
+     inkscape:cx=3D"192.89821"
+     inkscape:cy=3D"21.466522"
+     inkscape:document-units=3D"px"
+     inkscape:current-layer=3D"layer1"
+     showgrid=3D"false"
+     fit-margin-top=3D"0"
+     fit-margin-left=3D"0"
+     fit-margin-right=3D"0"
+     fit-margin-bottom=3D"0"
+     inkscape:window-width=3D"1920"
+     inkscape:window-height=3D"1011"
+     inkscape:window-x=3D"0"
+     inkscape:window-y=3D"27"
+     inkscape:window-maximized=3D"1" />
+  <metadata
+     id=3D"metadata3205">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about=3D"">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource=3D"http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label=3D"Camada 1"
+     inkscape:groupmode=3D"layer"
+     id=3D"layer1"
+     transform=3D"translate(-335.7199,-384.22893)">
+    <g
+       id=3D"g6480"
+       transform=3D"matrix(1.445086,0,0,1.445086,235.26631,308.40273)">
+      <path
+         sodipodi:nodetypes=3D"cccccccccccccccccccccccccccccscccccccccccccc=
+ccccccccccccccccccccc"
+         style=3D"font-size:48.57053375px;font-style:normal;font-variant:no=
+rmal;font-weight:bold;font-stretch:normal;text-indent:0;text-align:start;te=
+xt-decoration:none;line-height:100%;letter-spacing:-0.54239523px;word-spaci=
+ng:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mo=
+de:lr-tb;text-anchor:start;color:#000000;fill:#555753;fill-opacity:1;fill-r=
+ule:nonzero;stroke:none;stroke-width:1;marker:none;visibility:visible;filte=
+r:url(#filter5477-4);font-family:Transformers;-inkscape-font-specification:=
+Transformers Bold"
+         d=3D"m 98.406703,58.847509 c -2.03604,5.3e-5 -3.78508,0.447696 -5.=
+24632,1.383119 -1.46127,0.935507 -2.70486,2.480266 -3.72011,4.626294 l -1.3=
+5927,5.103231 28.807027,0 0.0238,-0.0715 8.25101,0 -0.0238,0.0715 c 0.002,-=
+0.0031 0.0219,0.0031 0.0238,0 0.87492,-1.424273 1.85524,-3.018701 2.98086,-=
+4.769375 1.14685,-1.815865 2.46051,-3.922021 3.93474,-6.343269 l -33.671787=
+,0 z m 69.251327,0 -33.69564,0.0715 -2.95701,11.041104 41.01662,0 c 0.43132=
+,-1.609698 0.81074,-2.967192 1.38312,-5.103231 0.13477,-2.146028 -0.28013,-=
+3.690787 -1.24003,-4.626294 -0.96,-0.935424 -2.47111,-1.383066 -4.50706,-1.=
+383119 z m 9.1572,0.0715 -2.95702,11.041104 13.92658,0 2.98086,-11.041104 z=
+ M 85.577083,76.715458 c -0.211,0.76101 -0.44358,1.54453 -0.71541,2.38468 l=
+ -0.73925,2.79009 c -0.10352,3.46676 1.86583,5.22248 5.93787,5.22247 l 19.0=
+77497,0 -2.59931,9.39566 -22.296827,0 -7.08252,11.303412 23.250707,-0.16692=
+ 0.0238,-0.0715 10.6834,-0.16693 c 4.07198,0 6.99745,-1.7319 8.75181,-5.198=
+61 l 5.15092,-19.244422 -0.16693,0 c 0.0295,-0.11003 0.0659,-0.19989 0.0954=
+,-0.31002 0.0993,-0.16507 0.16122,-0.31911 0.19078,-0.42924 0.13476,-2.1460=
+4 -0.28015,-3.6908 -1.24004,-4.62629 -0.38616,-0.37628 -0.87055,-0.65741 -1=
+.43081,-0.88233 l -36.891117,0 z m 42.852827,0 -8.29871,30.929392 14.04581,=
+0 2.76624,-10.301862 -0.0954,0 3.24318,-12.06651 21.53373,0 0.0715,-0.23847=
+ c 1.55942,-0.2751 2.89899,-0.87687 4.03012,-1.81237 1.18609,-0.93543 2.228=
+28,-2.30959 3.10009,-4.12551 0.10316,-0.38516 0.2011,-0.84015 0.33386,-1.33=
+542 0.0607,-0.22637 0.19806,-0.72044 0.28616,-1.04926 l -41.01662,0 z m 42.=
+85284,0 -8.27487,30.857842 13.87889,0 8.32256,-30.857852 z"
+         id=3D"path5465"
+         inkscape:connector-curvature=3D"0" />
+      <path
+         inkscape:connector-curvature=3D"0"
+         id=3D"path4643"
+         d=3D"m 95.42641,55.377071 c -2.03604,5.3e-5 -3.78508,0.447696 -5.2=
+4632,1.383119 -1.46127,0.935507 -2.70486,2.480266 -3.72011,4.626294 l -1.35=
+927,5.103231 28.80703,0 0.0238,-0.0715 8.25101,0 -0.0238,0.0715 c 0.002,-0.=
+0031 0.0219,0.0031 0.0238,0 0.87492,-1.424273 1.85524,-3.018701 2.98086,-4.=
+769375 1.14685,-1.815865 2.46051,-3.922021 3.93474,-6.343269 l -33.67179,0 =
+z m 69.25133,0 -33.69564,0.0715 -2.95701,11.041104 41.01662,0 c 0.43132,-1.=
+609698 0.81074,-2.967192 1.38312,-5.103231 0.13477,-2.146028 -0.28013,-3.69=
+0787 -1.24003,-4.626294 -0.96,-0.935424 -2.47111,-1.383066 -4.50706,-1.3831=
+19 z m 9.1572,0.0715 -2.95702,11.041104 13.92658,0 2.98086,-11.041104 z M 8=
+2.59679,73.24502 c -0.211,0.76101 -0.44358,1.54453 -0.71541,2.38468 l -0.73=
+925,2.79009 c -0.10352,3.46676 1.86583,5.22248 5.93787,5.22247 l 19.0775,0 =
+-2.59931,9.39566 -22.29683,0 -7.08252,11.3034 23.25071,-0.16692 0.0238,-0.0=
+715 10.6834,-0.16693 c 4.07198,0 6.99745,-1.7319 8.75181,-5.198598 l 5.1509=
+2,-19.244422 -0.16693,0 c 0.0295,-0.11003 0.0659,-0.19989 0.0954,-0.31002 0=
+.0993,-0.16507 0.16122,-0.31911 0.19078,-0.42924 0.13476,-2.14604 -0.28015,=
+-3.6908 -1.24004,-4.62629 -0.38616,-0.37628 -0.87055,-0.65741 -1.43081,-0.8=
+8233 l -36.89112,0 z m 42.85283,0 -8.29871,30.92938 14.04581,0 2.76624,-10.=
+30185 -0.0954,0 3.24318,-12.06651 21.53373,0 0.0715,-0.23847 c 1.55942,-0.2=
+751 2.89899,-0.87687 4.03012,-1.81237 1.18609,-0.93543 2.22828,-2.30959 3.1=
+0009,-4.12551 0.10316,-0.38516 0.2011,-0.84015 0.33386,-1.33542 0.0607,-0.2=
+2637 0.19806,-0.72044 0.28616,-1.04926 l -41.01662,0 z m 42.85284,0 -8.2748=
+7,30.85783 13.87889,0 8.32256,-30.85784 z"
+         style=3D"font-size:48.57053375px;font-style:normal;font-variant:no=
+rmal;font-weight:bold;font-stretch:normal;text-indent:0;text-align:start;te=
+xt-decoration:none;line-height:100%;letter-spacing:-0.54239523px;word-spaci=
+ng:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mo=
+de:lr-tb;text-anchor:start;color:#000000;fill:url(#linearGradient5559-4);fi=
+ll-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;visib=
+ility:visible;font-family:Transformers;-inkscape-font-specification:Transfo=
+rmers Bold"
+         sodipodi:nodetypes=3D"cccccccccccccccccccccccccccccscccccccccccccc=
+ccccccccccccccccccccc" />
+      <path
+         style=3D"font-size:48.57053375px;font-style:normal;font-variant:no=
+rmal;font-weight:bold;font-stretch:normal;text-indent:0;text-align:start;te=
+xt-decoration:none;line-height:100%;letter-spacing:-0.54239523px;word-spaci=
+ng:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mo=
+de:lr-tb;text-anchor:start;color:#000000;fill:none;stroke:#000000;stroke-wi=
+dth:0.49288514;stroke-opacity:1;marker:none;visibility:visible;filter:url(#=
+filter5611-2);font-family:Transformers;-inkscape-font-specification:Transfo=
+rmers Bold"
+         d=3D"m 277.8028,83.533789 c -2.03604,5.3e-5 -3.78508,0.447696 -5.2=
+4632,1.383119 -1.46127,0.935507 -2.70486,2.480266 -3.72011,4.626294 l -1.35=
+927,5.103231 28.80703,0 0.0238,-0.0715 8.25101,0 -0.0238,0.0715 c 0.002,-0.=
+0031 0.0219,0.0031 0.0238,0 0.87492,-1.424273 1.85524,-3.018701 2.98086,-4.=
+769375 1.14685,-1.815865 2.46051,-3.922021 3.93474,-6.343269 l -33.67179,0 =
+z m 69.25133,0 -33.69564,0.0715 -2.95701,11.041104 41.01662,0 c 0.43132,-1.=
+609698 0.81074,-2.967192 1.38312,-5.103231 0.13477,-2.146028 -0.28013,-3.69=
+0787 -1.24003,-4.626294 -0.96,-0.935424 -2.47111,-1.383066 -4.50706,-1.3831=
+19 z m 9.1572,0.0715 -2.95702,11.041104 13.92658,0 2.98086,-11.041104 z m -=
+91.23815,17.796451 c -0.211,0.76101 -0.44358,1.54453 -0.71541,2.38468 l -0.=
+73925,2.79009 c -0.10352,3.46676 1.86583,5.22248 5.93787,5.22247 l 19.0775,=
+0 -2.59931,9.39566 -22.29683,0 -7.08252,11.30341 23.25071,-0.16692 0.0238,-=
+0.0715 10.6834,-0.16693 c 4.07198,0 6.99745,-1.7319 8.75181,-5.19861 l 5.15=
+092,-19.24442 -0.16693,0 c 0.0295,-0.11003 0.0659,-0.19989 0.0954,-0.31002 =
+0.0993,-0.16507 0.16122,-0.31911 0.19078,-0.42924 0.13476,-2.14604 -0.28015=
+,-3.6908 -1.24004,-4.62629 -0.38616,-0.37628 -0.87055,-0.65741 -1.43081,-0.=
+88233 l -36.89112,0 z m 42.85283,0 -8.29871,30.92939 14.04581,0 2.76624,-10=
+.30186 -0.0954,0 3.24318,-12.06651 21.53373,0 0.0715,-0.23847 c 1.55942,-0.=
+2751 2.89899,-0.87687 4.03012,-1.81237 1.18609,-0.93543 2.22828,-2.30959 3.=
+10009,-4.12551 0.10316,-0.38516 0.2011,-0.84015 0.33386,-1.33542 0.0607,-0.=
+22637 0.19806,-0.72044 0.28616,-1.04926 l -41.01662,0 z m 42.85284,0 -8.274=
+87,30.85784 13.87889,0 8.32256,-30.85785 z"
+         id=3D"path5481"
+         inkscape:connector-curvature=3D"0"
+         clip-path=3D"url(#clipPath6474-1)"
+         transform=3D"translate(-182.82214,-28.60247)"
+         sodipodi:nodetypes=3D"cccccccccccccccccccccccccccccscccccccccccccc=
+ccccccccccccccccccccc" />
+    </g>
+  </g>
+</svg>=0A
+------MultipartBoundary--SKTECRLA4kS5daPK4it3G79vbshDyD7rkJjmll6aJf------
