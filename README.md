@@ -9,7 +9,10 @@ Learning from the internet.
 * [Jay Alammar](http://jalammar.github.io/)
 * [Physics with Elliot](https://www.physicswithelliot.com/)
 * [科学空间](https://spaces.ac.cn/)
+* [Life Is Computation](https://www.lifeiscomputation.com/)
+
 * [Medium](https://medium.com/)
+* [Substack](https://substack.com/)
 
 ## unknown
 
