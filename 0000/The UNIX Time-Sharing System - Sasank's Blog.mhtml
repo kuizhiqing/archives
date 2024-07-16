@@ -1,0 +1,2464 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: https://chsasank.com/classic_papers/unix-time-sharing-system.html
+Subject: The UNIX Time-Sharing System - Sasank's Blog
+Date: Fri, 24 May 2024 16:55:19 +0800
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--RTMToaHn7cnAyfuDjUhd90AdU80aac6p2wIcxA80eK----"
+
+
+------MultipartBoundary--RTMToaHn7cnAyfuDjUhd90AdU80aac6p2wIcxA80eK----
+Content-Type: text/html
+Content-ID: <frame-D4D85E0D134335CFE03FD872FAB2B4D5@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://chsasank.com/classic_papers/unix-time-sharing-system.html
+
+<!DOCTYPE html><html =E2=9A=A1=3D"" lang=3D"en"><head><meta http-equiv=3D"C=
+ontent-Type" content=3D"text/html; charset=3DUTF-8"><link rel=3D"stylesheet=
+" type=3D"text/css" href=3D"cid:css-971e8630-20fe-47e9-8c57-d7fb4614898f@mh=
+tml.blink" /><link rel=3D"stylesheet" type=3D"text/css" href=3D"cid:css-7ad=
+e143a-6d12-4163-b3a0-f50803f6b8b4@mhtml.blink" /><link rel=3D"stylesheet" t=
+ype=3D"text/css" href=3D"cid:css-b5c1f194-b40b-40e7-8579-50ee4ca1a8dd@mhtml=
+.blink" /><link rel=3D"stylesheet" type=3D"text/css" href=3D"cid:css-fefe80=
+70-ea50-4989-83b2-426d5669571d@mhtml.blink" /><link rel=3D"stylesheet" type=
+=3D"text/css" href=3D"cid:css-8f274f8a-6f1f-49a5-9896-090b86141693@mhtml.bl=
+ink" /><link rel=3D"stylesheet" type=3D"text/css" href=3D"cid:css-f3bf3550-=
+d3ab-424f-84f2-4bf74962aa97@mhtml.blink" /><link rel=3D"stylesheet" type=3D=
+"text/css" href=3D"cid:css-0d563e46-c721-453f-9cf2-3db9e2ff705f@mhtml.blink=
+" />
+ =20
+  <meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+  <meta name=3D"viewport" content=3D"width=3Ddevice-width,minimum-scale=3D1=
+">
+  <meta property=3D"og:locale" content=3D"en_GB">
+
+  <meta name=3D"twitter:card" content=3D"summary">
+  <meta name=3D"twitter:site" content=3D"@sasank51">
+
+ =20
+
+  <meta name=3D"twitter:image" content=3D"https://upload.wikimedia.org/wiki=
+pedia/commons/thumb/8/8f/Ken_Thompson_%28sitting%29_and_Dennis_Ritchie_at_P=
+DP-11_%282876612463%29.jpg/1280px-Ken_Thompson_%28sitting%29_and_Dennis_Rit=
+chie_at_PDP-11_%282876612463%29.jpg">
+  <meta property=3D"og:image" content=3D"https://upload.wikimedia.org/wikip=
+edia/commons/thumb/8/8f/Ken_Thompson_%28sitting%29_and_Dennis_Ritchie_at_PD=
+P-11_%282876612463%29.jpg/1280px-Ken_Thompson_%28sitting%29_and_Dennis_Ritc=
+hie_at_PDP-11_%282876612463%29.jpg">
+
+ =20
+
+  <meta name=3D"twitter:title" content=3D"The UNIX Time-Sharing System - Sa=
+sank's Blog">
+  <meta property=3D"og:title" content=3D"The UNIX Time-Sharing System - Sas=
+ank's Blog">
+  <meta name=3D"title" content=3D"The UNIX Time-Sharing System - Sasank's B=
+log">
+  <title>The UNIX Time-Sharing System - Sasank's Blog</title>
+
+ =20
+
+  <meta name=3D"twitter:description" content=3D"UNIX is a general-purpose, =
+multi-user, interactive operating system for the Digital Equipment Corporat=
+ion PDP-11/40 and 11/45 computers. It offers a number of features seldom fo=
+und even in larger o...">
+  <meta name=3D"description" content=3D"UNIX is a general-purpose, multi-us=
+er, interactive operating system for the Digital Equipment Corporation PDP-=
+11/40 and 11/45 computers. It offers a number of features seldom found even=
+ in larger o...">
+  <meta property=3D"og:description" content=3D"UNIX is a general-purpose, m=
+ulti-user, interactive operating system for the Digital Equipment Corporati=
+on PDP-11/40 and 11/45 computers. It offers a number of features seldom fou=
+nd even in larger o...">
+
+
+ =20
+    <meta name=3D"author" content=3D"Dennis M. Ritchie and Ken Thompson">
+    <meta property=3D"og:type" content=3D"article">
+ =20
+
+
+  <link rel=3D"canonical" href=3D"https://classic_papers/unix-time-sharing-=
+system.html">
+  <link rel=3D"alternate" type=3D"application/rss+xml" title=3D"Sasank's Bl=
+og" href=3D"https://feed.xml/">
+ =20
+
+  <link rel=3D"apple-touch-icon" sizes=3D"180x180" href=3D"https://chsasank=
+.com/assets/favicon/apple-touch-icon.png">
+  <link rel=3D"icon" type=3D"image/png" sizes=3D"32x32" href=3D"https://chs=
+asank.com/assets/favicon/favicon-32x32.png">
+  <link rel=3D"icon" type=3D"image/png" sizes=3D"16x16" href=3D"https://chs=
+asank.com/assets/favicon/favicon-16x16.png">
+  <link rel=3D"manifest" href=3D"https://chsasank.com/assets/favicon/site.w=
+ebmanifest">
+
+  <link rel=3D"stylesheet" href=3D"https://chsasank.com/assets/css/tufte.cs=
+s">
+  <link rel=3D"stylesheet" href=3D"https://chsasank.com/assets/css/styles.c=
+ss">
+  <link rel=3D"stylesheet" href=3D"https://chsasank.com/assets/css/syntax-h=
+ighlighting.css">
+
+ =20
+</head>
+
+  <body><div id=3D"MathJax_Message" style=3D"display: none;"></div>
+    <header>
+  <div class=3D"page-links">
+    <a class=3D"page-link" href=3D"https://chsasank.com/">Home</a>
+   =20
+   =20
+     =20
+   =20
+     =20
+   =20
+     =20
+   =20
+     =20
+   =20
+     =20
+   =20
+     =20
+   =20
+     =20
+   =20
+     =20
+   =20
+     =20
+   =20
+     =20
+   =20
+     =20
+   =20
+     =20
+   =20
+     =20
+   =20
+     =20
+   =20
+     =20
+   =20
+     =20
+   =20
+     =20
+   =20
+     =20
+   =20
+     =20
+   =20
+     =20
+   =20
+     =20
+   =20
+     =20
+      =E2=80=A2 <a class=3D"page-link" href=3D"https://chsasank.com/archive=
+/">My Writing</a>
+     =20
+   =20
+     =20
+      =E2=80=A2 <a class=3D"page-link" href=3D"https://chsasank.com/classic=
+_papers/">Classic Papers</a>
+     =20
+   =20
+     =20
+      =E2=80=A2 <a class=3D"page-link" href=3D"https://chsasank.com/about/"=
+>About Me</a>
+     =20
+   =20
+    =E2=80=A2 <a class=3D"page-link" href=3D"https://chsasank.com/classic_p=
+apers/unix-time-sharing-system.html#">Toggle Dark Mode</a>
+  </div>
+</header>
+
+
+    <article>
+
+  <h1 class=3D"title" temprop=3D"name">The UNIX Time-Sharing System</h1>
+
+  <div class=3D"post-meta">
+
+   =20
+
+   =20
+
+    <!-- https://www.alexrodba.com/2016/04/24/adding-minutes-to-read-to-you=
+r-jekyll-blog/ -->
+   =20
+  =20
+
+    <span class=3D"subtitle">Dennis M. Ritchie and Ken Thompson</span> |
+    <time datetime=3D"
+     =20
+        1974 July
+     =20
+    ">
+     =20
+        1974 July
+     =20
+    </time> |
+   =20
+   =20
+     =20
+          56
+     =20
+           minutes to read.
+     =20
+   =20
+  =20
+  </div>
+
+  <section>
+   =20
+      <div class=3D"small"><p>This is the 1974 paper that started it all an=
+d is highly relevant to this day. The design choices described in this pape=
+r significantly influenced the modern OS design. Best of all, it=E2=80=99s =
+a breeze to read and it flows like a tutorial.</p>
+
+        Yellow highlights/annotations are my own.
+        <a href=3D"https://chsasank.com/classic_papers/unix-time-sharing-sy=
+stem.html#">You can disable them.</a>
+      </div>
+   =20
+    <h2 id=3D"abstract">Abstract</h2>
+
+<p>UNIX is a general-purpose, multi-user, interactive operating system for =
+the Digital Equipment Corporation PDP-11/40 and 11/45 computers. It offers =
+a number of features seldom found even in larger operating systems, includi=
+ng: (1) a hierarchical file system incorporating demountable volumes; (2) c=
+ompatible file, device, and inter-process I/O; (3) the ability to initiate =
+asynchronous processes; (4) system command language select-able on a per-us=
+er basis; and (5) over 100 subsystems including a dozen languages. This pap=
+er discusses the nature and implementation of the file system and of the us=
+er command interface.</p>
+
+<h2 id=3D"1-introduction">1. Introduction</h2>
+
+<p>There have been three versions of UNIX. The earliest version (circa 1969=
+=E2=80=9370) ran on the Digital Equipment Corporation PDP-7 and -9 computer=
+s. The second version ran on the unprotected PDP-11/20 computer. This paper=
+ describes only the PDP-11/40 and /45 [l] system since it is more modern an=
+d many of the differences between it and older UNIX systems result from red=
+esign of features found to be deficient or lacking.</p>
+
+<p>Since PDP-11 UNIX became operational in February 1971, about 40 installa=
+tions have been put into service; they are generally smaller than the syste=
+m described here. Most of them are engaged in applications such as the prep=
+aration and formatting of patent applications and other textual material, t=
+he collection and processing of trouble data from various switching machine=
+s within the Bell System, and recording and checking telephone service orde=
+rs. Our own installation is used mainly for research in operating systems, =
+languages, computer networks, and other topics in computer science, and als=
+o for document preparation.</p>
+
+<p>Perhaps <mark>the most important achievement of UNIX is to demonstrate t=
+hat a powerful operating system for interactive use need not be expensive e=
+ither in equipment or in human effort</mark>: UNIX can run on hardware cost=
+ing as little as $40,000, and less than two man years were spent on the mai=
+n system software. Yet UNIX contains a number of features seldom offered ev=
+en in much larger systems. <mark>It is hoped, however, the users of UNIX wi=
+ll find that the most important characteristics of the system are its simpl=
+icity, elegance, and ease of use.</mark></p>
+
+<p>Besides the system proper, the major programs available under UNIX are: =
+assembler, text editor based on QED[2], linking loader, symbolic debugger, =
+compiler for a language resembling BCPL[3] with types and structures (C), i=
+nterpreter for a dialect of BASIC, text formatting program, Fortran compile=
+r, Snobol interpreter, top-down compiler-compiler (TMG) [4], bottom-up comp=
+iler-compiler (YACC), form letter generator, macro processor (M6) [5], and =
+permuted index program.</p>
+
+<p>There is also a host of maintenance, utility, recreation, and novelty pr=
+ograms. All of these programs were written locally. It is worth noting that=
+ the system is totally self-supporting. All UNIX software is maintained und=
+er UNIX; likewise, UNIX documents are generated and formatted by the UNIX e=
+ditor and text formatting program.</p>
+
+<h2 id=3D"2-hardware-and-software-environment">2. Hardware and Software Env=
+ironment</h2>
+
+<p>The PDP-11/45 on which our UNIX installation is implemented is a 16-bit =
+word (8-bit byte) computer with 144 Kbytes of core memory; UNIX occupies 42=
+K bytes. This system, however, includes a very large number of device drive=
+rs and enjoys a generous allotment of space for I/O buffers and system tabl=
+es; a minimal system capable of running the software mentioned above can re=
+quire as little as 50K bytes of core altogether.</p>
+
+<p>The PDP-11 has a 1M byte fixed-head disk, used for filesystem storage an=
+d swapping, four moving-head disk drives which each provide 2.5M bytes on r=
+emovable disk cartridges, and a single moving-head disk drive which uses re=
+movable 40M byte disk packs. There are also a high-speed paper tape reader-=
+punch, nine-track magnetic tape,and D-tape (a variety of magnetic tape faci=
+lity in which individual records may be addressed and rewritten). Besides t=
+he console typewriter, there are 14 variable-speed communications interface=
+s attached to 100-series datasets and a 201 dataset interface used primaril=
+y for spooling printout to a communal line printer. There are also several =
+one-of-a-kind devices including a Picturephone=C2=AE interface,a voice resp=
+onse unit, a voice synthesizer, a phototypesetter, a digital switching netw=
+ork, and a satellite PDP-11/20 which generates vectors, curves, and charact=
+ers on a Tektronix 611 storage-tube display.</p>
+
+<p>The greater part of UNIX software is written in the above-mentioned C la=
+nguage [6]. Early versions of the operating system were written in assembly=
+ language, but during the summer of 1973, it was rewritten in C. The size o=
+f the new system is about one third greater than the old. Since the new sys=
+tem is not only much easier to understand and to modify but also includes m=
+any functional improvements, including multiprogramming and the ability to =
+share reentrant code among several user programs, we considered this increa=
+se in size quite acceptable.</p>
+
+<h2 id=3D"3-the-file-system">3. The File System</h2>
+
+<p>The most important job of UNIX is to provide a file system.
+<label for=3D"mn-1" class=3D"margin-toggle">=E2=8A=95</label><input type=3D=
+"checkbox" id=3D"mn-1" class=3D"margin-toggle">
+<span class=3D"marginnote">
+ S: Note how the paper considers files important. Unix exposes all the func=
+tionality through files.
+</span>
+From the point of view of the user, there are three kinds of files: ordinar=
+y disk files, directories, and special files</p>
+
+<h3 id=3D"31-ordinary-files">3.1 Ordinary Files</h3>
+
+<p><mark>A file contains whatever information the user places on it, for ex=
+ample symbolic or binary (object) programs. No particular structuring is ex=
+pected by the system.</mark> Files of text consist simply of a string of ch=
+aracters, with lines demarcated by the new-line character. Binary programs =
+are sequences of words as they will appear in core memory when the program =
+starts executing. A few user programs manipulate files with more structure:=
+ the assembler generates and the loader expects an object file in a particu=
+lar format. However, the structure of files is controlled by the programs w=
+hich use them, not by the system.</p>
+
+<h3 id=3D"32-directories">3.2 Directories</h3>
+
+<p><mark>Directories provide the mapping between the names of files and the=
+ files themselves, and thus induce a structure on the file system as a whol=
+e.</mark> Each user has a directory of his own files; he may also create su=
+bdirectories to contain groups of files conveniently treated together. A di=
+rectory behaves exactly like an ordinary file except that it cannot be writ=
+ten on by unprivileged programs, so that the system controls the contents o=
+f directories. However, anyone with appropriate permission may read a direc=
+tory just like any other file.</p>
+
+<p>The system maintains several directories for its own use. One of these i=
+s the <em>root</em> directory. All files in the system can be found by trac=
+ing a path through a chain of directories until the desired file is reached=
+. The starting point for such searches is often the root. Another system di=
+rectory contains all the programs provided for general use; that is, all th=
+e <em>commands</em>. As will be seen however, it is by no means necessary t=
+hat a program reside in this directory for it to be executed.</p>
+
+<p><label for=3D"mn-2" class=3D"margin-toggle">=E2=8A=95</label><input type=
+=3D"checkbox" id=3D"mn-2" class=3D"margin-toggle">
+<span class=3D"marginnote">
+ S: This is a succinct description of path system of unix and Linux
+</span>
+Files are named by sequences of 14 or fewer characters. When the name of a =
+file is specified to the system, it may be in the form of a <em>path name</=
+em>, which is a sequence of directory names separated by slashes <code clas=
+s=3D"language-plaintext highlighter-rouge">/</code> and ending in a file na=
+me. If the sequence begins with a slash, the search begins in the root dire=
+ctory. The name <code class=3D"language-plaintext highlighter-rouge">/alpha=
+/beta/gamma</code> causes the system to search the root for directory <code=
+ class=3D"language-plaintext highlighter-rouge">alpha</code>, then to searc=
+h <code class=3D"language-plaintext highlighter-rouge">alpha</code> for <co=
+de class=3D"language-plaintext highlighter-rouge">beta</code>, finally to f=
+ind <code class=3D"language-plaintext highlighter-rouge">gamma</code> in <c=
+ode class=3D"language-plaintext highlighter-rouge">beta</code>. <code class=
+=3D"language-plaintext highlighter-rouge">gamma</code> may be an ordinary f=
+ile, a directory, or a special file. As a limiting case, the name <code cla=
+ss=3D"language-plaintext highlighter-rouge">/</code> refers to the root its=
+elf.</p>
+
+<p>A path name not starting with <code class=3D"language-plaintext highligh=
+ter-rouge">/</code> causes the system to begin the search in the user=E2=80=
+=99s current directory. Thus, the name <code class=3D"language-plaintext hi=
+ghlighter-rouge">alpha/beta</code> specifies the file named <code class=3D"=
+language-plaintext highlighter-rouge">beta</code> in subdirectory <code cla=
+ss=3D"language-plaintext highlighter-rouge">alpha</code> of the current dir=
+ectory. The simplest kind of name, for example <code class=3D"language-plai=
+ntext highlighter-rouge">alpha</code>, refers to a file which itself is fou=
+nd in the current directory. As another limiting case, the null file name r=
+efers to the current directory.</p>
+
+<p>The same nondirectory file may appear in several directories under possi=
+bly different names. This feature is called <em>linking</em>; a directory e=
+ntry for a file is sometimes called a link. <mark>UNIX differs from other s=
+ystems in which linking is permitted in that all links to a file have equal=
+ status.</mark> That is, a file does not exist within a particular director=
+y; the directory entry for a file consists merely of its name and a pointer=
+ to the information actually describing the file. Thus a file exists indepe=
+ndently of any directory entry, although in practice a file is made to disa=
+ppear along with the last link to it.</p>
+
+<p>Each directory always has at least two entries. The name in each directo=
+ry refers to the directory itself. Thus a program may read the current dire=
+ctory under the name <code class=3D"language-plaintext highlighter-rouge">.=
+</code> without knowing its complete path name. The name <code class=3D"lan=
+guage-plaintext highlighter-rouge">..</code> by convention refers to the pa=
+rent of the directory in which it appears, that is, to the directory in whi=
+ch it was created.</p>
+
+<p><mark>The directory structure is constrained to have the form of a roote=
+d tree.</mark> Except for the special entries <code class=3D"language-plain=
+text highlighter-rouge">.</code> and <code class=3D"language-plaintext high=
+lighter-rouge">..</code>, each directory must appear as an entry in exactly=
+ one other,which is its parent. Te reason for this is to simplify the writi=
+ng of programs which visit subtrees of the directory structure, and more im=
+portant, to avoid the separation of portions of the hierarchy. If arbitrary=
+ links to directories were permitted, it would be quite difficult to detect=
+ when the last connection from the root to a directory was severed.</p>
+
+<h3 id=3D"33-special-files">3.3 Special Files</h3>
+
+<p><mark>Special files constitute the most unusual feature of the UNIX file=
+ system. Each I/O device supported by UNIX is associated with at least one =
+such file.</mark> Special files are read and written just like ordinary dis=
+k files, but requests to read or write result in activation of the associat=
+ed device. An entry for each special file resides in directory <code class=
+=3D"language-plaintext highlighter-rouge">/dev</code>, although a link may =
+be made to one of these files just like an ordinary file. Thus, for example=
+, to punch paper tape, one may write on the file <code class=3D"language-pl=
+aintext highlighter-rouge">/dev/ppt</code>. Special files exist for each co=
+mmunication line, each disk, each tape drive, and for physical core memory.=
+ Of course, the active disks and the core special file are protected from i=
+ndiscriminate access.</p>
+
+<p>There is a threefold advantage in treating I/O devices this way: file an=
+d device I/O are as similar as possible; file and device names have the sam=
+e syntax and meaning, so that a program expecting a file name as a paramete=
+r can be passed a device name; finally, special files are subject to the sa=
+me protection mechanism as regular files.</p>
+
+<h3 id=3D"34-removable-file-systems">3.4 Removable File Systems</h3>
+
+<p>Although the root of the file system is always stored on the same device=
+, it is not necessary that the entire file system hierarchy reside on this =
+device. There is a <code class=3D"language-plaintext highlighter-rouge">mou=
+nt</code> system request which has two arguments: the name of an existing o=
+rdinary file, and the name of a direct-access special file whose associated=
+ storage volume (e.g. disk pack) should have the structure of an independen=
+t file system containing its own directory hierarchy. <mark>The effect of `=
+mount` is to cause references to the heretofore ordinary file to refer inst=
+ead to the root directory of the file system on the removable volume.</mark=
+> In effect, mount replaces a leaf of the hierarchy tree (the ordinary file=
+) by a whole new subtree (the hierarchy stored on the removable volume). Af=
+ter the <code class=3D"language-plaintext highlighter-rouge">mount</code>, =
+there is virtually no distinction between files on the removable volume and=
+ those in the permanent file system. In our installation, for example, the =
+root directory resides on the fixed-head disk, and the large disk drive, wh=
+ich contains user=E2=80=99s files, is mounted by the system initialization =
+program, the four smaller disk drives are available to users for mounting t=
+heir own disk packs. A mountable file system is generated by writing on its=
+ corresponding special file. A utility program is available to create an em=
+pty file system, or one may simply copy an existing file system.</p>
+
+<p>There is only one exception to the rule of identical treatment of files =
+on different devices: no link may exist between one file system hierarchy a=
+nd another. This restriction is enforced so as to avoid the elaborate bookk=
+eeping which would otherwise be required to assure removal of the links whe=
+n the removable volume is finally dismounted. In particular, in the root di=
+rectories of all file systems, removable or not, the name <code class=3D"la=
+nguage-plaintext highlighter-rouge">..</code> refers to the directory itsel=
+f instead of to its parent.</p>
+
+<h3 id=3D"35-protection">3.5 Protection</h3>
+
+<p>Although the access control scheme in UNIX is quite simple, it has some =
+unusual features. Each user of the system is assigned a unique user identif=
+ication number. When a file is created, it is marked with the user ID of it=
+s owner. Also given for new files is a set of seven protection bits. Six of=
+ these specify independently read, write, and execute permission for the ow=
+ner of the file and for all other users.</p>
+
+<p>If the seventh bit is on, the system will temporarily change the user id=
+entification of the current user to that of the creator of the file wheneve=
+r the file is executed as a program. This change in user ID is effective on=
+ly during the execution of the program which calls for it. The set-user-ID =
+feature provides for privileged programs which may use files inaccessible t=
+o other users. For example, a program may keep an accounting file which sho=
+uld neither be read nor changed except by the program itself. If the set-us=
+er-identification bit is on for the program, it may access the file althoug=
+h this access might be forbidden to other programs invoked by the given pro=
+gram=E2=80=99s user. Since the actual user ID of the invoker of any program=
+ is always available, set-user-ID programs may take any measures desired to=
+ satisfy themselves as to their invoker=E2=80=99s credentials. This mechani=
+sm is used to allow users to execute the carefully written commands which c=
+all privileged system entries. For example, there is a system entry invocab=
+le only by the =E2=80=9Csuper-user=E2=80=9D (below) which creates an empty =
+directory. As indicated above, directories are expected to have entries for=
+ <code class=3D"language-plaintext highlighter-rouge">.</code> and <code cl=
+ass=3D"language-plaintext highlighter-rouge">..</code> . The command which =
+creates a directory is owned by the superuser and has the set-user-ID bitse=
+t. After it checks its invoker=E2=80=99s authorization to create the specif=
+ied directory, it creates it and makes the entries for <code class=3D"langu=
+age-plaintext highlighter-rouge">.</code> and <code class=3D"language-plain=
+text highlighter-rouge">..</code> .</p>
+
+<p>Since anyone may set the set-user-ID bit on one of his own files, this m=
+echanism is generally available without administrative intervention. For ex=
+ample, this protection scheme easily solves the MOO accounting problem pose=
+d in [7].</p>
+
+<p>The system recognizes one particular user ID (that of the =E2=80=9Csuper=
+-user=E2=80=9D) as exempt from the usual constraints on file access; thus (=
+for example) programs may be written to dump and reload the file system wit=
+hout unwanted interference from the protection system.</p>
+
+<h3 id=3D"36-io-calls">3.6 I/O Calls</h3>
+
+<p>The system calls to do I/O are designed to eliminate the differences bet=
+ween the various devices and styles of access. <mark>There is no distinctio=
+n between "random" and sequential I/O, nor is any logical record size impos=
+ed by the system.</mark> The size of an ordinary file is determined by the =
+highest byte written on it; no predetermination of the size of a file is ne=
+cessary or possible.</p>
+
+<p>To illustrate the essentials of I/O in UNIX, Some of the basic calls are=
+ summarized below in an anonymous language which will indicate the required=
+ parameters without getting into the complexities of machine language progr=
+amming. Each call to the system may potentially result in an error return, =
+which for simplicity is not represented in the calling sequence.</p>
+
+<p>To read or write a file assumed to exist already, it must be opened by t=
+he following call:</p>
+
+<pre><code class=3D"language-C">filep =3D open(name, flag)
+</code></pre>
+
+<p><code class=3D"language-plaintext highlighter-rouge">name</code> indicat=
+es the name of the file. An arbitrary path name may be given. The <code cla=
+ss=3D"language-plaintext highlighter-rouge">flag</code> argument indicates =
+whether the file is to be read, written, or =E2=80=9Cupdated=E2=80=9D, that=
+ is read and written simultaneously.</p>
+
+<p>The returned value <code class=3D"language-plaintext highlighter-rouge">=
+filep</code> is called a file descriptor. It is a small integer used to ide=
+ntify the file in subsequent calls to read, write, or otherwise manipulate =
+it.</p>
+
+<p>To create a new file or completely rewrite an old one, there is a <code =
+class=3D"language-plaintext highlighter-rouge">create</code> system call wh=
+ich creates the given file if it does not exist, or truncates it to zero le=
+ngth if it does exist. <code class=3D"language-plaintext highlighter-rouge"=
+>create</code> also opens the new file for writing and, like <code class=3D=
+"language-plaintext highlighter-rouge">open</code>, returns a file descript=
+or.</p>
+
+<p>There are no user-visible locks in the file system, nor is there any res=
+triction on the number of users who may have a file open for reading or wri=
+ting; although it is possible for the contents of a file to become scramble=
+d when two users write on it simultaneously, in practice, difficulties do n=
+ot arise. We take the view that locks are neither necessary nor sufficient,=
+ in our environment, to prevent interference between users of the same file=
+. They are unnecessary because we are not faced with large, single-file dat=
+a bases maintained by independent processes. They are insufficient because =
+locks in the ordinary sense, whereby one user is prevented from writing on =
+a file which another user is reading, cannot prevent confusion when, for ex=
+ample, both users are editing a file with an editor which makes a copy of t=
+he file being edited.</p>
+
+<p>It should be said that the system has sufficient internal interlocks to =
+maintain the logical consistency of the file system when two users engage s=
+imultaneously in such inconvenient activities as writing on the same file, =
+creating files in the same directory or deleting each other=E2=80=99s open =
+files.</p>
+
+<p>Except as indicated below, reading and writing are sequential. This mean=
+s that if a particular byte in the file was the last byte written (or read)=
+, the next I/O call implicitly refers to the first following byte. For each=
+ open file there is a pointer, maintained by the system, which indicates th=
+e next byte to be read or written. If n bytes are read or written, the poin=
+ter advances by n bytes.</p>
+
+<p>Once a file is open, the following calls may be used:</p>
+
+<pre><code class=3D"language-C">n =3D read(filep, buffer, count)
+n =3D write(filep, buffer, count)
+</code></pre>
+
+<p>Up to <code class=3D"language-plaintext highlighter-rouge">count</code> =
+bytes are transmitted between the file specified by <code class=3D"language=
+-plaintext highlighter-rouge">filep</code> and the byte array specified by =
+<code class=3D"language-plaintext highlighter-rouge">buffer</code>. The ret=
+urned value <code class=3D"language-plaintext highlighter-rouge">n</code> i=
+s the number of bytes actually transmitted. In the <code class=3D"language-=
+plaintext highlighter-rouge">write</code> case, <code class=3D"language-pla=
+intext highlighter-rouge">n</code> is the same as <code class=3D"language-p=
+laintext highlighter-rouge">count</code> except under exceptional condition=
+s like I/O errors or end of physical medium on special files; in a <code cl=
+ass=3D"language-plaintext highlighter-rouge">read</code>, however, <code cl=
+ass=3D"language-plaintext highlighter-rouge">n</code> may without error be =
+less than <code class=3D"language-plaintext highlighter-rouge">count</code>=
+. If the read pointer is so near the end of the file that reading <code cla=
+ss=3D"language-plaintext highlighter-rouge">count</code> characters would c=
+ause reading beyond the end, only sufficient bytes are transmitted to reach=
+ the end of the file; also, typewriter-like devices never return more than =
+one line of input. When a <code class=3D"language-plaintext highlighter-rou=
+ge">read</code> call returns with <code class=3D"language-plaintext highlig=
+hter-rouge">n</code> equal to zero, it indicates the end of the file. For d=
+isk files this occurs when the read pointer becomes equal to the current si=
+ze of the file. It is possible to generate an end-of-file from a typewriter=
+ by use of an escape sequence which depends on the device used.</p>
+
+<p>Bytes written on a file affect only those implied by the position of the=
+ write pointer and the count; no other part of the file is changed. If the =
+last byte lies beyond the end of the file, the file is grown as needed.</p>
+
+<p>To do random (direct access) I/O, it is only necessary to move the read =
+or write pointer to the appropriate location in the file:</p>
+
+<pre><code class=3D"language-C">location =3D seek(filep, base, offset)
+</code></pre>
+
+<p>The pointer associated with <code class=3D"language-plaintext highlighte=
+r-rouge">filep</code> is moved to a position <code class=3D"language-plaint=
+ext highlighter-rouge">offset</code> bytes from the beginning of the file, =
+from the current position of the pointer, or from the end of the file, depe=
+nding on <code class=3D"language-plaintext highlighter-rouge">base</code>. =
+<code class=3D"language-plaintext highlighter-rouge">offset</code> may be n=
+egative. For some devices (e.g. paper tape and typewriters) <code class=3D"=
+language-plaintext highlighter-rouge">seek</code> calls are ignored. The ac=
+tual offset from the beginning of the file to which the pointer was moved i=
+s returned in <code class=3D"language-plaintext highlighter-rouge">location=
+</code>.</p>
+
+<p><strong>3.6.1: Other I/O Calls</strong>: There are several additional sy=
+stem entries having to do with I/O and with the file system which will not =
+be discussed. For example: close a file, get the status of a file, change t=
+he protection mode or the owner of a file, create a directory, make a link =
+to an existing file, delete a file.</p>
+
+<h2 id=3D"4-implementation-of-the-file-system">4. Implementation of the Fil=
+e System</h2>
+
+<p><label for=3D"mn-3" class=3D"margin-toggle">=E2=8A=95</label><input type=
+=3D"checkbox" id=3D"mn-3" class=3D"margin-toggle">
+<span class=3D"marginnote">
+ S: Implementation of a toy file system (in rust?) makes for an illustrativ=
+e exercise. Nice blog idea!
+</span>
+As mentioned in =C2=A73.2 above, a directory entry contains only a name for=
+ the associated file and a pointer to the file itself. This pointer is an i=
+nteger called the <code class=3D"language-plaintext highlighter-rouge">i-nu=
+mber</code> (for index number) of the file. When the file is accessed, its =
+<code class=3D"language-plaintext highlighter-rouge">i-number</code> is use=
+d as an index into a system table (the <code class=3D"language-plaintext hi=
+ghlighter-rouge">i-list</code>) stored in a known part of the device on whi=
+ch the directory resides. The entry thereby found (the file=E2=80=99s <code=
+ class=3D"language-plaintext highlighter-rouge">i-node</code>) contains the=
+ description of the file as follows.</p>
+
+<ol>
+  <li>Its owner.</li>
+  <li>Its protection bits.</li>
+  <li>The physical disk or tape addresses for the file contents.</li>
+  <li>Its size.</li>
+  <li>Time of last modification.</li>
+  <li>The number of links to the file, that is, the number of times it appe=
+ars in a directory.</li>
+  <li>A bit indicating whether the file is a directory.</li>
+  <li>A bit indicating whether the file is a special file.</li>
+  <li>A bit indicating whether the file is =E2=80=9Clarge=E2=80=9D or =E2=
+=80=9Csmall.=E2=80=9D</li>
+</ol>
+
+<p><mark>The purpose of an `open` or `create` system call is to turn the pa=
+th name given by the user into an `i-number` by searching the explicitly or=
+ implicitly named directories.</mark> Once a file is open, its device, <cod=
+e class=3D"language-plaintext highlighter-rouge">i-number</code>, and read/=
+write pointer are stored in a system table indexed by the file descriptor r=
+eturned by the open or create. Thus the file descriptor supplied during a s=
+ubsequent call to read or write the file may be easily related to the infor=
+mation necessary to access the file.</p>
+
+<p>When a new file is created, an <code class=3D"language-plaintext highlig=
+hter-rouge">i-node</code> is allocated for it and a directory entry is made=
+ which contains the name of the file and the <code class=3D"language-plaint=
+ext highlighter-rouge">i-node</code> number. Making a link to an existing f=
+ile involves creating a directory entry with the new name, copying the <cod=
+e class=3D"language-plaintext highlighter-rouge">i-number</code> from the o=
+riginal file entry, and incrementing the link-count field of the <code clas=
+s=3D"language-plaintext highlighter-rouge">i-node</code>. Removing (deletin=
+g) a file is done by decrementing the link-count of the <code class=3D"lang=
+uage-plaintext highlighter-rouge">i-node</code> specified by its directory =
+entry and erasing the directory entry. If the link-count drops to 0, any di=
+sk blocks in the file are freed and the <code class=3D"language-plaintext h=
+ighlighter-rouge">i-node</code> is deallocated.</p>
+
+<p>The space on all fixed or removable disks which contain a file system is=
+ divided into a number of 512-byte blocks logically addressed from 0 up to =
+a limit which depends on the device. There is space in the <code class=3D"l=
+anguage-plaintext highlighter-rouge">i-node</code> of each file for eight d=
+evice addresses. A <em>small</em> (nonspecial) file fits into eight or fewe=
+r blocks; in this case the addresses of the blocks themselves are stored. F=
+or <em>large</em> (nonspecial) files, each of the eight device addresses ma=
+y point to an indirect block of 256 addresses of blocks constituting the fi=
+le itself. These files may be as large as 8=E2=8B=85256=E2=8B=85512, or l,0=
+48,576 (220) bytes.</p>
+
+<p>The foregoing discussion applies to ordinary files. When an I/O request =
+is made to a file whose <code class=3D"language-plaintext highlighter-rouge=
+">i-node</code> indicates that it is special, the last seven device address=
+ words are immaterial, and the list is interpreted as a pair of bytes which=
+ constitute an internal <em>device</em> name. These bytes specify respectiv=
+ely a device type and subdevice number. The device type indicates which sys=
+tem routine will deal with I/O on that device; the subdevice number selects=
+, for example, a disk drive attached to a particular controller or one of s=
+everal similar typewriter interfaces.</p>
+
+<p>In this environment, the implementation of the <code class=3D"language-p=
+laintext highlighter-rouge">mount</code> system call (=C2=A73.4) is quite s=
+traightforward. <code class=3D"language-plaintext highlighter-rouge">mount<=
+/code> maintains a system table whose argument is the <code class=3D"langua=
+ge-plaintext highlighter-rouge">i-number</code> and device name of the ordi=
+nary file specified during the mount, and whose corresponding value is the =
+device name of the indicated special file. This table is searched for each =
+(<code class=3D"language-plaintext highlighter-rouge">i-number</code>, devi=
+ce)-pair which turns up while a path name is being scanned during an open o=
+r create; if a match is found, the <code class=3D"language-plaintext highli=
+ghter-rouge">i-number</code> is replaced by 1 (which is the <code class=3D"=
+language-plaintext highlighter-rouge">i-number</code> of the root directory=
+ on all file systems), and the device name is replaced by the table value.<=
+/p>
+
+<p><mark>To the user, both reading and writing of files appear to be synchr=
+onous and unbuffered.</mark> That is immediately after return from a <code =
+class=3D"language-plaintext highlighter-rouge">read</code> call the data ar=
+e available, and conversely after a <code class=3D"language-plaintext highl=
+ighter-rouge">write</code> the user=E2=80=99s workspace may be reused. In f=
+act the system maintains a rather complicated buffering mechanism which red=
+uces greatly the number of I/O operations required to access a file. Suppos=
+e a <code class=3D"language-plaintext highlighter-rouge">write</code> call =
+is made specifying transmission of a single byte.</p>
+
+<p>UNIX will search its buffers to see whether the affected disk block curr=
+ently resides in core memory; if not, it will be read in from the device. T=
+hen the affected byte is replaced in the buffer, and an entry is made in a =
+list of blocks to be written. The return from the <code class=3D"language-p=
+laintext highlighter-rouge">write</code> call may then take place, although=
+ the actual I/O may not be completed until a later time. Conversely, if a s=
+ingle byte is read, the system determines whether the secondary storage blo=
+ck in which the byte is located is already in one of the system=E2=80=99s b=
+uffers; if so, the byte can be returned immediately. If not, the block is r=
+ead into a buffer and the byte picked out.</p>
+
+<p>A program which reads or writes files in units of 512 bytes has an advan=
+tage over a program which reads or writes a single byte at a time, but the =
+gain is not immense; it comes mainly from the avoidance of system overhead.=
+ A program which is used rarely or which does no great volume of I/O may qu=
+ite reasonably read and write in units as small as it wishes.</p>
+
+<p>The notion of the <code class=3D"language-plaintext highlighter-rouge">i=
+-list</code> is an unusual feature of UNIX. In practice, this method of org=
+anizing the file system has proved quite reliable and easy to deal with. To=
+ the system itself, one of its strengths is the fact that each file has a s=
+hort, unambiguous name which is related in a simple way to the protection, =
+addressing, and other information needed to access the file. It also permit=
+s a quite simple and rapid algorithm for checking the consistency of a file=
+ system, for example verification that the portions of each device containi=
+ng useful information and those free to be allocated are disjoint and toget=
+her exhaust the space on the device. This algorithm is independent of the d=
+irectory hierarchy, since it need only scan the linearly-organized <code cl=
+ass=3D"language-plaintext highlighter-rouge">i-list</code>. At the same tim=
+e the notion of the <code class=3D"language-plaintext highlighter-rouge">i-=
+list</code> induces certain peculiarities not found in other file system or=
+ganizations. For example, there is the question of who is to be charged for=
+ the space a file occupies, since all directory entries for a file have equ=
+al status. Charging the owner of a file is unfair, in general, since one us=
+er may create a file, another may link to it, and the first user may delete=
+ the file. The first user is still the owner of the file, but it should be =
+charged to the second user. The simplest reasonably fair algorithm seems to=
+ be to spread the charges equally among users who have links to a file. The=
+ current version of UNIX avoids the issue by not charging any fees at all.<=
+/p>
+
+<h3 id=3D"41-efficiency-of-the-file-system">4.1 Efficiency of the File Syst=
+em</h3>
+
+<p>To provide an indication of the overall efficiency of UNIX and of the fi=
+le system in particular, timings were made of the assembly of a 7621-line p=
+rogram. The assembly was run alone on the machine; the total clock time was=
+ 35.9 sec, for a rate of 212 lines per sec. The time was divided as follows=
+: 63.5 percent assembler execution time, 16.5 percent system overhead, 20.0=
+ percent disk wait time. <mark>We will not attempt any interpretation of th=
+ese figures nor any comparison with other systems, but merely note that we =
+are generally satisfied with the overall performance of the system.</mark><=
+/p>
+
+<h2 id=3D"5-processes-and-images">5. Processes and Images</h2>
+
+<p><mark>An *image* is a computer execution environment.</mark> It includes=
+ a core image, general register values, status of open files, current direc=
+tory, and the like. An image is the current state of a pseudo computer.</p>
+
+<p><mark>A *process* is the execution of an image.</mark> While the process=
+or is executing on behalf of a process, the image must reside in core; duri=
+ng the execution of other processes it remains in core unless the appearanc=
+e of an active, higher-priority process forces it to be swapped out to the =
+fixed-head disk.</p>
+
+<p>The user-core part of an image is divided into three logical segments. T=
+he program text segment begins at location 0 in the virtual address space. =
+During execution, this segment is write-protected and a single copy of it i=
+s shared among all processes executing the same program. At the first 8K by=
+te boundary above the program text segment in the virtual address space beg=
+ins a non-shared, writable data segment, the size of which may be extended =
+by a system call. Starting at the highest address in the virtual address sp=
+ace is a stack segment, which automatically grows downward as the hardware=
+=E2=80=99s stack pointer fluctuates.</p>
+
+<h3 id=3D"51-processes">5.1 Processes</h3>
+
+<p>Except while UNIX is bootstrapping itself into operation, a new process =
+can come into existence only by use of the <code class=3D"language-plaintex=
+t highlighter-rouge">fork</code> system call:</p>
+
+<pre><code class=3D"language-C">processid =3D fork(label)
+</code></pre>
+
+<p><mark>When `fork` is executed by a process, it splits into two independe=
+ntly executing processes. The two processes have independent copies of the =
+original core image, and share any open files.</mark> The new processes dif=
+fer only in that one is considered the parent process: in the parent, contr=
+ol returns directly from the <code class=3D"language-plaintext highlighter-=
+rouge">fork</code>, while in the child, control is passed to location <code=
+ class=3D"language-plaintext highlighter-rouge">label</code>. The <code cla=
+ss=3D"language-plaintext highlighter-rouge">processid</code> returned by th=
+e <code class=3D"language-plaintext highlighter-rouge">fork</code> call is =
+the identification of the other process.</p>
+
+<p>Because the return points in the parent and child process are not the sa=
+me, each image existing after a <code class=3D"language-plaintext highlight=
+er-rouge">fork</code> may determine whether it is the parent or child proce=
+ss.</p>
+
+<h3 id=3D"52-pipes">5.2 Pipes</h3>
+
+<p>Processes may communicate with related processes using the same system r=
+ead and write calls that are used for file system I/O. The call</p>
+
+<div class=3D"language-plaintext highlighter-rouge"><div class=3D"highlight=
+"><pre class=3D"highlight"><code>filep =3D pipe()
+</code></pre></div></div>
+
+<p>returns a file descriptor <code class=3D"language-plaintext highlighter-=
+rouge">filep</code> and creates an interprocess channel called a <code clas=
+s=3D"language-plaintext highlighter-rouge">pipe</code>. This channel, like =
+other open flies, is passed from parent to child process in the image by th=
+e <code class=3D"language-plaintext highlighter-rouge">fork</code> call. A =
+<code class=3D"language-plaintext highlighter-rouge">read</code> using a pi=
+pe file descriptor waits until another process writes using the file descri=
+ptor for the same pipe. At this point, data are passed between the images o=
+f the two processes. Neither process need know that a pipe, rather than an =
+ordinary file, is involved.</p>
+
+<p>Although interprocess communication via pipes is a quite valuable tool (=
+see =C2=A76.2), it is not a completely general mechanism since the pipe mus=
+t be set up by a common ancestor of the processes involved.</p>
+
+<h3 id=3D"53-execution-of-programs">5.3 Execution of Programs</h3>
+
+<p>Another major system primitive is invoked by</p>
+
+<div class=3D"language-plaintext highlighter-rouge"><div class=3D"highlight=
+"><pre class=3D"highlight"><code>execute(file, arg1, arg2, ..., argn)
+</code></pre></div></div>
+
+<p>which requests the system to read in and execute the program named by <c=
+ode class=3D"language-plaintext highlighter-rouge">file</code>, passing it =
+string arguments <code class=3D"language-plaintext highlighter-rouge">arg1<=
+/code>, <code class=3D"language-plaintext highlighter-rouge">arg2</code>,=
+=E2=80=A6, <code class=3D"language-plaintext highlighter-rouge">argn</code>=
+. Ordinarily, <code class=3D"language-plaintext highlighter-rouge">arg1</co=
+de> should be the same string as <code class=3D"language-plaintext highligh=
+ter-rouge">file</code>, so that the program may determine the name by which=
+ it was invoked. All the code and data in the process using <code class=3D"=
+language-plaintext highlighter-rouge">execute</code> is replaced from the f=
+ile, but open files, current directory, and interprocess relationships are =
+unaltered. Only if the call fails, for example because <code class=3D"langu=
+age-plaintext highlighter-rouge">file</code> could not be found or because =
+its execute-permission bit was not set, does a return take place from the <=
+code class=3D"language-plaintext highlighter-rouge">execute</code> primitiv=
+e; it resembles a =E2=80=9Cjump=E2=80=9D machine instruction rather than a =
+subroutine call.</p>
+
+<h3 id=3D"54-process-synchronization">5.4 Process Synchronization</h3>
+
+<p>Another process control system call</p>
+
+<pre><code class=3D"language-C">processid =3D wait()
+</code></pre>
+
+<p>causes its caller to suspend execution until one of its children has com=
+pleted execution. Then <code class=3D"language-plaintext highlighter-rouge"=
+>wait</code> returns the <code class=3D"language-plaintext highlighter-roug=
+e">processid</code> of the terminated process. An error return is taken if =
+the calling process has no descendants. Certain status from the child proce=
+ss is also available. <code class=3D"language-plaintext highlighter-rouge">=
+wait</code> may also present status from a grandchild or more distant ances=
+tor; see =C2=A75.5.</p>
+
+<h3 id=3D"55-termination">5.5 Termination</h3>
+
+<p>Lastly,</p>
+
+<div class=3D"language-plaintext highlighter-rouge"><div class=3D"highlight=
+"><pre class=3D"highlight"><code>exit(status)
+</code></pre></div></div>
+
+<p>terminates a process, destroys its image, closes its open files, and gen=
+erally obliterates it. When the parent is notified through the <code class=
+=3D"language-plaintext highlighter-rouge">wait</code> primitive, the indica=
+ted <code class=3D"language-plaintext highlighter-rouge">status</code> is a=
+vailable to the parent; if the parent has already terminated, the status is=
+ available to the grandparent, and so on. Processes may also terminate as a=
+ result of various illegal actions or user-generated signals (=C2=A77 below=
+).</p>
+
+<h2 id=3D"6-the-shell">6. The Shell</h2>
+
+<p>For most users, communication with UNIX is carried on with the aid of a =
+program called the Shell. <mark>The Shell is a command line interpreter: it=
+ reads lines typed by the user and interprets them as requests to execute o=
+ther programs.</mark> In simplest form, a command line consists of the comm=
+and name followed by arguments to the command, all separated by spaces:</p>
+
+<div class=3D"language-plaintext highlighter-rouge"><div class=3D"highlight=
+"><pre class=3D"highlight"><code>command arg1 arg2 ... argn
+</code></pre></div></div>
+
+<p>The Shell splits up the command name and the arguments into separate str=
+ings. Then a file with name <code class=3D"language-plaintext highlighter-r=
+ouge">command</code> is sought; <code class=3D"language-plaintext highlight=
+er-rouge">command</code> may be a path name including the <code class=3D"la=
+nguage-plaintext highlighter-rouge">/</code> character to specify any file =
+in the system. If <code class=3D"language-plaintext highlighter-rouge">comm=
+and</code> is found, it is brought into core and executed. The arguments co=
+llected by the Shell are accessible to the command. When the command is fin=
+ished, the Shell resumes its own execution, and indicates its readiness to =
+accept another command by typing a prompt character.</p>
+
+<p>If file <code class=3D"language-plaintext highlighter-rouge">command</co=
+de> cannot be found, the Shell prefixes the string <code class=3D"language-=
+plaintext highlighter-rouge">/bin/</code> to command and attempts again to =
+find the file. Directory <code class=3D"language-plaintext highlighter-roug=
+e">/bin</code> contains all the commands intended to be generally used.</p>
+
+<h3 id=3D"61-standard-io">6.1 Standard I/O</h3>
+
+<p><label for=3D"mn-4" class=3D"margin-toggle">=E2=8A=95</label><input type=
+=3D"checkbox" id=3D"mn-4" class=3D"margin-toggle">
+<span class=3D"marginnote">
+ S: Discussion of stdout, stdin and stderr follows.=20
+</span>
+The discussion of I/O in =C2=A73 above seems to imply that every file used =
+by a program must be opened or created by the program in order to get a fil=
+e descriptor for the file. <mark>Programs executed by the Shell, however, s=
+tart off with two open files which have file descriptors 0 and 1.</mark> As=
+ such a program begins execution, file 1 is open for writing, and is best u=
+nderstood as the standard output file. Except under circumstances indicated=
+ below, this file is the user=E2=80=99s typewriter. Thus programs which wis=
+h to write informative or diagnostic information ordinarily use file descri=
+ptor 1. Conversely, file 0 starts off open for reading, and programs which =
+wish to read messages typed by the user usually read this file.</p>
+
+<p><label for=3D"mn-5" class=3D"margin-toggle">=E2=8A=95</label><input type=
+=3D"checkbox" id=3D"mn-5" class=3D"margin-toggle">
+<span class=3D"marginnote">
+ S: Redirection and filering are some of the best features on the Unix. The=
+se are easily implemented thanks to UNIX=E2=80=99s choice to consider every=
+ I/O as file.=20
+</span>
+The Shell is able to change the standard assignments of these file descript=
+ors from the user=E2=80=99s typewriter printer and keyboard. If one of the =
+arguments to a command is prefixed by <code class=3D"language-plaintext hig=
+hlighter-rouge">&gt;</code>, file descriptor 1 will, for the duration of th=
+e command, refer to the file named after the <code class=3D"language-plaint=
+ext highlighter-rouge">&gt;</code>. For example,</p>
+
+<div class=3D"language-plaintext highlighter-rouge"><div class=3D"highlight=
+"><pre class=3D"highlight"><code>ls
+</code></pre></div></div>
+
+<p>ordinarily lists, on the typewriter, the names of the files in the curre=
+nt directory. The command</p>
+
+<div class=3D"language-plaintext highlighter-rouge"><div class=3D"highlight=
+"><pre class=3D"highlight"><code>ls &gt; there
+</code></pre></div></div>
+
+<p>creates a file called <code class=3D"language-plaintext highlighter-roug=
+e">there</code> and places the listing there. Thus the argument <code class=
+=3D"language-plaintext highlighter-rouge">&gt;there</code> means, =E2=80=9C=
+place output on <code class=3D"language-plaintext highlighter-rouge">there<=
+/code>.=E2=80=9D On the other hand,</p>
+
+<div class=3D"language-plaintext highlighter-rouge"><div class=3D"highlight=
+"><pre class=3D"highlight"><code>ed
+</code></pre></div></div>
+
+<p>ordinarily enters the editor, which takes requests from the user via his=
+ typewriter. The command</p>
+
+<div class=3D"language-plaintext highlighter-rouge"><div class=3D"highlight=
+"><pre class=3D"highlight"><code>ed &lt; script
+</code></pre></div></div>
+
+<p>interprets <code class=3D"language-plaintext highlighter-rouge">script</=
+code> as a file of editor commands; thus <code class=3D"language-plaintext =
+highlighter-rouge">&lt;script</code> means, =E2=80=9Ctake input from script=
+.=E2=80=9D</p>
+
+<p>Although the file name following <code class=3D"language-plaintext highl=
+ighter-rouge">&lt;</code> or <code class=3D"language-plaintext highlighter-=
+rouge">&gt;</code> appears to be an argument to the command, in fact it is =
+interpreted completely by the Shell and is not passed to the command at all=
+. Thus no special coding to handle I/O redirection is needed within each co=
+mmand; the command need merely use the standard file descriptors 0 and 1 wh=
+ere appropriate.</p>
+
+<h3 id=3D"62-filters">6.2 Filters</h3>
+
+<p>An extension of the standard I/O notion is used to direct output from on=
+e command to the input of another. A sequence of commands separated by vert=
+ical bars causes the Shell to execute all the commands simultaneously and t=
+o arrange that the standard output of each command be delivered to the stan=
+dard input of the next command in the sequence. Thus in the command line</p=
+>
+
+<div class=3D"language-sh highlighter-rouge"><div class=3D"highlight"><pre =
+class=3D"highlight"><code><span class=3D"nb">ls</span> | <span class=3D"nb"=
+>pr</span> =E2=80=932 | opr
+</code></pre></div></div>
+
+<p><code class=3D"language-plaintext highlighter-rouge">ls</code> lists the=
+ names of the files in the current directory; its output is passed to <code=
+ class=3D"language-plaintext highlighter-rouge">pr</code>, which paginates =
+its input with dated headings. The argument <code class=3D"language-plainte=
+xt highlighter-rouge">=E2=80=932</code> means double column. Likewise the o=
+utput from <code class=3D"language-plaintext highlighter-rouge">pr</code> i=
+s input to <code class=3D"language-plaintext highlighter-rouge">opr</code>.=
+ This commands pools its input onto a file for off-line printing.</p>
+
+<p>This process could have been carried out more clumsily by</p>
+
+<div class=3D"language-sh highlighter-rouge"><div class=3D"highlight"><pre =
+class=3D"highlight"><code><span class=3D"nb">ls</span> <span class=3D"o">&g=
+t;</span>temp1
+<span class=3D"nb">pr</span> =E2=80=932 &lt;temp1 <span class=3D"o">&gt;</s=
+pan>temp2
+opr &lt;temp2
+</code></pre></div></div>
+
+<p>followed by removal of the temporary files. In the absence of the abilit=
+y to redirect output and input, a still clumsier method would have been to =
+require the <code class=3D"language-plaintext highlighter-rouge">ls</code> =
+command to accept user requests to paginate its output, to print in multi-c=
+olumn format, and to arrange that its output be delivered off-line. Actuall=
+y it would be surprising, and in fact unwise for efficiency reasons, to exp=
+ect authors of commands such as <code class=3D"language-plaintext highlight=
+er-rouge">ls</code> to provide such a wide variety of output options.</p>
+
+<p>A program such as <code class=3D"language-plaintext highlighter-rouge">p=
+r</code> which copies its standard input to its standard output (with proce=
+ssing) is called a <em>filter</em>. Some filters which we have found useful=
+ perform character transliteration, sorting of the input, and encryption an=
+d decryption.</p>
+
+<h3 id=3D"63-command-separators-multitasking">6.3 Command Separators: Multi=
+tasking</h3>
+
+<p>Another feature provided by the Shell is relatively straightforward. Com=
+mands need not be on different lines;instead they may be separated by semic=
+olons.</p>
+
+<div class=3D"language-plaintext highlighter-rouge"><div class=3D"highlight=
+"><pre class=3D"highlight"><code>ls ; ed
+</code></pre></div></div>
+
+<p>will first list the contents of the current directory, then enter the ed=
+itor.</p>
+
+<p>A related feature is more interesting. If a command is followed by <code=
+ class=3D"language-plaintext highlighter-rouge">&amp;</code>, the Shell wil=
+l not wait for the command to finish before prompting again; instead, it is=
+ ready immediately to accept a new command. For example,</p>
+
+<div class=3D"language-plaintext highlighter-rouge"><div class=3D"highlight=
+"><pre class=3D"highlight"><code>as source &gt;output &amp;
+</code></pre></div></div>
+
+<p>causes source to be assembled, with diagnostic output going to output; n=
+o matter how long the assembly takes, the Shell returns immediately. When t=
+he Shell does not wait for the completion of a command, the identification =
+of the process running that command is printed. This identification may be =
+used to wait for the completion of the command or to terminate it. The <cod=
+e class=3D"language-plaintext highlighter-rouge">&amp;</code> may be used s=
+everal times in a line:</p>
+
+<div class=3D"language-plaintext highlighter-rouge"><div class=3D"highlight=
+"><pre class=3D"highlight"><code>as source &gt;output &amp; ls &gt;files &a=
+mp;
+</code></pre></div></div>
+
+<p>does both the assembly and the listing in the background. In the example=
+s above using <code class=3D"language-plaintext highlighter-rouge">&amp;</c=
+ode>, an output file other than the typewriter was provided; if this had no=
+t been done, the outputs of the various commands would have been intermingl=
+ed.</p>
+
+<p>The Shell also allows parentheses in the above operations. For example,<=
+/p>
+
+<div class=3D"language-plaintext highlighter-rouge"><div class=3D"highlight=
+"><pre class=3D"highlight"><code>(date; ls) &gt;x &amp;
+</code></pre></div></div>
+
+<p>prints the current date and time followed by a list of the current direc=
+tory onto the file <code class=3D"language-plaintext highlighter-rouge">x</=
+code>. The Shell also returns immediately for another request.</p>
+
+<h3 id=3D"64-the-shell-as-a-command-command-files">6.4 The Shell as a Comma=
+nd: Command files</h3>
+
+<p><label for=3D"mn-6" class=3D"margin-toggle">=E2=8A=95</label><input type=
+=3D"checkbox" id=3D"mn-6" class=3D"margin-toggle">
+<span class=3D"marginnote">
+ S: Description of awesome shell scripts follows.
+</span>
+The Shell is itself a command, and may be called recursively. Suppose file =
+<code class=3D"language-plaintext highlighter-rouge">tryout</code> contains=
+ the lines</p>
+
+<div class=3D"language-plaintext highlighter-rouge"><div class=3D"highlight=
+"><pre class=3D"highlight"><code>as source
+mv a.out testprog
+testprog
+</code></pre></div></div>
+
+<p>The <code class=3D"language-plaintext highlighter-rouge">mv</code> comma=
+nd causes the file <code class=3D"language-plaintext highlighter-rouge">a.o=
+ut</code> to be renamed <code class=3D"language-plaintext highlighter-rouge=
+">testprog</code>. <code class=3D"language-plaintext highlighter-rouge">a.o=
+ut</code> is the (binary) output of the assembler, ready to be executed. Th=
+us if the three lines above were typed on the console, <code class=3D"langu=
+age-plaintext highlighter-rouge">source</code> would be assembled, the resu=
+lting program named <code class=3D"language-plaintext highlighter-rouge">te=
+stprog</code>, and <code class=3D"language-plaintext highlighter-rouge">tes=
+tprog</code> executed. When the lines are in <code class=3D"language-plaint=
+ext highlighter-rouge">tryout</code>, the command</p>
+
+<div class=3D"language-plaintext highlighter-rouge"><div class=3D"highlight=
+"><pre class=3D"highlight"><code>sh &lt; tryout
+</code></pre></div></div>
+
+<p>would cause the Shell <code class=3D"language-plaintext highlighter-roug=
+e">sh</code> to execute the commands sequentially.</p>
+
+<p>The Shell has further capabilities, including the ability to substitute =
+parameters and to construct argument lists from a specified subset of the f=
+ile names in a directory. It is also possible to execute commands condition=
+ally on character string comparisons or on existence of given files and to =
+perform transfers of control within filed command sequences.</p>
+
+<h3 id=3D"65-implementation-of-the-shell">6.5 Implementation of the Shell</=
+h3>
+
+<p><label for=3D"mn-7" class=3D"margin-toggle">=E2=8A=95</label><input type=
+=3D"checkbox" id=3D"mn-7" class=3D"margin-toggle">
+<span class=3D"marginnote">
+ S: Shell=E2=80=99s implementation is remarkably simple thanks to the desig=
+n choices described earlier in the paper.
+</span>
+The outline of the operation of the Shell can now be understood. Most of th=
+e time, the Shell is waiting for the user to type a command. When the new-l=
+ine character ending the line is typed, the Shell=E2=80=99s <code class=3D"=
+language-plaintext highlighter-rouge">read</code> call returns. The Shell a=
+nalyzes the command line, putting the arguments in a form appropriate for <=
+code class=3D"language-plaintext highlighter-rouge">execute</code>. Then <c=
+ode class=3D"language-plaintext highlighter-rouge">fork</code> is called. T=
+he child process, whose code of course is still that of the Shell, attempts=
+ to perform an <code class=3D"language-plaintext highlighter-rouge">execute=
+</code> with the appropriate arguments. If successful, this will bring in a=
+nd start execution of the program whose name was given. Meanwhile, the othe=
+r process resulting from the <code class=3D"language-plaintext highlighter-=
+rouge">fork</code>, which is the parent process, <code class=3D"language-pl=
+aintext highlighter-rouge">wait</code>s for the child process to die. When =
+this happens, the Shell knows the command is finished, so it types its prom=
+pt and reads the typewriter to obtain another command.</p>
+
+<p>Given this framework, the implementation of background processes is triv=
+ial; whenever a command line contains <code class=3D"language-plaintext hig=
+hlighter-rouge">&amp;</code>, the Shell merely refrains from waiting for th=
+e process which it created to execute the command.</p>
+
+<p>Happily, all of this mechanism meshes very nicely with the notion of sta=
+ndard input and output files. When a process is created by the <code class=
+=3D"language-plaintext highlighter-rouge">fork</code> primitive, it inherit=
+s not only the core image of its parent but also all the files currently op=
+en in its parent, including those with file descriptors 0 and 1. The Shell,=
+ of course, uses these files to read command lines and to write its prompts=
+ and diagnostics, and in the ordinary case its children =E2=80=94 the comma=
+nd programs =E2=80=94 inherit them automatically. When an argument with <co=
+de class=3D"language-plaintext highlighter-rouge">&lt;</code> or <code clas=
+s=3D"language-plaintext highlighter-rouge">&gt;</code> is given however, th=
+e offspring process, just before it performs <code class=3D"language-plaint=
+ext highlighter-rouge">execute</code>, makes the standard I/O file descript=
+or 0 or 1 respectively refer to the named file. This is easy because, by ag=
+reement, the smallest unused file descriptor is assigned when a new file is=
+ opened (or created); it is only necessary to close file 0 (or 1) and open =
+the named file. Because the process in which the command program runs simpl=
+y terminates when it is through, the association between a file specified a=
+fter <code class=3D"language-plaintext highlighter-rouge">&lt;</code> or <c=
+ode class=3D"language-plaintext highlighter-rouge">&gt;</code> and file des=
+criptor 0 or 1 is ended automatically when the process dies. Therefore the =
+Shell need not know the actual names of the files which are its own standar=
+d input and output since it need never reopen them.</p>
+
+<p>Filters are straightforward extensions of standard I/O redirection with =
+pipes used instead of files.</p>
+
+<p>In ordinary circumstances, the main loop of the Shell never terminates. =
+(The main loop includes that branch of the return from <code class=3D"langu=
+age-plaintext highlighter-rouge">fork</code> belonging to the parent proces=
+s; that is, the branch which does a <code class=3D"language-plaintext highl=
+ighter-rouge">wait</code>, then reads another command line.) The one thing =
+which causes the Shell to terminate is discovering an end-of-file condition=
+ on its input file. Thus when the Shell is executed as a command with a giv=
+en input file, as in</p>
+
+<div class=3D"language-plaintext highlighter-rouge"><div class=3D"highlight=
+"><pre class=3D"highlight"><code>sh &lt; comfile
+</code></pre></div></div>
+
+<p>the commands in <code class=3D"language-plaintext highlighter-rouge">com=
+file</code> will be executed until the end of <code class=3D"language-plain=
+text highlighter-rouge">comfile</code> is reached; then the instance of the=
+ Shell invoked by <code class=3D"language-plaintext highlighter-rouge">sh</=
+code> will terminate. Since this Shell process is the child of another inst=
+ance of the Shell, the <code class=3D"language-plaintext highlighter-rouge"=
+>wait</code> executed in the latter will return, and another command may be=
+ processed.</p>
+
+<h3 id=3D"66-initialization">6.6 Initialization</h3>
+
+<p><label for=3D"mn-8" class=3D"margin-toggle">=E2=8A=95</label><input type=
+=3D"checkbox" id=3D"mn-8" class=3D"margin-toggle">
+<span class=3D"marginnote">
+ S: Booting and logging-in are described.
+</span>
+The instances of the Shell to which users type commands are themselves chil=
+dren of another process. The last step in the initialization of UNIX is the=
+ creation of a single process and the invocation (via <code class=3D"langua=
+ge-plaintext highlighter-rouge">execute</code>) of a program called <code c=
+lass=3D"language-plaintext highlighter-rouge">init</code>. The role of <cod=
+e class=3D"language-plaintext highlighter-rouge">init</code> is to create o=
+ne process for each typewriter channel which may be dialed up by a user. Th=
+e various subinstances of <code class=3D"language-plaintext highlighter-rou=
+ge">init</code> open the appropriate typewriters for input and output. Sinc=
+e when <code class=3D"language-plaintext highlighter-rouge">init</code> was=
+ invoked there were no files open, in each process the typewriter keyboard =
+will receive file descriptor 0 and the printer file descriptor 1. Each proc=
+ess types out a message requesting that the user log in and waits, reading =
+the typewriter, for a reply. At the outset, no one is logged in, so each pr=
+ocess simply hangs. Finally someone types his name or other identification.=
+ The appropriate instance of <code class=3D"language-plaintext highlighter-=
+rouge">init</code> wakes up, receives the log-in line, and reads a password=
+ file. If the user name is found, and if he is able to supply the correct p=
+assword, init changes to the user=E2=80=99s default current directory, sets=
+ the process=E2=80=99s user ID to that of the person logging in, and perfor=
+ms an execute of the Shell. At this point the Shell is ready to receive com=
+mands and the logging-in protocol is complete</p>
+
+<p>Meanwhile, the mainstream path of <code class=3D"language-plaintext high=
+lighter-rouge">init</code> (the parent of all the subinstances of itself wh=
+ich will later become Shells) does a <code class=3D"language-plaintext high=
+lighter-rouge">wait</code>. If one of the child processes terminates, eithe=
+r because a Shell found an end of file or because a user typed an incorrect=
+ name or password, this path of init simply recreates the defunct process, =
+which in turn reopens the appropriate input and output files and types anot=
+her login message. Thus a user may log out simply by typing the end-of-file=
+ sequence in place of a command to the Shell.</p>
+
+<h3 id=3D"67-other-programs-as-shell">6.7 Other Programs as Shell</h3>
+
+<p>The Shell as described above is designed to allow users full access to t=
+he facilities of the system since it will invoke the execution of any progr=
+am with appropriate protection mode. Sometimes, however, a different interf=
+ace to the system is desirable, and this feature is easily arranged.</p>
+
+<p>Recall that after a user has successfully logged in by supplying his nam=
+e and password, <code class=3D"language-plaintext highlighter-rouge">init</=
+code> ordinarily invokes the Shell to interpret command lines. The user=E2=
+=80=99s entry in the password file may contain the name of a program to be =
+invoked after login instead of the Shell. This program is free to interpret=
+ the user=E2=80=99s messages in any way it wishes.</p>
+
+<p>For example, the password file entries for users of a secretarial editin=
+g system specify that the editor <code class=3D"language-plaintext highligh=
+ter-rouge">ed</code> is to be used instead of the Shell. Thus when editing =
+system users log in, they are inside the editor and can begin work immediat=
+ely; also, they can be prevented from invoking UNIX programs not intended f=
+or their use. In practice, it has proved desirable to allow a temporary esc=
+ape from the editor to execute the formatting program and other utilities.<=
+/p>
+
+<p>Several of the games (e.g. chess, blackjack, 3D tic-tac-toe) available o=
+n UNIX illustrate a much more severely restricted environment. For each of =
+these an entry exists in the password file specifying that the appropriate =
+game-playing program is to be invoked instead of the Shell. People who log =
+in as a player of one of the games find themselves limited to the game and =
+unable to investigate the presumably more interesting offerings of UNIX as =
+a whole.</p>
+
+<h2 id=3D"7-traps">7. Traps</h2>
+
+<p>The PDP-11 hardware detects a number of program faults, such as referenc=
+es to nonexistent memory, unimplemented instructions, and odd addresses use=
+d where an even address is required. Such faults cause the processor to tra=
+p to a system routine. When an illegal action is caught, unless other arran=
+gements have been made, the system terminates the process and writes the us=
+er=E2=80=99s image on file core in the current directory. A debugger can be=
+ used to determine the state of the program at the time of the fault.</p>
+
+<p><label for=3D"mn-9" class=3D"margin-toggle">=E2=8A=95</label><input type=
+=3D"checkbox" id=3D"mn-9" class=3D"margin-toggle">
+<span class=3D"marginnote">
+ S: How ctrl-c, our all-killer, works is described.
+</span>
+Programs which are looping, which produce unwanted output, or about which t=
+he user has second thoughts may be halted by the use of the <code class=3D"=
+language-plaintext highlighter-rouge">interrupt</code> signal, which is gen=
+erated by typing the =E2=80=9Cdelete=E2=80=9D character. Unless special act=
+ion has been taken, this signal simply causes the program to cease executio=
+n without producing a core image file.</p>
+
+<p>There is also a <code class=3D"language-plaintext highlighter-rouge">qui=
+t</code> signal which is used to force a core image to be produced. Thus pr=
+ograms which loop unexpectedly may be halted and the core image examined wi=
+thout prearrangement.</p>
+
+<p>The hardware-generated faults and the interrupt and quit signals can, by=
+ request, be either ignored or caught by the process. For example, the Shel=
+l ignores quits to prevent a quit from logging the user out. The editor cat=
+ches interrupts and returns to its command level. This is useful for stoppi=
+ng long printouts without losing work in progress (the editor manipulates a=
+ copy of the file it is editing). In systems without floating point hardwar=
+e, unimplemented instructions are caught, and floating point instructions a=
+re interpreted.</p>
+
+<h2 id=3D"8-perspective">8. Perspective</h2>
+
+<p><label for=3D"mn-10" class=3D"margin-toggle">=E2=8A=95</label><input typ=
+e=3D"checkbox" id=3D"mn-10" class=3D"margin-toggle">
+<span class=3D"marginnote">
+ S: A succinct discussion and retrospective of the development process.
+</span>
+<mark>Perhaps paradoxically, the success of UNIX is largely due to the fact=
+ that it was not designed to meet any predefined objectives.</mark> The fir=
+st version was written when one of us (Thompson), dissatisfied with the ava=
+ilable computer facilities, discovered a little-used system PDP-7 and set o=
+ut to create a more hospitable environment. This essentially personal effor=
+t was sufficiently successful to gain the interest of the remaining author =
+and others, and later to justify the acquisition of the PDP-11/20, specific=
+ally to support a text editing and formatting system. Then in turn the 11/2=
+0 was outgrown, UNIX had proved useful enough to persuade management to inv=
+est in the PDP-11/45. <mark>Our goals throughout the effort, when articulat=
+ed at all, have always concerned themselves with building a comfortable rel=
+ationship with the machine and with exploring ideas and inventions in opera=
+ting systems. We have not been faced with the need to satisfy someone else'=
+s requirements, and for this freedom we are grateful.</mark></p>
+
+<p>Three considerations which influenced the design of UNIX are visible in =
+retrospect.</p>
+
+<p>First, since we are programmers, we naturally designed the system to mak=
+e it easy to write, test, and run programs.The most important expression of=
+ our desire for programming convenience was that the system was arranged fo=
+r interactive use, even though the original version only supported one user=
+. We believe that a properly designed interactive system is much more produ=
+ctive and satisfying to use than a =E2=80=9Cbatch=E2=80=9D system. Moreover=
+ such a system is rather easily adaptable to non-interactive use, while the=
+ converse is not true.</p>
+
+<p>Second there have always been fairly severe size constraints on the syst=
+em and its software. Given the partiality antagonistic desires for reasonab=
+le efficiency and expressive power, <mark>the size constraint has encourage=
+d not only economy but a certain elegance of design. This may be a thinly d=
+isguised version of the "salvation through suffering" philosophy, but in ou=
+r case it worked.</mark></p>
+
+<p>Third, nearly from the start, the system was able to, and did, maintain =
+itself. This fact is more important than it might seem. If designers of a s=
+ystem are forced to use that system, they quickly become aware of its funct=
+ional and superficial deficiencies and are strongly motivated to correct th=
+em before it is too late. Since all source programs were always available a=
+nd easily modified online, we were willing to revise and rewrite the system=
+ and its software when new ideas were invented, discovered, or suggested by=
+ others.</p>
+
+<p>The aspects of UNIX discussed in this paper exhibit clearly at least the=
+ first two of these design considerations. The interface to the file system=
+, for example, is extremely convenient from a programming standpoint. The l=
+owest possible interface level is designed to eliminate distinctions betwee=
+n the various devices and files and between direct and sequential access. N=
+o large =E2=80=9Caccess method=E2=80=9D routines are required to insulate t=
+he programmer from the system calls; in fact, all user programs either call=
+ the system directly or use a small library program, only tens of instructi=
+ons long, which buffers a number of characters and reads or writes them all=
+ at once.</p>
+
+<p>Another important aspect of programming convenience is that there are no=
+ =E2=80=9Ccontrol blocks=E2=80=9D with a complicated structure partially ma=
+intained by and depended on by the file system or other system calls. Gener=
+ally speaking, the contents of a program=E2=80=99s address space are the pr=
+operty of the program, and we have tried to avoid placing restrictions on t=
+he data structures within that address space.</p>
+
+<p>Given the requirement that all programs should be usable with any file o=
+r device as input or output, it is also desirable from a space-efficiency s=
+tandpoint to push device-dependent considerations into the operating system=
+ itself. The only alternatives seem to be to load routines for dealing with=
+ each device with all programs, which is expensive in space, or to depend o=
+n some means of dynamically linking to the routine appropriate to each devi=
+ce when it is actually needed, which is expensive either in overhead or in =
+hardware.</p>
+
+<p>Likewise, the process control scheme and command interface have proved b=
+oth convenient and efficient. Since the Shell operates as an ordinary, swap=
+pable user program, it consumes no wired-down space in the system proper, a=
+nd it may be made as powerful as desired at little cost, In particular, giv=
+en the framework in which the Shell executes as a process which spawns othe=
+r processes to perform commands, the notions of I/O redirection, background=
+ processes, command files, and user-selectable system interfaces all become=
+ essentially trivial to implement.</p>
+
+<h3 id=3D"81-influences">8.1 Influences</h3>
+
+<p><mark>The success of UNIX lies not so much in new inventions but rather =
+in the full exploitation of a carefully selected set of fertile ideas</mark=
+>, and especially in showing that they can be keys to the implementation of=
+ a small yet powerful operating system.</p>
+
+<p>The <code class=3D"language-plaintext highlighter-rouge">fork</code> ope=
+ration, essentially as we implemented it, was present in the Berkeley time-=
+sharing system [8]. On a number of points we were influenced by Multics, wh=
+ich suggested the particular form of the I/O system calls [9] and both the =
+name of the Shell and its general functions, The notion that the Shell shou=
+ld create a process for each command was also suggested to us by the early =
+design of Multics, although in that system it was later dropped for efficie=
+ncy reasons. A similar scheme is used by TENEX [10].</p>
+
+<h2 id=3D"9-statistics">9. Statistics</h2>
+
+<p>The following statistics from UNIX are presented to show the scale of th=
+e system and to show how a system of this scale is used. Those of our users=
+ not involved in document preparation tend to use the system for program de=
+velopment, especially language work. There are few important =E2=80=9Cappli=
+cations=E2=80=9D programs.</p>
+
+<h3 id=3D"91-overall">9.1 Overall</h3>
+
+<table>
+  <tbody>
+    <tr>
+      <td>72</td>
+      <td>user population</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>maximum simultaneous users</td>
+    </tr>
+    <tr>
+      <td>300</td>
+      <td>directories</td>
+    </tr>
+    <tr>
+      <td>4400</td>
+      <td>files</td>
+    </tr>
+    <tr>
+      <td>34000</td>
+      <td>512-byte secondary storage blocks used</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id=3D"92-per-day-24-hour-day-7-day-week-basis">9.2 Per day (24-hour day=
+, 7-day week basis)</h3>
+
+<p>There is a =E2=80=9Cbackground=E2=80=9D process that runs at the lowest =
+possible priority; it is used to soak up any idle CPU time. It has been use=
+d to produce a million-digit approximation to the constant e =E2=80=93 2, a=
+nd is now generating composite pseudoprimes (base 2).</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>1800</td>
+      <td>Commands</td>
+    </tr>
+    <tr>
+      <td>4.3</td>
+      <td>CPU hours (aside from background)</td>
+    </tr>
+    <tr>
+      <td>70</td>
+      <td>connect hours</td>
+    </tr>
+    <tr>
+      <td>30</td>
+      <td>different users</td>
+    </tr>
+    <tr>
+      <td>75</td>
+      <td>logins</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id=3D"93-command-cpu-usage-cut-off-at-1">9.3 Command CPU Usage (cut off=
+ at 1%)</h3>
+
+<table>
+  <tbody>
+    <tr>
+      <td>15.7%</td>
+      <td>C compiler</td>
+      <td>1.7%</td>
+      <td>Fortran compiler</td>
+    </tr>
+    <tr>
+      <td>15.2%</td>
+      <td>users=E2=80=99 programs</td>
+      <td>1.6%</td>
+      <td>remove file</td>
+    </tr>
+    <tr>
+      <td>11.7%</td>
+      <td>editor</td>
+      <td>1.6%</td>
+      <td>tape archive</td>
+    </tr>
+    <tr>
+      <td>5.8%</td>
+      <td>Shell (used as a command including command times)</td>
+      <td>1.6%</td>
+      <td>file system consistency, check</td>
+    </tr>
+    <tr>
+      <td>5.3%</td>
+      <td>chess</td>
+      <td>1.4%</td>
+      <td>library maintainer</td>
+    </tr>
+    <tr>
+      <td>3.3%</td>
+      <td>list directory</td>
+      <td>1.3%</td>
+      <td>concatenate/print files</td>
+    </tr>
+    <tr>
+      <td>3.1%</td>
+      <td>document formatter</td>
+      <td>1.3%</td>
+      <td>paginate and print file</td>
+    </tr>
+    <tr>
+      <td>1.6%</td>
+      <td>backup dumper</td>
+      <td>1.1%</td>
+      <td>print disk usage</td>
+    </tr>
+    <tr>
+      <td>1.8%</td>
+      <td>assembler</td>
+      <td>1.0%</td>
+      <td>copy file</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id=3D"94-command-accesses-cut-off-at-1">9.4 Command Accesses (cut off a=
+t 1%)</h3>
+
+<table>
+  <tbody>
+    <tr>
+      <td>15.3%</td>
+      <td>editor</td>
+      <td>1.6%</td>
+      <td>debugger</td>
+    </tr>
+    <tr>
+      <td>9.6%</td>
+      <td>list directory</td>
+      <td>1.6%</td>
+      <td>Shell (used as a command)</td>
+    </tr>
+    <tr>
+      <td>6.3%</td>
+      <td>remove file</td>
+      <td>1.5%</td>
+      <td>print disk availability</td>
+    </tr>
+    <tr>
+      <td>6.3%</td>
+      <td>C compiler</td>
+      <td>1.4%</td>
+      <td>list processes executing</td>
+    </tr>
+    <tr>
+      <td>6.0%</td>
+      <td>concatenate/print file</td>
+      <td>1.4%</td>
+      <td>assembler</td>
+    </tr>
+    <tr>
+      <td>6.0%</td>
+      <td>users=E2=80=99 programs</td>
+      <td>1.4%</td>
+      <td>print arguments</td>
+    </tr>
+    <tr>
+      <td>3.3%</td>
+      <td>list people logged on system</td>
+      <td>1.2%</td>
+      <td>copy file</td>
+    </tr>
+    <tr>
+      <td>3.2%</td>
+      <td>rename/move file</td>
+      <td>1.1%</td>
+      <td>paginate and print file</td>
+    </tr>
+    <tr>
+      <td>3.1%</td>
+      <td>file status</td>
+      <td>1.1%</td>
+      <td>print current date/time</td>
+    </tr>
+    <tr>
+      <td>1.8%</td>
+      <td>library maintainer</td>
+      <td>1.1%</td>
+      <td>file system consistency check</td>
+    </tr>
+    <tr>
+      <td>1.8%</td>
+      <td>document formatter</td>
+      <td>1.0%</td>
+      <td>tape archive</td>
+    </tr>
+    <tr>
+      <td>1.6%</td>
+      <td>execute another command conditionally</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id=3D"95-reliability">9.5 Reliability</h3>
+
+<p>Our statistics on reliability are much more subjective than the others. =
+The following results are true to the best of our combined recollections. T=
+he time span is over one year with a very early vintage 11/45.</p>
+
+<p>There has been one loss of a file system (one disk out of five) caused b=
+y software inability to cope with a hardware problem causing repeated power=
+ fail traps. Files on that disk were backed up three days.</p>
+
+<p>A =E2=80=9Ccrash=E2=80=9D is an unscheduled system reboot or halt. There=
+ is about one crash every other day; about two-thirds of them are caused by=
+ hardware-related difficulties such as power dips and inexplicable processo=
+r interrupts to random locations. The remainder are software failures. The =
+longest uninterrupted up time was about two weeks. Service calls average on=
+e every three weeks, but are heavily clustered. Total up time has been abou=
+t 98 percent of our 24-hour, 365-day schedule.</p>
+
+<p><em>Acknowledgments</em>. We are grateful to R.H. Canaday, L.L. Cherry, =
+and L.E. McMahon for their contributions to UNIX. We are particularly appre=
+ciative of the inventiveness,thoughtful criticism, and constant support of =
+R. Morris, M.D. McIlroy, and J.F. Ossanna.</p>
+
+<p><strong>References</strong>:</p>
+
+<div class=3D"small">
+
+  <ol>
+    <li>Digital Equipment Corporation. PDP-11/40 Processor Handbook, 1972, =
+and PDP-11/45 Processor Handbook. 1971.</li>
+    <li>Deutsch, L.P., and Lampson, B.W. An online editor. Comm. ACM 10, 12=
+ (Dec, 1967) 793=E2=80=93799, 803.</li>
+    <li>Richards, M. BCPL: A tool for compiler writing and system programmi=
+ng. Proc. AFIPS 1969 SJCC, Vol. 34, AFIPS Press, Montvale, N.J., pp. 557=E2=
+=80=93566.</li>
+    <li>McClure, R.M. TMG=E2=80=94A syntax directed compiler. Proc. ACM 20t=
+h Nat. Conf., ACM, 1965, New York, pp. 262=E2=80=93274.</li>
+    <li>Hall. A.D. The M6 macroprocessor. Computing Science Tech. Rep. #2, =
+Bell Telephone Laboratories, 1969.</li>
+    <li>Ritchie, D.M. C reference manual. Unpublished memorandum, Bell Tele=
+phone Laboratories, 1973.</li>
+    <li>Aleph-null. Computer Recreations. Software Practice and Experience =
+1, 2 (Apr.=E2=80=93June 1971), 201=E2=80=93204.</li>
+    <li>Deutsch, L.P., and Lampson, B.W. SDS 930 time-sharing system prelim=
+inary reference manual. Doc. 30.10.10, Project GENIE, U of California at Be=
+rkeley, Apr. 1965.</li>
+    <li>Feiertag. R.J., and Organick, E.I. The Multics input-output system.=
+ Proc. Third Symp. on Oper. Syst. Princ., Oct. 18=E2=80=9320, 1971, ACM, Ne=
+w York, pp. 35=E2=80=9341.</li>
+    <li>Bobrow, D.C., Burchfiel, J.D., Murphy, D.L., and Tomlinson, R.S. TE=
+NEX, a paged time sharing system for the PDP-10. Comm. ACM 15, 3 (Mar. 1972=
+) 135=E2=80=93143.</li>
+  </ol>
+
+</div>
+
+  </section>
+
+    <footer class=3D"site-footer">
+=09
+=09
+=09
+   <!-- <section class=3D"copyright">All content copyright <a href=3D"mailt=
+o:sasankchilamkurthy@gmail.com">Sasank Chilamkurthy</a> &copy; 2024 &bull; =
+All rights reserved.</section> -->
+</footer>
+
+
+ =20
+</article>
+
+ =20
+
+</body></html>
+------MultipartBoundary--RTMToaHn7cnAyfuDjUhd90AdU80aac6p2wIcxA80eK----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: cid:css-971e8630-20fe-47e9-8c57-d7fb4614898f@mhtml.blink
+
+@charset "utf-8";
+
+.MathJax_Hover_Frame { border-radius: 0.25em; box-shadow: rgb(136, 51, 170)=
+ 0px 0px 15px; display: inline-block; position: absolute; border: 1px solid=
+ rgb(170, 102, 221) !important; }
+
+.MathJax_Menu_Button .MathJax_Hover_Arrow { position: absolute; cursor: poi=
+nter; display: inline-block; border: 2px solid rgb(170, 170, 170); border-r=
+adius: 4px; font-family: "Courier New", Courier; font-size: 9px; color: rgb=
+(240, 240, 240); }
+
+.MathJax_Menu_Button .MathJax_Hover_Arrow span { display: block; background=
+-color: rgb(170, 170, 170); border: 1px solid; border-radius: 3px; line-hei=
+ght: 0; padding: 4px; }
+
+.MathJax_Hover_Arrow:hover { color: white !important; border: 2px solid rgb=
+(204, 204, 204) !important; }
+
+.MathJax_Hover_Arrow:hover span { background-color: rgb(204, 204, 204) !imp=
+ortant; }
+------MultipartBoundary--RTMToaHn7cnAyfuDjUhd90AdU80aac6p2wIcxA80eK----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: cid:css-7ade143a-6d12-4163-b3a0-f50803f6b8b4@mhtml.blink
+
+@charset "utf-8";
+
+#MathJax_About { position: fixed; left: 50%; width: auto; text-align: cente=
+r; border: 3px outset; padding: 1em 2em; background-color: rgb(221, 221, 22=
+1); color: black; cursor: default; font-family: message-box; font-size: 120=
+%; font-style: normal; text-indent: 0px; text-transform: none; line-height:=
+ normal; letter-spacing: normal; word-spacing: normal; overflow-wrap: norma=
+l; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; box=
+-shadow: rgb(128, 128, 128) 0px 10px 20px; }
+
+#MathJax_About.MathJax_MousePost { outline: none; }
+
+.MathJax_Menu { position: absolute; background-color: white; color: black; =
+width: auto; padding: 5px 0px; border: 1px solid rgb(204, 204, 204); margin=
+: 0px; cursor: default; font-style: ; font-variant: normal; font-weight: ; =
+font-stretch: ; font-size: ; font-family: ; font-optical-sizing: ; font-ker=
+ning: ; font-feature-settings: ; font-variation-settings: ; text-align: lef=
+t; text-indent: 0px; text-transform: none; line-height: normal; letter-spac=
+ing: normal; word-spacing: normal; overflow-wrap: normal; white-space: nowr=
+ap; float: none; z-index: 201; border-radius: 5px; box-shadow: rgb(128, 128=
+, 128) 0px 10px 20px; }
+
+.MathJax_MenuItem { padding: 1px 2em; background: transparent; }
+
+.MathJax_MenuArrow { position: absolute; right: 0.5em; padding-top: 0.25em;=
+ color: rgb(102, 102, 102); font-size: 0.75em; }
+
+.MathJax_MenuActive .MathJax_MenuArrow { color: white; }
+
+.MathJax_MenuArrow.RTL { left: 0.5em; right: auto; }
+
+.MathJax_MenuCheck { position: absolute; left: 0.7em; }
+
+.MathJax_MenuCheck.RTL { right: 0.7em; left: auto; }
+
+.MathJax_MenuRadioCheck { position: absolute; left: 0.7em; }
+
+.MathJax_MenuRadioCheck.RTL { right: 0.7em; left: auto; }
+
+.MathJax_MenuLabel { padding: 1px 2em 3px 1.33em; font-style: italic; }
+
+.MathJax_MenuRule { border-top: 1px solid rgb(221, 221, 221); margin: 4px 3=
+px; }
+
+.MathJax_MenuDisabled { color: graytext; }
+
+.MathJax_MenuActive { background-color: rgb(96, 104, 114); color: white; }
+
+.MathJax_MenuDisabled:focus, .MathJax_MenuLabel:focus { background-color: r=
+gb(232, 232, 232); }
+
+.MathJax_ContextMenu:focus { outline: none; }
+
+.MathJax_ContextMenu .MathJax_MenuItem:focus { outline: none; }
+
+#MathJax_AboutClose { top: 0.2em; right: 0.2em; }
+
+.MathJax_Menu .MathJax_MenuClose { top: -10px; left: -10px; }
+
+.MathJax_MenuClose { position: absolute; cursor: pointer; display: inline-b=
+lock; border: 2px solid rgb(170, 170, 170); border-radius: 18px; font-famil=
+y: "Courier New", Courier; font-size: 24px; color: rgb(240, 240, 240); }
+
+.MathJax_MenuClose span { display: block; background-color: rgb(170, 170, 1=
+70); border: 1.5px solid; border-radius: 18px; line-height: 0; padding: 8px=
+ 0px 6px; }
+
+.MathJax_MenuClose:hover { color: white !important; border: 2px solid rgb(2=
+04, 204, 204) !important; }
+
+.MathJax_MenuClose:hover span { background-color: rgb(204, 204, 204) !impor=
+tant; }
+
+.MathJax_MenuClose:hover:focus { outline: none; }
+------MultipartBoundary--RTMToaHn7cnAyfuDjUhd90AdU80aac6p2wIcxA80eK----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: cid:css-b5c1f194-b40b-40e7-8579-50ee4ca1a8dd@mhtml.blink
+
+@charset "utf-8";
+
+.MathJax_Preview .MJXf-math { color: inherit !important; }
+------MultipartBoundary--RTMToaHn7cnAyfuDjUhd90AdU80aac6p2wIcxA80eK----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: cid:css-fefe8070-ea50-4989-83b2-426d5669571d@mhtml.blink
+
+@charset "utf-8";
+
+.MJX_Assistive_MathML { top: 0px; left: 0px; clip: rect(1px, 1px, 1px, 1px)=
+; user-select: none; position: absolute !important; padding: 1px 0px 0px !i=
+mportant; border: 0px !important; height: 1px !important; width: 1px !impor=
+tant; overflow: hidden !important; display: block !important; }
+
+.MJX_Assistive_MathML.MJX_Assistive_MathML_Block { width: 100% !important; }
+------MultipartBoundary--RTMToaHn7cnAyfuDjUhd90AdU80aac6p2wIcxA80eK----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: cid:css-8f274f8a-6f1f-49a5-9896-090b86141693@mhtml.blink
+
+@charset "utf-8";
+
+#MathJax_Zoom { position: absolute; background-color: rgb(240, 240, 240); o=
+verflow: auto; display: block; z-index: 301; padding: 0.5em; border: 1px so=
+lid black; margin: 0px; font-weight: normal; font-style: normal; text-align=
+: left; text-indent: 0px; text-transform: none; line-height: normal; letter=
+-spacing: normal; word-spacing: normal; overflow-wrap: normal; white-space:=
+ nowrap; float: none; box-sizing: content-box; box-shadow: rgb(170, 170, 17=
+0) 5px 5px 15px; }
+
+#MathJax_ZoomOverlay { position: absolute; left: 0px; top: 0px; z-index: 30=
+0; display: inline-block; width: 100%; height: 100%; border: 0px; padding: =
+0px; margin: 0px; background-color: white; opacity: 0; }
+
+#MathJax_ZoomFrame { position: relative; display: inline-block; height: 0px=
+; width: 0px; }
+
+#MathJax_ZoomEventTrap { position: absolute; left: 0px; top: 0px; z-index: =
+302; display: inline-block; border: 0px; padding: 0px; margin: 0px; backgro=
+und-color: white; opacity: 0; }
+------MultipartBoundary--RTMToaHn7cnAyfuDjUhd90AdU80aac6p2wIcxA80eK----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: cid:css-f3bf3550-d3ab-424f-84f2-4bf74962aa97@mhtml.blink
+
+@charset "utf-8";
+
+.MathJax_Preview { color: rgb(136, 136, 136); }
+
+#MathJax_Message { position: fixed; left: 1em; bottom: 1.5em; background-co=
+lor: rgb(230, 230, 230); border: 1px solid rgb(149, 149, 149); margin: 0px;=
+ padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto;=
+ white-space: nowrap; }
+
+#MathJax_MSIE_Frame { position: absolute; top: 0px; left: 0px; width: 0px; =
+z-index: 101; border: 0px; margin: 0px; padding: 0px; }
+
+.MathJax_Error { color: rgb(204, 0, 0); font-style: italic; }
+
+.MathJax_Display { width: 55% !important; }
+------MultipartBoundary--RTMToaHn7cnAyfuDjUhd90AdU80aac6p2wIcxA80eK----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: cid:css-0d563e46-c721-453f-9cf2-3db9e2ff705f@mhtml.blink
+
+@charset "utf-8";
+
+.MJXp-script { font-size: 0.8em; }
+
+.MJXp-right { transform-origin: right center; }
+
+.MJXp-bold { font-weight: bold; }
+
+.MJXp-italic { font-style: italic; }
+
+.MJXp-scr { font-family: MathJax_Script, "Times New Roman", Times, STIXGene=
+ral, serif; }
+
+.MJXp-frak { font-family: MathJax_Fraktur, "Times New Roman", Times, STIXGe=
+neral, serif; }
+
+.MJXp-sf { font-family: MathJax_SansSerif, "Times New Roman", Times, STIXGe=
+neral, serif; }
+
+.MJXp-cal { font-family: MathJax_Caligraphic, "Times New Roman", Times, STI=
+XGeneral, serif; }
+
+.MJXp-mono { font-family: MathJax_Typewriter, "Times New Roman", Times, STI=
+XGeneral, serif; }
+
+.MJXp-largeop { font-size: 150%; }
+
+.MJXp-largeop.MJXp-int { vertical-align: -0.2em; }
+
+.MJXp-math { display: inline-block; line-height: 1.2; text-indent: 0px; fon=
+t-family: "Times New Roman", Times, STIXGeneral, serif; white-space: nowrap=
+; border-collapse: collapse; }
+
+.MJXp-display { display: block; text-align: center; margin: 1em 0px; }
+
+.MJXp-math span { display: inline-block; }
+
+.MJXp-box { display: block !important; text-align: center; }
+
+.MJXp-box::after { content: " "; }
+
+.MJXp-rule { display: block !important; margin-top: 0.1em; }
+
+.MJXp-char { display: block !important; }
+
+.MJXp-mo { margin: 0px 0.15em; }
+
+.MJXp-mfrac { margin: 0px 0.125em; vertical-align: 0.25em; }
+
+.MJXp-denom { display: inline-table !important; width: 100%; }
+
+.MJXp-denom > * { display: table-row !important; }
+
+.MJXp-surd { vertical-align: top; }
+
+.MJXp-surd > * { display: block !important; }
+
+.MJXp-script-box > * { display: table !important; height: 50%; }
+
+.MJXp-script-box > * > * { display: table-cell !important; vertical-align: =
+top; }
+
+.MJXp-script-box > :last-child > * { vertical-align: bottom; }
+
+.MJXp-script-box > * > * > * { display: block !important; }
+
+.MJXp-mphantom { visibility: hidden; }
+
+.MJXp-munderover { display: inline-table !important; }
+
+.MJXp-over { display: inline-block !important; text-align: center; }
+
+.MJXp-over > * { display: block !important; }
+
+.MJXp-munderover > * { display: table-row !important; }
+
+.MJXp-mtable { vertical-align: 0.25em; margin: 0px 0.125em; }
+
+.MJXp-mtable > * { display: inline-table !important; vertical-align: middle=
+; }
+
+.MJXp-mtr { display: table-row !important; }
+
+.MJXp-mtd { text-align: center; padding: 0.5em 0px 0px 0.5em; display: tabl=
+e-cell !important; }
+
+.MJXp-mtr > .MJXp-mtd:first-child { padding-left: 0px; }
+
+.MJXp-mtr:first-child > .MJXp-mtd { padding-top: 0px; }
+
+.MJXp-mlabeledtr { display: table-row !important; }
+
+.MJXp-mlabeledtr > .MJXp-mtd:first-child { padding-left: 0px; }
+
+.MJXp-mlabeledtr:first-child > .MJXp-mtd { padding-top: 0px; }
+
+.MJXp-merror { background-color: rgb(255, 255, 136); color: rgb(204, 0, 0);=
+ border: 1px solid rgb(204, 0, 0); padding: 1px 3px; font-style: normal; fo=
+nt-size: 90%; }
+
+.MJXp-scale0 { transform: scaleX(0); }
+
+.MJXp-scale1 { transform: scaleX(0.1); }
+
+.MJXp-scale2 { transform: scaleX(0.2); }
+
+.MJXp-scale3 { transform: scaleX(0.3); }
+
+.MJXp-scale4 { transform: scaleX(0.4); }
+
+.MJXp-scale5 { transform: scaleX(0.5); }
+
+.MJXp-scale6 { transform: scaleX(0.6); }
+
+.MJXp-scale7 { transform: scaleX(0.7); }
+
+.MJXp-scale8 { transform: scaleX(0.8); }
+
+.MJXp-scale9 { transform: scaleX(0.9); }
+
+.MathJax_PHTML .noError { font-size: 90%; text-align: left; color: black; p=
+adding: 1px 3px; border: 1px solid; }
+------MultipartBoundary--RTMToaHn7cnAyfuDjUhd90AdU80aac6p2wIcxA80eK----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://chsasank.com/assets/css/tufte.css
+
+@charset "utf-8";
+
+@font-face { font-family: et-book; src: url("/assets/et-book/et-book-roman-=
+line-figures/et-book-roman-line-figures.woff") format("woff"), url("/assets=
+/et-book/et-book-roman-line-figures/et-book-roman-line-figures.ttf") format=
+("truetype"); font-weight: normal; font-style: normal; font-display: swap; =
+}
+
+@font-face { font-family: et-book; src: url("/assets/et-book/et-book-displa=
+y-italic-old-style-figures/et-book-display-italic-old-style-figures.woff") =
+format("woff"), url("/assets/et-book/et-book-display-italic-old-style-figur=
+es/et-book-display-italic-old-style-figures.ttf") format("truetype"); font-=
+weight: normal; font-style: italic; font-display: swap; }
+
+@font-face { font-family: et-book; src: url("/assets/et-book/et-book-bold-l=
+ine-figures/et-book-bold-line-figures.woff") format("woff"), url("/assets/e=
+t-book/et-book-bold-line-figures/et-book-bold-line-figures.ttf") format("tr=
+uetype"); font-weight: bold; font-style: normal; font-display: swap; }
+
+@font-face { font-family: et-book-roman-old-style; src: url("/assets/et-boo=
+k/et-book-roman-old-style-figures/et-book-roman-old-style-figures.woff") fo=
+rmat("woff"), url("/assets/et-book/et-book-roman-old-style-figures/et-book-=
+roman-old-style-figures.ttf") format("truetype"); font-weight: normal; font=
+-style: normal; font-display: swap; }
+
+html { font-size: 15px; }
+
+body { width: 87.5%; margin-left: auto; margin-right: auto; padding-left: 1=
+2.5%; font-family: et-book, Palatino, "Palatino Linotype", "Palatino LT STD=
+", "Book Antiqua", Georgia, serif; background-color: rgb(255, 255, 248); co=
+lor: rgb(17, 17, 17); max-width: 1400px; counter-reset: sidenote-counter 0;=
+ }
+
+h1 { font-weight: 400; margin-top: 4rem; margin-bottom: 1.5rem; font-size: =
+3.2rem; line-height: 1; }
+
+h2 { font-style: italic; font-weight: 400; margin-top: 2.1rem; margin-botto=
+m: 1.4rem; font-size: 2.2rem; line-height: 1; }
+
+h3 { font-style: italic; font-weight: 400; font-size: 1.7rem; margin-top: 2=
+rem; margin-bottom: 1.4rem; line-height: 1; }
+
+hr { display: block; height: 1px; width: 55%; border-width: 1px 0px 0px; bo=
+rder-right-style: initial; border-bottom-style: initial; border-left-style:=
+ initial; border-right-color: initial; border-bottom-color: initial; border=
+-left-color: initial; border-image: initial; border-top-style: solid; borde=
+r-top-color: rgb(204, 204, 204); margin: 1em 0px; padding: 0px; }
+
+p.subtitle { font-style: italic; margin-top: 1rem; margin-bottom: 1rem; fon=
+t-size: 1.8rem; display: block; line-height: 1; }
+
+.numeral { font-family: et-book-roman-old-style; }
+
+.danger { color: red; }
+
+article { padding: 5rem 0rem; }
+
+section { padding-top: 1rem; padding-bottom: 1rem; }
+
+p, dl, ol, ul { font-size: 1.4rem; line-height: 2rem; }
+
+p { margin-top: 1.4rem; margin-bottom: 1.4rem; padding-right: 0px; vertical=
+-align: baseline; }
+
+div.epigraph { margin: 5em 0px; }
+
+div.epigraph > blockquote { margin-top: 3em; margin-bottom: 3em; }
+
+div.epigraph > blockquote, div.epigraph > blockquote > p { font-style: ital=
+ic; }
+
+div.epigraph > blockquote > footer { font-style: normal; }
+
+div.epigraph > blockquote > footer > cite { font-style: italic; }
+
+blockquote { font-size: 1.4rem; }
+
+blockquote p { width: 55%; margin-right: 40px; }
+
+blockquote footer { width: 55%; font-size: 1.1rem; text-align: right; }
+
+section > p, section > footer, section > table { width: 55%; }
+
+section > dl, section > ol, section > ul { width: 50%; padding-inline-start=
+: 5%; }
+
+dt:not(:first-child), li:not(:first-child) { margin-top: 0.25rem; }
+
+figure { padding: 0px; border: 0px; font: inherit; vertical-align: baseline=
+; max-width: 55%; margin-inline: 0px; margin: 0px 0px 3em; }
+
+figcaption { float: right; clear: right; margin-top: 0px; margin-bottom: 0p=
+x; font-size: 1.1rem; line-height: 1.6; vertical-align: baseline; position:=
+ relative; max-width: 40%; }
+
+figure.fullwidth figcaption { margin-right: 24%; }
+
+a:link, a:visited { color: inherit; }
+
+.no-tufte-underline:link { background: unset; text-shadow: unset; }
+
+a:link, .tufte-underline, .hover-tufte-underline:hover { text-decoration: n=
+one; background: linear-gradient(rgb(255, 255, 248), rgb(255, 255, 248)) 0%=
+ 93% / 0.05em 1px no-repeat, linear-gradient(rgb(255, 255, 248), rgb(255, 2=
+55, 248)) 100% 93% / 0.05em 1px no-repeat, linear-gradient(currentcolor, cu=
+rrentcolor) 0% 93% / 1px 1px repeat-x; text-shadow: rgb(255, 255, 248) 0.03=
+em 0px, rgb(255, 255, 248) -0.03em 0px, rgb(255, 255, 248) 0px 0.03em, rgb(=
+255, 255, 248) 0px -0.03em, rgb(255, 255, 248) 0.06em 0px, rgb(255, 255, 24=
+8) -0.06em 0px, rgb(255, 255, 248) 0.09em 0px, rgb(255, 255, 248) -0.09em 0=
+px, rgb(255, 255, 248) 0.12em 0px, rgb(255, 255, 248) -0.12em 0px, rgb(255,=
+ 255, 248) 0.15em 0px, rgb(255, 255, 248) -0.15em 0px; }
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  a:link, .tufte-underline, .hover-tufte-underline:hover { background-posit=
+ion-y: 87%, 87%, 87%; }
+}
+
+img { max-width: 100%; }
+
+.sidenote, .marginnote { float: right; clear: right; margin-right: -60%; wi=
+dth: 50%; margin-top: 0.3rem; margin-bottom: 0px; font-size: 1.1rem; line-h=
+eight: 1.3; vertical-align: baseline; position: relative; }
+
+.sidenote-number { counter-increment: sidenote-counter 1; }
+
+.sidenote-number::after, .sidenote::before { font-family: et-book-roman-old=
+-style; position: relative; vertical-align: baseline; }
+
+.sidenote-number::after { content: counter(sidenote-counter); font-size: 1r=
+em; top: -0.5rem; left: 0.1rem; }
+
+.sidenote::before { content: counter(sidenote-counter) " "; font-size: 1rem=
+; top: -0.5rem; }
+
+blockquote .sidenote, blockquote .marginnote { margin-right: -82%; min-widt=
+h: 59%; text-align: left; }
+
+div.fullwidth, table.fullwidth { width: 100%; }
+
+div.table-wrapper { overflow-x: auto; font-family: "Trebuchet MS", "Gill Sa=
+ns", "Gill Sans MT", sans-serif; }
+
+.sans { font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif; lett=
+er-spacing: 0.03em; }
+
+code, pre > code { font-family: Consolas, "Liberation Mono", Menlo, Courier=
+, monospace; font-size: 1rem; line-height: 1.42; text-size-adjust: 100%; }
+
+.sans > code { font-size: 1.2rem; }
+
+h1 > code, h2 > code, h3 > code { font-size: 0.8em; }
+
+.marginnote > code, .sidenote > code { font-size: 1rem; }
+
+pre > code { font-size: 0.9rem; width: 52.5%; margin-left: 2.5%; overflow-x=
+: auto; display: block; }
+
+pre.fullwidth > code { width: 90%; }
+
+.fullwidth { max-width: 90%; clear: both; }
+
+span.newthought { font-variant: small-caps; font-size: 1.2em; }
+
+input.margin-toggle { display: none; }
+
+label.sidenote-number { display: inline; }
+
+label.margin-toggle:not(.sidenote-number) { display: none; }
+
+.iframe-wrapper { position: relative; padding-bottom: 56.25%; padding-top: =
+25px; height: 0px; }
+
+.iframe-wrapper iframe { position: absolute; top: 0px; left: 0px; width: 10=
+0%; height: 100%; }
+
+@media (max-width: 760px) {
+  body { width: 84%; padding-left: 8%; padding-right: 8%; }
+  hr, section > p, section > footer, section > table { width: 100%; }
+  pre > code { width: 97%; }
+  section > dl, section > ol, section > ul { width: 90%; }
+  figure { max-width: 90%; }
+  figcaption, figure.fullwidth figcaption { margin-right: 0%; max-width: no=
+ne; }
+  blockquote { margin-left: 1.5em; margin-right: 0em; }
+  blockquote p, blockquote footer { width: 100%; }
+  label.margin-toggle:not(.sidenote-number) { display: inline; }
+  .sidenote, .marginnote { display: none; }
+  .margin-toggle:checked + .sidenote, .margin-toggle:checked + .marginnote =
+{ display: block; float: left; left: 1rem; clear: both; width: 95%; margin:=
+ 1rem 2.5%; vertical-align: baseline; position: relative; }
+  label { cursor: pointer; }
+  div.table-wrapper, table { width: 85%; }
+  img { width: 100%; }
+}
+------MultipartBoundary--RTMToaHn7cnAyfuDjUhd90AdU80aac6p2wIcxA80eK----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://chsasank.com/assets/css/styles.css
+
+@charset "utf-8";
+
+main { margin-top: 20px; }
+
+article { padding: 2.5rem 0px; }
+
+header { margin-top: 20px; }
+
+.post-meta { margin-top: 10px; font-size: 1.5rem; }
+
+h3, h2, h1, .post-meta, p.description { width: 55%; }
+
+.sidenote, .marginnote { margin-bottom: 20px; }
+
+.pagination a, .pagination em, table { font-size: 1.4rem; }
+
+pre { width: 55%; padding-top: 1.25rem; padding-bottom: 1.25rem; background=
+-color: rgb(248, 248, 248); color: rgb(17, 17, 17); overflow: hidden; }
+
+pre > code { width: 100%; font-size: 1.125rem; }
+
+code { font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;=
+ font-size: 1.125rem; line-height: 1.6; }
+
+.marginnote code, .sidenote code { font-size: 1rem; }
+
+p code, li code { color: rgb(217, 83, 79); }
+
+.box { border: 1px solid; padding: 1rem; width: 55%; }
+
+.small { width: 55%; }
+
+@media screen and (max-width: 760px) {
+  p, p.description, h1, h2, h3, .post-meta, .small, footer { width: 100%; }
+  figure { max-width: 100%; }
+  pre { width: 100% !important; }
+  body, .box, .small { width: 90%; padding-left: 5%; padding-right: 5%; }
+}
+
+article.post-container { padding: 0px; }
+
+p.description { display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-or=
+ient: vertical; overflow: hidden; text-overflow: ellipsis; }
+
+p.description a { background: none; }
+
+h1.title { margin-top: 1rem; }
+
+td { text-align: center; vertical-align: middle; }
+
+td, th { padding: 7px 3px 6px; border-collapse: collapse; border-bottom: 2p=
+x solid rgb(238, 238, 238); }
+
+th { font-weight: bold; padding-bottom: 4px; letter-spacing: 1px; border-bo=
+ttom-width: 3px; }
+
+.table-caption { float: right; clear: right; margin-right: -60%; width: 50%=
+; margin-top: 0px; margin-bottom: 0px; font-size: 1rem; line-height: 1.6; }
+
+.side-by-side-container { height: auto; width: 150px; float: left; padding-=
+left: 20px; padding-top: 20px; padding-right: 20px; }
+
+.side-by-side-img { display: inline-block; }
+
+.small p, .small li { font-size: 1rem; line-height: 1rem; }
+
+.iframe-container { position: relative; overflow: hidden; width: 55%; paddi=
+ng-top: 29%; }
+
+.responsive-iframe { position: absolute; inset: 0px; width: 100%; height: 1=
+00%; }
+
+mark, span.mark { background: rgba(255, 255, 0, 0.2); color: inherit; }
+
+.MathJax_Display { font-size: 1.4rem; }
+
+ul.archive { line-height: 2em; font-size: 1.5em; }
+
+a { text-shadow: none !important; }
+
+img { background: rgb(255, 255, 248); }
+
+.dark-mode { background: rgb(18, 18, 18); color: rgb(238, 238, 238); }
+
+.box h1, .box h2, .box h3 { width: 100%; }
+
+header h2 { font-style: normal; }
+------MultipartBoundary--RTMToaHn7cnAyfuDjUhd90AdU80aac6p2wIcxA80eK----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://chsasank.com/assets/css/syntax-highlighting.css
+
+@charset "utf-8";
+
+.highlight table td { padding: 5px; }
+
+.highlight table pre { margin: 0px; }
+
+.highlight .cm { color: rgb(153, 153, 136); font-style: italic; }
+
+.highlight .cp { color: rgb(153, 153, 153); font-weight: bold; }
+
+.highlight .c1 { color: rgb(153, 153, 136); font-style: italic; }
+
+.highlight .cs { color: rgb(153, 153, 153); font-weight: bold; font-style: =
+italic; }
+
+.highlight .c, .highlight .ch, .highlight .cd, .highlight .cpf { color: rgb=
+(153, 153, 136); font-style: italic; }
+
+.highlight .err { color: rgb(166, 23, 23); background-color: rgb(227, 210, =
+210); }
+
+.highlight .gd { color: rgb(0, 0, 0); background-color: rgb(255, 221, 221);=
+ }
+
+.highlight .ge { color: rgb(0, 0, 0); font-style: italic; }
+
+.highlight .gr { color: rgb(170, 0, 0); }
+
+.highlight .gh { color: rgb(153, 153, 153); }
+
+.highlight .gi { color: rgb(0, 0, 0); background-color: rgb(221, 255, 221);=
+ }
+
+.highlight .go { color: rgb(136, 136, 136); }
+
+.highlight .gp { color: rgb(85, 85, 85); }
+
+.highlight .gs { font-weight: bold; }
+
+.highlight .gu { color: rgb(170, 170, 170); }
+
+.highlight .gt { color: rgb(170, 0, 0); }
+
+.highlight .kc { color: rgb(0, 0, 0); font-weight: bold; }
+
+.highlight .kd { color: rgb(0, 0, 0); font-weight: bold; }
+
+.highlight .kn { color: rgb(0, 0, 0); font-weight: bold; }
+
+.highlight .kp { color: rgb(0, 0, 0); font-weight: bold; }
+
+.highlight .kr { color: rgb(0, 0, 0); font-weight: bold; }
+
+.highlight .kt { color: rgb(68, 85, 136); font-weight: bold; }
+
+.highlight .k, .highlight .kv { color: rgb(0, 0, 0); font-weight: bold; }
+
+.highlight .mf { color: rgb(0, 153, 153); }
+
+.highlight .mh { color: rgb(0, 153, 153); }
+
+.highlight .il { color: rgb(0, 153, 153); }
+
+.highlight .mi { color: rgb(0, 153, 153); }
+
+.highlight .mo { color: rgb(0, 153, 153); }
+
+.highlight .m, .highlight .mb, .highlight .mx { color: rgb(0, 153, 153); }
+
+.highlight .sb { color: rgb(221, 17, 68); }
+
+.highlight .sc { color: rgb(221, 17, 68); }
+
+.highlight .sd { color: rgb(221, 17, 68); }
+
+.highlight .s2 { color: rgb(221, 17, 68); }
+
+.highlight .se { color: rgb(221, 17, 68); }
+
+.highlight .sh { color: rgb(221, 17, 68); }
+
+.highlight .si { color: rgb(221, 17, 68); }
+
+.highlight .sx { color: rgb(221, 17, 68); }
+
+.highlight .sr { color: rgb(0, 153, 38); }
+
+.highlight .s1 { color: rgb(221, 17, 68); }
+
+.highlight .ss { color: rgb(153, 0, 115); }
+
+.highlight .s, .highlight .sa, .highlight .dl { color: rgb(221, 17, 68); }
+
+.highlight .na { color: rgb(0, 128, 128); }
+
+.highlight .bp { color: rgb(153, 153, 153); }
+
+.highlight .nb { color: rgb(0, 134, 179); }
+
+.highlight .nc { color: rgb(68, 85, 136); font-weight: bold; }
+
+.highlight .no { color: rgb(0, 128, 128); }
+
+.highlight .nd { color: rgb(60, 93, 93); font-weight: bold; }
+
+.highlight .ni { color: rgb(128, 0, 128); }
+
+.highlight .ne { color: rgb(153, 0, 0); font-weight: bold; }
+
+.highlight .nf, .highlight .fm { color: rgb(153, 0, 0); font-weight: bold; =
+}
+
+.highlight .nl { color: rgb(153, 0, 0); font-weight: bold; }
+
+.highlight .nn { color: rgb(85, 85, 85); }
+
+.highlight .nt { color: rgb(0, 0, 128); }
+
+.highlight .vc { color: rgb(0, 128, 128); }
+
+.highlight .vg { color: rgb(0, 128, 128); }
+
+.highlight .vi { color: rgb(0, 128, 128); }
+
+.highlight .nv, .highlight .vm { color: rgb(0, 128, 128); }
+
+.highlight .ow { color: rgb(0, 0, 0); font-weight: bold; }
+
+.highlight .o { color: rgb(0, 0, 0); font-weight: bold; }
+
+.highlight .w { color: rgb(187, 187, 187); }
+------MultipartBoundary--RTMToaHn7cnAyfuDjUhd90AdU80aac6p2wIcxA80eK------
