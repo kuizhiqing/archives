@@ -1,0 +1,1066 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: https://linux.die.net/man/5/sshd_config
+Subject: sshd_config(5): OpenSSH SSH daemon config file - Linux man page
+Date: Thu, 8 Aug 2024 18:49:23 +0800
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--qP1SFlZQ9uiFUu1UV38hgLEUrGAn919LbJNfhsj2xm----"
+
+
+------MultipartBoundary--qP1SFlZQ9uiFUu1UV38hgLEUrGAn919LbJNfhsj2xm----
+Content-Type: text/html
+Content-ID: <frame-8FFFDCDEDFC3E0EA25BCB917A8F3FE51@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://linux.die.net/man/5/sshd_config
+
+<!DOCTYPE html><html lang=3D"en"><head><meta http-equiv=3D"Content-Type" co=
+ntent=3D"text/html; charset=3Dwindows-1252">
+<title>sshd_config(5): OpenSSH SSH daemon config file - Linux man page</tit=
+le>
+<base href=3D"https://linux.die.net/man/5/sshd_config">
+<link rel=3D"canonical" href=3D"https://linux.die.net/man/5/sshd_config">
+<link rel=3D"stylesheet" type=3D"text/css" href=3D"https://linux.die.net/st=
+yle/white.css">
+<link rel=3D"shortcut icon" href=3D"https://linux.die.net/favicon.ico" type=
+=3D"image/x-icon">
+<link href=3D"https://linux.die.net/style/search.xml" rel=3D"search" title=
+=3D"Search the die.net site" type=3D"application/opensearchdescription+xml"=
+>
+<meta name=3D"viewport" content=3D"width=3Ddevice-width,initial-scale=3D1">
+<meta name=3D"description" content=3D"sshd(8) reads configuration data from=
+ /etc/ssh/sshd_config (or the file specified with -f on the command line). =
+The file contains keyword-argument pairs, ...">
+
+</head>
+
+<body>
+<div id=3D"bg">
+<div id=3D"logo">
+<a href=3D"https://www.die.net/"><img src=3D"https://linux.die.net/style/lo=
+go.svg" alt=3D"die.net" width=3D"120" height=3D"120"></a>
+</div>
+<div id=3D"content">
+
+<!-- google_ad_section_start -->
+<h1>sshd_config(5) - Linux man page</h1>
+<h2>Name</h2>
+
+<p><b>sshd_config</b> - OpenSSH SSH daemon configuration file
+</p><h2>Synopsis</h2>
+
+<p><b>/etc/ssh/sshd_config</b>
+
+</p><h2>Description</h2>
+
+<p><b><a href=3D"https://linux.die.net/man/8/sshd">sshd</a></b>(8) reads co=
+nfiguration data from <i>/etc/ssh/sshd_config</i> (or the file specified wi=
+th <b>-f</b> on the command line). The file contains
+keyword-argument pairs, one per line. Lines starting with '#' and empty lin=
+es are interpreted as comments. Arguments may optionally be enclosed in dou=
+ble
+quotes (") in order to represent arguments containing spaces.
+</p><p>The possible keywords and their meanings are as follows (note that k=
+eywords are case-insensitive and arguments are case-sensitive):
+</p><pre class=3D"code"><b>       AcceptEnv</b></pre>
+
+<dl compact=3D"">
+<dd>Specifies what environment variables sent by the client will be copied =
+into the session's <b><a href=3D"https://linux.die.net/man/7/environ">envir=
+on</a></b>(7). See <b>SendEnv</b> in <b><a href=3D"https://linux.die.net/ma=
+n/5/ssh_config">ssh_config</a></b>(5) for how to
+configure the client. Note that environment passing is only supported for p=
+rotocol 2. Variables are specified by name, which may contain the wildcard
+characters '*' and '?'. Multiple environment variables may be separated by =
+whitespace or spread across multiple <b>AcceptEnv</b> directives. Be warned=
+ that
+some environment variables could be used to bypass restricted user environm=
+ents. For this reason, care should be taken in the use of this directive. T=
+he
+default is not to accept any environment variables.
+<p><b>AddressFamily</b><br>
+Specifies which address family should be used by <b><a href=3D"https://linu=
+x.die.net/man/8/sshd" rel=3D"nofollow">sshd</a></b>(8). Valid arguments are=
+ ''any'', ''inet'' (use IPv4 only), or ''inet6'' (use IPv6 only). The defau=
+lt is
+''any''.
+</p><p><b>AllowAgentForwarding</b><br>
+Specifies whether <b><a href=3D"https://linux.die.net/man/1/ssh-agent">ssh-=
+agent</a></b>(1) forwarding is permitted. The default is ''yes''. Note that=
+ disabling agent forwarding does not improve security unless users are
+also denied shell access, as they can always install their own forwarders.
+</p><p><b>AllowGroups</b><br>
+This keyword can be followed by a list of group name patterns, separated by=
+ spaces. If specified, login is allowed only for users whose primary group =
+or
+supplementary group list matches one of the patterns. Only group names are =
+valid; a numerical group ID is not recognized. By default, login is allowed=
+ for all
+groups. The allow/deny directives are processed in the following order: <b>=
+DenyUsers</b>, <b>AllowUsers</b>, <b>DenyGroups</b>, and finally <b>AllowGr=
+oups</b>.
+
+</p><p>See <i>PATTERNS</i> in <b><a href=3D"https://linux.die.net/man/5/ssh=
+_config" rel=3D"nofollow">ssh_config</a></b>(5) for more information on pat=
+terns.
+</p><p><b>AllowTcpForwarding</b><br>
+Specifies whether TCP forwarding is permitted. The default is ''yes''. Note=
+ that disabling TCP forwarding does not improve security unless users are a=
+lso
+denied shell access, as they can always install their own forwarders.
+</p><p><b>AllowUsers</b><br>
+This keyword can be followed by a list of user name patterns, separated by =
+spaces. If specified, login is allowed only for user names that match one o=
+f the
+patterns. Only user names are valid; a numerical user ID is not recognized.=
+ By default, login is allowed for all users. If the pattern takes the form =
+USER@HOST
+then USER and HOST are separately checked, restricting logins to particular=
+ users from particular hosts. The allow/deny directives are processed in th=
+e
+following order: <b>DenyUsers</b>, <b>AllowUsers</b>, <b>DenyGroups</b>, an=
+d finally <b>AllowGroups</b>.
+</p><p>See <i>PATTERNS</i> in <b><a href=3D"https://linux.die.net/man/5/ssh=
+_config" rel=3D"nofollow">ssh_config</a></b>(5) for more information on pat=
+terns.
+</p><p><b>AuthorizedKeysFile</b><br>
+Specifies the file that contains the public keys that can be used for user =
+authentication. <b>AuthorizedKeysFile</b> may contain tokens of the form %T=
+ which
+are substituted during connection setup. The following tokens are defined: =
+%% is replaced by a literal '%', %h is replaced by the home directory of th=
+e user
+being authenticated, and %u is replaced by the username of that user. After=
+ expansion, <b>AuthorizedKeysFile</b> is taken to be an absolute path or on=
+e
+relative to the user's home directory. The default is ''.ssh/authorized_key=
+s''.
+</p><p><b>Banner</b><br>
+The contents of the specified file are sent to the remote user before authe=
+ntication is allowed. If the argument is ''none'' then no banner is display=
+ed. This
+option is only available for protocol version 2. By default, no banner is d=
+isplayed.
+</p><p><b>ChallengeResponseAuthentication</b><br>
+Specifies whether challenge-response authentication is allowed (e.g. via PA=
+M or though authentication styles supported in <b>login.conf</b>(5)) The de=
+fault is
+''yes''.
+</p><p><b>ChrootDirectory</b><br>
+Specifies a path to <b><a href=3D"https://linux.die.net/man/2/chroot">chroo=
+t</a></b>(2) to after authentication. This path, and all its components, mu=
+st be root-owned directories that are not writable by any other
+user or group. After the chroot, <b><a href=3D"https://linux.die.net/man/8/=
+sshd" rel=3D"nofollow">sshd</a></b>(8) changes the working directory to the=
+ user's home directory.
+</p><p>The path may contain the following tokens that are expanded at runti=
+me once the connecting user has been authenticated: %% is replaced by a lit=
+eral '%', %h
+is replaced by the home directory of the user being authenticated, and %u i=
+s replaced by the username of that user.
+</p><p>The <b>ChrootDirectory</b> must contain the necessary files and dire=
+ctories to support the user's session. For an interactive session this requ=
+ires at least
+a shell, typically <b><a href=3D"https://linux.die.net/man/1/sh">sh</a></b>=
+(1), and basic <i>/dev</i> nodes such as <b><a href=3D"https://linux.die.ne=
+t/man/4/null">null</a></b>(4), <b><a href=3D"https://linux.die.net/man/4/ze=
+ro">zero</a></b>(4), <b>stdin</b>(4), <b>stdout</b>(4), <b>stderr</b>(4), <=
+b>arandom</b>(4) and <b><a href=3D"https://linux.die.net/man/4/tty">tty</a>=
+</b>(4) devices. For file
+transfer sessions using ''sftp'', no additional configuration of the enviro=
+nment is necessary if the in-process sftp server is used, though sessions w=
+hich use
+logging do require <i>/dev/log</i> inside the chroot directory (see <b><a h=
+ref=3D"https://linux.die.net/man/8/sftp-server">sftp-server</a></b>(8) for =
+details).
+</p><p>The default is not to <b><a href=3D"https://linux.die.net/man/2/chro=
+ot" rel=3D"nofollow">chroot</a></b>(2).
+</p><p><b>Ciphers</b><br>
+Specifies the ciphers allowed for protocol version 2. Multiple ciphers must=
+ be comma-separated. The supported ciphers are ''3des-cbc'', ''aes128-cbc''=
+,
+''aes192-cbc'', ''aes256-cbc'', ''aes128-ctr'', ''aes192-ctr'', ''aes256-ct=
+r'', ''arcfour128'', ''arcfour256'', ''arcfour'', ''blowfish-cbc'', and
+''cast128-cbc''. The default is:
+</p><p>aes128-ctr,aes192-ctr,aes256-ctr,arcfour256,arcfour128,<br>
+aes128-cbc,3des-cbc,blowfish-cbc,cast128-cbc,aes192-cbc,<br>
+aes256-cbc,arcfour
+</p></dd></dl>
+<pre class=3D"code"><b>       ClientAliveCountMax</b></pre>
+
+<dl compact=3D"">
+<dd>Sets the number of client alive messages (see below) which may be sent =
+without <b><a href=3D"https://linux.die.net/man/8/sshd" rel=3D"nofollow">ss=
+hd</a></b>(8) receiving any messages back from the client. If this threshol=
+d is
+reached while client alive messages are being sent, sshd will disconnect th=
+e client, terminating the session. It is important to note that the use of =
+client
+alive messages is very different from <b>TCPKeepAlive</b> (below). The clie=
+nt alive messages are sent through the encrypted channel and therefore will=
+ not be
+spoofable. The TCP keepalive option enabled by <b>TCPKeepAlive</b> is spoof=
+able. The client alive mechanism is valuable when the client or server depe=
+nd on
+knowing when a connection has become inactive.
+<p>The default value is 3. If <b>ClientAliveInterval</b> (see below) is set=
+ to 15, and <b>ClientAliveCountMax</b> is left at the default, unresponsive=
+ SSH
+clients will be disconnected after approximately 45 seconds. This option ap=
+plies to protocol version 2 only.
+</p><p><b>ClientAliveInterval</b><br>
+Sets a timeout interval in seconds after which if no data has been received=
+ from the client, <b><a href=3D"https://linux.die.net/man/8/sshd" rel=3D"no=
+follow">sshd</a></b>(8) will send a message through the encrypted channel t=
+o
+request a response from the client. The default is 0, indicating that these=
+ messages will not be sent to the client. This option applies to protocol v=
+ersion 2
+only.
+</p><p><b>Compression</b><br>
+Specifies whether compression is allowed, or delayed until the user has aut=
+henticated successfully. The argument must be ''yes'', ''delayed'', or ''no=
+''. The
+default is ''delayed''.
+</p><p><b>DenyGroups</b><br>
+This keyword can be followed by a list of group name patterns, separated by=
+ spaces. Login is disallowed for users whose primary group or supplementary=
+ group
+list matches one of the patterns. Only group names are valid; a numerical g=
+roup ID is not recognized. By default, login is allowed for all groups. The
+allow/deny directives are processed in the following order: <b>DenyUsers</b=
+>, <b>AllowUsers</b>, <b>DenyGroups</b>, and finally <b>AllowGroups</b>.
+
+</p><p>See <i>PATTERNS</i> in <b><a href=3D"https://linux.die.net/man/5/ssh=
+_config" rel=3D"nofollow">ssh_config</a></b>(5) for more information on pat=
+terns.
+</p><p><b>DenyUsers</b><br>
+This keyword can be followed by a list of user name patterns, separated by =
+spaces. Login is disallowed for user names that match one of the patterns. =
+Only user
+names are valid; a numerical user ID is not recognized. By default, login i=
+s allowed for all users. If the pattern takes the form USER@HOST then USER =
+and HOST
+are separately checked, restricting logins to particular users from particu=
+lar hosts. The allow/deny directives are processed in the following order:
+<b>DenyUsers</b>, <b>AllowUsers</b>, <b>DenyGroups</b>, and finally <b>Allo=
+wGroups</b>.
+</p><p>See <i>PATTERNS</i> in <b><a href=3D"https://linux.die.net/man/5/ssh=
+_config" rel=3D"nofollow">ssh_config</a></b>(5) for more information on pat=
+terns.
+</p><p><b>ForceCommand</b><br>
+Forces the execution of the command specified by <b>ForceCommand</b>, ignor=
+ing any command supplied by the client and <i>~/.ssh/rc</i> if present. The=
+ command
+is invoked by using the user's login shell with the -c option. This applies=
+ to shell, command, or subsystem execution. It is most useful inside a <b>M=
+atch</b>
+block. The command originally supplied by the client is available in the SS=
+H_ORIGINAL_COMMAND environment variable. Specifying a command of ''internal=
+-sftp''
+will force the use of an in-process sftp server that requires no support fi=
+les when used with <b>ChrootDirectory</b>.
+</p><p><b>GatewayPorts</b><br>
+Specifies whether remote hosts are allowed to connect to ports forwarded fo=
+r the client. By default, <b><a href=3D"https://linux.die.net/man/8/sshd" r=
+el=3D"nofollow">sshd</a></b>(8) binds remote port forwardings to the loopba=
+ck
+address. This prevents other remote hosts from connecting to forwarded port=
+s. <b>GatewayPorts</b> can be used to specify that sshd should allow remote=
+ port
+forwardings to bind to non-loopback addresses, thus allowing other hosts to=
+ connect. The argument may be ''no'' to force remote port forwardings to be
+available to the local host only, ''yes'' to force remote port forwardings =
+to bind to the wildcard address, or ''clientspecified'' to allow the client=
+ to
+select the address to which the forwarding is bound. The default is ''no''.
+</p><p><b>GSSAPIAuthentication</b><br>
+Specifies whether user authentication based on GSSAPI is allowed. The defau=
+lt is ''no''. Note that this option applies to protocol version 2 only.
+
+</p><p><b>GSSAPIKeyExchange</b><br>
+Specifies whether key exchange based on GSSAPI is allowed. GSSAPI key excha=
+nge doesn't rely on ssh keys to verify host identity. The default is ''no''=
+. Note
+that this option applies to protocol version 2 only.
+</p><p><b>GSSAPICleanupCredentials</b><br>
+Specifies whether to automatically destroy the user's credentials cache on =
+logout. The default is ''yes''. Note that this option applies to protocol v=
+ersion 2
+only.
+</p><p><b>GSSAPIStrictAcceptorCheck</b><br>
+Determines whether to be strict about the identity of the GSSAPI acceptor a=
+ client authenticates against. If ''yes'' then the client must authenticate=
+ against
+the <i>host</i> service on the current hostname. If ''no'' then the client =
+may authenticate against any service key stored in the machine's default st=
+ore. This
+facility is provided to assist with operation on multi homed machines. The =
+default is ''yes''. Note that this option applies only to protocol version =
+2 GSSAPI
+connections, and setting it to ''no'' may only work with recent Kerberos GS=
+SAPI libraries.
+</p><p><b>GSSAPIStoreCredentialsOnRekey</b><br>
+Controls whether the user's GSSAPI credentials should be updated following =
+a successful connection rekeying. This option can be used to accepted renew=
+ed or
+updated credentials from a compatible client. The default is ''no''.
+</p><p><b>HostbasedAuthentication</b><br>
+Specifies whether rhosts or /etc/hosts.equiv authentication together with s=
+uccessful public key client host authentication is allowed (host-based
+authentication). This option is similar to <b>RhostsRSAAuthentication</b> a=
+nd applies to protocol version 2 only. The default is ''no''.
+</p><p><b>HostbasedUsesNameFromPacketOnly</b><br>
+Specifies whether or not the server will attempt to perform a reverse name =
+lookup when matching the name in the <i>~/.shosts</i>, <i>~/.rhosts</i>, an=
+d
+<i>/etc/hosts.equiv</i> files during <b>HostbasedAuthentication</b>. A sett=
+ing of ''yes'' means that <b><a href=3D"https://linux.die.net/man/8/sshd" r=
+el=3D"nofollow">sshd</a></b>(8) uses the name supplied by the client rather=
+ than
+attempting to resolve the name from the TCP connection itself. The default =
+is ''no''.
+</p><p><b>HostKey</b><br>
+Specifies a file containing a private host key used by SSH. The default is =
+<i>/etc/ssh/ssh_host_key</i> for protocol version 1, and
+<i>/etc/ssh/ssh_host_rsa_key</i> and <i>/etc/ssh/ssh_host_dsa_key</i> for p=
+rotocol version 2. Note that <b><a href=3D"https://linux.die.net/man/8/sshd=
+" rel=3D"nofollow">sshd</a></b>(8) will refuse to use a file if it is
+group/world-accessible. It is possible to have multiple host key files. ''r=
+sa1'' keys are used for version 1 and ''dsa'' or ''rsa'' are used for versi=
+on 2 of
+the SSH protocol.
+</p><p><b>IgnoreRhosts</b><br>
+Specifies that <i>.rhosts</i> and <i>.shosts</i> files will not be used in =
+<b>RhostsRSAAuthentication</b> or <b>HostbasedAuthentication</b>.
+
+</p><p><i>/etc/hosts.equiv</i> and <i>/etc/ssh/shosts.equiv</i> are still u=
+sed. The default is ''yes''.
+</p><p><b>IgnoreUserKnownHosts</b><br>
+Specifies whether <b><a href=3D"https://linux.die.net/man/8/sshd" rel=3D"no=
+follow">sshd</a></b>(8) should ignore the user's <i>~/.ssh/known_hosts</i> =
+during <b>RhostsRSAAuthentication</b> or <b>HostbasedAuthentication</b>. Th=
+e
+default is ''no''.
+</p><p><b>KerberosAuthentication</b><br>
+Specifies whether the password provided by the user for <b>PasswordAuthenti=
+cation</b> will be validated through the Kerberos KDC. To use this option, =
+the
+server needs a Kerberos servtab which allows the verification of the KDC's =
+identity. The default is ''no''.
+</p><p><b>KerberosGetAFSToken</b><br>
+If AFS is active and the user has a Kerberos 5 TGT, attempt to acquire an A=
+FS token before accessing the user's home directory. The default is ''no''.
+
+</p><p><b>KerberosOrLocalPasswd</b><br>
+If password authentication through Kerberos fails then the password will be=
+ validated via any additional local mechanism such as <i>/etc/passwd</i>. T=
+he
+default is ''yes''.
+</p><p><b>KerberosTicketCleanup</b><br>
+Specifies whether to automatically destroy the user's ticket cache file on =
+logout. The default is ''yes''.
+</p><p><b>KerberosUseKuserok</b><br>
+Specifies whether to look at .k5login file for user's aliases. The default =
+is ''yes''.
+</p><p><b>KeyRegenerationInterval</b><br>
+In protocol version 1, the ephemeral server key is automatically regenerate=
+d after this many seconds (if it has been used). The purpose of regeneratio=
+n is to
+prevent decrypting captured sessions by later breaking into the machine and=
+ stealing the keys. The key is never stored anywhere. If the value is 0, th=
+e key is
+never regenerated. The default is 3600 (seconds).
+</p><p><b>ListenAddress</b><br>
+Specifies the local addresses <b><a href=3D"https://linux.die.net/man/8/ssh=
+d" rel=3D"nofollow">sshd</a></b>(8) should listen on. The following forms m=
+ay be used:
+</p><p><b>ListenAddress</b> <i>host</i>|<i>IPv4_addr</i>|<i>IPv6_addr</i><b=
+><br>
+ListenAddress</b> <i>host</i>|<i>IPv4_addr</i>:<i>port</i><b><br>
+ListenAddress</b> [<i><br>
+host</i>|<i>IPv6_addr</i>]:<i>port</i>
+</p><p>If <i>port</i> is not specified, sshd will listen on the address and=
+ all prior <b>Port</b> options specified. The default is to listen on all l=
+ocal
+addresses. Multiple <b>ListenAddress</b> options are permitted. Additionall=
+y, any <b>Port</b> options must precede this option for non-port qualified
+addresses.
+</p><p><b>LoginGraceTime</b><br>
+The server disconnects after this time if the user has not successfully log=
+ged in. If the value is 0, there is no time limit. The default is 120 secon=
+ds.
+
+</p><p><b>LogLevel</b><br>
+Gives the verbosity level that is used when logging messages from <b><a hre=
+f=3D"https://linux.die.net/man/8/sshd" rel=3D"nofollow">sshd</a></b>(8). Th=
+e possible values are: QUIET, FATAL, ERROR, INFO, VERBOSE, DEBUG, DEBUG1, D=
+EBUG2,
+and DEBUG3. The default is INFO. DEBUG and DEBUG1 are equivalent. DEBUG2 an=
+d DEBUG3 each specify higher levels of debugging output. Logging with a DEB=
+UG level
+violates the privacy of users and is not recommended.
+</p><p><b>MACs</b>' Specifies the available MAC (message authentication cod=
+e) algorithms. The MAC algorithm is used in protocol version 2 for data int=
+egrity
+protection. Multiple algorithms must be comma-separated. The default is:
+</p><p>hmac-md5,hmac-sha1,<a href=3D"mailto:umac-64@openssh.com">umac-64@op=
+enssh.com</a>,<br>
+hmac-ripemd160,hmac-sha1-96,hmac-md5-96
+</p></dd></dl>
+<pre class=3D"code"><b>       Match</b></pre>
+
+<dl compact=3D"">
+<dd>Introduces a conditional block. If all of the criteria on the <b>Match<=
+/b> line are satisfied, the keywords on the following lines override those =
+set in the
+global section of the config file, until either another <b>Match</b> line o=
+r the end of the file.
+<p>The arguments to <b>Match</b> are one or more criteria-pattern pairs. Th=
+e available criteria are <b>User</b>, <b>Group</b>, <b>Host</b>, and <b>Add=
+ress</b>.
+The match patterns may consist of single entries or comma-separated lists a=
+nd may use the wildcard and negation operators described in the <i>PATTERNS=
+</i>
+section of <b><a href=3D"https://linux.die.net/man/5/ssh_config" rel=3D"nof=
+ollow">ssh_config</a></b>(5).
+</p><p>The patterns in an <b>Address</b> criteria may additionally contain =
+addresses to match in CIDR address/masklen format, e.g. ''192.0.2.0/24'' or
+''3ffe:ffff::/32''. Note that the mask length provided must be consistent w=
+ith the address - it is an error to specify a mask length that is too long =
+for the
+address or one with bits set in this host portion of the address. For examp=
+le, ''192.0.2.0/33'' and ''192.0.2.0/8'' respectively.
+</p><p>Only a subset of keywords may be used on the lines following a <b>Ma=
+tch</b> keyword. Available keywords are <b>AllowAgentForwarding</b>,
+<b>AllowTcpForwarding</b>, <b>Banner</b>, <b>ChrootDirectory</b>, <b>ForceC=
+ommand</b>, <b>GatewayPorts</b>, <b>GSSAPIAuthentication</b>,
+<b>HostbasedAuthentication</b>, <b>KbdInteractiveAuthentication</b>, <b>Ker=
+berosAuthentication</b>, <b>KerberosUseKuserok</b>, <b>MaxAuthTries</b>,
+<b>MaxSessions</b>, <b>PubkeyAuthentication</b>, <b>AuthorizedKeysCommand</=
+b>, <b>AuthorizedKeysCommandRunAs</b>, <b>PasswordAuthentication</b>,
+<b>PermitEmptyPasswords</b>, <b>PermitOpen</b>, <b>PermitRootLogin</b>, <b>=
+RequiredAuthentications1, RequiredAuthentications2, RhostsRSAAuthentication=
+</b>,
+<b>RSAAuthentication</b>, <b>X11DisplayOffset</b>, <b>X11Forwarding</b> and=
+ <b>X11UseLocalHost</b>.
+</p><p><b>MaxAuthTries</b><br>
+Specifies the maximum number of authentication attempts permitted per conne=
+ction. Once the number of failures reaches half this value, additional fail=
+ures are
+logged. The default is 6.
+</p><p><b>MaxSessions</b><br>
+Specifies the maximum number of open sessions permitted per network connect=
+ion. The default is 10.
+</p><p><b>MaxStartups</b><br>
+Specifies the maximum number of concurrent unauthenticated connections to t=
+he SSH daemon. Additional connections will be dropped until authentication =
+succeeds
+or the <b>LoginGraceTime</b> expires for a connection. The default is 10.
+</p><p>Alternatively, random early drop can be enabled by specifying the th=
+ree colon separated values ''start:rate:full'' (e.g. "10:30:60"). <b><a hre=
+f=3D"https://linux.die.net/man/8/sshd" rel=3D"nofollow">sshd</a></b>(8) wil=
+l refuse
+connection attempts with a probability of ''rate/100'' (30%) if there are c=
+urrently ''start'' (10) unauthenticated connections. The probability increa=
+ses
+linearly and all connection attempts are refused if the number of unauthent=
+icated connections reaches ''full'' (60).
+</p><p><b>PasswordAuthentication</b><br>
+Specifies whether password authentication is allowed. The default is ''yes'=
+'.
+</p><p><b>PermitEmptyPasswords</b><br>
+When password authentication is allowed, it specifies whether the server al=
+lows login to accounts with empty password strings. The default is ''no''.
+
+</p><p><b>PermitOpen</b><br>
+Specifies the destinations to which TCP port forwarding is permitted. The f=
+orwarding specification must be one of the following forms:
+</p><p><b>PermitOpen</b> <i>host</i>:<i>port</i><b><br>
+PermitOpen</b> <i>IPv4_addr</i>:<i>port</i><b><br>
+PermitOpen</b> <i>[IPv6_addr]</i>:<i>port</i>
+</p><p>Multiple forwards may be specified by separating them with whitespac=
+e. An argument of ''any'' can be used to remove all restrictions and permit=
+ any
+forwarding requests. By default all port forwarding requests are permitted.
+</p><p><b>PermitRootLogin</b><br>
+Specifies whether root can log in using <b><a href=3D"https://linux.die.net=
+/man/1/ssh">ssh</a></b>(1). The argument must be ''yes'', ''without-passwor=
+d'', ''forced-commands-only'', or ''no''. The default is
+''yes''.
+</p><p>If this option is set to ''without-password'', password authenticati=
+on is disabled for root.
+</p><p>If this option is set to ''forced-commands-only'', root login with p=
+ublic key authentication will be allowed, but only if the <i>command</i> op=
+tion has been
+specified (which may be useful for taking remote backups even if root login=
+ is normally not allowed). All other authentication methods are disabled fo=
+r root.
+
+</p><p>If this option is set to ''no'', root is not allowed to log in.
+</p><p><b>PermitTunnel</b><br>
+Specifies whether <b>tun</b>(4) device forwarding is allowed. The argument =
+must be ''yes'', ''point-to-point'' (layer 3), ''ethernet'' (layer 2), or '=
+'no''.
+Specifying ''yes'' permits both ''point-to-point'' and ''ethernet''. The de=
+fault is ''no''.
+</p><p><b>PermitUserEnvironment</b><br>
+Specifies whether <i>~/.ssh/environment</i> and <b>environment=3D</b> optio=
+ns in <i>~/.ssh/authorized_keys</i> are processed by <b><a href=3D"https://=
+linux.die.net/man/8/sshd" rel=3D"nofollow">sshd</a></b>(8). The default is =
+''no''.
+Enabling environment processing may enable users to bypass access restricti=
+ons in some configurations using mechanisms such as LD_PRELOAD.
+</p><p><b>PidFile</b><br>
+Specifies the file that contains the process ID of the SSH daemon. The defa=
+ult is <i>/var/run/sshd.pid</i>.
+</p><p><b>Port</b>' Specifies the port number that <b><a href=3D"https://li=
+nux.die.net/man/8/sshd" rel=3D"nofollow">sshd</a></b>(8) listens on. The de=
+fault is 22. Multiple options of this type are permitted. See also
+<b>ListenAddress</b>.
+</p><p><b>PrintLastLog</b><br>
+Specifies whether <b><a href=3D"https://linux.die.net/man/8/sshd" rel=3D"no=
+follow">sshd</a></b>(8) should print the date and time of the last user log=
+in when a user logs in interactively. The default is ''yes''.
+</p><p><b>PrintMotd</b><br>
+Specifies whether <b><a href=3D"https://linux.die.net/man/8/sshd" rel=3D"no=
+follow">sshd</a></b>(8) should print <i>/etc/motd</i> when a user logs in i=
+nteractively. (On some systems it is also printed by the shell,
+<i>/etc/profile</i>, or equivalent.) The default is ''yes''.
+</p><p><b>Protocol</b><br>
+Specifies the protocol versions <b><a href=3D"https://linux.die.net/man/8/s=
+shd" rel=3D"nofollow">sshd</a></b>(8) supports. The possible values are '1'=
+ and '2'. Multiple versions must be comma-separated. The default is ''2,1''=
+. Note
+that the order of the protocol list does not indicate preference, because t=
+he client selects among multiple protocol versions offered by the server. S=
+pecifying
+''2,1'' is identical to ''1,2''.
+</p><p><b>PubkeyAuthentication</b><br>
+Specifies whether public key authentication is allowed. The default is ''ye=
+s''. Note that this option applies to protocol version 2 only.
+</p><p><b>AuthorizedKeysCommand</b><br>
+Specifies a program to be used for lookup of the user's public keys. The pr=
+ogram will be invoked with its first argument the name of the user being au=
+thorized,
+and should produce on standard output AuthorizedKeys lines (see AUTHORIZED_=
+KEYS in <b><a href=3D"https://linux.die.net/man/8/sshd" rel=3D"nofollow">ss=
+hd</a></b>(8)). By default (or when set to the empty string) there is no
+AuthorizedKeysCommand run. If the AuthorizedKeysCommand does not successful=
+ly authorize the user, authorization falls through to the AuthorizedKeysFil=
+e. Note
+that this option has an effect only with PubkeyAuthentication turned on.
+</p><p><b>AuthorizedKeysCommandRunAs</b><br>
+Specifies the user under whose account the AuthorizedKeysCommand is run. Em=
+pty string (the default value) means the user being authorized is used.
+
+</p><p><b>RequiredAuthentications[12]</b><br>
+Specifies required methods of authentications that has to succeed before au=
+thorizing the connection. (RequiredAuthentication1 for Protocol version 1, =
+and
+RequiredAuthentication2 for v2)
+</p><p>RequiredAuthentications1 method[,method...]<br>
+RequiredAuthentications2 method[,method...]
+</p><p>Example 1:
+</p><pre class=3D"code">RequiredAuthentications2 password,hostbased</pre>Ex=
+ample 2:
+<pre class=3D"code">RequiredAuthentications2 publickey,password</pre>Availa=
+ble methods:
+<pre class=3D"code">password, keyboard-interactive, publickey, hostbased, g=
+ssapi-keyex, gssapi-with-mic</pre>
+</dd></dl>
+<pre class=3D"code"><b>       RhostsRSAAuthentication</b></pre>
+
+<dl compact=3D"">
+<dd>Specifies whether rhosts or /etc/hosts.equiv authentication together wi=
+th successful RSA host authentication is allowed. The default is ''no''. Th=
+is option
+applies to protocol version 1 only.
+<p><b>RSAAuthentication</b><br>
+Specifies whether pure RSA authentication is allowed. The default is ''yes'=
+'. This option applies to protocol version 1 only.
+</p><p><b>ServerKeyBits</b><br>
+Defines the number of bits in the ephemeral protocol version 1 server key. =
+The minimum value is 512, and the default is 1024.
+</p><p><b>ShowPatchLevel</b><br>
+Specifies whether <b>sshd</b> will display the patch level of the binary in=
+ the identification string. The patch level is set at compile-time. The def=
+ault is
+''no''. This option applies to protocol version 1 only.
+</p><p><b>StrictModes</b><br>
+Specifies whether <b><a href=3D"https://linux.die.net/man/8/sshd" rel=3D"no=
+follow">sshd</a></b>(8) should check file modes and ownership of the user's=
+ files and home directory before accepting login. This is normally desirabl=
+e
+because novices sometimes accidentally leave their directory or files world=
+-writable. The default is ''yes''.
+</p><p><b>Subsystem</b><br>
+Configures an external subsystem (e.g. file transfer daemon). Arguments sho=
+uld be a subsystem name and a command (with optional arguments) to execute =
+upon
+subsystem request.
+</p><p>The command <b><a href=3D"https://linux.die.net/man/8/sftp-server" r=
+el=3D"nofollow">sftp-server</a></b>(8) implements the ''sftp'' file transfe=
+r subsystem.
+</p><p>Alternately the name ''internal-sftp'' implements an in-process ''sf=
+tp'' server. This may simplify configurations using <b>ChrootDirectory</b> =
+to force a
+different filesystem root on clients.
+</p><p>By default no subsystems are defined. Note that this option applies =
+to protocol version 2 only.
+</p><p><b>SyslogFacility</b><br>
+Gives the facility code that is used when logging messages from <b><a href=
+=3D"https://linux.die.net/man/8/sshd" rel=3D"nofollow">sshd</a></b>(8). The=
+ possible values are: DAEMON, USER, AUTH, AUTHPRIV, LOCAL0, LOCAL1, LOCAL2,=
+ LOCAL3,
+LOCAL4, LOCAL5, LOCAL6, LOCAL7. The default is AUTH.
+</p><p><b>TCPKeepAlive</b><br>
+Specifies whether the system should send TCP keepalive messages to the othe=
+r side. If they are sent, death of the connection or crash of one of the ma=
+chines
+will be properly noticed. However, this means that connections will die if =
+the route is down temporarily, and some people find it annoying. On the oth=
+er hand,
+if TCP keepalives are not sent, sessions may hang indefinitely on the serve=
+r, leaving ''ghost'' users and consuming server resources.
+</p><p>The default is ''yes'' (to send TCP keepalive messages), and the ser=
+ver will notice if the network goes down or the client host crashes. This a=
+voids
+infinitely hanging sessions.
+</p><p>To disable TCP keepalive messages, the value should be set to ''no''=
+.
+</p><p><b>UseDNS</b><br>
+Specifies whether <b><a href=3D"https://linux.die.net/man/8/sshd" rel=3D"no=
+follow">sshd</a></b>(8) should look up the remote host name and check that =
+the resolved host name for the remote IP address maps back to the very same=
+ IP
+address. The default is ''yes''.
+</p><p><b>UseLogin</b><br>
+Specifies whether <b><a href=3D"https://linux.die.net/man/1/login">login</a=
+></b>(1) is used for interactive login sessions. The default is ''no''. Not=
+e that <b><a href=3D"https://linux.die.net/man/1/login" rel=3D"nofollow">lo=
+gin</a></b>(1) is never used for remote command execution. Note
+also, that if this is enabled, <b>X11Forwarding</b> will be disabled becaus=
+e <b><a href=3D"https://linux.die.net/man/1/login" rel=3D"nofollow">login</=
+a></b>(1) does not know how to handle <b><a href=3D"https://linux.die.net/m=
+an/1/xauth">xauth</a></b>(1) cookies. If
+<b>UsePrivilegeSeparation</b> is specified, it will be disabled after authe=
+ntication.
+</p><p><b>UsePAM</b><br>
+Enables the Pluggable Authentication Module interface. If set to ''yes'' th=
+is will enable PAM authentication using <b>ChallengeResponseAuthentication<=
+/b> and
+<b>PasswordAuthentication</b> in addition to PAM account and session module=
+ processing for all authentication types.
+</p><p>Because PAM challenge-response authentication usually serves an equi=
+valent role to password authentication, you should disable either
+<b>PasswordAuthentication</b> or <b>ChallengeResponseAuthentication.</b>
+</p><p>If <b>UsePAM</b> is enabled, you will not be able to run <b><a href=
+=3D"https://linux.die.net/man/8/sshd" rel=3D"nofollow">sshd</a></b>(8) as a=
+ non-root user. The default is ''no''.
+</p><p><b>UsePrivilegeSeparation</b><br>
+Specifies whether <b><a href=3D"https://linux.die.net/man/8/sshd" rel=3D"no=
+follow">sshd</a></b>(8) separates privileges by creating an unprivileged ch=
+ild process to deal with incoming network traffic. After successful
+authentication, another process will be created that has the privilege of t=
+he authenticated user. The goal of privilege separation is to prevent privi=
+lege
+escalation by containing any corruption within the unprivileged processes. =
+The default is ''yes''.
+</p><p><b>X11DisplayOffset</b><br>
+Specifies the first display number available for <b><a href=3D"https://linu=
+x.die.net/man/8/sshd" rel=3D"nofollow">sshd</a></b>(8)'s X11 forwarding. Th=
+is prevents sshd from interfering with real X11 servers. The default is 10.
+
+</p><p><b>X11Forwarding</b><br>
+Specifies whether X11 forwarding is permitted. The argument must be ''yes''=
+ or ''no''. The default is ''no''.
+</p><p>When X11 forwarding is enabled, there may be additional exposure to =
+the server and to client displays if the <b><a href=3D"https://linux.die.ne=
+t/man/8/sshd" rel=3D"nofollow">sshd</a></b>(8) proxy display is configured =
+to listen
+on the wildcard address (see <b>X11UseLocalhost</b> below), though this is =
+not the default. Additionally, the authentication spoofing and authenticati=
+on data
+verification and substitution occur on the client side. The security risk o=
+f using X11 forwarding is that the client's X11 display server may be expos=
+ed to
+attack when the SSH client requests forwarding (see the warnings for <b>For=
+wardX11</b> in <b><a href=3D"https://linux.die.net/man/5/ssh_config" rel=3D=
+"nofollow">ssh_config</a></b>(5)). A system administrator may have a stance=
+ in which
+they want to protect clients that may expose themselves to attack by unwitt=
+ingly requesting X11 forwarding, which can warrant a ''no'' setting.
+
+</p><p>Note that disabling X11 forwarding does not prevent users from forwa=
+rding X11 traffic, as users can always install their own forwarders. X11 fo=
+rwarding is
+automatically disabled if <b>UseLogin</b> is enabled.
+</p><p><b>X11UseLocalhost</b><br>
+Specifies whether <b><a href=3D"https://linux.die.net/man/8/sshd" rel=3D"no=
+follow">sshd</a></b>(8) should bind the X11 forwarding server to the loopba=
+ck address or to the wildcard address. By default, sshd binds the forwardin=
+g
+server to the loopback address and sets the hostname part of the DISPLAY en=
+vironment variable to ''localhost''. This prevents remote hosts from connec=
+ting to
+the proxy display. However, some older X11 clients may not function with th=
+is configuration. <b>X11UseLocalhost</b> may be set to ''no'' to specify th=
+at the
+forwarding server should be bound to the wildcard address. The argument mus=
+t be ''yes'' or ''no''. The default is ''yes''.
+</p><p><b>XAuthLocation</b><br>
+Specifies the full pathname of the <b><a href=3D"https://linux.die.net/man/=
+1/xauth" rel=3D"nofollow">xauth</a></b>(1) program. The default is <i>/usr/=
+bin/xauth</i>.
+</p><h2>Time Formats</h2>
+</dd></dl>
+
+<p><b><a href=3D"https://linux.die.net/man/8/sshd" rel=3D"nofollow">sshd</a=
+></b>(8) command-line arguments and configuration file options that specify=
+ time may be expressed using a sequence of the form:
+<i>time</i>[<i>qualifier</i>], where <i>time</i> is a positive integer valu=
+e and <i>qualifier</i> is one of the following:
+</p><pre class=3D"code">&lt;<b>none</b>&gt;</pre>
+
+<dl compact=3D"">
+<dd>seconds<b><br>
+s</b> | <b>S</b><br>
+seconds<b><br>
+m</b> | <b>M</b><br>
+minutes<b><br>
+h</b> | <b>H</b><br>
+hours<b><br>
+d</b> | <b>D</b><br>
+days<b><br>
+w</b> | <b>W</b><br>
+weeks
+<p>Each member of the sequence is added together to calculate the total tim=
+e value.
+</p><p>Time format examples:
+</p><p>600' 600 seconds (10 minutes)<br>
+10m' 10 minutes<br>
+1h30m<br>
+1 hour 30 minutes (90 minutes)
+</p><h2>Files</h2>
+</dd></dl>
+<pre class=3D"code">/etc/ssh/sshd_config</pre>
+
+<dl compact=3D"">
+<dd>Contains configuration data for <b><a href=3D"https://linux.die.net/man=
+/8/sshd" rel=3D"nofollow">sshd</a></b>(8). This file should be writable by =
+root only, but it is recommended (though not necessary) that it be world-re=
+adable.
+
+<h2>See Also</h2>
+</dd></dl>
+
+<p><b><a href=3D"https://linux.die.net/man/8/sshd" rel=3D"nofollow">sshd</a=
+></b>(8)
+</p><h2>Authors</h2>
+
+<p>OpenSSH is a derivative of the original and free ssh 1.2.12 release by T=
+atu Ylonen. Aaron Campbell, Bob Beck, Markus Friedl, Niels Provos, Theo de =
+Raadt and
+Dug Song removed many bugs, re-added newer features and created OpenSSH. Ma=
+rkus Friedl contributed the support for SSH protocol versions 1.5 and 2.0. =
+Niels
+Provos and Markus Friedl contributed support for privilege separation.
+</p><p>BSD April 14, 2013 BSD
+
+<!-- google_ad_section_end -->
+</p><h2>Referenced By</h2>
+<b><a href=3D"https://linux.die.net/man/3/brlapi_tty" rel=3D"nofollow">brla=
+pi_tty</a></b>(3),
+<b><a href=3D"https://linux.die.net/man/1/gsissh" rel=3D"nofollow">gsissh</=
+a></b>(1),
+<b><a href=3D"https://linux.die.net/man/5/gsissh_config" rel=3D"nofollow">g=
+sissh_config</a></b>(5),
+<b><a href=3D"https://linux.die.net/man/8/gsisshd" rel=3D"nofollow">gsisshd=
+</a></b>(8),
+<b><a href=3D"https://linux.die.net/man/1/ssh-add" rel=3D"nofollow">ssh-add=
+</a></b>(1),
+<b><a href=3D"https://linux.die.net/man/8/ssh-ldap-helper" rel=3D"nofollow"=
+>ssh-ldap-helper</a></b>(8),
+<b><a href=3D"https://linux.die.net/man/1/sss_ssh_authorizedkeys" rel=3D"no=
+follow">sss_ssh_authorizedkeys</a></b>(1)
+<div id=3D"adbottom">
+
+<ins class=3D"adsbygoogle" style=3D"display:inline-block;width:336px;height=
+:280px" data-ad-client=3D"ca-pub-5823754184406795" data-ad-slot=3D"87899403=
+13"></ins>
+
+</div>
+
+</div>
+<div id=3D"menu">
+<dl>
+<dt>Site Search</dt>
+<dd>
+<form id=3D"cse-search-box-menu" action=3D"https://www.die.net/search/">
+<input name=3D"q" type=3D"text" size=3D"10">
+
+
+
+
+</form>
+
+</dd></dl>
+
+
+
+<dl>
+<dt>Library</dt>
+<dd><a href=3D"https://linux.die.net/">linux docs</a></dd>
+<dd><a href=3D"https://linux.die.net/man/">linux man pages</a></dd>
+<dd><a href=3D"https://www.die.net/musings/page_load_time/">page load time<=
+/a></dd>
+</dl>
+<dl>
+<dt>Toys</dt>
+<dd><a href=3D"https://www.die.net/earth/">world sunlight</a></dd>
+<dd><a href=3D"https://www.die.net/moon/">moon phase</a></dd>
+<dd><a href=3D"http://trace.die.net/">trace explorer</a></dd>
+</dl>
+
+
+<dl>
+<dt><a href=3D"https://linux.die.net/man/5/"><img src=3D"https://linux.die.=
+net/style/back.gif" alt=3D"Back" width=3D"20" height=3D"22"></a></dt><dd></=
+dd>
+</dl>
+</div></div>
+
+<iframe height=3D"1" width=3D"1" style=3D"position: absolute; top: 0px; lef=
+t: 0px; border: none; visibility: hidden;"></iframe>
+
+</body></html>
+------MultipartBoundary--qP1SFlZQ9uiFUu1UV38hgLEUrGAn919LbJNfhsj2xm----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://linux.die.net/style/white.css
+
+@charset "windows-1252";
+
+body, table { padding: 0px; font-family: verdana, helvetica, arial, sans-se=
+rif; background-color: rgb(255, 255, 255); color: rgb(68, 68, 68); }
+
+body { margin: 0px; background-image: url("data:image/png;base64,iVBORw0KGg=
+oAAAANSUhEUgAAAH4AAAAhAQMAAAAlNY3pAAAABlBMVEVmAABmZmag5upWAAAAE0lEQVQoU2NkQ=
+AUcjKMCowJ4BABBCQEqSqTgLwAAAABJRU5ErkJggg=3D=3D"); background-repeat: repea=
+t-y; background-position: left top; }
+
+table { font-size: 1em; }
+
+#bg { margin: 0px; max-width: 1024px; }
+
+#content { margin: 10px 10px 10px 136px; padding: 0px; font-size: 16px; lin=
+e-height: 1.4; }
+
+#logo, #menu { font-size: 13px; text-align: left; color: rgb(153, 153, 153)=
+; background-color: rgb(102, 0, 0); border: 0px; margin: 0px; position: abs=
+olute; top: 0px; left: 0px; padding: 4px 0px 4px 4px; width: 120px; }
+
+#menu { border-bottom: 1px dashed rgb(0, 0, 0); top: 124px; }
+
+b, strong { font-weight: bold; }
+
+i { font-style: italic; }
+
+a { color: rgb(102, 0, 0); }
+
+hr { height: 1px; border: 0px; color: rgb(102, 0, 0); background-color: rgb=
+(102, 0, 0); }
+
+h1 { text-align: left; font-size: 1.75em; margin-top: 0px; border-bottom: 2=
+px solid rgb(102, 0, 0); line-height: 1.2; }
+
+h2 { font-size: 1.25em; line-height: 1.2; }
+
+img { border: none; }
+
+.shrink { max-width: 100%; height: auto; }
+
+input { border-color: rgb(153, 153, 153); }
+
+pre, tt { font-family: monospace; }
+
+#logo a, #menu a { color: rgb(255, 255, 255); display: block; padding-left:=
+ 8px; text-indent: -8px; text-decoration: none; }
+
+#logo a:hover, #menu a:hover { background-color: rgb(153, 51, 51); }
+
+#menu dl { margin: 8px 0px 8px 4px; padding-left: 0px; text-align: left; }
+
+#menu dd { margin: 0px 0px 0px 8px; padding-left: 0px; }
+
+#menu dt { font-size: 1.25em; }
+
+#menu input { background-color: rgb(255, 204, 204); border-color: rgb(255, =
+204, 204); width: 90%; }
+
+#menu label { font-size: 0.75em; margin-top: 1.5em; display: block; }
+
+#news { margin: 1em 0px; padding: 0px 0.5em 0.5em; background-color: rgb(23=
+8, 238, 238); }
+
+#news dt { text-align: center; font-weight: bold; margin: 0px; padding: 0.5=
+em 0px 0px; }
+
+#news dd { margin: 0px; padding: 0px 0px 0px 3.5em; text-indent: -3.5em; }
+
+.center { text-align: center; }
+
+.source { font-size: 0.75em; font-style: italic; }
+
+.even { background-color: rgb(255, 238, 238); }
+
+.odd { background-color: rgb(238, 238, 238); }
+
+.code { padding: 0px 2em 0px 0px; }
+
+.sidebar { background-color: rgb(255, 238, 238); border: 1px solid rgb(102,=
+ 0, 0); padding: 0.5em 1em; }
+
+.highlight { background-color: rgb(255, 204, 204); }
+
+.error { border: 1px solid rgb(204, 0, 0); padding: 0.5em 1em; color: rgb(2=
+04, 0, 0); }
+
+.button { white-space: nowrap; padding: 0.125em 0.25em; border: 1px solid r=
+gb(102, 102, 102); }
+
+#adlink { background-color: rgb(102, 0, 0); height: 100px; }
+
+#admiddle { margin: 0.5em 3em; }
+
+#adbottom { margin: 1em 0px 4em 0.5em; }
+
+#adright { float: right; margin: 0px 15% 0.5em 1em; }
+
+@media print {
+  body, #bg, #content { margin: 0px; color: rgb(0, 0, 0); background-color:=
+ rgb(255, 255, 255); background-image: none; font-size: 12pt; }
+  pre, tt { font-size: 12pt; }
+  a { text-decoration: underline; }
+  form, #menu, #logo, #admiddle, #adbottom, #adright { display: none; }
+}
+
+@media screen and (max-width: 640px) {
+  body { background-image: none; }
+  #content { margin: 50px 10px 10px; }
+  #logo { padding: 0px; top: -87px; width: 100%; border-bottom: 1px solid r=
+gb(102, 102, 102); }
+  #logo a { padding: 4px 4px 2px 8px; background-image: url("/style/logo.sv=
+g"); background-size: 61px 61px; background-repeat: no-repeat; background-p=
+osition: right 85px; }
+  #menu { font-size: 84%; position: static; width: 100%; border-top: 1px so=
+lid rgb(102, 102, 102); margin: 1em 0px 0px; }
+  #menu dt { margin: 0px 0px 8px; }
+  #menu dd a { padding: 8px 16px; border-width: 1px; border-style: solid; b=
+order-image: initial; border-color: rgb(153, 51, 51) rgb(0, 0, 0) rgb(0, 0,=
+ 0) rgb(153, 51, 51); }
+  #adright { margin: 0px 0px 1em 0.5em; }
+}
+------MultipartBoundary--qP1SFlZQ9uiFUu1UV38hgLEUrGAn919LbJNfhsj2xm----
+Content-Type: image/svg+xml
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://linux.die.net/style/logo.svg
+
+<svg xmlns=3D"http://www.w3.org/2000/svg" height=3D"120" width=3D"120" vers=
+ion=3D"1">
+<path fill=3D"#111" d=3D"M49 43h500V82H49z"/>
+<path fill=3D"#a44" d=3D"M79.064 27.94c6.96 12.46 7.832 26.413 1.945 31.168=
+s-16.302-1.49-23.263-13.948-7.832-26.413-1.945-31.168 16.3 1.49 23.262 13.9=
+48zM73.02 22.772c4.73 12.555-5.08 27.467-21.915 33.307s-34.317.398-39.05-12=
+.157 5.08-27.466 21.915-33.307 34.317-.398 39.05 12.156zM24.582 67.565c-6.4=
+28-10.927-4.028-22.636 5.36-26.153s22.21 2.49 28.637 13.418 4.027 22.635-5.=
+36 26.152-22.21-2.49-28.638-13.417z"/>
+<path fill=3D"#711" d=3D"M76.04 27c0 11.16-12.664 20.204-28.284 20.204S19.4=
+73 38.16 19.473 27 32.136 6.8 47.756 6.8c15.62 0 28.283 9.045 28.283 20.203=
+z"/>
+<path fill=3D"#e77" d=3D"M26.977 43.686c7.302 11.077 11.882 24.8 10.23 30.6=
+5s-8.915 1.61-16.218-9.467-11.884-24.8-10.23-30.65 8.914-1.61 16.217 9.466z=
+"/>
+<path fill=3D"#411" d=3D"M85.02 51.253c2.56 8.985-5.948 21.4-19 27.727s-25.=
+71 4.176-28.27-4.808c-2.558-8.985 5.95-21.398 19.002-27.727s25.71-4.176 28.=
+268 4.808z"/>
+<path fill=3D"#fff" d=3D"M55.32 12.24c0 1.915-2.392 3.466-5.342 3.466-2.95 =
+0-5.342-1.55-5.342-3.465s2.392-3.464 5.342-3.464c2.95 0 5.342 1.552 5.342 3=
+.465zM32.9 22.5c0 1.915-2.39 3.466-5.34 3.466-2.95 0-5.343-1.55-5.343-3.465=
+s2.392-3.464 5.342-3.464c2.95 0 5.34 1.552 5.34 3.465zM48.422 41.037c0 1.91=
+4-2.392 3.465-5.342 3.465-2.95 0-5.342-1.55-5.342-3.465s2.392-3.465 5.342-3=
+.465c2.95 0 5.342 1.552 5.342 3.465zM73.254 30.114c0 1.914-2.392 3.465-5.34=
+2 3.465-2.95 0-5.342-1.552-5.342-3.466s2.392-3.465 5.342-3.465c2.95 0 5.342=
+ 1.55 5.342 3.464zM17.15 37.106c1.632 2.222 2.53 4.536 2 5.168-.527.63-2.28=
+-.66-3.913-2.882s-2.53-4.536-2.003-5.168c.528-.63 2.28.66 3.915 2.882zM18.5=
+28 45.712c1.633 2.222 2.53 4.536 2.002 5.168-.528.63-2.28-.66-3.914-2.882s-=
+2.53-4.536-2.003-5.168c.528-.63 2.28.66 3.915 2.882zM20.598 54.98c1.633 2.2=
+22 2.53 4.536 2.002 5.168-.528.63-2.28-.66-3.914-2.882s-2.53-4.536-2.003-5.=
+168c.528-.63 2.28.66 3.915 2.882zM29.91 52.332c1.633 2.222 2.53 4.536 2.002=
+ 5.168-.528.63-2.28-.66-3.914-2.882s-2.53-4.536-2.003-5.168c.528-.63 2.28.6=
+6 3.915 2.882zM30.945 60.937c1.633 2.222 2.53 4.536 2.002 5.168-.528.63-2.2=
+8-.66-3.914-2.882s-2.53-4.536-2.003-5.168c.528-.63 2.28.66 3.915 2.882zM32.=
+324 69.874c1.633 2.222 2.53 4.536 2.002 5.168-.528.63-2.28-.66-3.914-2.882s=
+-2.53-4.536-2.003-5.168c.527-.63 2.28.66 3.914 2.882zM53.95 72.954c1.134 1.=
+236.04 3.598-2.446 5.275-2.484 1.676-5.417 2.033-6.55.797s-.04-3.6 2.446-5.=
+276c2.484-1.676 5.417-2.033 6.55-.796zM79.127 46.806c1.134 1.236.04 3.598-2=
+.446 5.275-2.483 1.678-5.416 2.035-6.55.8s-.038-3.6 2.447-5.277c2.484-1.677=
+ 5.417-2.034 6.55-.797z"/>
+<path fill=3D"#fff" d=3D"M24.56 115h-2.32v-3.92h-.08c-.28.68-.68 1.28-1.2 1=
+.84s-1.12 1.04-1.76 1.44c-.68.4-1.4.68-2.16.88-.76.24-1.52.32-2.24.32-1.6 0=
+-2.96-.28-4.12-.84s-2.12-1.36-2.88-2.36c-.8-1-1.36-2.16-1.72-3.48-.4-1.32-.=
+56-2.72-.56-4.2-.04-1.44.16-2.84.56-4.16.36-1.32.92-2.48 1.72-3.48.76-1 1.7=
+2-1.8 2.88-2.4 1.16-.56 2.52-.88 4.12-.88.76 0 1.52.12 2.24.28.72.2 1.44.48=
+ 2.08.88s1.2.84 1.68 1.4.88 1.24 1.16 1.96h.08V86.44h2.52V115M8.04 104.68c0=
+ 1.08.12 2.16.36 3.2s.64 2 1.2 2.8c.56.84 1.24 1.52 2.12 2.04.84.52 1.84.76=
+ 3.08.76 1.32 0 2.44-.24 3.36-.76s1.68-1.2 2.24-2.04c.56-.8 1-1.76 1.24-2.8=
+s.4-2.12.4-3.2c0-1.04-.16-2.12-.4-3.16s-.68-2-1.24-2.84c-.56-.8-1.32-1.48-2=
+.24-2s-2.04-.8-3.36-.8c-1.2 0-2.24.28-3.08.8-.88.52-1.56 1.2-2.12 2-.56.84-=
+.96 1.8-1.2 2.84s-.36 2.12-.36 3.16M29.41 86.44h2.52v4.04h-2.52v-4.04m0 7.9=
+2h2.52V115h-2.52V94.36M51.63 103.24c-.04-.96-.2-1.88-.52-2.76s-.72-1.64-1.2=
+8-2.32-1.24-1.24-2.04-1.64-1.72-.64-2.72-.64c-1.04 0-1.96.24-2.76.64s-1.48.=
+96-2.04 1.64-1.04 1.48-1.36 2.36-.56 1.8-.64 2.72h13.36m-13.36 2.12c0 .92.1=
+2 1.88.36 2.84s.68 1.84 1.24 2.6c.52.8 1.24 1.44 2.12 1.92.84.52 1.84.76 3.=
+08.76 1.84 0 3.28-.48 4.32-1.44s1.76-2.24 2.16-3.84h2.52c-.56 2.36-1.52 4.1=
+6-2.96 5.44s-3.44 1.92-6.04 1.92c-1.64 0-3.04-.28-4.24-.84s-2.16-1.36-2.88-=
+2.36c-.76-1-1.32-2.16-1.68-3.48s-.52-2.72-.52-4.2c0-1.32.16-2.68.52-4 .36-1=
+.28.92-2.44 1.68-3.48.72-1.04 1.68-1.84 2.88-2.48s2.6-.96 4.24-.96 3.04.36 =
+4.24 1c1.16.68 2.12 1.56 2.84 2.64s1.28 2.32 1.6 3.72c.28 1.4.44 2.8.4 4.24=
+H38.27M56.862 115v-4.24h3.36V115h-3.36M63.796 94.36h2.52v3.56h.08c.48-1.24 =
+1.32-2.24 2.56-3 1.2-.76 2.56-1.16 4.04-1.16 1.44 0 2.64.2 3.6.56.96.4 1.76=
+.92 2.36 1.6.56.68.96 1.52 1.24 2.48.24 1 .36 2.12.36 3.32V115h-2.52v-12.88=
+c0-.88-.08-1.68-.24-2.44s-.44-1.44-.84-2-.96-1-1.64-1.32-1.52-.48-2.52-.48c=
+-1.04 0-1.92.2-2.72.56s-1.44.84-2 1.48-.96 1.36-1.28 2.24-.48 1.8-.48 2.8V1=
+15h-2.52V94.36M100.16 103.24c-.04-.96-.2-1.88-.52-2.76s-.72-1.64-1.28-2.32-=
+1.24-1.24-2.04-1.64-1.72-.64-2.72-.64c-1.04 0-1.96.24-2.76.64s-1.48.96-2.04=
+ 1.64-1.04 1.48-1.36 2.36-.56 1.8-.64 2.72h13.36m-13.36 2.12c0 .92.12 1.88.=
+36 2.84s.68 1.84 1.24 2.6c.52.8 1.24 1.44 2.12 1.92.84.52 1.84.76 3.08.76 1=
+.84 0 3.28-.48 4.32-1.44s1.76-2.24 2.16-3.84h2.52c-.56 2.36-1.52 4.16-2.96 =
+5.44s-3.44 1.92-6.04 1.92c-1.64 0-3.04-.28-4.24-.84s-2.16-1.36-2.88-2.36c-.=
+76-1-1.32-2.16-1.68-3.48s-.52-2.72-.52-4.2c0-1.32.16-2.68.52-4 .36-1.28.92-=
+2.44 1.68-3.48.72-1.04 1.68-1.84 2.88-2.48s2.6-.96 4.24-.96 3.04.36 4.24 1c=
+1.16.68 2.12 1.56 2.84 2.64s1.28 2.32 1.6 3.72c.28 1.4.44 2.8.4 4.24H86.8M1=
+10.1 94.36h4.2v2.12h-4.2v13.92c0 .84.08 1.48.32 1.96s.8.72 1.72.76c.72 0 1.=
+44-.04 2.16-.12v2.12c-.4 0-.76.04-1.12.04-.4.04-.76.04-1.12.04-1.68 0-2.88-=
+.32-3.52-.96-.68-.64-1-1.88-.96-3.64V96.48h-3.6v-2.12h3.6v-6.2h2.52v6.2"/>
+</svg>=0A
+------MultipartBoundary--qP1SFlZQ9uiFUu1UV38hgLEUrGAn919LbJNfhsj2xm----
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: https://linux.die.net/style/back.gif
+
+R0lGODlhFAAWAIQAAJSIiKyqqOvh4YRcWrN/f/Xy8MCdns/RzpiZls6trYBFRcOYmP7//KFgYdzE
+wqGjoP///////////////////////////////////////////////////////////////yH5BAEA
+ABAALAAAAAAUABYAAAVjICSOZGmeSIoAw4mqauuOcD2LtT3n+ssjj4Dr9zgwGDcA7FE4Im8QZaDp
+LC1MCqPzSDI8RY0Fdft1bMfkKsScbh8dEIHbnYjP23CR/H4sNEpoaQIELmxbDoRQCV9QJYmNkCch
+ADs=
+
+------MultipartBoundary--qP1SFlZQ9uiFUu1UV38hgLEUrGAn919LbJNfhsj2xm----
+Content-Type: text/html
+Content-ID: <frame-3B1C1B258C2F5E94C087020EC6F946B3@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+
+<html><head><meta http-equiv=3D"Content-Type" content=3D"text/html; charset=
+=3DUTF-8"></head><body></body></html>
+------MultipartBoundary--qP1SFlZQ9uiFUu1UV38hgLEUrGAn919LbJNfhsj2xm------
