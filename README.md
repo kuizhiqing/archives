@@ -14,6 +14,8 @@ Learning from the internet.
 * [Medium](https://medium.com/)
 * [Substack](https://substack.com/)
 
+* [Futility Closet](https://www.futilitycloset.com/)
+
 ## unknown
 
 * [interview](https://github.com/huihut/interview)

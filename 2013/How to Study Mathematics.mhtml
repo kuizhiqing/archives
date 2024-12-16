@@ -1,0 +1,522 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: https://www.math.uh.edu/~dblecher/pf2.html
+Subject: How to Study Mathematics
+Date: Mon, 2 Dec 2024 11:33:13 +0800
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--yQL5m8qv3tDfeCBkCrum1x9OtYGZ1S9K7tUx6WiuQC----"
+
+
+------MultipartBoundary--yQL5m8qv3tDfeCBkCrum1x9OtYGZ1S9K7tUx6WiuQC----
+Content-Type: text/html
+Content-ID: <frame-59031101FBE2B7BE68EF93D69C6CD64B@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://www.math.uh.edu/~dblecher/pf2.html
+
+<!DOCTYPE html PUBLIC "-//w3c//dtd html 4.0 transitional//en"><html><head><=
+meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DUTF-8">
+  =20
+   <meta name=3D"GENERATOR" content=3D"Mozilla/4.51 [en] (X11; U; Linux 2.0=
+.36 i686) [Netscape]">
+   <title>How to Study Mathematics</title>
+</head>
+<body>
+
+<h1>
+How to Study Mathematics</h1>
+Lawrence Neff Stout,
+<br>Department of Mathematics,
+<br>Illinois Wesleyan University,
+<br>Bloomington, Il 61702-2900
+<hr><a name=3D"top"></a>
+<p>This essay describes a number of strategies for studying college level
+mathematics. It has sections entitled
+</p><ol>
+<li>
+<a href=3D"https://www.math.uh.edu/~dblecher/pf2.html#differences">How is c=
+ollege mathematics different?</a></li>
+
+<li>
+<a href=3D"https://www.math.uh.edu/~dblecher/pf2.html#definitions">What sho=
+uld you do with a definition</a></li>
+
+<li>
+<a href=3D"https://www.math.uh.edu/~dblecher/pf2.html#theorems">Theorems, P=
+ropositions, Lemmas, and Corollaries</a></li>
+
+<li>
+<a href=3D"https://www.math.uh.edu/~dblecher/pf2.html#fit">Fitting the subj=
+ect together</a></li>
+
+<li>
+<a href=3D"https://www.math.uh.edu/~dblecher/pf2.html#proofs">How to make s=
+ense of a proof</a></li>
+
+<li>
+<a href=3D"https://www.math.uh.edu/~dblecher/pf2.html#technique">Developing=
+ technique</a></li>
+
+<li>
+<a href=3D"https://www.math.uh.edu/~dblecher/pf2.html#final">A few final su=
+ggestions</a></li>
+</ol>
+<a href=3D"http://www.iwu.edu/%7Elstout">Return</a> to L.N. Stout's home pa=
+ge.
+<hr>
+<h2>
+<a name=3D"differences"></a>How is college mathematics different from high
+school math?</h2>
+In high school mathematics much of your time was spent learning algorithms
+and manipulative techniques which you were expected to be able to apply
+in certain well-defined situations. This limitation of material and expecta=
+tions
+for your performance has probably led you to develop study habits which
+were appropriate for high school mathematics but may be insufficient for
+college mathematics. This can be a source of much frustration for you and
+for your instructors. My object in writing this essay is to help ease this
+frustration by describing some study strategies which may help you channel
+your abilities and energies in a productive direction.
+<p>The first major difference between high school mathematics and college
+mathematics is the amount of emphasis on what the student would call theory=
+---the
+precise statement of definitions and theorems and the logical processes
+by which those theorems are established. To the mathematician this material=
+,
+together with examples showing why the definitions chosen are the correct
+ones and how the theorems can be put to practical use, is the essence of
+mathematics. A course description using the term ``rigorous'' indicates
+that considerable care will be taken in the statement of definitions and
+theorems and that proofs will be given for the theorems rather than just
+plausibility arguments. If your approach is to go straight to the problems
+with only cursory reading of the ``theory'' this aspect of college math
+will cause difficulties for you.
+</p><p>The second difference between college mathematics and high school ma=
+thematics
+comes in the approach to technique and application problems. In high school
+you studied one technique at a time---a problem set or unit might deal,
+for instance, with solution of quadratic equations by factoring or by use
+of the quadratic formula, but it wouldn't teach both and ask you to decide
+which was the better approach for particular problems. To be sure, you
+learn individual techniques well in this approach, but you are unlikely
+to learn how to attack a problem for which you are not told what technique
+to use or which is not exactly like other applications you have seen. Colle=
+ge
+mathematics will offer many techniques which can be applied for a particula=
+r
+type of problem---individual problems may have many possible approaches,
+some of which work better than others. Part of the task of working such
+a problem lies in choosing the appropriate technique. This requires study
+habits which develop judgment as well as technical competence.
+</p><p>We will take up the problem of how to study mathematics by consideri=
+ng
+specific aspects individually. First we will consider definitions---first
+because they form the foundation for any part of mathematics and are essent=
+ial
+for understanding theorems. Then we'll take up theorems, lemmas, propositio=
+ns,
+and corollaries and how to study the way the subject fits together. The
+subject of proofs, how to decipher them and why we need them, comes next.
+And finally, we will discuss development of judgment in problem solving.
+<br><a href=3D"https://www.math.uh.edu/~dblecher/pf2.html#top">To contents<=
+/a>
+</p><h2>
+<a name=3D"definitions"></a>What should you do with a definition?</h2>
+A definition in mathematics is a precise statement delineating and naming
+a concept by relating it to previously defined concepts or such undefined
+concepts as ``number'' or ``set.'' Careful definitions are necessary so
+that we know exactly what we are talking about. Unfortunately, for many
+of the concepts in undergraduate mathematics the definition is rather diffi=
+cult
+to understand, so often at low levels an intuitive feeling for the meaning
+of a term is all that is given or required. This intuitive feeling, while
+necessary, is not sufficient at the college level. This means that you
+need to grapple with and master the formal statement of definitions and
+their meanings. How do you do it?
+<h3>
+Step 1. Make sure you understand what the definition says.</h3>
+This sounds obvious, but it can cause some difficulties, particularly for
+definitions with complicated logical structure (like the definition of
+the limit of a function at a point in its domain). Definitions are not
+a good place to practice your speed reading. In general there are no wasted
+words or extraneous symbols in established definitions and the easily overl=
+ooked
+small words like <i>and, or, if ... then, for all,</i> and <i>there is</i>
+are your clues to the logical structure of the definition.
+<p>First determine what general class of things is being talked about:
+the definition of a polynomial describes a particular kind of algebraic
+expression; the definition of a continuous function specifies a kind of
+function; the definition of a basis for a vector space specifies a kind
+of set of vectors.
+</p><p>Next decipher the logical structure of the definition. What do you h=
+ave
+to do to show that a member of your general class of things satisfies the
+definition: what do you have to do to show that an expression is a polynomi=
+al,
+or a function is continuous, or a set of vectors is a basis.
+</p><h3>
+Step 2. Determine the scope of the definition with examples.</h3>
+Most definitions have standard examples that go with them. While these
+are useful, they may lead you to expect that all examples look like the
+standard example. To understand a definition you should make up your own
+examples: find three examples that do satisfy the definition but which
+are as different as possible from each other; find two examples of items
+in the general class described by the definition which do not satisfy it.
+Prove that your five examples do what you think they do---such proofs are
+usually short, follow the structure of the definition quite closely, and
+help immensely in understanding the definition. These examples should be
+neatly written up so that you can refer to them later. Your own examples
+will have more meaning for you than mine or the book's when it comes time
+to review.
+<h3>
+Step 3. Memorize the exact wording of the definition.</h3>
+This step may sound petty, but the use of definitions demands knowledge
+of exactly what they say. For this reason you can count on being asked
+for the statement of any definition on an exam. The importance of precise
+wording should have been made clear by your examples in step 2 and it certa=
+inly
+is essential in the proof of theorems.
+<p>Solid knowledge of definitions is more than a third of the battle. Time
+spent gaining such knowledge is not wasted.
+<br><a href=3D"https://www.math.uh.edu/~dblecher/pf2.html#top">To contents<=
+/a>
+</p><h2>
+<a name=3D"theorems"></a>Theorems, Propositions, Lemmas, and Corollaries</h=
+2>
+Occasionally definitions are useful in and of themselves, but usually we
+need to relate them to each other and to general problems before they can
+be made to work for us. This is the role of theory.
+<p>The relative importance and the intended use of statements which are
+then proved is hinted at by the names they are given. Theorems are usually
+important results which show how to make concepts solve problems or give
+major insights into the workings of the subject. They often have involved
+and deep proofs. Propositions give smaller results, often relating differen=
+t
+definitions to each other or giving alternate forms of the definition.
+Proofs of propositions are usually less complex than the proofs of theorems=
+.
+Lemmas are technical results used in the proofs of theorems. Often it is
+found that the same trick is used several times in one proof or in the
+proof of several theorems. When this happens the trick is isolated in a
+lemma so that its proof will not have to be repeated every time it is used.
+This often makes the proofs of theorems shorter and, one hopes, more lucid.
+Corollaries are immediate consequences of theorems either giving special
+cases or highlighting the interest and importance of the theorem. If the
+author or instructor has been careful (not all authors and instructors
+are) with the use of these labels, they will help you figure out what is
+important in the subject.
+</p><p>The steps to understanding and mastering a theorem follow the same l=
+ines
+as the steps to understanding a definition.
+</p><h3>
+Step 1. Make sure you understand what the theorem says.</h3>
+Part of this is a vocabulary problem. Theorems use terms which have been
+given precise meanings by definitions. So you may need to review the defini=
+tions
+to understand the words in a theorem.
+<p>Next you need to understand the logical structure of the theorem: what
+are the hypotheses and what are the conclusions? If you have several hypoth=
+eses,
+must they all be satisfied (that is, do they have an&nbsp; <b><i>and</i></b=
+>
+between them) or will it suffice to have only some of them (an&nbsp; <b><i>=
+or</i></b>
+between them)? In most cases theorems require that all of their hypotheses
+be satisfied. A theorem tells you nothing about a situation which does
+not satisfy the hypothesis. The hypothesis tells you what you must show
+in order for the theorem to apply to a particular case. The conclusions
+tell you what the theorem tells you about each case.
+</p><h3>
+Step 2. Determine how the theorem is used.</h3>
+This involves finding examples of problems for which the theorem gives
+a technique for finding the answer. Make up your own problems and show
+how the theorem helps with them. Again writing this down will help solidify
+the theorem in your mind and make it easier to review.
+<h3>
+Step 3. Find out what the hypotheses are doing there.</h3>
+This is a little tricky and is probably more important in advanced courses
+than in beginning courses. What you do is find examples (either your own
+or someone else's) to show that if individual hypotheses are omitted the
+conclusion can be false. For instance, in calculus many theorems have a
+hypothesis that the functions involved be continuous; why does the theorem
+fail if this hypothesis is left out? Usually an example will make this
+clearer than an examination of how the hypothesis was used in the proof
+will. A catalog of such examples can be very useful. See for instance the
+books Counterexamples in Analysis and Counterexamples in Topology.
+<p>In some cases a hypothesis is included just because it makes an otherwis=
+e
+complicated proof easy. This means that you may not be able to find example=
+s
+which illustrate that each hypothesis is essential.
+</p><h3>
+Step 4. Memorize the statement of the theorem.</h3>
+If you are going to use a theorem you need to know exactly what it says.
+Pay particular attention to hypotheses. We will take up proofs later, but
+for now let me note that it is not a good idea to try to memorize the proof
+of a theorem. What you want to do is understand the proof well enough that
+you can prove the theorem yourself.
+<br><a href=3D"https://www.math.uh.edu/~dblecher/pf2.html#top">To contents<=
+/a>
+<h2>
+<a name=3D"fit"></a>Fitting the subject together</h2>
+Mathematics is not a collection of miscellaneous techniques but rather
+a way of thinking---a unified subject. Part of the task of studying mathema=
+tics
+is getting the various definitions and theorems properly related to each
+other. This is particularly important at the end of a course, but it will
+help you make sense of the content and organization of a subject if you
+keep the overall organization in mind as you go along. There are two techni=
+ques
+I know of which help with this process: working backwards and definition-th=
+eorem
+outlines.
+<h3>
+Step 1. Working backwards</h3>
+In general there is very little difficulty recognizing a major result when
+you get to it. A good way of seeing how a subject works is to examine the
+proof of a major result and see what previous results were used in it.
+Then trace these results back to earlier results used to prove them. Eventu=
+ally
+you will work your way back to definitions (unless there are theorems given
+without proof---in calculus, for instance, the proof of the intermediate
+value theorem is often omitted because it requires a deeper understanding
+of the real numbers than is usually available at the beginning of calculus
+1). This information can be put into a sort of genealogy chart for results
+which helps you see at a glance how the results fit together. It helps
+to have descriptive names for your theorems and lemmas. Such a chart might
+look sort of like this:
+<pre>&nbsp;&nbsp;
+&nbsp;
+&nbsp;
+Mean Value Theorem
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Rolle's Theorem
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Candidate Lemm=
+a
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp; Meaning of the sign of the derivative
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Definition of derivative
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp; Definition of max and min
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Existence&nbsp; of&nbsp; max&nbsp; and&nbsp;=
+ min&nbsp;&nbsp; for&nbsp; continuous&nbsp; functions&nbsp; on [a, b]
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp; Definition of max and min
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp; Definition of closed interval
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp; Least upper bound axiom
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp; Definition of continuity</pre>
+With such a road map through the theory you should be able to tell how
+you got where you are, if not where you are headed.
+<h3>
+Step 2. Make a definition-theorem outline.</h3>
+After you have worked backwards to the definitions for each of your major
+theorems in a section you should have a good idea of which results are
+needed before others can be proved. Some definitions will not make sense
+until certain theorems are proved (dimension of a vector space is an exampl=
+e:
+you can't give a number a name until you know you are talking about a uniqu=
+e
+number, and that requires a theorem). A definition theorem outline is an
+arrangement of the results in an order so that each result is introduced
+before it is needed in a proof. It should contain the precise statements
+of all definitions and theorems and a sketch of the proof of each theorem.
+A sketch of a proof will show which earlier results were used and how they
+were combined. It will usually omit calculations simplifying forms of expre=
+ssions
+and routine checks that hypotheses are satisfied. This outline is both
+a good way to start a review and a useful thing to have to refer to.
+<br><a href=3D"https://www.math.uh.edu/~dblecher/pf2.html#top">To contents<=
+/a>
+<h2>
+<a name=3D"proofs"></a>How to make sense of a proof</h2>
+College level mathematics demands that the student work through (or at
+least sit through) many proofs. This is often unpopular, I think largely
+because it is hard work to follow a proof, hard work of an unfamiliar kind.
+Proof is largely absent or at most optional in high school math; it is
+neither absent nor optional in college mathematics.
+<h3>
+Step 1. Make sure you know what the theorem says.</h3>
+If you have the hypotheses mixed up with the conclusions you will not know
+what assumptions may be made nor will you know what conclusion you are
+trying to reach.
+<h3>
+Step 2. Make a general outline of the proof.</h3>
+This is what you would do in a definition theorem outline. See what the
+previous results used are and find out what the basic strategy of the proof
+is. On this pass through omit the details, else you miss the direction
+of the road by too close examination of the bricks in the pavement.
+<p>Most theorems have the form of implications: if the hypotheses are true,
+then the conclusion follows. The easiest structure for a proof to use is
+to assume the hypotheses and combine them, using previous results, to reach
+the conclusion through a chain of implications. Some proofs use other strat=
+egies:
+contrapositive argument, reductio ad absurdum, mathematical induction,
+perhaps even Zorn's lemma (a form of the axiom of choice). The more complic=
+ated
+kinds of proofs will need to be discussed in class.
+</p><h3>
+Step 3. Fill in all of the details.</h3>
+Once you understand the strategy of the proof concentrate on its tactics.
+Almost all expositions of proofs in undergraduate mathematics textbooks
+(and all expositions at higher levels) leave out many routine steps. An
+expression will be simplified without showing exactly how to get from one
+line to the next. Fill in these details. A theorem will be quoted and appli=
+ed
+without explicitly checking all of its hypotheses. Check them. Some parts
+of the proof will be outlined with the details left to the reader. Put
+in those details. When you finish you should know why each step follows
+from what came before. You may not see how anyone could have thought to
+do the proof that way, but you should be able to see that it is correct.
+<h4>
+Why bother with proofs at all?</h4>
+For the mathematics major this question is easy to answer---a large portion
+of mathematics consists of proofs. The mathematician enjoys the logical
+puzzle which must be solved to find a proof and obtains aesthetic satisfact=
+ion
+from elegance in proofs. The student who wants to major in mathematics
+should do so because of ability in deciphering and producing proofs and
+enjoyment derived from proof well done. The major should also have skill
+in solving problems and finding applications as well.
+<p>But many of you will say ``I'm not a math major; I want applications
+so that I can use tools from mathematics in my field'' or ``I'm just taking
+this course because it's a requirement in my major and I sort of liked
+math in high school.'' Why should you learn about proof?
+</p><p>The applications you meet in other fields are not likely to look exa=
+ctly
+like the math textbook applications, which are chosen for their appeal
+to a traditional audience (largely engineers) and for their representative
+character. Other applications work similarly, though not exactly the same
+way. This means that you need to learn how to apply the concepts in your
+math courses to situations not discussed in those courses. (There is no
+way that a course could discuss every possible known application: about
+500 papers appear every two weeks with applications, and those are just
+the applications published in the ``mathematical'' literature!) To do so
+you need the best possible understanding of the mathematics you want to
+apply. Certainly this means that you need to know the hypotheses of theorem=
+s
+so that you don't apply them where they won't work. It is helpful to know
+the proof so that you can see how to circumvent the failed hypothesis if
+necessary. One of the major pitfalls of applied mathematics, particularly
+as practiced by nonmathematicians, is the danger of conveniently overlookin=
+g
+the assumptions of a mathematical model. (Mathematicians trying to do appli=
+ed
+mathematics are more likely to fall into the trap of making models which
+have no relationship to reality.)
+</p><p>Many applications consist of recognizing the definition of a mathema=
+tical
+concept phrased in the terms of another discipline---the more familiar
+you are with the definition, the more likely you are to be able to recogniz=
+e
+the disguised version elsewhere. The nuances of definitions are made most
+clear in the proofs of propositions relating definitions and pointing out
+unexpected equivalent variants, some of which may look more like a situatio=
+n
+in another discipline than the precise form used in your math class.
+</p><p>Arguments for theory as an aid to application rest on an obvious pre=
+mise:
+it is much easier to apply something you understand thoroughly. This is,
+however, a better argument for care in learning the statements of theorems
+than it is for spending time understanding proofs. The best justification
+for the inclusion of proof in math classes is more philosophical:
+</p><p><b><font color=3D"#FF0000"><font size=3D"+2">Proof is the ultimate t=
+est of
+validity in mathematics.</font></font></b><font color=3D"#FF0000"><font siz=
+e=3D"+2"></font></font>
+</p><p>Once one accepts the logical processes involved in a proof no furthe=
+r
+observation or change in fashion will change the validity of a mathematical
+result. No other discipline has such an immutable criterion for validity.
+</p><p>The major benefit derived from an education is the ability to think
+clearly and make considered judgment. Each discipline should teach a body
+of material, appropriate modes of thought in dealing with that material,
+and a means for determining the validity of the conclusions reached. A
+chemistry curriculum with no lab work would be seriously deficient since
+experiment is the test of validity in science. Similarly mathematics withou=
+t
+proof is severely deficient, indeed it is not mathematics.
+<br><a href=3D"https://www.math.uh.edu/~dblecher/pf2.html#top">To contents<=
+/a>
+</p><h2>
+<a name=3D"technique"></a>Developing technique</h2>
+About a third to a half of any math course deals with technique---the proce=
+ss
+of making theorems work for you in specific situations rather than in the
+general setting in which they are usually stated. Sometimes this is fairly
+easy: many proofs give explicit constructions which you follow for the
+special case. In these situations the only problems are with algebraic
+and trigonometric manipulations and keeping track of where you are in the
+process. In other situations (technique of integration is a good example)
+there are lots of approaches which might apply to a given problem and sever=
+al
+tricks which might be used to make the problem more tractable. For these
+you need to develop judgment.
+<h3>
+Step 1. Read through the theorems and examples.</h3>
+Some students make the whole process of learning how to do problems more
+difficult by acting like it had no connection with the other material in
+the course. Often problems follow a pattern which is given explicitly in
+the proof of the major theorem they follow. Knowing the general pattern
+in advance is easier than trying to find it by trial and error.
+<h3>
+Step 2. Work enough problems to master the technique.</h3>
+At this stage you should work enough problems so that the single technique
+which the problems illustrate is firmly in your mind. Since you have ultima=
+te
+responsibility for your education, you should take the initiative to work
+enough problems for your own practice needs. This may well be more problems
+than are assigned to be turned in.
+<h3>
+Step 3. Work a few problems in as many different ways as possible.</h3>
+Too often the practice obtained in step 2 leads the student to think that
+there is only one approach to each problem. Sometimes one approach is easy
+and another is complicated, but often several different attacks will work
+equally well. Complicated approaches give the student practice in solving
+problems which take more than one step and more than one technique.
+<h3>
+Step 4. Make yourself a set of randomly chosen problems.</h3>
+One difficulty with learning many techniques to solve a particular kind
+of problem is that you have to figure out which technique to use before
+you can get to work on a solution. This is exacerbated by the tendency
+for problems to be grouped so that the appropriate technique to use is
+the one which immediately preceded the problem set. Putting two or three
+problems from each of the problem sets in a chapter on technique on 3 by
+5 cards and then shuffling the cards will give you a set of problems on
+which to practice deciding which technique to use.
+<br><a href=3D"https://www.math.uh.edu/~dblecher/pf2.html#top">To contents<=
+/a>
+<h2>
+<a name=3D"final"></a>A few final suggestions</h2>
+Mathematical prose has a very low redundancy rate and mathematics is a
+very cumulative subject. Pay close attention as you read---once introduced,
+a concept is rarely repeated and it will be assumed later. Allow yourself
+adequate time to read the book before starting the problems.
+<p>Few students write fast enough to get complete and readable notes in
+class. For this reason it is useful to go back over your class notes shortl=
+y
+after each class and make a complete, clean copy with all of the definition=
+s
+and theorems clearly stated. This practice will also help you identify
+parts you don't understand so you can ask your professor about them in
+a timely fashion.
+</p><p>Do not let yourself fall behind. Mathematics requires precision, hab=
+its
+of clear thought, and practice. Cramming for an exam will not only fail
+to produce the desired result on the exam, it will also reinforce a bad
+habit---that of trying to do mathematics by memorization rather than unders=
+tanding.
+A good night's sleep and a clear head will serve you better than last minut=
+e
+memorization.
+<br><a href=3D"https://www.math.uh.edu/~dblecher/pf2.html#top">To contents<=
+/a>
+</p><address>
+lstout@sun.iwu.edu</address>
+
+
+
+</body></html>
+------MultipartBoundary--yQL5m8qv3tDfeCBkCrum1x9OtYGZ1S9K7tUx6WiuQC------
