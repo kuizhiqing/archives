@@ -15,28 +15,18 @@ Learning from the internet.
 * [Substack](https://substack.com/)
 
 * [Futility Closet](https://www.futilitycloset.com/)
-
-## unknown
+* [How To Scale Your Model](https://jax-ml.github.io/scaling-book/)
 
 * [interview](https://github.com/huihut/interview)
 
-# Wathing List
 
-#### Now
+* [fullstackdeeplearning](https://fullstackdeeplearning.com/)
 
-[GitHub - ray-project/ray: An open source framework that provides a simple, universal API for building distributed applications. Ray is packaged with RLlib, a scalable reinforcement learning library, and Tune, a scalable hyperparameter tuning library.](https://github.com/ray-project/ray)
+* [6.887 Machine Learning for Systems](http://dsg.csail.mit.edu/6.887/)
 
-[GitHub - suquark/hoplite](https://github.com/suquark/hoplite)
+* http://implicit-layers-tutorial.org/
 
-Hoplite: Efficient and Fault-Tolerant Collective Communication for Task-Based Distributed Systems ?
-
-https://fullstackdeeplearning.com/
-
-[6.887 Machine Learning for Systems](http://dsg.csail.mit.edu/6.887/)
-
-http://implicit-layers-tutorial.org/
-
-https://fergalcotter.com/
+* https://fergalcotter.com/
 
 ## Repositories
 
