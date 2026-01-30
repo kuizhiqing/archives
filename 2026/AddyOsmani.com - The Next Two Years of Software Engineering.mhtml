@@ -1,0 +1,2138 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: https://addyosmani.com/blog/next-two-years/
+Subject: AddyOsmani.com - The Next Two Years of Software Engineering
+Date: Tue, 13 Jan 2026 17:20:29 +0800
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--49AQQbyXquX9TZKVOtv4p0sdYqml2sNca3pkzzjEFP----"
+
+
+------MultipartBoundary--49AQQbyXquX9TZKVOtv4p0sdYqml2sNca3pkzzjEFP----
+Content-Type: text/html
+Content-ID: <frame-ECBF29BD230047DC10468471565970A6@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://addyosmani.com/blog/next-two-years/
+
+<!DOCTYPE html><html lang=3D"en"><head><meta http-equiv=3D"Content-Type" co=
+ntent=3D"text/html; charset=3DUTF-8"><link rel=3D"stylesheet" type=3D"text/=
+css" href=3D"cid:css-91df058a-0d9a-4aca-85d7-76dec730477b@mhtml.blink" /><l=
+ink rel=3D"stylesheet" type=3D"text/css" href=3D"cid:css-524803c8-7507-4c16=
+-b55d-9c10699aca29@mhtml.blink" />
+    <!-- Why hello, view-sourcerer! -->
+ =20
+  <meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge,chrome=3D1">
+  <meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=3D=
+1">
+ =20
+ =20
+
+  <meta name=3D"description" content=3D"Exploring five critical questions s=
+haping software engineering through 2026, with contrasting scenarios for ea=
+ch. These lenses help prepare for the evolving ...">
+  <meta name=3D"author" content=3D"Addy Osmani">
+  <meta name=3D"twitter:creator" content=3D"@addyosmani">
+  <meta name=3D"twitter:url" content=3D"https://addyosmani.com/">
+  <meta name=3D"twitter:site" content=3D"@addyosmani">
+  <meta name=3D"twitter:description" content=3D"Exploring five critical que=
+stions shaping software engineering through 2026, with contrasting scenario=
+s for each. These lenses help prepare for the evolving ...">
+  <meta name=3D"twitter:card" content=3D"summary_large_image">
+  <meta name=3D"twitter:title" content=3D"The Next Two Years of Software En=
+gineering">
+ =20
+  <meta property=3D"og:image" content=3D"https://addyosmani.com/assets/imag=
+es/next-two.jpg">
+  <meta name=3D"twitter:image" content=3D"https://addyosmani.com/assets/ima=
+ges/next-two.jpg">
+  <meta name=3D"twitter:image:src" content=3D"https://addyosmani.com/assets=
+/images/next-two.jpg">
+ =20
+  <meta property=3D"og:locale" content=3D"en_US">
+  <meta property=3D"og:title" content=3D"The Next Two Years of Software Eng=
+ineering">
+  <meta property=3D"og:description" content=3D"Exploring five critical ques=
+tions shaping software engineering through 2026, with contrasting scenarios=
+ for each. These lenses help prepare for the evolving ...">
+ =20
+
+
+  <link rel=3D"alternate" type=3D"application/rss+xml" title=3D"AddyOsmani.=
+com RSS Feed" href=3D"http://addyosmani.com/rss.xml">
+
+ =20
+  <title>AddyOsmani.com - The Next Two Years of Software Engineering</title=
+>
+  <link rel=3D"apple-touch-icon" sizes=3D"57x57" href=3D"https://addyosmani=
+.com/assets/images/favicons/apple-touch-icon-57x57.png">
+<link rel=3D"apple-touch-icon" sizes=3D"60x60" href=3D"https://addyosmani.c=
+om/assets/images/favicons/apple-touch-icon-60x60.png">
+<link rel=3D"apple-touch-icon" sizes=3D"72x72" href=3D"https://addyosmani.c=
+om/assets/images/favicons/apple-touch-icon-72x72.png">
+<link rel=3D"apple-touch-icon" sizes=3D"76x76" href=3D"https://addyosmani.c=
+om/assets/images/favicons/apple-touch-icon-76x76.png">
+<link rel=3D"apple-touch-icon" sizes=3D"114x114" href=3D"https://addyosmani=
+.com/assets/images/favicons/apple-touch-icon-114x114.png">
+<link rel=3D"apple-touch-icon" sizes=3D"120x120" href=3D"https://addyosmani=
+.com/assets/images/favicons/apple-touch-icon-120x120.png">
+<link rel=3D"apple-touch-icon" sizes=3D"144x144" href=3D"https://addyosmani=
+.com/assets/images/favicons/apple-touch-icon-144x144.png">
+<link rel=3D"apple-touch-icon" sizes=3D"152x152" href=3D"https://addyosmani=
+.com/assets/images/favicons/apple-touch-icon-152x152.png">
+<link rel=3D"apple-touch-icon" sizes=3D"180x180" href=3D"https://addyosmani=
+.com/assets/images/favicons/apple-touch-icon-180x180.png">
+<link rel=3D"icon" type=3D"image/png" href=3D"https://addyosmani.com/assets=
+/images/favicons/favicon-32x32.png" sizes=3D"32x32">
+<link rel=3D"icon" type=3D"image/png" href=3D"https://addyosmani.com/assets=
+/images/favicons/android-chrome-192x192.png" sizes=3D"192x192">
+<link rel=3D"icon" type=3D"image/png" href=3D"https://addyosmani.com/assets=
+/images/favicons/favicon-96x96.png" sizes=3D"96x96">
+<link rel=3D"icon" type=3D"image/png" href=3D"https://addyosmani.com/assets=
+/images/favicons/favicon-16x16.png" sizes=3D"16x16">
+<link rel=3D"manifest" href=3D"https://addyosmani.com/manifest.json">
+<link rel=3D"mask-icon" href=3D"https://addyosmani.com/assets/images/favico=
+ns/safari-pinned-tab.svg" color=3D"#5bbad5">
+<meta name=3D"msapplication-TileColor" content=3D"#ffc40d">
+<meta name=3D"msapplication-TileImage" content=3D"/assets/images/favicons/m=
+stile-144x144.png">
+<meta name=3D"theme-color" content=3D"#eb298c">
+
+  <link rel=3D"stylesheet" href=3D"https://addyosmani.com/assets/css/style.=
+css">
+ =20
+  <link rel=3D"stylesheet" href=3D"https://addyosmani.com/assets/css/post-p=
+age.css">
+  <link rel=3D"stylesheet" href=3D"https://addyosmani.com/assets/css/highli=
+ght.css">
+ =20
+  <link rel=3D"alternate" type=3D"application/rss+xml" title=3D"My Blog" hr=
+ef=3D"https://addyosmani.com/rss.xml">
+</head>
+<body>
+
+ =20
+<nav class=3D"main-nav">
+   =20
+    <a href=3D"https://addyosmani.com/"> <span class=3D"arrow"></span> Home=
+ </a>
+   =20
+
+   =20
+   =20
+   =20
+
+    <a class=3D"mobile-hidden" href=3D"https://github.com/addyosmani">GitHu=
+b </a>
+
+    <a class=3D"mobile-hidden" href=3D"https://addyosmani.com/press">Press =
+</a>
+
+    <a class=3D"mobile-hidden" href=3D"https://addyosmani.com/bio">Biograph=
+y </a>
+
+    <!-- <a href=3D"https://www.youtube.com/playlist?list=3DPLVUliVBcvz1lKS=
+9-rcPFFXkwGOj_YX_-5">Talks</a> -->
+    <!-- <a rel=3D"me" class=3D"mobile-hidden" href=3D"https://indieweb.soc=
+ial/@addyosmani">Mastodon</a> -->
+    <a rel=3D"me" class=3D"mobile-hidden" href=3D"https://www.linkedin.com/=
+in/addyosmani/">LinkedIn</a>
+
+    <a href=3D"https://twitter.com/addyosmani">Twitter </a>
+
+    <!-- <a class=3D"mobile-hidden" href=3D"/feed.xml">Subscribe</a> -->
+    <a class=3D"mobile-hidden" style=3D"font-weight:bold;" href=3D"https://=
+addyo.substack.com/">Newsletter</a>
+
+    <!-- <a target=3D"_blank" href=3D"https://teejungle.net/">Shop </a> -->
+
+    <a class=3D"cta" href=3D"https://addyosmani.com/blog">Blog </a>
+
+</nav>
+
+  <section id=3D"wrapper" class=3D"" style=3D"">
+    <article class=3D"post">
+    <header>
+        <h1>The Next Two Years of Software Engineering</h1>
+        <h2 class=3D"headline">January 5, 2026</h2>
+    </header>
+    <section id=3D"post-body">
+        <p>The software industry sits at a strange inflection point. AI cod=
+ing has evolved from autocomplete on steroids to agents that can autonomous=
+ly execute development tasks. The economic boom that fueled tech=E2=80=99s =
+hiring spree has given way to an efficiency mandate: companies now often fa=
+vor profitability over growth, experienced hires over fresh graduates, and =
+smaller teams armed with better tools.</p>
+
+<p>Meanwhile, a new generation of developers is entering the workforce with=
+ a different calculus: pragmatic about career stability, skeptical of hustl=
+e culture, and raised on AI assistance from day one.</p>
+
+<p>What happens next is genuinely uncertain. Below are five critical questi=
+ons that may shape software engineering through 2026, with two contrasting =
+scenarios for each. These aren=E2=80=99t really predictions, but lenses for=
+ preparation. The goal is a clear roadmap for handling what comes next, gro=
+unded in current data and tempered by the healthy skepticism this community=
+ is known for.</p>
+
+<hr>
+
+<h2 id=3D"1-the-junior-developer-question">1. The Junior developer question=
+</h2>
+
+<p><strong>The bottom line: Junior developer hiring could collapse as AI au=
+tomates entry-level tasks, or rebound as software spreads into every indust=
+ry. Both futures require different survival strategies.</strong></p>
+
+<p>The traditional pathway of =E2=80=9Clearn to code, get junior job, grow =
+into senior=E2=80=9D is wobbling. A <a href=3D"https://www.finalroundai.com=
+/blog/ai-is-making-it-harder-for-junior-developers-to-get-hired">Harvard st=
+udy of 62 million workers</a> found that when companies adopt generative AI=
+, junior developer employment drops by about 9-10% within six quarters, whi=
+le senior employment barely budges. <a href=3D"https://restofworld.org/2025=
+/engineering-graduates-ai-job-losses/">Big tech hired 50% fewer fresh gradu=
+ates</a> over the past three years. As <a href=3D"https://www.cio.com/artic=
+le/4062024/demand-for-junior-developers-softens-as-ai-takes-over.html">one =
+engineer cynically put it</a>: ~=E2=80=9DWhy hire a junior for $90K when an=
+ AI coding agent costs less?=E2=80=9D</p>
+
+<p>This isn=E2=80=99t just AI. <a href=3D"https://www.2ndorderthinkers.com/=
+p/are-junior-level-jobs-really-killed">Macro factors like rising interest r=
+ates and post-pandemic corrections</a> hit around 2022, before AI tools bec=
+ame widespread. But AI has accelerated the trend. A single senior engineer =
+with AI assistance can now produce what used to require a small team. Compa=
+nies are quietly not hiring juniors more than they=E2=80=99re firing anyone=
+.</p>
+
+<p>The flip scenario: AI unlocks massive demand for developers across every=
+ industry, not just tech. Healthcare, agriculture, manufacturing, and finan=
+ce all start embedding software and automation. Rather than replacing devel=
+opers, AI becomes a force multiplier that spreads development work into dom=
+ains that never employed coders. We=E2=80=99d see more entry-level roles, j=
+ust different ones: =E2=80=9CAI-native=E2=80=9D developers who quickly buil=
+d automations and integrations for specific niches.</p>
+
+<p>The <a href=3D"https://www.cio.com/article/4062024/demand-for-junior-dev=
+elopers-softens-as-ai-takes-over.html">Bureau of Labor Statistics still pro=
+jects ~15% growth</a> in software jobs from 2024 to 2034. If businesses use=
+ AI to expand output rather than strictly cut headcount, <a href=3D"https:/=
+/www.2ndorderthinkers.com/p/are-junior-level-jobs-really-killed">they=E2=80=
+=99ll need humans to seize the opportunities AI creates</a>.</p>
+
+<p>The long-term risk of the pessimistic scenario is often overlooked: toda=
+y=E2=80=99s juniors are tomorrow=E2=80=99s senior engineers and tech leader=
+s. Cut off the talent pipeline entirely and you create a leadership vacuum =
+in 5-10 years. <a href=3D"https://www.finalroundai.com/blog/ai-is-making-it=
+-harder-for-junior-developers-to-get-hired">Industry veterans call this the=
+ =E2=80=9Cslow decay=E2=80=9D</a>: an ecosystem that stops training its rep=
+lacements.</p>
+
+<p><strong>What to do about it:</strong></p>
+
+<p><em>Junior developers:</em> Make yourself AI-proficient and versatile. D=
+emonstrate that one junior plus AI can match a small team=E2=80=99s output.=
+ Use AI coding agents (Cursor/Antigravity/Claude Code/Gemini CLI) to build =
+bigger features, but understand and explain every line if not most. Focus o=
+n skills AI can=E2=80=99t easily replace: communication, problem decomposit=
+ion, domain knowledge. Look at adjacent roles (QA, DevRel, data analytics) =
+as entry points. Build a portfolio, especially projects integrating AI APIs=
+. Consider apprenticeships, internships, contracting, or open source. Don=
+=E2=80=99t be =E2=80=9Cjust another new grad who needs training=E2=80=9D; b=
+e an immediately useful engineer who learns quickly.</p>
+
+<p><em>Senior developers:</em> Fewer juniors means more grunt work landing =
+on your plate. Lean on automation for routine tasks, but don=E2=80=99t do e=
+verything yourself. Set up CI/CD, linters, and AI-assisted testing to catch=
+ basic issues. Mentor unofficially through open source or coaching colleagu=
+es in other departments. <a href=3D"https://www.finalroundai.com/blog/ai-is=
+-making-it-harder-for-junior-developers-to-get-hired">Be frank with managem=
+ent about the risks of all-senior teams</a>. If junior demand rebounds, be =
+ready to onboard effectively and delegate in ways that use AI. Your value i=
+s in multiplying the whole team=E2=80=99s output, not just your own code.</=
+p>
+
+<hr>
+
+<h2 id=3D"2-the-skills-question">2. The Skills question</h2>
+
+<p><strong>The bottom line: Core programming skills could atrophy as AI wri=
+tes most code, or become more critical than ever as human developers focus =
+on oversight. The coming years determine whether we trade understanding for=
+ speed.</strong></p>
+
+<p><a href=3D"https://stackoverflow.blog/2025/09/10/ai-vs-gen-z/">84% of de=
+velopers now use AI assistance regularly</a>. For many, the first instinct =
+when facing a bug or new feature isn=E2=80=99t to write code from scratch, =
+but to compose a prompt and stitch together AI-generated pieces. Entry-leve=
+l coders are skipping the =E2=80=9Chard way=E2=80=9D: they might never buil=
+d a binary search tree from scratch or debug a memory leak on their own.</p=
+>
+
+<p>The skillset is shifting from implementing algorithms to knowing how to =
+ask the AI the right questions and verify its output. <a href=3D"https://ww=
+w.cio.com/article/4062024/demand-for-junior-developers-softens-as-ai-takes-=
+over.html">The first rung of the ladder now demands prompting and validatin=
+g AI</a> rather than demonstrating raw coding ability. Some senior engineer=
+s worry this produces a generation who can=E2=80=99t code well independentl=
+y, a kind of deskilling. AI-generated code introduces subtle bugs and secur=
+ity vulnerabilities that less-experienced developers might miss.</p>
+
+<p>The counter-scenario: as AI handles the routine 80%, humans focus on the=
+ hardest 20%. Architecture, tricky integrations, creative design, edge case=
+s: the problems machines alone can=E2=80=99t solve. Rather than making deep=
+ knowledge obsolete, AI=E2=80=99s ubiquity makes human expertise more impor=
+tant than ever. This is the =E2=80=9Chigh-leverage engineer=E2=80=9D who us=
+es AI as a force multiplier but must deeply understand the system to wield =
+it effectively.</p>
+
+<p>If everyone has AI coding agent access, what distinguishes great develop=
+ers is knowing when the AI is wrong or suboptimal. <a href=3D"https://www.c=
+io.com/article/4062024/demand-for-junior-developers-softens-as-ai-takes-ove=
+r.html">As one senior engineer put it</a>: =E2=80=9CThe best software engin=
+eers won=E2=80=99t be the fastest coders, but those who know when to distru=
+st AI.=E2=80=9D</p>
+
+<p>Programming shifts: less typing boilerplate, more reviewing AI output fo=
+r logical errors, security flaws, and mismatches with requirements. Critica=
+l skills become software architecture, system design, performance tuning, a=
+nd security analysis. <a href=3D"https://www.cio.com/article/4062024/demand=
+-for-junior-developers-softens-as-ai-takes-over.html">AI can produce a web =
+app quickly, but an expert engineer ensures the AI followed security best p=
+ractices</a> and didn=E2=80=99t introduce race conditions.</p>
+
+<p>Developer discourse in 2025 was split. Some admitted they hardly ever wr=
+ite code =E2=80=9Cby hand=E2=80=9D and think coding interviews should evolv=
+e. Others argued that skipping fundamentals leads to more firefighting when=
+ AI=E2=80=99s output breaks. <a href=3D"https://www.cio.com/article/4062024=
+/demand-for-junior-developers-softens-as-ai-takes-over.html">The industry i=
+s starting to expect engineers to bring both</a>: AI speed and foundational=
+ wisdom for quality.</p>
+
+<p><strong>What to do about it:</strong></p>
+
+<p><em>Junior developers:</em> Use AI as a learning tool, not a crutch. Whe=
+n AI coding agents (Cursor/Antigravity/Claude Code/Gemini CLI) suggest code=
+ review why it works, identify weaknesses. Occasionally disable your AI hel=
+per and write key algorithms from scratch. Prioritize CS fundamentals: data=
+ structures, algorithms, complexity, memory management. Implement projects =
+twice, once with AI, once without, and compare. Learn prompt engineering an=
+d tool mastery. Train yourself in rigorous testing: write unit tests, read =
+stack traces without immediately asking AI, get comfortable with debuggers.=
+ Deepen complementary skills AI can=E2=80=99t replicate: system design, use=
+r experience intuition, concurrency reasoning. Show you can both crank out =
+solutions with AI and tackle thorny issues when it fails.</p>
+
+<p><em>Senior developers:</em> Position yourself as the guardian of quality=
+ and complexity. Sharpen your core expertise: architecture, security, scali=
+ng, domain knowledge. Practice modeling systems with AI components and thin=
+k through failure modes. Stay current on vulnerabilities in AI-generated co=
+de. Embrace your role as mentor and reviewer: define where AI use is accept=
+able and where manual review is mandatory (payment or safety code). Lean in=
+to creative and strategic work; let the junior+AI combo handle routine API =
+hookups while you decide which APIs to build. Invest in soft skills and cro=
+ss-domain knowledge. Stay current on new tools and best practices. Double d=
+own on what makes a human developer indispensable: sound judgment, system-l=
+evel thinking, and mentorship.</p>
+
+<hr>
+
+<h2 id=3D"3-the-role-question">3. The Role question</h2>
+
+<p><strong>The bottom line: The developer role could shrink into limited au=
+diting (overseeing AI-generated code) or expand into a pivotal orchestrator=
+ position designing and governing AI-driven systems. Either way, adding val=
+ue means more than just coding.</strong></p>
+
+<p>The extremes here are stark. In one vision, developers see their creativ=
+e responsibilities diminished. Rather than building software, they mostly a=
+udit and babysit AI outputs. AI systems (or =E2=80=9Ccitizen developers=E2=
+=80=9D using no-code platforms) handle production; human developers review =
+auto-generated code, check for errors, bias, or security issues, and approv=
+e deployments. Maker becomes checker. The joy of code creation replaced by =
+the anxiety of risk management.</p>
+
+<p>There are reports of engineers spending more time evaluating AI-generate=
+d pull requests and managing automated pipelines, less time crafting code f=
+rom scratch. Programming feels less like creative problem-solving and more =
+like compliance. As one engineer lamented: =E2=80=9CI don=E2=80=99t want to=
+ end up as a code janitor, cleaning up what the AI throws over the wall.=E2=
+=80=9D</p>
+
+<p>The alternative future is far more interesting: developers evolve into h=
+igh-level orchestrators, combining technical, strategic, and ethical respon=
+sibilities. AI =E2=80=9Cworkers=E2=80=9D mean human developers take on an a=
+rchitect or general contractor role, designing the overall system, deciding=
+ which tasks go to which AI or software component, weaving solutions from m=
+any moving parts.</p>
+
+<p><a href=3D"https://www.cio.com/article/4062024/demand-for-junior-develop=
+ers-softens-as-ai-takes-over.html">A CEO of a low-code platform articulated=
+ this vision</a>: in an =E2=80=9Cagentic=E2=80=9D development environment, =
+engineers become =E2=80=9Ccomposers,=E2=80=9D orchestrating ensembles of AI=
+ agents and software services. They won=E2=80=99t write every note themselv=
+es, but they define the melody: architecture, interfaces, how agents intera=
+ct. This role is interdisciplinary and creative: part software engineer, pa=
+rt system architect, part product strategist.</p>
+
+<p>The optimistic take: as AI handles rote work, developer roles shift towa=
+rd higher-value activities by necessity. Jobs may become more interesting. =
+Someone has to decide what the AI should build, verify the product makes se=
+nse, and continuously improve it.</p>
+
+<p>Which way it goes may depend on how organizations choose to integrate AI=
+. Companies that see AI as labor replacement might trim dev teams and ask r=
+emaining engineers to keep automations running. Companies that see AI as a =
+way to amplify their teams might keep headcounts similar but have each engi=
+neer deliver more ambitious projects.</p>
+
+<p><strong>What to do about it:</strong></p>
+
+<p><em>Junior developers:</em> Seek opportunities beyond just writing code.=
+ Volunteer for test case writing, CI pipeline setup, or application monitor=
+ing: skills aligned with an auditor/custodian role. Keep your creative codi=
+ng alive through personal projects so you don=E2=80=99t lose the joy of bui=
+lding. Develop a systems mindset: learn how components communicate, what ma=
+kes APIs well-designed. Read engineering blogs and case studies of system d=
+esigns. Familiarize yourself with AI and automation tools beyond code gener=
+ation: orchestration frameworks, AI APIs. Improve communication skills, wri=
+tten and verbal. Write documentation as if explaining to someone else. Ask =
+senior colleagues not just =E2=80=9CDoes my code work?=E2=80=9D but =E2=80=
+=9CDid I consider the right things?=E2=80=9D Prepare to be verifier, design=
+er, and communicator, not just coder.</p>
+
+<p><em>Senior developers:</em> Lean into leadership and architectural respo=
+nsibilities. Shape the standards and frameworks that AI and junior team mem=
+bers follow. Define code quality checklists and ethical AI usage policies. =
+Stay current on compliance and security topics for AI-produced software. Fo=
+cus on system design and integration expertise; volunteer to map data flows=
+ across services and identify failure points. Get comfortable with orchestr=
+ation platforms (Kubernetes, Airflow, serverless frameworks, agent orchestr=
+ation tools). Double down on your role as technical mentor: more code revie=
+ws, design discussions, technical guidelines. Hone your ability to quickly =
+assess someone else=E2=80=99s (or something=E2=80=99s) code and give high-l=
+evel feedback. Develop product and business sense; understand why features =
+get built and what customers care about. Shadow a product manager or join c=
+ustomer feedback sessions. Protect your creative passion through prototypes=
+, hackathons, or emerging tech research. Evolve from coder to conductor.</p=
+>
+
+<hr>
+
+<h2 id=3D"4-the-specialist-vs-generalist-question">4. The Specialist vs. Ge=
+neralist question</h2>
+
+<p><strong>The bottom line: Narrow specialists risk finding their niche aut=
+omated or obsolete. The fast-changing, AI-infused landscape rewards T-shape=
+d engineers: broad adaptability with one or two deep skills.</strong></p>
+
+<p>Given how quickly models, tools and frameworks rise and fall, betting yo=
+ur career on a single technology stack is risky. A guru in a legacy framewo=
+rk might suddenly find themselves in less demand when a new AI tool handles=
+ that tech with minimal human intervention. Developers who specialize narro=
+wly in =E2=80=9Ca single stack, framework or product area=E2=80=9D might wa=
+ke up to find that area declining or redundant.</p>
+
+<p>Think of COBOL developers, Flash developers, or mobile game engine speci=
+alists who didn=E2=80=99t pivot when the industry moved. What=E2=80=99s dif=
+ferent now is the pace of change. AI automation can make certain programmin=
+g tasks trivial, undercutting roles that revolved around those tasks. A spe=
+cialist who only knows one thing (fine-tuning SQL queries, slicing Photosho=
+p designs into HTML) could find AI handling 90% of that work.</p>
+
+<p>Hiring managers chase the newest niche. A few years ago everyone wanted =
+cloud infrastructure specialists; now there=E2=80=99s a surge in AI/ML engi=
+neers. Those who specialized narrowly in yesterday=E2=80=99s technology fee=
+l stalled as that niche loses luster.</p>
+
+<p>The opposite outcome is specialization in a new form: the =E2=80=9Cversa=
+tile specialist=E2=80=9D or <a href=3D"https://www.youtube.com/watch?v=3DIM=
+HneaMO-dg">T-shaped developer</a>. Deep expertise in one or two areas (the =
+vertical stroke), broad familiarity with many others (the horizontal stroke=
+). <a href=3D"https://medium.com/nerd-for-tech/beyond-full-stack-the-rise-o=
+f-the-t-shaped-developer-a4afd757d976">These engineers become the =E2=80=9C=
+glue=E2=80=9D in multidisciplinary teams</a>; they communicate with special=
+ists of other stripes and fill gaps when needed.</p>
+
+<p><a href=3D"https://medium.com/nerd-for-tech/beyond-full-stack-the-rise-o=
+f-the-t-shaped-developer-a4afd757d976">Companies no longer want developers =
+who are either too shallow or too narrowly focused</a>; they want a strong =
+core competency plus ability to work across the stack. Part of the reason i=
+s efficiency: a T-shaped engineer can often solve problems end-to-end witho=
+ut waiting on handoffs. Part is innovation: cross-pollination of knowledge =
+leads to better solutions.</p>
+
+<p>AI tools actually augment generalists more, making it easier for one per=
+son to handle multiple components. A back-end engineer can rely on AI help =
+to create a reasonable UI; a front-end specialist can have AI generate serv=
+er boilerplate. An AI-rich environment lets people operate more broadly. Me=
+anwhile, deep specialists might find their niche partly automated with no e=
+asy way to branch out.</p>
+
+<p><a href=3D"https://medium.com/nerd-for-tech/beyond-full-stack-the-rise-o=
+f-the-t-shaped-developer-a4afd757d976">Nearly 45% of engineering roles now =
+expect proficiency in multiple domains</a>: programming plus cloud infrastr=
+ucture knowledge, or front-end plus some ML familiarity.</p>
+
+<p><strong>What to do about it:</strong></p>
+
+<p><em>Junior developers:</em> Establish a broad foundation early. Even if =
+hired for a specific role, peek outside that silo. If you=E2=80=99re doing =
+mobile, learn backend basics; if you=E2=80=99re doing front-end, try writin=
+g a simple server. Learn the deployment process and tools like Docker or Gi=
+tHub Actions. Identify one or two areas that genuinely excite you and go de=
+eper: this becomes your vertical expertise. Brand yourself as a hybrid: =E2=
+=80=9Cfull-stack developer with cloud security focus=E2=80=9D or =E2=80=9Cf=
+rontend developer with UX expertise.=E2=80=9D Use AI tools to learn new dom=
+ains quickly; when you=E2=80=99re a novice in backend, have ChatGPT generat=
+e starter API code and study it. Build the habit of continuous re-skilling.=
+ Participate in hackathons or cross-functional projects to force yourself i=
+nto generalist mode. Tell your manager you want exposure to different parts=
+ of the project. Adaptability is a superpower early in your career.</p>
+
+<p><em>Senior developers:</em> Map your skill graph: what are you expert in=
+, what related domains have you only touched superficially? Pick one or two=
+ adjacent domains and commit to becoming conversant. If you=E2=80=99re a ba=
+ck-end database specialist, get comfortable with a modern front-end framewo=
+rk or learn ML pipeline basics. Do a small project in your weak area with A=
+I assistance. Integrate your deep expertise with new contexts; if you speci=
+alize in web app performance, explore how those skills apply to ML inferenc=
+e optimization. Advocate for or design your role to be more cross-functiona=
+l. Volunteer to be the =E2=80=9Cintegration champion=E2=80=9D for projects =
+touching multiple areas. Mentor others to spread skills around while pickin=
+g up something from them in return. Update your resume to reflect versatili=
+ty. Use your experience to identify patterns and transferable knowledge. Be=
+come the T-shaped role model: deep in your specialty (giving authority and =
+confidence) but actively stretching horizontally.</p>
+
+<hr>
+
+<h2 id=3D"5-the-education-question">5. The Education question</h2>
+
+<p><strong>The bottom line: Will a CS degree remain the gold standard, or w=
+ill faster learning paths (bootcamps, online platforms, employer training) =
+overtake it? Universities may struggle to keep up with an industry that cha=
+nges every few months.</strong></p>
+
+<p>A four-year computer science degree has long been the primary ticket int=
+o software roles. But that tradition is being questioned.</p>
+
+<p>One future: universities remain important but struggle to stay relevant.=
+ Degrees stay the default credential, but programs lag behind rapidly evolv=
+ing needs, hampered by slow curriculum update cycles and bureaucratic appro=
+val processes. Students and employers feel academia is disconnected from in=
+dustry, teaching theory or outdated practice that doesn=E2=80=99t translate=
+ to job skills.</p>
+
+<p>Recent grads report never learning about cloud computing, modern DevOps,=
+ or AI tooling during their degree. If universities demand high time and fi=
+nancial investment while delivering low-relevance education, they risk bein=
+g seen as expensive gatekeepers. But many companies still require a bachelo=
+r=E2=80=99s degree out of inertia, so the burden shifts to students to fill=
+ the gap with bootcamps, online courses, and self-taught projects.</p>
+
+<p><a href=3D"https://campustechnology.com/articles/2025/10/21/solving-the-=
+talent-crisis-starts-in-higher-ed.aspx">Student loan debt is enormous, and =
+companies spend billions training new grads</a> because those grads lack sk=
+ills needed in the workplace. Universities might add an AI ethics class her=
+e, a cloud computing elective there, but by the time they implement somethi=
+ng, industry tools have moved on.</p>
+
+<p>The disruptive scenario: traditional education gets increasingly replace=
+d by new systems. Coding bootcamps, online certifications, self-taught port=
+folios, employer-created training academies. Many high-profile employers (G=
+oogle, IBM) have dropped degree requirements for certain technical roles. <=
+a href=3D"https://campustechnology.com/articles/2025/10/21/solving-the-tale=
+nt-crisis-starts-in-higher-ed.aspx">In 2024, nearly 45% of companies planne=
+d to eliminate bachelor=E2=80=99s degree requirements</a> for at least some=
+ positions.</p>
+
+<p>Bootcamps have matured. They produce grads who get hired at top companie=
+s alongside CS grads. These programs are shorter (12-week intensive) and fo=
+cus on practical skills: current frameworks, cloud services, teamwork. The =
+hiring currency is shifting toward live portfolios, micro-credentials, and =
+verified skills. A strong GitHub portfolio or recognized certification can =
+bypass degree requirements.</p>
+
+<p>Employer-driven education is emerging: companies creating their own trai=
+ning pipelines or partnering with bootcamps. Some big tech companies have s=
+tarted internal =E2=80=9Cuniversities=E2=80=9D for non-traditional candidat=
+es. AI itself offers new ways to learn: AI tutors, interactive coding sandb=
+oxes, personalized instruction outside university settings.</p>
+
+<p>A modular ecosystem of learning is far more accessible than an expensive=
+ four-year degree. A kid in a country without strong CS universities can ta=
+ke the same Coursera courses and build the same portfolio as someone in Sil=
+icon Valley.</p>
+
+<p><strong>What to do about it:</strong></p>
+
+<p><em>Aspiring/junior developers:</em> If in a traditional CS program, don=
+=E2=80=99t rely on it exclusively. Augment coursework with real-world proje=
+cts: build a web app, contribute to open source. Seek internships or co-ops=
+. If your curriculum misses hot topics, learn them through online platforms=
+. Earn industry-recognized certifications (GCP, AWS, Azure) to signal pract=
+ical knowledge. If self-teaching or in a bootcamp, focus on a compelling po=
+rtfolio: at least one substantial project with good documentation. Be activ=
+e in the developer community: contribute to open source, write technical po=
+sts. Network through LinkedIn, meetups, dev events. Get an experienced deve=
+loper to vouch for you. Keep learning continuously; the half-life of techni=
+cal skills is short. Use AI as your personal tutor. Prove your skills in co=
+ncrete ways: portfolio, certification, and ability to talk intelligently ab=
+out your work will open doors.</p>
+
+<p><em>Senior developers and leaders:</em> Your credential alone won=E2=80=
+=99t carry you forever. Invest in continuous education: online courses, wor=
+kshops, conferences, certifications. Validate your skills in new ways; be p=
+repared for interviews that assess current competency through real problems=
+. Maintain side projects with new tech. Reassess job requirements: do you r=
+eally need a new hire to have a CS degree, or do you need certain skills an=
+d learning ability? Push for skills-first hiring to widen your talent pool.=
+ Support internal training programs or apprenticeship-style roles. Champion=
+ mentorship circles for junior devs without formal backgrounds. Engage with=
+ academia and alternatives: advisory boards, guest lectures, feedback on cu=
+rriculum gaps. Reflect this in your own career growth: real-world achieveme=
+nts and continuous learning matter more than additional degrees.</p>
+
+<hr>
+
+<h2 id=3D"the-through-line">The Through-Line</h2>
+
+<p>These scenarios aren=E2=80=99t mutually exclusive. Reality will draw ele=
+ments from all of them. Some companies will reduce junior hiring while othe=
+rs expand it in new domains. AI will automate routine coding while raising =
+standards for the code humans touch. Developers might spend mornings review=
+ing AI outputs and afternoons crafting high-level architecture.</p>
+
+<p>The consistent thread: change is the only constant. By keeping a finger =
+on technology trends (and skepticism around them), you avoid being caught o=
+ff-guard by hype or doom. By updating skills, diversifying abilities, and f=
+ocusing on uniquely human aspects (creativity, critical thinking, collabora=
+tion) you remain in the loop.</p>
+
+<p>Whether the future brings a coding renaissance or a world where code wri=
+tes itself, there will always be demand for engineers who think holisticall=
+y, learn continuously, and drive technology toward solving real problems.</=
+p>
+
+<p>The best way to predict the future is to actively engineer it.</p>
+
+    </section>
+</article>
+<footer style=3D"border-top: 1px solid #eee; padding-top: 40px;">
+<!-- Begin Mailchimp Signup Form -->
+</footer>
+
+<footer id=3D"post-meta" class=3D"clearfix">
+    <a href=3D"http://twitter.com/addyosmani">
+        <img class=3D"avatar" src=3D"https://addyosmani.com/assets/images/a=
+ddy_2022.jpg" style=3D"margin-bottom:16px;">
+        <div>
+            <!-- <span class=3D"dark">Addy Osmani</span> -->
+            <span>Addy Osmani is a Software Engineer at Google working on G=
+oogle Cloud and Gemini.</span>
+        </div>
+    </a>
+
+    <section id=3D"sharing">
+        <a class=3D"twitter" href=3D"https://twitter.com/intent/tweet?text=
+=3Dhttps://addyosmani.com/blog/next-two-years/%20-%20The%20Next%20Two%20Yea=
+rs%20of%20Software%20Engineering%20by%20@addyosmani" target=3D"_blank" rel=
+=3D"noopener noreferrer"><span class=3D"icon-twitter"> Tweet</span></a>
+
+<a class=3D"bluesky" href=3D"https://bsky.app/intent/compose?text=3DThe%20N=
+ext%20Two%20Years%20of%20Software%20Engineering%20-%20https://addyosmani.co=
+m/blog/next-two-years/" target=3D"_blank" rel=3D"noopener noreferrer"><span=
+ class=3D"icon-bluesky"> Bluesky</span></a>
+
+<a class=3D"mastodon" href=3D"https://mastodon.social/share?text=3DThe%20Ne=
+xt%20Two%20Years%20of%20Software%20Engineering%0Ahttps://addyosmani.com/blo=
+g/next-two-years/" target=3D"_blank" rel=3D"noopener noreferrer"><span clas=
+s=3D"icon-mastodon"> Mastodon</span></a>
+
+<a class=3D"threads" href=3D"https://www.threads.net/intent/post?text=3DThe=
+%20Next%20Two%20Years%20of%20Software%20Engineering%0Ahttps://addyosmani.co=
+m/blog/next-two-years/" target=3D"_blank" rel=3D"noopener noreferrer"><span=
+ class=3D"icon-threads"> Threads</span></a>
+
+<a class=3D"linkedin" href=3D"https://www.linkedin.com/sharing/share-offsit=
+e/?url=3Dhttps://addyosmani.com/blog/next-two-years/" target=3D"_blank" rel=
+=3D"noopener noreferrer"><span class=3D"icon-linkedin"> LinkedIn</span></a>
+
+<a class=3D"facebook" href=3D"https://addyosmani.com/blog/next-two-years/#"=
+><span class=3D"icon-facebook-rect"> Share</span>
+</a>
+
+                <p id=3D"newsletterform">
+            </p><div style=3D"margin-bottom:20px; font-weight: bold;">Want =
+more? Subscribe to my free newsletter:</div>
+            <div id=3D"custom-substack-embed"><form class=3D"custom-substac=
+k-widget csw-theme-purple"><input placeholder=3D"example@gmail.com" value=
+=3D""><button type=3D"submit">Subscribe</button></form></div>
+           =20
+            =20
+        <p></p>
+    </section>
+</footer>
+
+<!-- Disqus comments -->
+<!--=20
+ -->
+<!-- Archive post list -->
+<!--  -->
+
+
+
+
+  </section>
+
+ =20
+ =20
+ =20
+ =20
+ =20
+ =20
+
+ =20
+
+
+
+
+
+</body></html>
+------MultipartBoundary--49AQQbyXquX9TZKVOtv4p0sdYqml2sNca3pkzzjEFP----
+Content-Type: image/jpeg
+Content-Transfer-Encoding: base64
+Content-Location: https://addyosmani.com/assets/images/addy_2022.jpg
+
+/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAgICAgJCAkKCgkNDgwODRMREBARExwUFhQWFBwrGx8b
+Gx8bKyYuJSMlLiZENS8vNUROQj5CTl9VVV93cXecnNEBCAgICAkICQoKCQ0ODA4NExEQEBETHBQW
+FBYUHCsbHxsbHxsrJi4lIyUuJkQ1Ly81RE5CPkJOX1VVX3dxd5yc0f/CABEIAoACgAMBIgACEQED
+EQH/xAA0AAABBQEBAQAAAAAAAAAAAAAAAQMEBQYCBwgBAQADAQEBAAAAAAAAAAAAAAABAgMEBQb/
+2gAMAwEAAhADEAAAAPTQN/FAAAAAAAAAAAABRBQQUEFBBQRRRBQAAAAAAARQQUEFBBQQUEFQQUEF
+BBQQUEFBBQQUEFBBQQUEFBBQQUEFBBQQAAAAAAAAAAAAAAAAAUQUAFAAAAAAG0uFZCrfQFLZIkCF
+qKIoIqAKCAAKCCggAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAoAKAAAAAgsGv8/y6/Qcv
+59Jx7dNUu8U3Zk1y1ay1xEyaejW/m+k34b+ty1Ott43mb1N9zF86bX9jv/A7+2PtK5HV78HaBbIA
+AAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAUBQAAAAAixMnA1WZ5/SdZSVj2OTYlGTqWbNlnZdz
+2Qp/HETZ56XAIsVlZmVYVLE12EnG2aXubCHCbqvLpk1+iZXkvqnR5ToGvMAAAAAAAAAAAAAAAAAA
+AAgAAAAAAAAAAAAACgqKAAAAEKJY8Q3/AJrz+rLjxeKdN1Prn6OXJTZHrjmUyXUT09o91EtK2tbR
+KTY0UTCdidaZz665t0Yi9scmnT0EuTML6F5zYxX3koL/ALfFAJoAAAAAAAAAAAAAAAAAAIAAAAAA
+AAAAAAKAKAAAACEfzfTec8/o85WRBz7Es40mZnWEGzylyiq41zvfUxaFLb4i10/W2Wd++JPNbSs7
+pqWrJucwt8bF+rt5rOuKzqEKzl1MxYxXHoW3rXgXp+3Hs1RenzBFQAAAAAAAAAAAAAAAABAAAAAA
+AAAAAABQUAAAAIcvCU2y2TeruX2GlZWx2dX6mqRn7nJJgE2xm8aeTc7wFv5WW1RYT7PHeC9OsM71
+MLQQlfM6b0DLdPNTWcTjXHSV8yxtSits/HtXSRlYRauV0Y+i5GC3nX4yoqWyAAAAAAAAAAAAAAAA
+BAAAAAAAAAAFRQUAAAAAr4tW+RzKPk9hmteiTp33HvCVpq6LRTtPTG0SdbTOTur7GfM5uiuky36a
+RpfbkSj48NsXLETl6nZRL089Z3FXvzY6TeQN+VKCY9vzVLsGXrnB0ecuImx9q8B3UY+rKy92eQIq
+IAAAAAAAAAAAAAAAQAAAAAAAAABUUUAAAAOPKNV5ZzelzU9x8+2KvEq0Tp/EusyqOzzsXn6dLfj9
+DiZ1I4u4fHq6NSF7Tx0rwPD0OlHiNFtOJrSQdDBtGVrtXTa4Zip1WX7vOag29B18dpT3tHC+vqrr
+G3rOn8s9J6vLlgbcaAAAAAAAAAAAAAAAgAAAAAAAAqKAoAAABDlYim2RyvfPJ7ENpHiHPiS7TZT0
+diappywz30E+LP8AM9Z2Q07ls84j0X5776WHOXIP9qqqPcSLUb665mrEeU2vVVOhq5plqrT0PTzZ
+GNZQvS8iTUzlVt241lSZvo/k+qvj6mrD3Z4wAgAAAAAAAAAAAAAQAAAAAAABQUAAADleImP4lrcH
+zeq1T2NNTpsFkwYdXMXQ2SM9Nh0u3pIVpyd86dCmcvW+/GlZ7yHozsXkdtORbrrnuEleHFe3me7U
+dOFmjbLzS7MKfGmKnN7Cn1zxWY2GW9HyksETXlasqK/pMG1p7CY9ltcXs+vxlEL4qICiAogKICiA
+ogKICiAAAAAAAACgqKAAABltJ5hl1ZOtmV3N60aK9Ll125YxEtiFAueuaXQc3TKnxZvH3vyY8imr
+8hiTTZ1zl6miyWXIl0Qg/wBM9ye757tRU65mvDL/ACs0y+1MRoFnGmmMwvqPnXZxstx2O3zXNNn7
+qkV5aU1o9C9L8W9k6PMkCmvEgoIKCCggoIKCCggoIKCAAAAAACgoAAACEeJrfLNRgeX1o1a5zXoZ
+toUkfhjVoOHYybuxgWPJ2WcyPJ5e1+VHk57OyY8mt33m366Dq9xbleuxuQ2+jp3nu2TZ1xM889tx
+ZGnWhqPJYRX+dekYjbDz2VXXPqeNJ7saylZ1TdQLRx7P4xvNuX08466PJUQFEBRAUQFEBRAUQFEA
+AAAAAAFVFAAAQYa7xWfTic7f5fk9Zzvh6xyG+1JZseytWqbWLnpsZ9RoOXtank3m6x9H6adOoqZT
+0STGj/bLkX6656O3mXUPDSzVzlEFRFgcPrEQGLNmtqTIbTGa5eZXNTfet4d3nr/JxW+rbSHMR51U
+/evvdlhNj0eTKAvgAAAAAAAAAAACAAAAAKigoAADXceLRfPLfMc/o5HtjvHtYe5esiSYc61erZuR
+ViJysxfadwqfn6fRJXniVt6U75cyeuL5ndxfavZefl03rlfJp0S+470XdRtknJDYtnbdZxq+OsML
+Gtl6IYJIpvkw9lnra4TcY6m3mmprLP1PGi0M6utnoobvEKm2q7ay79T8r0l+X0VYkvo8wAmoAAAA
+AAAAACAAAAAoKAAAhzRykpvlPNNzgOb03mVSmr8XtbollW2crmkus1RAHYybWrehpn1Nw1MVndmk
+oEqM2vb6TH2uOu+v8boOXtvZNXPz63IcmsmsTLzM30cMZqoi9HJpH8jNvnrVrJUJfXMJOua87s8t
+7hyskac9ZD7cvRZ1dbQq1iz039jjt9OW5scbqd/NniGnOogKICiAogKICiAAAACoCqigADXceLRK
+6982z6c7lr6g5/TmMsyImQ33xaHhxqV5l9bjKTY1Vq1W8O7R2L2nOUbrfVsYG40po49esXs34qYd
+VtcZa5x00tlT3dOh+n0NRpTIVUyBpiccs2pZysHK6OTezfMZ0x6Qxk7bm3yTO2Y1yzU6tndHLXM8
+8nVnRXCIU6F3WXdDVpE7X0Txf2jXgk9svbcABMAAAAAAAAAAAAKiigACDcPibXVjz7deb5dOTqHk
+w9FY0duy6WLImJjLLsrjLzWqTJehWlNIvM+vrrmt9V3sa0FZ6FKrbznWaThbB8a+DnrGJfFGo0+c
+03J2z6O+hzXzas1lV044/QzJOlcnV+iv3y8/3MpJr53V+lUyK+ZJrtOekvM5s9+bERn+JqTIUqFh
+U32bLlITlZuvSvI/Qr4+jP5++38roC2YAAAAAAAAgAAAqKKAHPTSa6ZWyc94vlHofk2PbTuPM59a
+086NZJlwpYTYbEx3Lq7eLc3VJfZayWbCfz9NDIv0z6K96a5GtcW7i1NHvY8xQzJUnOJmhoL7Hsno
+DOhodlDtOSd0XGtM6aLma0rls5WKVvQVdsoGA3GG7vOa1Oc2V6YOvn1emDs+BOLKktYIx3x3NWvQ
+cHupps9FT934NEIuvIAAAAAAAAIAAAKiigA25ymsaeg59Gb8y0mb5vTgMymo0h8ct2iTKYcie4vM
+WZk3dTY1tI09Jf562N3V3HD6Hbrz2PTH6l9rwyZwVrFhEmrESbFmJd5UW9d7FTphCcRxs1333FOe
+ZROUTuSkxVUltTaRkquxq+/zYm48/wDT7085ymnzumPcmOKW/UC2RAZlxrQ1eZyxPoanaudPNnOU
+F/fAFS2YAAAAAAIAAAKAoAc9NJqqazymPZ5y2wc/qSqeyhTEBxFRKjkVPDR1MT7CBaRpJ0OX0eW2
+ntK214e6dIZkZdTvaO11bbkMkSBYVls2Wx21JtrAs8+icKW54yONTs5JhSWcrqP2wdaWHKDXX1Fa
+3ny8Pd3nY31bC6DbKhx/ouEUrpkKRfKW+7Xlg0TCqmq+el7Xy/0G/BJm88ac0tFS+IAAAAAAIACo
+oCgAA07wnO+Tel+Nc3qxeujLscjrGViykYmGGeuiPNi2dpcm1rsWlajK6HLXW29LY8fZfSoUvLqk
+9slN3GEinFVKgXx6sOZkH5zEum8leltzx40tJ0reivta2cpOqTcxW3rZu0lvAvj5/wBsTuzgzr87
+P74PUs6Czr5Elq1Xn4TpV3sOTWZEfqymL/Y1ki/JtliyduB0C2YAAAAAAIACgKAAANuNJwvk+7y/
+F7VVE6WN+4i8zXmJLbmI7TiivwZKROSV5bUttlrqL3Mabk672RClY9L8dqPXR9hrtEZFZtE+wqJ0
+Wt34bsbWaxX7ZLxwzaFi9vwpIN1TKSJtDJtF5FaJrg7Jyh6uK2ymqxuuEKO9D1xemVU0SHNhwmcQ
+ritnnIcmXo3ORvr83prraa+dLAvkAAAAAACAoAoAAAFfMq66ea430Hzbj9lIncVqvLL81b677RDO
+G7TYQnYxIc7Qcuq1+ltTpcbqeXq0aV0PPWxYzrWuNjaZHRIsqZ6C0j22XYtT1yR5xpc+vTmbqb0s
+K6Lcac1/Y1TnPvIyVpX2yrJ9bH0y1D9YZ7dUF1Wb4wKRG98Icmrs7ZwotxQGipJSlXpsteVtKWSs
+pG88y384+kv89beUjrTk1UQmFEBRAUQBRQAAAACFQHneHd3k2esPSh8SmVo3SvzXiFbUklHyRFmR
+EWfMltEhmbKpZjVYfV56X9S2xSzUau71xteU4WdhOokTiQcPsR5i3V9uLXr1fxW8ywzkw7kQK+a3
+NfFmKv2EeZW9fm7aHtjEpdZmrRnbSjvtc7PO3NbSen62xsiTmH62lyoMgkbLCenzj6ExnNFt5jri
+LbNBRCCggoIKAqKAAABCfwNNu/JX4vN60Kajtday9z1mMHfaHKKfEsHYdjLqDa8idu9ocsGWqTWW
+bbEWuHa++pali6uAiJetRab2U2rlV6Fsor9dZNTZySl0fLaeu47dknis4tk/m9e5Gfnl5YOX5X4M
+/O2isuIM3XLjH6DNpzs+ru9sbmIzb52ysrpi0yukiytHoVpW0z1fCejzx3NTdR9uGR1T3E0AJqAA
+AAAKigACLwZnxrUaXm9SdmPTKK+PltPNq+f0q95h2LLKqLCYajTa+9Gr2psos1YJJGnWpdUVa+Yn
+phjuHemyb9Z3LlHPpe2lRLbDrzrWq5dtE5eTa9GTkbJ2u2OkaeQnMStIzbKmesXYz4pbKst51FGk
+5/r4ZUGTT65z48bq1Kqvg2MTQWUZjSkrT5PQldx3TxNyjvM2et6+XRpPX/HfZ9OBhG4VsZFsi3wA
+JqAAAAAKigADLyJ8bu9R5Lzen7dE8x2V8fNc7r8fz+lXSjiLRp8mFallQWlgUid9yt5FNZxZa2VS
+ouuJLKYrHbcTZxpzCsfQZrRRbTWOeusNrKVnDPp0ndSkdOjey/DbXuZNJjXOZyVbK9rq2Q5+2O6q
+2EajuaXo5GqqdWzEFpKjSlTqoEooBXrRzeZjQXR6u4rKpUyFNrebNadrN77V4P6bfjfuKLV35uwN
+OUAAAAAAE6QFEUABKi4SLeR0ntmJ5/S84X07PU388WSxTaPBu0tELYWGOnOuH6ppYWuenQ7ZsIJF
+vqtstotk7Cth2NPKRaZuaaiwz86lraTAn56xazVNxbKSrU0pUvWb8odxIkxZiZDixHDddxpi8RYt
+6VUbiuk/nXYsxfcutEDqTCRFsa21ufiyeyRKbuKWhcz6+trBaiYj0b0XxT07Xz74RduAEUAAAAAQ
+AURRQABCpgxtJn0xsVv8LW/mEXiNz+rY6nHVtqbfD9RSW9T2EmnHYybxmJJrL8B9ZmXcZqfCxzmn
+rJjPq9HldSKmyospdDZRbT2mcv8AHZztt+mvCTZcq93ti1IlXKh7YNuzqW+bVA9U3z4pNFn6bHch
+ZjmbCs7V5pLqJCqsI9nMNybBqJenwYNbXDblsjPs+gYW1bbTYr162NvMcNvMbdCaAEwAAAAAKiig
+Bx2hldPRWtN5GR19AfPECxhcvs9zddd3xwud+h/nlEKQ7CjTvlY14vZtDJpeV27JTRSlZiLOxyr1
+okV1uylqxo5dJ00ypkRNzb5+zzvavQ4dNLV2nsZT2aybavLTc3TKBnu6PSkHSW1vzdWZwPoFJFsy
+r0fp5pMqXBtVzuKsGpzXNV1ULErbt+vtpWF3WcIk8x7eYt/Uc1rd/NXhxq/M8BbMAAAABRQQUAAA
+UZzeqI0yjWvWt/DMD9WefZdfi9hrsc2cznW2i+M60uYT1BtIg6/XCbNpqbDR0se2i9DGnPTLVk3Z
+56M0OykY6Yu2YqtsdLb4q+ReOUrFZvHa3g0rNDDvXS0MLRFPunpHN2MwrUw3yyaPMWpg7Lk7+Ch6
+sKy9LpqDdVliDb5qJfjdvRMW9ZnGkqH5ykHbZa40x9CuM7ea+e8rPdsexOrVQUQgoIKCgAACgACQ
+FAFEZfhpk1mdrKb+hP8AiWerr6P5DLpqdbUaVHjVhxmwRHfYQ0kvlmtyQzPi0e3qtDhu+k85uqF1
+NWYy9buuNM8U3ueprk11jplbPQTKawZk2VjvXPzeolnqRyivZnJrljs5sMj08fn/AHWu9XLqaeRO
+pavchxJm5b79anLzGd9HmnH8+aj1tFfJKr3BuYgyJK25+OXSaIoTCCoAAAHQAAACpRRRBfIK63WU
+xUTH0bPPcR41seK92JuILvC/D6Q0cd88zDtrGsovVy+Gy7SLLgTWki03XZ/Q8XWvMprHoFXtLI+T
+DHb0iEaQ+5W6SuHc9ZSs9jhy5aoquWqy1LjKUfnXpfnPVyecSpsHv4WLukkRa25WBMONXFQnc7rx
+S6nH6Gl/P3oF+P0FI8nTiQBAAAAAAAIKh0AkCOSOsXmqdHrLPiNBXb0/yrnnLsKS4oou1H7S0cus
+yDm244i6V7bU0d7a6lfy6qxzvRS+urTKl1F/WZUCuuc7ztXk9Tx9li13zlsr3L8XbdekwjuyHImJ
+3K6raM+71W/HTzkocx12YZV9hVmI/HRU+d6vzzt4Gc5tsx38VU6x3at3KqLhMupu6itq6ccxNtKq
+LEm3uS6q9M1Ph8u/N7+eO+g7cGhA05QAAAAOcBmaHn9SypYiZ9bzXJNlbGxuRDkIKa5p0RF7LOJ3
+UxLVPKgq8LzKtTnjrmLO39JOrfjurmJmyauXCTGejrb+z899L4e55yTN5emDKld005lJJrLZIWDP
+TyJZccWLNd9qKjfKX2laRGrrDzPbno6GTx7PkSLGiZRZ1dnYROdtZ3SI1BOr5XlbaRBt1vis2DMm
+LExpEaIbTuBa2ruNt4tb68Xqpnr7XznALZgB869NdcX0Nb006DnPUmWX2iPLizRista2YjvdTJLG
+n1ZBiupNH1mRFmU7dH+XmU8PwpMH16fSyg8N2UHqJ9Z0vgGt4e31Z7M6Tj7u++zK/S8qlF6cS0va
+iONtj0VxiTzFT55vzXGDc59Ty2xedc4qv8xMRixZhW2DPabWpv6qazu2Z1ZqmbGLFksc/fFXT6PM
+o02gxOlLxjqIif1XSInZbHxbrTl96PLNltweHuNPc/r1LrL8S50doYbeZGpkWZKNCsI8y3KRYiPT
+TYMmrBq5msCFYMkd/uQmO1MjkeTzKTy6nRw1I5Ok66GmZfAy902mWR3qS8807KVJgdptnaTms33N
+CkrOvZL1BSa8p2kOOXSJ5YlNEZzvoi1l3TrXUmsvFauU13B+JYR4mh6nZlG5y193LH6Okky3NZKj
+VlH4ncTNbQiO+2+Zmtd45vSvlw7CodRYMMyY8mZ9fZkYlMjMKTWzLLMl5MvmVHmsbl9Zht5wgwzJ
+bk06dgdKlIc9o5kVbqJjcuUmC871BtXHqmHHurG+++pM8ymiPy7BmHhHDg67hw52xEtyIc+tmuH+
+RrvvqDNRdwZV+qyGtmILc2ImZxzLiK7NauBCg2OCvb1lwNLQVtdzYNymjcaciZHfEhDbEhsarLSn
+mrU+FMH+HFiY/D8aZj2tfZIajuwBll5pZu6jSlWW3EtDKudS5V3mJjkjlDPbrkGOZPCWOXuSHDtY
+NquW9JZJmB3A74B5znsO2+JONtdHTDzBKVqRBs75GI78atu5rEsjKvET07w4NRJrEs7qcveWrcVV
+zWRLVjWWETzEmx4Zer2WU0ppZeQ1ETKt4MmsVPEmEmwmwJkSrMuMf//EACYQAAICAgICAwEBAQEB
+AQAAAAECAAMEEQUSEBMUIEBQMAYVYID/2gAIAQEAAQIB/wDwiWfL/wDSXOWz/wCJsve+/IszvY8r
+uq5F+RxbwXsNz5RzX5NeUTk67/7mTl25pZKVqe03+wOpxsj5b5d3J+8syCrWM+Png/2cvk3sVVXd
+t73l1cZCW7OSbuweu0CM3yKbsfPqt/rW3ZPKExUdi4qFXbv6zRMin1hPWSmTXnC2zDd6sjBy0f8A
+qZeRfkd4LOzKtbT3LBW1HUlJbV29ocU2YS5NeS4NWM3F5n9O+6xrLfYCkDKr2MnuW4ZAYwsI62VG
+B0dGuxLqUfdYD8flf0bbN5uaW2BWqIwbKLGbrO0OzVXMpSROqVrkLa+LSlldYwshH/nk3vm5TERY
+qVSy+65QFKsgWtknSpSuRS69xZVYcgN3dVcj28Vlfz7jmZJJ8B1glzNYpRenrFaVJUE9XS6q6lqk
+apVN4ryBb1DPMHLrf+dy91jlt7UY9dpui4wrAWtVFa1hOihEvS5LKPjhabpbjVXB7GxnKcRmfzc3
+LvsaF4FqQyxxAgx1pFQrSsIAoUdHrspel6WU01uBkUIetbXDCuov/l5F2TkuWJZgK6VyGUV1isIt
+fULrprSqoKtWUelqitlQvuXrW2VXRZScbJRv5LNyuUI7NEmOlSs+W9FSVqiqBqAQAAQTRBQqyWVk
+XVIbYkuXElkrbAt/k8hm2vc7QxauhJnRFVQBANaEC61oADRUoysliauTqDumMlduJZS/8e1uUbus
+0WL1QC5wqAQAeBNwAQfTcMIYWC1b0U5C0gio+rtg3fxjOTzHjFYRqpa1eGYyVAeBANQCLB4HjWvD
+h1dDMhQwNy4bWzHbirEP8W1sy3dz1hj1qRVtt9VYQDwIPvv7GEOt6OGjQpgxxVENNn8QnlMtgxgg
+iJWl19aVqoEEEHje/AH03uHxphYrLkgSmYrXm+O2A/8AEz7brNoahaUrrrtvWLFg+ggggg8CD/Ew
+x1vrzBRFcQs4RuHtU/wnblbb1abReqi2/dcrC+BBBBB9h4H1PkxpfXnLhM0Sveqzx1tf8PIew3WW
+RggLNYJutVK+BBBBB4H0EEAh+p8NHGcuGVihyZarNx9/8Ezmbr7jBPWzbUGYkpjQQQAeBAB9h9iP
+JjTkEE0tds05A4e4H99hdsmy6xpX4UsEFgErmqwIIBoQfceN/TRBBBnIBziqA8eWStqHqf8AgZ2V
+kV0jQjNTNotr44pNUK9QB5Bm/wDPWtMrjkIZgqzO4jTYbBvrf9pl52WIEcXTVAslag1LW5s79vZ3
+3NwHfje972D7Pb7e5LryIuSqFrDjG87oGPdUwP7c23lHojQIkSXTHXKBZRW72C0ZjZIzEzkzFylv
+VthtwnubWyTe2X8oZYyfkV5It5CWVwxhjG4KtZxph5CH9ZNz3VZbuhjIkpNq1nMuczHsYxW9ncML
+VvqupuVhBNsbbLL2zDki33rcLhaMmvKybLQTUSoOVGgNNl6oyN+q+1F5O2k22O1xSYqWxTkQC6Yp
+0yLi/C9L44rVaRSVdGBMc3HIjmsqooTHSsUXY/tF1ljSqZEMaWxgjLOKyVb9LGlc58qwTtLQ7YgU
+pLoR0rSmkJ7zk/KM7hYhQqVMtF016eiuuSuV7QtlGVjUV2yw0rdAaSjKvXDyKGCr+kzeXbkoYsVo
+BSK/G2CKADdkCdWx8imi/oCJU9cQdLlthmlIleMMamVZC5V4Cs1ooJKnHLrS8aCyor+hjXHloabq
+iExIsxRdZUthSAs6LizLxbqxhUK9SZAlcpFa6yFKWw0Uq2AeK/8AORMrF9uM+UyixK4IAoyQj9kN
+bcbl7/PfFW+cuxdoBa9ZSWHGLvjwzSVulSJWtfXqQ0MEAolfixXHt7QL1hV0aqunOamWAiUyuFKw
+HaA4MqtH5jFNhL8mbBrYRS5c9mNakY416vSsB79uvqNbCqumLBGl9b0+v19Ad9fU1armHGjDJlsA
+Hhgw3OOglLflaYsuZFyX6md9LLYhsYGs2HFnVa/V6hX0FfUqV9RFMWCN4NZq9Hq9XqFXqYZVj1UL
+kLnjW0lRyRUTXOIbMpwbfytMaXzl72Ftmtyib2SsWWzDSkKvVU6dOpUjWjK4kWNBNaA106dbzZMu
+ZwwhaMyLDMe2OFDRph27SoH8hlIB5HJmnm7ZWsZt1GtgKSkWCATU0QfKBIsP0A1rWrS0rnIBWpXJ
+lkU1xz2hhFMxrK1qP5DBMmO7FZawhWMXhKysOaYFSKBAJoxo0PhIsWH6D6GdMgYcza7q8J81LwAj
+ZE2JYrKZhhJaqN+NiZzN5iWFYYoY6JrBiSwUTaQQQDy0Y7WKFiw+dgg77WOJmHFF75swLeUFkQWK
+JcK30iE4TYjmIPxkchL3YzVpQOGZvFQiFTN1FYPJhLlyIgUKB4MYb7BuxKTd042da14ps6y2t52P
+hCGjKiY7wfkM5N2JWbeJGInWEFqyFDUnGiweNlmLGaUCCAGGacE9/aro27ZizIGfVa+Uym6qpBPZ
+bTWIglBQj8jTk2EaCEGbIhbp2EDda5Q2PB42WLbeVwFfAgJ8vDW9ZZWRt2C5EseNXElDbIsFReFq
+2WzGgG/xtORZYSCTpnMslUbykR6TSaYCCzl+4NsRt1uCCDtm9nbdjuQws7FrkW22WvqkpFZ1slL2
+opE72ysr+TJPJL7NM1YBlYcliE8LEilZQQbLfY9xZLbT7LM2jJSzuLGuu5CvNqKO75Lvar1Ws9sv
+THvtDu6utsUsVNbsuwzqBofiEy5lhRc6rayQLNHxVNA6Rq2rId7PY1wiObnNx9+PmLk++zINdIEF
+jG6q+UMpVjHN57A4j3iyGMrRJsCtqDBG/ExycnIy18AgAvLIIssgEI8UPVaxvhi2lxDb7TAWqx7b
+7aoI1gzFusu9jQiiGWRnAuUWWC8heyllrAira/EvCR+LLuLWTbN00sRHKxEumpYqAIsVxbYxZGY7
+efH9K12yoPMSoubWq9ZUxslDUna+5aHquZpUaQsqKSuI1ZJ1g4KZCfiubKybH3rd8EqFpddtLkKw
+rWtcMJ6vDQ7Y7dRR6mxa6HxmwcTAXGehMayk1u5WyvHWWuhplkyJYWjHKGrjomk2GqvCJT1g/wC7
+tk5llr45p6uKWtlC3l2SXQjpXFNYrlkMpKDo+P6Bb7/Yr+xbvb7fZ2NjW9qcOyq+gM72WUIXverx
+bKCa9xZYa44wVasSwYn4OQyXmNx3IJkQElI7byYAiqgPWW11uIxEretkJNYalsYYIxTXqvwEGP8A
+B+MtOsg9rjY+g/dziSpb2rKtkCoVy6Y6GcWVFRtbFH+xmdbweI8zKsiAuQFes5KIQtbOmNLFxYke
+OaG0LWtR6oGhCxYBqAb2BGlssgDHtGey4RIxArmU1bGOEjzjSsdwoH+zzPxcDORrBnCaMC3Swsg8
+UsgyGxsjMqLsN31sO2O4ZSH3oQEEHt42zdbIyFb7LWrbKdBkjYhao5ASLGrSxlwSp5E4w/BnVBcX
+OXkc20zWsdbTUy0ElaGzB3eV2CszUad0iWdgws95yvmf+h8354y/cmQCzvaXDWO0aPMOvImkilHs
+ijQiRpRdx+bnRR+G/Dv4uxbR8R1Xytd+OQtmlcwwFLHr6Cb3WBZ3Qsz17DenqRQvqSGx7vfYyRiw
+NjWUOGdWiFDEixYy7Vq2S38ds+P8HMVlUvXRTi43I5bm0I9b5EBlcWVjMpugb3UCJYrANX6SK0Va
+1hLO9oUJk3rPezqgswxcmRBK5s1ojAhopUVLi5m/w5T4aPORhZJY3HPyOcxrNkAWY1rJNU2SwmAo
+N+9CtlZHgq1aV9vDH12F7r2N9k6ovZF3kGuCBejT3QVFUOI+FSlHXr/vm2KGHKra/ssY+GiGrwGZ
+bYsZlcMpsVliWKRZWarOwZYTVNCOpiy6u6wlKLoRXAIsZKAsKbjQTGrt4+5qWw0m/wDcwoIZyqZE
+ck0YdmER0rFjB1ZWeCxpXettjMCazWS9S0usDFnJfsHtYntkXscPCyZcHZCFtmJZW/TrfAQ26bAL
+cjHxsfDqGtfgyClhmcb2Q8nj/wDO38vjM2kNoAQ1muz49iTa5GzVEgKSu7qqhjZkSs9ytVptrmPg
+PLhZiNVTW4qliZCkqy37BWmjHMrsxMzBt3Cv4HS/GeJjctxYX5QyrMtypaWrEYpsR3uR44WUy2i3
+HreiAVMrrCY9j2VZTX01VUxxeMqWNQCRBLQ9YZlXxVk4dzz4lPDU1j8uoVv4a3/mG4eqYvBcpxdn
+hw0U9lNpadejpUoBqv48Obfb7FdHW7RuBx8KuvQU1PValuFnL63dpXbXbcosiVDA+OZW1OUsVZsf
+lK6y1WvebM3Cc2eVPatbIAolC+vqrPjnjTgDD+H8f004aYS1BQgQKV168oXpkW6x02tyxsU8cvGL
+WiUcXkcRRiIsE1+WzIv5q3/oW/6HI5A8kptZ4F9XUxA0UDxQk106zfbfUKqhQgTXXRGtZoz2Ec05
+GTXoIk47mvr1/Nmf9C//AEd/L+z3G2kWF3m2IBFkVBbpIJQEBH069eoUKAIJv6dZkryUAZFeq6d7
+jrC5WrnKb/0cxyZjRvBgCuQq2usLVEQuSBtFsfHiwjyB1AAA1B4HgeNGbvmZXr1BehNYaWLWyWI+
+JzVd35LLM7nCGDsT4Ila2sBFisSy0HdaWvUFNf2C9eutTWoB1A0YwyATctkEFvQpUCqwmt+6PXm1
+czTyH+tl13N2c+/LPcWEtZ/oJXXZcTF8U2g3QXKa5bYJUlR3BAvrChQuuvWCaAHgwljyGQjkZFWt
+KyGtULpE89haDj8ljcl/gzZfM2cmz78E9qpbGmtarS6HwAZtI7K3RY9gVbaR1E0FAUdeutamgPAM
+MaX2Z1+ksAtxDSKaq73pLLqVtYqtbMa4qs4/OVvtl55LfTZhiGyGHwimOSYB4SWQMrM4PZjRk0WI
+nTqAAPpr6EeDGPJZcPgMmV7BPkZMrixl8Vlo0qNVg8Y2RXySt9TG+hhhFQshGlURi/ipGhgCCbWa
+WHzjZGHn7moPI8dRB4J7QzkOR8aYQrCUhVQCy6lZcOAa2qYzsGW6jmKcv6N9TDK48aaUEuTAujAN
+abwkAHnZitj8tRySWQwHtqAwnwzX8rl8h40Z1PgzQNcKAgspDGo2K8psrdptW3sNj8nTyUMMHjUM
+MrDwgARo5lSQgBVh8IPBg8a0RoWjMbK9vdbvmDkByv8A6rcq2az/AFQH6NHlJuCxYwIuXHtIyErN
+bibEBmwe6loYPoZpA866Y2PqtGBmgFBhGh5YLNa1qaFaoJrWprR+xnVYYRrWrlxi40PBFiyh7q+i
+HGdx9BDEjzYGiD5WEaMsJhiI3kAwzSjyYAGhTxrXnXgzX11DFBHnVwxyIRFhBl9dFqm9ElUuBgPk
+yoWmsCahmmGoYxPiquETQBE1NeXEEVtdYBrz16EEeAOvWHwv01LBWai4MrjDVqsMe4zpXHB8L5aa
+sifYQ+GJOgAv+Gta1ogzYZYPA+mp27d9wQAiGKPB8aIYSiWBpX4MYZFatRbcixC3hDvTQl4v1eUw
+zbnRNCHxrQHjX+DCI2/I8sR40QvkwmLD5HkywUExgIIfFiuiNTb0rloiwQxp/8QARRAAAQMCAwQG
+BwYFBAEDBQAAAQACEQMhEjFBIlFhcQQQEzKBkSAjQEJSobEwUGJywdEFFDPw8SRDguFTFUSiYGOA
+ksL/2gAIAQEAAz8B/wDwRa3MgLozO9VauhnKqF0Z3+4E12R/+iqdO0ydytJfC/hziO0cXkKk5uGn
+QEbyibYAt4VRuRKrtzuFjZAsV2lO+fUGhfiUZOWG7iqYyKM3VDVyZUEtcD9+tYIBumsDm0hLzm5V
+6puXFGclhuUxqnRHcp0UrsXQcimtm6EnGbJpGFoRqHaNkHDNfCbqvqVUFi0JzLB2E8FcMqkTvU/f
+MKcTKWmqe/MqESbJjBmnKPdkqufdVSLtKOS3prmpzXGTknPzPUU8mwTpnAJVrrAdqUNFT/3BYp1F
+wbOOnv1CZVbiaZ+96dFpc9wAVTpDi2ns0/qgXQEUSg0YWp1Q7Omqc/MqiwXElN+FA2yVN2t1GphY
+TYrGZCIsjzR3p47sqqxO1THiHRCZBLTCex0OChdiQQZacwmvaHNyP3q3o9FzzoFX6S/FWJ4NWzEX
+UGE0CBmobxKixK3ogZ4WpgOFoJVR4u0NR1W4CV0inebLtBtNg70Qx2oRcQdIRY7JTpCO5MfonU5c
+DbgmsEYZKDwPoqVUcVhOVkLwVhd2T8jl96NpMLnFdsw9IriGDuhY3lxy0Ci+qc4xqUxvNRnmcgoE
+nvFBhgDE/wCimXV3+CYwQxkImTKtkUDqnNFwgbGyEwiWgRnmombJwNjZEZiyp7uqjVvhhyqUDiIt
+vCs29t6N5QDi/wCSsHBdvRE94feTaTC4qp0npJqVzFFlw1HpLiG9wZIJzjDVhFjfep2tESS5WkmA
+mMkUWzvKe47RVO03sm3hcENGozn4FNtKBFtFiZncIf8AkklYTGanOU85VFX+NPY7DUbZCoCMMjcs
+JxUwY3IPE5IGITgXNIsuwqhB7QR94QJTDL6h0sF2h7Jp5poGELETCwjhvRcdzV2zhHcb802nYXKq
+1nd7ZQFsbUCbuatGx5r8vgiMkRzWKEHRxCIXdIyNipFmRxQZOfNHenAZDxRc4CYRaIcyyy7O3BW2
+s05ri5rjyWIAg3WLbYb6hOl41C7WkBP3gA0yYaLlFwLpucuSw8ypOaAsMtVkT4BOeCJ5oUmSUDf5
+ISbqcgEbWlTmIW5YTkbo53CujYHQqIK2I4oFp5J5F1hFwFTFimE7Bur4XNtqCqlDbZtMKxwQE1wy
+um4w4a5o0qki4KaBj0K7GqBNpQe0Efd7SBRni5SUBLiM8gvMprc1iIAF0ADwRm/gES7NN1zQGcI5
+Yk4e8idSnTqiCiFZWUSm3WyYCOrXKe7tcE4XhYhD7/VMwuBGyUWy5vd+iMjEveOSIlvkUHtLXa/V
+dk/8Wi7VmA6fdwoUy7XQJzg5xO08odUXKxEWvuQD8LdcyhSplOc8x4lANMeJRMQFOY6uCaAtShPV
+ZQiX9XAIgZIZgEIkXEnfr4rDBRGybhRcd3VNa7EBLTdA7EypHELDWcwnNdpRa7I6p1KoxzTabplV
+tjf7sZSYS4wj0irc20Cvnkrm6uA1SQhTaC7NdmzETtuui4eNk0HOwWK5aI6z1T1ZLRWK2QrIdXBC
+clHJQssGSNOpBy/vNY2ENO0LgI4ZAggoOgjVZOGhQqjAfeHzQbUcE6i4EeKD2hw1+6sIlF7xSGua
+iXDwUXQN3ZDNCMQYoJe5NqP7R3cabcSi4kBRDWqW31WgHXuW/ruVr1ZrL7BjwcQ8UWmD5pwM6Lbc
+IRdScD8KMckMbKotiz5olgIzBQLY0Nx91U2Q2c9yx1Xu8kXQwaaLLggbIuOdlicKYPNQMDBZqFOn
+PBY3z4IBoACgdU9cI/ZyOqbLA/cD8ihUbGsQ5Oa7AdCpp4tyNN1QblNKdMwsNTAdQHJzHGn+Kyxs
+n7ogQgKp3BbM70A4y7XyVt5lGQ0AcVAnXRYKcxtuWGGjW5lTotBnKy6t/pj7LVQsbE5rja4srioi
+abmb0cRdr+yxU6e64K2w45CVZtVueS7RoP3Q1lN1Np2nKbEysDC7yRdjOk5qFnfmsRD4tpKBOI5B
+QCdSm94nRSXHePktkDd7JYhWLSiKjKg1smElrv7Cc2q1oNr+ajaGu0i4ObucCFPaDVB9Nzd107tD
+T338VI+5g1tzErtKjiDaYCgYvJTbcoEbhPishmSp2fNEmNEMIjTJYiQMt6xv2sgckG+zQcSD6bhH
+9hbRAFxc8iphwtl+yD6OeV0O7wWFwdxuuy6QWnIrsnioPcd8isRB+IT9ygAkrGGNaYk25IYgDoru
+vopcBxkoNZfW5V8X93RyHmgG4PF53BDutEBTtFXJVp9lsrLA53NNZWpuGrYKHqye6ZBRwVWnj81F
+dv5iCjlpYraY5bIINnWPipoUj8MfcpPqgYbEvPBF78emTRyUGdYU4gdQttx5BHb8AFkMgFaRbidE
+yOzp93f8RWImcliJJ6rezxdWB3O+qxUqg3R9V65h+IOHiFHSMX4kHOeCP7IRd0c72uWKnHBbNSn5
+KQPuPC0lXYwd53e5BFovmbAbpVlZq2wBkLqXhNGaxS1ht+q7xOgshhxeSho9ozUtIWw+14+ikV26
+GnPkrUy3MOcfmh2g5odo2RmA1CH8XBYSWrsulCcnWCt9x6TAF121bGfeMeCxEHFkdkfqjFtAtocI
+Ktzz4rDkpsotu+pUsqBTSplYmz59VvZ7IT8kW1mT+Qo48B3o9rTMa3UPdwqAjyXfjX/K9bi/CFBp
+uGmq7Wkxx1H3ESsAp02nPvckQwnIkYQtomcgr87FCROivbrhpPOUXmoN6lrAMm2WB2Md33v3W72n
+YcnY7bwR9UD0hzfxWKIeeZW2w+6f1QBa3eYWzlkR81bh+hQwGmDkZUj7ggWzKFKnJRrV3unkg+pI
+uAIC2gN5UOeT1YjPVw5ImWj4YXZ7LM5uU2A8ZdWAhoGzop9oBp33rbY1thP6wg6u48AsMTvKBcG6
+2U9m7eJR2xGbR8kcH1RoVmVKZ1lAgcfuC+Ip9Rwp0tUKR7wsL81mhjPJZnyWwLo9nPxLE5HVBvaY
+TtX8JRc2FFIAZAhA3UNHBw9p9X/yCmsQbQ8/utsHfdS5g/EV65/5gsVBpjRHb4N/VAOnQlQ0biZ8
+kKlPCPdy5LEOPt4FIkmAiZrxfJnJOe98HSExsNB5qTCJGHfYIYQ0a2UMaNIQL12dN7/eOXAFGoHH
+nJKGBrW92b8UMEb0GVME3TIF9QgUE1NQ+zCG9NTUxNTbKbdWzHFf6nDvwn5IMxOGlggA48CAv9RW
+tF5+SLqTRvYsNIkcB81LeMIPAbrFuJCdQqNLL0//AOSg5oeNVI9tkwEOlOfSafV0yMZGvBOaGUwI
+GoCu6+5YcvhlAa5hGC7ci9zRFgZKAy0CiXa6KQyd63WZKO3+YKKTtCGyjLS3P5qA5xcckb5mye4T
+KcMnlPkYnJtkED6YCCaNR5qBmtzk+VIvmt4UiAUXNibhB3NZc1/qWO/BPksNIN3u+iMRzKnG7hHm
+oexumGFDY1VmkHJAWB5FOEwMRAkBRW7MXDhMKDz9sgJ/9Kkdtwz3Bfy1JtOmb5yeGqcWRN8kGUaN
+Noybc8TqgTW1GQV2tA0Wwdy7w3fqgTfui6mnO8fJTXpi8Zwppk8UYqRvQc1wxTaE7BO1qPJeofxg
+I+sEaIEKG9xag2TgREI6hF4DgbrT0oBVpmykw1P+ISVVEl7iOH/SxCWioPzJ2GLFE8+CdESJQtos
+RCDxY5L+i78J+sqQBKBe8rCTexw/RYMPBTccIUPG791gcAdTCDao5R+qNGrTq0u6XS3hvCxNa4ai
+QsQ9riwEk5IUaTnOzzcVLWsx7Wbv2QdUE3GMG/BOc5zryb+ChwboLoh//FBtGFiL+YJKuBvMLvNj
+QDzQ/mXjRrVNGnbvKGuZlvUtmIGP9EXEZ6gJ5oBozxfRPe0yDi+qrt9wo607/mIXMfNVG5golEae
+S3+lJgusidLLcntdAVTEXYTJ1VYxLHKoG3E8zknzdp5hPdMTzhOwhGjVHLyTiMW/PgVstHwtutio
+4jIfooZE7UIReblbLTwWJjHaR9EcOLcU2owEI92bjIr+a6O8NG13m/mC7boz2kQ6mckLHf7VATi4
+vcr06cgYnXncFFHpBJk1KhFtGD91hc0g80MWMjSIUklS6d6HZuA3KMDR+Y+GSl4qaZNUu+axVa8a
+y1DB0XcASi5+LesDKbd1z4plsVlTbNgqTbTKbNmnxU2geac6+AFNmHNKYcigNEND6FuuVTObQqLb
+WCoN/wALowvK6Mf8Lo7rWVNMcE9pOqcIAFpuhNUcYXqqg3kL1lxmpDCPiUl3FqLujlnBHIoYYB2f
+ooK7N8E2KbR/iBwj+ocP/aGCFb2mdlQu0r4WFzn+9a0IdlWnPG1o+pVoGic4vjLfuUuwbhK2Ti3I
+EwUWse4mC4F3IaIOrAaNCwtlCakaF3msNMt+Gm0LgojeUW4TwUOMlVq39OwVTG5pcbFNZBdUdGt0
++g/1b8OyL4pBT6jMT2TxTHXYU7IjrlcEVZEuKwpzgcZgIvJbSblqq3SKr2OfEJvb9kag4SUe1cG1
+cESV0xoxuaajBZU3ThcWoscG1NcnIPKa1s8UHEEe85RRKPaIux74K+i2gEWveyMnWRsfBXDtxThB
+gZpxDHE5GQsVJjt7Qrn2iBKmXjVDA4rsQ4uIBcGRuF1UeajgNjGYvqoa5uZmUyWAicy7juCwuc93
+vOhQ88Qpc/khgfN7Il7jqXL5LEHjj+qdtAa5r5NRLp4Lvk5ASnPccWqDWwqoqY6TMQOYXSX4YpOX
+S3MjA1o3IUejin2cnVVM2sI8UWw2s0jihE5g6q6sOqysUdAizJmJy6TUdcyFUpiMIVXtXPpuFzku
+mueTDPErpmPu02tysUKVFrACYCMl7c09oLKoKmGl0qKJhAEtzgwFLWtUON1tVDuAHitrmFtDkvVd
+pN2xPJXjj9UbWtvR/pnwTTTe08wi6k2m8GRkd/tOKGDVBrYCacNPUnLgmu6QymXZNuPogNsnkg1h
+NpKdtaK9NnJYhylCD+N/0WzzP0UCTzRIPFQNnU/RZDigP1UAlS4jPegFCO+VyQmcSaOqkTdUwbBb
+XoSEWlyi0KUIQ0KdvKf8SkXdKbCadEAbBAFoOTbnitpm8lXpHe4rDUPNetc34jKBaN7Soc0jkUC0
+jQtITv0PgjksjuQkHO+axUuz4yjGB2Y19omqVAso2jEkw1f6pzR7oz3yiXf3oiRwWIxHElFz8SjX
+MrDTB3N+tyjhYImyDGEAAZKW3Kwsj+7r5KQ38qgcutwR6nHJVCt63LRa9VuubrEtCOpwTkU4remh
+QJRcX3yu/wD5ZBevpYviWx0c/i+qwPqQPfQAY6eRRp1z8LxIQ2oRwOHCQsL9wdnzCJBVgfDkofB5
+hF48IRY8Y74rEolon2axV6juKhpduCFQfzFawYNlv7ovrPcTmVed6DjGmqccZnOw5LC0cTZNLoB1
+UuDVtXyV4/u6lwVsO+6IC2GHhCmBxM+HXKG5D0oCt6EiOqeo9Q65dwC7Kk4ohgnvVXsLj4kovktg
+HFA8j+yA6L0Yx8PzX9XfiTX0y3UiR4ImkGkSgW+CiyAAJBzhe6g0GHZoyJGqPavYN0+Kx0LTIvZB
+9ED3m+zWKGA8yg6GbzdbIpB0A5qXI4sLd10Q0DUoCQ3L9UMDcR4q7nbkZlWdnkpNzyRvvsFtIEtu
+sLQN0oEvd+KByQ6rIenf0b+iEOrBTO/IcyhTaBmu0d2XCSoNQb6P6osN8w8A/Ndp/Cx8QpjzCmpH
+xSVgDeBQwvCcROos5ARCD6ZY9Ahs6WRJv4KDM6wYRoV6bxOaDmyFgqCs3U39msg3HzTTVcTou0qu
+IyyAQAjU/RSWo3dr7vAIWDcpROHkopR8RlaSoC1Rv5q5KBc0nRHG8j3qbMI5oNe9ukCFf2f1l8mt
+JR/qOzjyWOv0lx3Qndu1ojbZgnxRZ0mqJ99jvmCgaGE5EFqIcDfKPEZoB4+EowJ8VBkDwWRnNd1E
+VLZH6oYwR5KMUm3HRYHCTMEGyGHDPeGIL1YCdTrYHGQcvZi2RxWAVHHINxIl2I2m6Em3uhbJ33ui
+7lktNEH1AxWJ42QVm9WFrjwAWZjkgIncv9Sw/wD2gAvWDjP21vsg+rPu/UqGnhKtVJ95xHyQno74
+mHuEIs6bWZoSQDzEhdpSMixgxzTmVajTk4y0qRll9ETrm35tQDpBzutgnlClrQdRKuE7DLBcG3JY
+6lJpnaMLCRHdxETrIWPome1Ty5KWhWnUKQPZcDwXalbLWM1CgE7lheCLnDroj2bhwVqY4LTirvd4
+KA0LaAnipKmoPMo+CwwBnhQx8AFhFFx1/ZWadxCv1W9j4rIDM5INaQNIXqqhWLodbfjKceiYo2gQ
+fFNNGjVEZAg/l/6KikHHJriDyddS5scbJro2u8FUa027pkfRRtNFrQsVMT3XNkoiwOTLIPaIUiN6
+JqU7kbQ8EA9zIvj8lUpMJ3y1FzIOYt1R7K/sR2ehvyWNzi45ZcFJzVrK0cEAxo1+ik2UYR5raCM5
+o3UB+/JA/Jet5ifkjPjCw0KJ+FyDmlTP2M/aWRxOvMLNYqNRvAr1VYa4gf0V30Tli+SHruhvsWu2
+MXFesew+8wgtOhYndqIPdyWKCzS4/K66wNlptin91NJ0tmHDJYQ4NggMTXQ0t0RY4sOhR3om4zCc
+WCqYGF5xccRVbowods/Zewk/mWB7R8Xs1k7+XFNou835BYnEaYoQvO9bCtGSOQUTGepV53IS2+qL
+sgoBjzWClSjNzZ81EAcSrj8o+S2HOOlRE0KIJvK2ByWyP7y6r+lidCA+wg81HUUF3/zLI7rL5hdm
+88S5h+oRa9tRoyusTRWp94Nm2rdf3WCrQ6Uz39v/AJCzgsbnPFrp3Y4h7phNqUsbDAO/SUez3OFp
+4tRbig6IdoNDMcFj2gYORRNkYmbtN12uGjNiZ5rtOhsb7zXYEX06Dge6SCtCr+yWQOJskHs5WEAg
+ZCVs2zlF2yCgDcq+zkth1rlT4q7gpmDZYBLhfRv7qWydAAFOIzaIV5RwVhvuESynzVo3KzvzFZKP
+Qnq13/Y2UhQoRGG6zWYWweC9adO0Fj+JqFWlJsRYo0xG7aH6ptJj2R6l20zWHahbJsnQYzI+ihrr
+WKBFNwOySgNk6WXrQCiMInExwzXZ1mmLOsr3yOaNN9vd+iY2thI2a9MYfzIsq1GaWPyVgr+yWlYW
+vqTd9vBTEW9WJUBBoG9bQvdCIurRFsgjpmVE4f8AKw7Rz04ImSdVYsGigDireK7SlfQruj8Shx4q
+C/mFfqhSmiZPVYqw9MBBTZSbJvxITdC19VB6pyQe1zfJFmKeTxx3rtujscDDl7rozyG9FzXN95es
+aHC4WCsWjeQgBB7pIWhOUXVnAnkdxWEYH75QLM9Vvurnh9E91GkR3qVSP+JVSl0qmcRioz5gqWBQ
+T7J6oolob4q5AziFgph2pyRxqJqu5N/dS0u8PNSWzkBKN3b0MTY0TsUaZBZfhF908FtkKzeah9t9
+0GuIFlcRvRxAytt/IISEGDit6yjNHF+5VgrZosncj7idIDx4qeuAnFxFMTGpXSHGHMuqgIMc7prs
+iPBNMz5I5MPgqmEPd48VjZY5aozhctVqE5x7Sld4EOb8QWz2f/6/sortiACi2o1/gV65lVvdNj+6
+is7aviBRbVYJyP1QqUhvzXqnNJmw+SdIBzQIFMjgoeiHTxWEOg7LmplSt0VuKHYiY4G6wZdUexXK
+Lg1g1N1L64aLBoBJUu4lS63u2U245pzzGihkaLZRF7W46qJnPNd3eURTjeVL1dQb7l3ydwUtnWxV
+rb1B5gK980BdY3Ta2qL9mn57kO02gZ3lEm1m6b03PmseQgICIdCqaOlFrRMnemuFigM0Tcm2gTqh
+aWmPnKYdRI80Rnu0XiVVdMxG47lUPcEt3D9E8swtYeINlgEPDmmcuCBEFcZaV8KuC13BA43gRHe/
+dGo0H3iCCi51Rmc3HMI/0ify/sm9rMQd6mSTJlFrWAaH6oOa7lKdA3tWxvNisUnxTSwzv80RsnNM
+qdJHSAM6gaPL0LewxUHFCkSO9+ixdFIJ28RsOKgTqUFAsjjdG/NSDAmCtqFh2Y5qWHetpQxvBesb
+xQxHepExojgb+K/lZEAluiGJzd+SvxyUcV7oFz3itmxho+aGKAb/ACC4EninZlsyg0fU5rEBuJyU
+sgusg4NDQiagi1pPgoqFs/5TmuAkp9URKqU2jFEQnNi3dzGoBVIFv6SPNfFMfRUmvvixIEYpmc7p
+0EtYSN2oWJl9+SNnaQpEwtxgp4dc6zluQPa4Tmb+K7GtbJHtBA1WVQb02pR7XUWMI1H4Tw+SxY9d
+qysSBr/lZ4dIUN8ETlxU20ALvJNcaAGjL8UxxFE5tfj6ty3+xRWbgMuboE+o7pNZ78Amw4o9qYFp
+WXioAYMtU7BjhYiYNpQ7VrGi2vJQ4uI7pKJdffK04LJbYav/AImyyPBDAvUs4B37pvZvdwEogg8f
+og2o02uC5RrdWB11vnwCIfmQNynIECM+KaLA+OpO9bRuLxkcvBVHMAdbii5jWyRP0TA7s5J+JEGB
+8MlOE7vrwTmnEdYTKzatMf1KZR7O3elG06fqnk3GQ1WIzZp0m908ke675GE51jTGdkQbETN+MJ7g
+dog6QnVBtjaykIYS2LhRhhXq7gi+rfg5M34CfqicIcNYRDgu07Wm6IeBHNFrnU3ZOERxCwPqD4UL
+Wzcg0AH4l2h3QSQrmd6OJw8UQD+WFDaTjG0LKlV6K19w/OV0qk7sq7QdzwgcvYnRhZmVR6G621UK
+c8uJOsq5W00cFL+GZW21jbsF+GSgOKmq/wDL9VhYfJYDi0KgsPGEWVGzb9itoHeiM16kcEH0HAZ4
+cQ/VE4R+A/RSyoMjACJvxuhFAD4ZHKVMnF4rCMrxZEjLO5UOMeCcOE+9ElNsNPmUNQInLkhiHEIG
+dEwZ7oTH5QrX0TmnGTcpjeaaY5ym/JNLY+fFDCJ01TWNdMTv3p1RpIy4p7WCRdPIplxznPNA4nRq
+jTHJCHzfHIUPcw5wM1MjO5QdVpxlP1WJzuZWwziAg4062sgP/dQW1AMzhcsLsrNy4rUZWWE1AN8r
+uu81tkHwKgsGpRfTqOnJ1MDhddngZoWDzCBzX8u4uB2DmNyBEj2AMaShRY+o59zkFXqvJeHSclUw
+gYSHFQAdFn+VGYai5jpO9WneoxONyYTi2m3SCfFAimeEod2csliYD8NvBBw4WUuwlS1zeBjkuzNF
+57vvcsiiyrQZuLm+QsV60jfiRJd/d1st4G3iu0PAWhSI1O5AAQ3LNCcTla3ehOYdqnBUpztU7enp
+wWLNFFFP0Kf8WWirPHDep2nXTWZypDRGRU0L5gpvZhwzIui62hTQZPEg8kLG28H9F6o4TDlifJv/
+ANIuPMoBn/FoCEunuuRewsOcfMXXallsroPFsnfopceSgzuQDi6bYggXtPCEC5tKYLqmLyC9ZTIH
+c6sTSFGJk2B9gbTaGTcqp0jpeBu0SbcEyjTk7T4zKLHseboYIGRuFc8lktgQUC5hGUwVDDGglD1T
+vdwiEDSYdxdbgVttCx4m/wBkFFtMzo6EDrY5FOpNFQ5t0TexJF8Lp5goH+Ve45Pwnysoew8EHC3J
+FzHeRURwKOKd6tnqsTzqP1TCeKa4ZISUT3azgq4sKk81XHuhV/8Ax/NVBnReq+lKBxVc5tHmqztY
+Q950qk2YbyUmSgE2DAWES7Iu8VsRvRB4FAnGMpusLwDcFWqn3crppyzjJEvL3e7TUkWzspnibcls
+GM/+1/SJ3QfBdn2oGpkckw08HvET4rX3wACFOK0wVtEaLC4ckD01p+EHxUt5owQdFAVi7Qn7eyFT
+tqpOUgJtGmXG7nw4ckSYTXscOCh0A20VxI0UCVhptnUr1uHitpp91zVioMIGTQvVM/5LC6fwuKiq
+CchY8ioZWHigaQacxknYcG5Y+i1KWHaiPLJRsnIn5q7uBTdl2hUki8G4RY4WmTBRZszZQ2ncZIhu
+02BmnOuWW+aEZIOUKEDomoIIIDrEIp2USP0TTmLJ8ncAQDzWMERplyT6UNI2SYCdgxe8FFNzJn9O
+CxVGxoUadF05ut4Cywgv4WXq8WuJQQD8IRcMA3T5IFzCdydjnNXY9kGDtIVp7K1T4f2Wci6dinTC
+g3pFIE5qybSMnVGq+/io+32SnOovwDunJRTZTI22iEH08Q1QhDGIZE9Re4D3c1YTvW2XDiuzp0mT
+BnNAtLolvvcii1rgMgZC9Y5ke6vW52cEKjHj3gF2TQE7s+R+RRpVKb+MHxUVMTcipwu1+u9QAM1h
+cIOSm/xCfFWZvDb+KLcJAup2XGbqW5GOAVtq3BNlDf8AYb0IQNhmnRM34IiJ8wm1dlxLTNinU7C+
+EjxlHE5gsUcDbeKLql9dE3syAf8AKLngBEB5NgAwfutjPO3gpDBxXrz5Lu+Sy3AqXJ1Ml4vOiB26
+dxO0NQu0ID9cnLuyvX0bTe6BFlHZfmWxO/2F5YTTbJ94cE5j33IO9dJ6K7ATjYd66NU7xwxvVOsR
+gvCDZutgwFsUzuKG0Tl7qx4nRn+ijs5GuA+KwOe0xh0W3ii7Xx5q7XfCVh6QBp+iOL8JWJrXG8tw
+kck4B9k2vQwnNuqdcOyOSzBQkEZlerkNyQEmcxCdgwjMm5WzsUibSXStmXOK2AAwXQDjdHFZBuZQ
+Gq5JoMRdcFuARNpXFdpMFDU+Kp56oP2cRCDAcDjj+WzcWXbYyWAT5clTzgSBE7kWuAeAQRMhAPmc
+ijUc4AGCc0RWMju5omi8fiBnmtjOyEggWaDmtoFAQI3SpbWjmtgH8SdiB4wnNmDBiUxzQ8tgwnNA
+IyTqW02EypTDSdpTVpDioAHsVGq27b71XpucbObosGEAyToizCNZU05BRa9o3IGQBkjiw5ArDUJ9
+wBVHMeQ2Y15r+WpUKBeHP0PLRZk/FHkm4MT/AJIYw4Fdq17CbpwDg2w73iFJIORyTqbRVbo66DoP
+uOzCEQNcinaDabmCgyqR8Yy4qBByTMpm/dH6pzHbYOWonyRscIG5Y22qSbBXynjopcI+ic4l2Kw0
+TwZIRAe8nIwBvKdibnic2eUp9xORW2Yy/wCro454QsT5mxWCTHBMEZSUMcRH7pobJZ/e9CJa7kiy
+k4OGy4XRgNJsvdyjurDibmi6znGNwWCjVe0XkNB4pzKb23Liy6I7Nh5lWk2acgtpd877KXuboWLu
+xvRFplF8b1GwUYEG2Sa6wRa4YTBRqv6O854sJ9kGAypqyIKY4E1G3TcJDLNbotStokWFih3tSEKz
+m0ZGJ5+a/wDThPSTm4kEXaBCf0iu14sG2au022jvCYWBlMcXLuDcsLgd95WzjaOaa5uXAqMYPNCn
+cOkaoFvAmyIc5rsxl+IFQ5tRu4Stpx91113YKrCQD4yjUaXZ3gpund4JkEAS4rzWhyTTotqcNgnA
+uw55eagXQV4OoUD5IxYa3ugQZzCa44P7lVmgNbOVtUzBdt9Qm4CxpxNaYBH/AGpLpOhUQ6Dki6Tq
+pcAtgsAsBbwU1QZmW7Xindp+ENkHfC2mfkCzKxdm08yV604RYKC0E2lZRkF+G8Su9eyFiBqsGhzW
+Kbp7IfTqYmi6bWY2c/Y4YUcGMi7tEVgabBONThK9Y5pG9ENHmuiNp9oAO0Oh05KlUbhbU7SczoBw
+Q72+ys5u4/IoVKLXAbQO0P1RwYvxI4RCBPYvUFwadoHJWGEaa70zvM2SRcLA3aBg6hY4vpmE5zC0
+nbR2gdbhCZyhaYghsjE4gC0aErIBuIDwCa0S7PhZOJBU6okcVohdaReFpmgy3zQInzTpLDc6XzRj
+FMjiIcFD8ZyzlB9QdnPOcvJPDmuIBmZCG0WiOG9bAvfRGGclDQpsM0A/D9EW06lQZmwWLtGHIgHk
+TuUuFsmgFd6NycKhHIeaipG9XnguyY0DxRODe2w3wUZKxbMiM05jTqQrlYGViVXxgPEMN2lYb9o5
+H4iuJ9gLi2k3N7oUCOqaPGVhblkorFB4EHWQVgqTTfMaoubOamVDhcJzXx/xQEBvFYXExY5hThcD
+cLGZ/wBxvzCrtN2nmreKvLagt7rrKrTvhIGYOip9JZOLaCO1ivHmj6ydQIQBuoNxkqTYLQOS25jP
+gi7K29AkYeSudwyKAI3lb98IYuYTQyUC13jZSIGounTPvRmqsO7QXKDqZYc42Tu4Ls3U3b9Rqtpw
+Bz+aJEEyjsuc2FNc7pQzUXQxSdAVFFoM7/FGaYzdET+67bo/aTBbom9qGncpq55ESg2o4yodwyCB
+YLydyuHN0zHBQJQqPibb1TYC5lTu5zqgHSApkDVVHU2Tk32Ky/1NEnj1+plWnejjnkoyyXSelvIo
+sn6J3RXNbVm+ukomVaZReQtsm6vdEaWIQfwO9VWO7zoPisYw4WzyUe6ONk5rtmRbLRU3vBEMqDXe
+iYDhDos79OSLRfepcJyTHkyChusi7FIwt3RYKmBEW4fqhh7p4JuBznZzACyOqE4RoPmvWkDciRuQ
+h5GUCCgKjXfiWJwtF0QyCJGixAEAtwxtD9VDY/HPJYnQ0TyUjHVb+UFRloFDyUCQ0LE+ycXAcNpA
+SQMgiKtOdZE8yqXavp4YkkQnMq2hBj2cf0UNceCZgAdMySES+RuQsZUZrZc9r4VesA1x2RuXbGLw
+ms6V2dO8NBTg28dQHsPZVKb4sCmONirJv8s8nQIF2zkDkmF9MPttQeS6MGUBQpw4mJ3oFlTo5s5j
+p5gqlU6I55MYLqESy3NYbnfCh07wpRiy/wALNrxxQqPDqJvq3XwRDjIMzdYak4dEMXcanDYdlpwU
+ixvxXaAEaI0zDv8AKm/+ETH1QfUiSeCDcWzkthpGpQxs3ZlQ93NBtRsugTdWptGcT53RZjnVQQON
+uCLn2NsEpv8ALETdrp5KGOLBAOYm3gn1zFIZG/BMpgOd3wUYWwTfNEtuOKwSY3wU412ACSLptIxq
+doovgFFhZGiHbVHD4vmseXeLZRcwxmLgbjqFNB7YuPom9mHNbrF9FiIk3T23wmCnESLgosc7DkdF
+EuaPBBlXGWWVOrUfXDCMS4exh4gqqCHU9F01zYFlWLS2pdOoj+Ypi3vQp2k4dmJ7ptOiqdE6YalO
+qyXai4ujUxdt0h7zuRxFEC3isTWHJS0O1hXTdRzVNwlj78SiAMXmtuPLgqXSiadXZc3uv18UWHaG
+iFxuC2yVDOYRLQmvNx4qpSI14rIHKFg229+Chs6S6PFOxMYci5F0u0yCbLpcApOW9YstP0VJ98iG
+u5nKE1r3EHZEZJpqiRY2A5p1IkNvYi4seYT6tT1fc2TO47imUW4Wjq0Rawfmb9VhpkppcRxQ6P0a
+p0hw2nZfosQ7V+ufFPLrf44BdsNqydTqEkSMIkclNFvSKN4tG5MnHbFqry3PdoUWyPkg0zp9FFMN
+NwDY6qGPwN4prKuJ5JGq6T0lw/l2RzsFhA7ZwLuCZSGECB7QCC0iyovc5rRhncqpBwVb8V0pmPGW
+tIGR1R7rWku4XK/iHSiwvAps3u/ZVehGGnG0RdACmRyKDmjFYaLAXNeL79yhrFI8UY2dCm437PzR
+7RzgM16tofmQpc5XyUMaBnK9XT8QonmmVGwRbiqjSXUzKeyxsUdlpNgZHMpuGmQ8k4hwNgsWIDJo
+J8UXEoBwk2FydwXZPLmjEMBgaTNinPqQZgCSsH8wBmRhaB9SnvZ2baZxmqHchhReC7pDbkkic02m
+3C0W6p06sTSCJCefVE5cE/tWbjYo1HUaTcrnyUHaiMmjdzUVC3JOZf3XoVWw8Xaj0Z8OB7F4uOBT
+GVXCWuE2c0oD3vkqZNiqZNnhAQTU2eATc2uc1B1INcJVWlZjy0KsXXeSVUqBtlAR6rey3lQmOY0P
+AjGEwZU2jwTWi5gJ/wDEnxRYewpnbfli4BP6NUqh3dLtjknYmD8MW0V2u35oG48k0YY5om+gUidS
+Z8lirS6IIxIlyBDXeaOaz4WUtbwE+a4KOqlVu5onemYgQSq3xAx4KvAG4lVyQZyhPlxl12xH1VYY
+8rgAcAqkYnVDixW5JmJzjcmyAOQ8PTG5d0ayVhMxtZBYnlrTbfvQq2/3Rl+L/tDpHRqlFw9YzKd6
+MAnkQnjHMFsKg7IYTu0TH9xwB3aLpObGOdyC/icB38q9fxNgH+nfHJfxR3/t3eS6bWjtnYQumN/p
+PxjyXS21hiYQVUwtlP8AaKFL+pVa3mV/DqX++XfluuglhEPnkulkAUy3xaumdJM1K2z8OQXS2AAV
+nxuFgjXqbRk5qKllsH83VsmSEW4pQ/8AivUB34IUgP8Aw4fNZtGSESoAGpKgGesegNyah1Hd9lr/
+AHmoovfw6g5xhPp1AXibd7WP1WMmpTyc24470cDgQQbJ2MYTmqzHWaqMtoV9k5B2npCZj2ejSJZ0
+dnaka5NXTyLMos8yv4hVnH0h0bhsj5IziMSiN3UXnOyl6yaF2dOfeKLnTuRwjiZTi8WMFe6NFORW
+yj/KuAzUSOErV276rZk+CLqrfw39Iehw9AencoEun4PoUOw5mFJiE5re5E6rx5qmIY5VACA7IrYO
+Ay4Zp7w0kqMF10rowDO1lmgN0JHbUrfE39lRrtxUnhw4e09q93RqTvVizzvO5StEFGvVvKAA03Ih
+0hQcSxutlogLbs0SZT5Emy7yDdLpz356ZbkAzDKErG627+yhi5KFb2Qb0JafDzWOi9m4/RYXKpV2
+i4cSSmznPJScwgTgxXAsttw0WKlMZG6sIUgcFFk9j8dF5a7gp2ektg/EFSqCWVGnkfZadJuKo8NH
+EpgBZ0YST7+iBN0APQuigjmgRhagNUFCOEENBgLETaJCLZB3o54VGeaxG52f1RptIyxLFFkd62R9
+hwW4dQ9Ak+k3A4FS4jcVgMRsnJDJDVHu6Sg9wIz3r1Z+q2DxUtPNFputyxDitHBDRy6XT7lZ3I3V
+Qf1aQPFtl0Wtk+Dudb7alSE1HtaOJXRWdwOf8gukHuU2N53XT3/78flEJ7zLnEnjfqutPRMLerFo
+y9CboThJ5ITcbQRxWF0Q3CM9T1BoD3d0ZBPqvJw62CIbGsX4dQj0D6Y3fZdnScfJA380HjjosyBD
+tQgsO0tlo3lTO5b1tnrgrGOKATtCnb0/eukUYE23Lo9axOB24/YtY0ucYA1RktoD/kV011j0h3hZ
+FxkuJPG/Vf0Mz1z1lFtuuSgFuW02RqgEHy2M1hsPNRCxWzAQFwdlQ/EddEKjA9qi46juRW7rHoBW
+Uengplds/gFGS3qlVgOz0cr2AlOFnU06xwxzUIMaVtXWILOVAUFDMdVpROakSOoAdlVdbQprhLSC
+OHp1ukm5hujR1X9O0K3o4RZaz1xHXLkXs4ohHRQiRM2UWGSnMJ1B9u7qFTrMBYesKEI+wHWLehJN
+Jhn4vQcHSMtyIgHJUn+9Co61FTHdErHDlfqAKlQmuEKFZbajrdRfia7mF0d0YpaU1wlpBHpWV/sh
+1W6o6pklXy64BJCOcphN2oaFDmnGx9Cp0Z+Jh5jeqNfWHbih6eat1adYCBKKAX+1RPN37K/VZW6t
+yKugsVMqD1T1wVIlWRD/AEIWJVaTpY8hPFqrZ4hUK3cffcfQsr+nZDq4dQAQUlF1kGiPQ2Q2EeuO
+ragob+tzTIN1UZAfcfNdGq+/hPFMOTh5oIIbwm7x1WQQ6iB1MbcuAXRKYs7GeCr9It3WbuvXq19C
+NFcQtEWvKg9V+ogrE2FEoh/VkrT6AUGyrU7E4m8V0epmcJ6renZW9CFKk9RFyrFX6gpMoqfQlQb+
+iQnjgukR33eaqn3neadvKdvKrDKo4eK6T/5nea6Z/wCUrpo/3B5LpnxDyXTIjH8l0l2dV/mnPN3E
+8/S3+gOqIWS1VvQKvCDgtVBWSli06x1wp6r+lKsp64Ry6sbuCaLD0LLgp9CFCBUXRGfoHrH2s5BY
+UT6dlLfRsVgegQsQWF6urQVDj6d+q/WNFHVC2fRlZLC30dPRv1SEQjKBTlvQzU+hl1kenCnq4/YQ
+YUjrlXWagyoICBHVdZLI+naVZX6467gKyt1WU9WI4io9OfR3IOE6oq/UCh1BAdQUrirHqgyE7OFw
+RRUIKFdW6r+hIUOUhQeqT12UOWhQe1YXoqaav6UDqv6U1PQnqxGAsLY9guoVlM9d5V/RKO5GZ9O/
+Xb0LKHKw64PolpUwpIcOqWq59K3VHpS8n0YUDEVPsF7dWnpgIK/2N/sLLaWyFib1R13UhEFYUHCC
+oV1DypUKVZWX/8QALBABAAICAgICAQQDAAMBAQEAAQARITFBUWFxgZEQQKGxwVDR4SAw8fBggP/a
+AAgBAQABPxD/APwiZZnlgii+YGtcxgD0sCEWWS5f5v8AN/8A8C5bwW5RVmdIYWsVDcAgBtX0RKlB
+G6FE6fumAGTCqwy8l+uGIxh1r5mYOvEGbbheQigAGFwD0/5xQLZU/bmOhyGywEmXBaLm43FqEga/
+NljksJbEEVLDdRWG1lhAtTtUqIAiY1BwEbivERssjD2zJU8wYT2KyHlpoaYAsf8AMqBVoIb0FXnM
+Qre2MldShKibAXONggXCE0T6wmwIICZqYGo2QbBzD11i4b5grdxjbQHEqg4iBe7ERVVGoeVSCC0q
+EUd5OSPhcO0BIw/5c665Yhfk5g01BLClSm4JUPPLGhphaKBb5/CCCqyHRC4KERakIdnhBAMnmIxZ
+5YuySCdqlIoonS8l5gy2xBzjIUuGJkt1GNPctFLXJEWIh2LD/KqNlKO2ASBb4iJEcmoqS3zBAWoK
+o8XibkRy1tgBxOAn3C7Y+oaQo8JeWOGgsV1eyzQXGy7i0HsBFSohCi1RcXASQA2i1QUgFYL3LJHp
+kwoF2M7j5UyEocRlp1l/6DLBMuf+UHxggrZ7R3FPUH0E2jLgyAmuycx8xcgai0i5znGovIJwJWg8
+mK0JqJSpoX5YlthFGyxGA+TnmCumyhNWy2wuAe0E0eRK4iVgJqvcCGD0ktpL40R1KK1FCFZDhjGY
+YcrNkqD4X/JODOU9rnq5jqxxnkpzo7lQBTcAbaP3MUKvDGv2JmuxG/RrqFU7YVfJWomLKMAqo8S5
+CojDNwPURqHYqFpy/YgtPYOCLTLMDmBUXU/zLd2X3Lsoz3ZVoDZ5nrBI0YlTXcviWs8RzU0tM1BJ
+/kARaC2NoVtzh9tkFt7iofJhVpBb7Qo3/IyxcGo4vLsqPoi4VX4JgheLuHf2Uy6IbaSvb8lwAVZ4
+ZW5fCruCyozpGIt8nhGN0ZOTuoDyZQhWBwG5a3ghlHsoja02tT9xWkEtm6I0v3yuWZ0226S6BpbD
+wwAw5kLVGr58MBFbSQFC8ksDIh/j1sgWeCbUFD1AhqQXUA/vLzGBHgBA49ujwOjzOPMAHQRpbts/
+uxwKfBgmqQm+dvqIwg3tjRVBHxU9M5iTCnbuXYDXMeUh2coxaAcNv+4NR5w9OYgBegXUZ/CrxUe/
+A6ZcDx3cdVVyDFGKxga8nZEihGPEQBNlo6fZCdU0qZi0ozK8OuyAXiR8MOJEqsT/AByhBdzqHg4Z
+lmqNHgjlowWLV/qlCllLZnTeh0eWcpHKZQhj/sy5LC4xtnG1xLxKMrxzEYHxWpgD6kApR6nGRrGI
+Jj6lmwRKY0QkHJdHqI9OJjEYSkBTkNRssngKfqO00eMVFr6nOozfJ1mXnzbK2vMAWCNLGHDbF9QU
+C3aTWzw6jFpabTojWORBv/Gm+nTsZdYv30QDLoMEs4rNSwkMivxTvywydq9zFXF1+68wv25ePBK8
+XL5X/ULwytzc8lQsKfU5SLAxco5h45zUCymGVk7MQ0GA4jss1dzmrjDj1HHwCPsZxKXpz7iVbPWp
+pDZASVrTkl12MqXqudCbla3OD4mCMFj5m7dPgkr3UQafMP8AGCdAQspknUdw2rhh6jImHnEy0LW+
+CU6vAMZoXivPUvUIC8DFAaKQlFIW1yxmAnRUuWizio+Lz4IziggTZLVhiXWoCDLLG2AEJvGmApNs
+3pyLAdxfJtsJestgWiWS+2HTklUaTVvHiApqyBqOje+RiAsN74YUbAHx1HQ5uqe4XgjiFAwL/wAU
+SqHUVkuiCpC0p9Eftzj3LjfuB3FTSFq5yYMC8RUGADjo/wBwLLGi+3/RM2U06eNMLoZeZjKITCEG
+aIBwnqGAVMHI6JzpgJhY06lA+kbtp+GtuCzdjMBusRDHMIKhNIDVaKPA0y2FCc+HpjqzL54nINNl
+w7fJCzqEB5TKV/Dgjg0df4oF2kjoEEMty6GNgwUWMCoMC929sO2wIBwsKdgZcoLpP32xCvloe2N1
+NmAeoZrQEGo3G6xA4BRNGIWg+lSwjN6JjVsLSmCowIyzNfjywoCbhJZKYizfXhjVXwf3CZQVivHC
+eSA8bTiKcaVPpwzjlUuA2sXVylBAT+GXWKLPwykRT/iEoc7gti4aIWVLeHiC5m3eIRRbWwdwVyLo
+aInPRh4lmoaL/olL1ithUD08XHKLQvqHnxxNou/rAwtxBRM6omcZhbtgWds5MAhVwsM5gMRMMo7J
+fcpt8TH0NzCT7hkiCpvsgRbezwauGiqjD/IyhWaPyypQvQnmLguYD3xAaIwr07IO1wR34mE6Ez7P
+8OqJhb1LEsT5OYTAYKhrwAezuMZe/wD8Q8xEOwQDzJjyxl86vRHwADLFVzcB1FDt4Qh7hf4VENVq
+UTZK/BXacfjBPMKSUYkNRCNOPw2MVYQiJuEXgi96RmgrVcK/smkAGDhphYbTBnxmcBlXzK5iUKhm
+w4JlSqp8CLk3z/hVldHQQhgK+/LKAzLgP8yzioLhoNEni2WGtTpF89sVXh0/iLdNIDBr9zuNcXj2
+gKA0EioA5SVL2k2hqHx+HqBVZhqVAba3Bos1NNQE5th+GNR8flVWkQAPmMa2ONjyIAM/eZbIbsUK
+Xu+UsLgKeBjsjt+0egwVXjiUz6wDwtkdu3dfaVBL0Y9m/wDConQCr0E4B0oDSJlUGzipaHtjIk03
+9RHZ51iF9jlXF/3ARxRZ+j2ys+I9+5gu2twBxm7jlm8M44p5ji1EwMEFBMJT+ANQxiB0wUljiZR/
+BLjYl6GI6ZI1PyIjeG8VMG6R7g3Hg9rX908pfnidxh7O4w9MvuA1Eq+yGL5i/Dh/wp7nCzXpF6x9
+NDeVqWYGTyB7csvcuAL8sQo0Ani9w6uoWsRxgZ6Hb5mAGrby5FndP5JuFoHiHC/cI+ENlbhDZLTK
+CD8kER+AowEJfOY59ROoqbjVQQE3P3CRxun5gilur4hrjaUd4gw6B+zEZU1TD+0xJBD4sls5pD4M
+xFDb+xI78+EU7ov/AAYM8QVsMigBbFX/AOBlIwgr2Wxay1H7qpcGOV6IDW5kP7YuTjCnK6/3KFop
+PptmAjCUOuYyHaFwlEzT1UOsQNt/mMCBCXEdR8QW9fgH4fxlEeI/gMRiLCYlF+APy7iXAj8y059s
+pwf2l3ORvNAwucDnsLIsWMBgOubZU2qni5jV33/grh20hsupe4Gt65WWxsFXC5UsWbmxLEKKZJwQ
+G1uYGxvMvibe2X0hal8H+odaKA6JiXRddvBKgulp62fjzr8NvzP8BzA5gDvUShSGkGC/wUu5buP4
+WLiUiV+FjgkulftOETYe4gdGWfNyoE409EHqtuwokqmSlhPGEoBaFD2bly0vZ6S1FpZ/wSTGpuWa
+juCmIfoZlxAV8S6QMpXwEOofu9xfHjMUGYBmhd1GOtq+xN/6lmuKQFjbMuU5hToslevCEoVY8mmd
+VDG4wAwwxf5wgfjqUMrmaEJiNfi+IiuIkb/B/ChPH8MIacfVJD48+QY+f/KpS8FiJvpNhFg+CXpb
+WPQP+RioKGxq/wD4RmSVjwwyT/ALT0CLJ6PLQbrMJoieThYgLvJ8cwCpBKIqWvWCcyotfiNjYr/E
+5HhUOZWXkXuIOwGrXo/uDSXa+2ZU87iglh9U2Q29QTRCNoioahOvwXB/AYg/C/mjMMU/EYhEgZpl
+l1wtEN43SgmQD3csLk/3bDwwKvZiWB6CnIzKWivysQ5MNJTw7mo40PTsjjwb/XrRAb6Aixdziwjn
+c4jklvwQE6lPpZZUtlPvbKHmvLvuFYPIIwAvQfqCAXz4JRaZwf2xMYWTCqEKG10BzAAKQXi7iJGg
+z4fMvP8A0rUQSjiGU1qGvxDAQYOYMGWSyXN8zmDAziGH4MWkqZsIHINF8QPUCHwEPufioY947q9B
+MoF0V9y4eKF+oXvMHsjoqsX5FMMbANtqh9Ywj+uV+o48TLAA1uguibxzMwCI+VbWZTHb88ksAS0y
++IDBr6CHkAD8wz8pQ9EA4vIQ39mmcij5hiTLwEFblD28mV/AAx1nvb5IwaZR+G4Z2vc57h2w7ILg
+SXUMYIfgEsFuDUYyNyo7hCjYvqZSsbKMwoM58zwfvLMHcBNqmV6IqOxgeSpXlEJm1C9tQ318gKbl
+tJH9ODbNFx9sv4MmWs5fwYuystPIT2ksXDIu/JGKzAAn6xmeENxryujYdZhpbZqvEQvteUQlwBW3
+uF2BoLPtmCl5etVDropeiUMsU+7zDNLgzV7pvxgNsKwICECrvcE1KCiuqm6IFuswlmX908y9lV6d
+HAQ7VAt0TCkL2qEqbkZwHjEyCNd6i0qMmQhvJD8Ahfw0JYtQhiJQtlafv9pa7HwssCOs2LEoo+WI
+g1gdDf2MGPJyMKOui/8AcHRK5Qt16yisZNPZP7jlDOV9LjW9pp5y1ERuUPzhUcg2fRjicoV57JUw
+Fl35xUoAFKhw7mYvN/K5o95IR20hcEGnjL0/rYQJryos5li6J8vXaV0m9le8v3K9lDsXK/8AErQK
+N7i7wMa3PE5ieuyzlyiY8qoY0Kz/AAQAqGQOhAQEbHBeFltaEh1xOdzVvQAbiQa3Mc07ey3MVuCh
+/u3LeBx8MGNY5Nworh3eWZ4z8kdSxoLvBpnkMJdSJhIrzFiNIkbKo76mdZn25jVDRyECV0F/0QQU
+4sZ9CCdOewHprESVg07frqDUqjFLBLFCLp7gG96G8R0GUwl5l10LJemXgXxSPkwvWFZnJpPObYeS
+wfkDHSRG38yyy4UJUblCJ4jJdKXTi4QulEcFqCYfMKwkjYzBJB8nP6ujcwhEVBnsRCUZGaAMKDby
+xzxAnUnDMU7o/YXHaXikoaaLjbLKK15AB3n+CZNPO9pcQyM30XLO5BYMFShe/ic+Fb8EFIaj9jKx
+nBsvO6YiaKgNaH+yVREN3dwZQ3wXM1gr6i3KEzFp01UHUAplwLmM56fL3GALmiWzSNnMuqH8vBA6
+UBpvXxECgpx/8muq7otjQeUU/cbXI8/OY3vwEKH4UxoT0Vi15mAPdGbZ9GIKl1bHKCi2DCJtxH+R
+cwzY9Yy2ieOWYyXJbR4Nx3YG874vU2AuFfvLd92XyZupgKsKfMeN8LLEdAuv98suXtQlWiI/qrB6
+JyOaIicgLVBmbj09JYSEsk0Dw2ZIqKlgQmNyNU9sF7YE6gGpbe5H+GYevWH25YT0Wn0V/cVjnP8A
+h/Yih068Ev8ArT7iqYUFu1YIMAfDy9ysNd4i76BmDpQeUEA0fLCKljpuaIeyJiD4gdSIMMxnia4m
+I5hhbYC9Gtym1RzEPbDBfBuAZuq3GZKJ4LU3lAVm/SRAFEd1Z5tl5AVw8xRWw7bYwg3h94gK7ch8
+UwguBI+iGsomF9LD6j0epyEMX9kniCV4SEuKNI9oOm3X35jqwcGOIVdL2JcuHUxFY/UMdwOdvqIx
+KhLrSmC2hlFBkzd8vAdbfmEADytWEPavJJmrJp9uIC3pnwExAKvBQlAoDo6uVW2rqomi2nypgXH9
+6y4F1CmA8slh0GmWopZ+2EPTwdwgUGsVKqo3Q4NwesBdExipgJlXt7hdQyV8QuFHsl9UpudjDEaF
+iuRXBDRrEqUXQER2is6MMfbBHtHwxCgTcxtpqPyBFVZiIRoBmzeiU6qUmX63L8qeYyomJafDArwz
+hTC7dA3OZyc7C5YOcMzVulPF3MQKA152RAscUKgjMW16GJ8G94S5QvptQ81GkWHk1mdD9K35IaGz
+A4SdpI+yWLOc/qBRaCESLglJwxnwY3VCzC0DY2unmUzGWRs1mV4yL7WBhj1JRPgWK8KZPpituij7
+ZZYQ0rVFzQGjHSrArcTmW/q7SpUVJ9IUsLr+Alg5VMAtfSUaIuZitemZyiepyBcNjHEtPGIHdstH
+OfBL4Km3awLbTqnrcSSOhLAAFgR186jMCwxLSOeqX1VWDaPiqwQgp0OAhI180VEjKjbFMuCCkR83
+gWaYYgWxFwWyVFVQumKExosbjhuL/WZdSwJ33PNFD9XDXNn+YGldifLMuTxd8m5cg3VPm7lr3Q8k
+0MAv1Sq7hQrZWINRHIDdoTlOErqEtAi6J1MEfP6diQzLz6gAKIxu2vIbhAAR+YgVpioeAgWCSlu8
+7qPHngPUMNWFPi2Uq7qfhjoLX8GcreKT+so99q4tcqLA4Z74wiFLb/JgRotT6S5KTRUwnSzLuYZI
+YW8xVLAZojd/sg2GVCoLgFIuFJkl2JzBQEWCDCYZShkWpVoo8xuHEBDBF8GICUEQFdsU3FYaF5Fw
+9E+6hdAeKIFmNLtsIXLnM83AKBYPdEcatYD1mUBdUfkjuSkc8mGUH4bDv3N7Pj7/AKmFSKY+RUKC
+ef5jxW5DiUg2aIeDhIzt2ByS+RR2isH9NpCrZSKBswb8iXcz2oF7qgEIIBvgi/yFsHPs8RRdj4Bt
+mhktauWFbWWeIFADRjuCkgqWJgWUSNBomUF561AIpjfuFHDsWsvy7VTV6L9QaaLcsWQJTDS3U0gT
+manO0qUBUrAGWYLQ5VJiI7JkQXUh+5CpskOrUc4gmm4LOAQbBjZqAyK5fUKw/ct1AhlAHfglecBd
+veNTRmMj2yySZ9UNLwG4ZUI42QvfMXI1uACHiBcmRsYXK0Las2Ii7GQrhK5zZTSdMy9UcW0IRIU5
+Of037aDtXX6l0uGWYQXqfzCLBtXWpdCMK8QoKDylvXBKlLN8Q2QVQzkPHiYGOFgVQQ0udW/uzLRh
+/McybLx5RqnV5g0QLZTmpqZCFz+VwpUzZ6RfPhHq1qdhAuCFwS/4XYZ3ArCYRqTWBgDKZ4O4jLyj
+ZKck8X4Lcyyrm+ZSaXVEylUo6KAx0mHesl/UCkAP1pGGo2X7T/f5YLDAU+U68xeDsOGnTMVlihMh
+pn66YJeCUNOheSPDFlBKpeRIiUrIsZdn02SBcAwLVkmpO6DZ+mWpqStgQ0eCIIij5wCNhD6dZIjY
+UvupTvVKM8OYIHiR7lS7dII1dXK1VZofMpShH9hLE5KYPcTXVUB8TqqwSWxtWPLNix9Qf7lRGBlA
+sllYnrAwPxpuUmcGafgYKhhP4fMnhIdMqaJaTKKO8BBsbB7YQzmvs4j1N20e6LKrT6JB/cTAynrL
+Bh8DfQf7l3NLu/Zgax246Tkgq7fV2OmWvS3GmRcjz2Rg2GXaShFgy/HJEHjCppWiXAqL7NQN0TjQ
+gfEBcfpd0xnTGESFMXY5T5l2WQXGgQNIx+6y1bZelnMGpKLQKgwFhEjIL0RClLW4CtlL/Ec7OLD7
+3LgaQDLj1AaqU1Dyoyt7lhMeGLRZUOi/CU+RDiYCB+FMY3wRaGBmaJappczJX4CJLz0lYwdTYr0u
+CFKGQA6MY0wL0CWrCtvF3ldDbukEV9wv/IgUlzFBn20P2lVaRzLTlWLc8D8wX1i29viHiCDHkiCz
+mz+Mx2mB9H/UOONl867rxARynhwzaxKDwC2ah0tf1sIf1FyNr+lFiRI+7svgLbSxuXDqUi2ajjxA
+DJlkIIWmmHRCUrXbC9igPQFssrPQVBC3nRABaTZLdG8wYPf7iYrlYitbWWuKI1cteIuhfkGUPwBC
+48Y/AbD8FRgTCbRYgKmIGoMfjFET8H4n4qPfeiYC2P2M/RA81FDLGR7IKp3gGWiyvklqL8Ii+oYC
+cL4Vc18xvbTx2JYbeIGU+TzXFuDQ/MCUygSNdP7MTsQWN9RmK8wTAiabtuYwg+1DhgobD8H9EoL5
+SiqfBLwdlks3P6RAaIkFex6j0RzPZEbDh7Yud9A0XDKEtYTjlfueIwa66csc5DgnncrHZn7mx5Wg
+ut4uVysH0EtFqtg6zFQlaJe1qvzGvhsg+X/mIqubx7Ys+j+5joh/AqMWa/ibQ2zRBqYH4JLICDX4
+feUhgfv9PMABoj4IHTzFQGDV3gisXB+ODN9z2By+2D4MJdYkoqO/9iFaARfCajYWRfY1kQhS/gPE
+pdAtXjzKnNvQYxuXCF8fdRbI0w11shZk08UNETV3i8NgGBth6ulglCxUN2Sw9P6RmEptf0h3+gUe
+HRL45ZeiUUaW8+Jam92zOGTDZwYDC5WA6cJl5YSIOGruUN2OYWoCxlDmU8Rsq2rD6IaOAfQaQCXX
+P6IpyQp9ow2O0u4dvCzO5yzDUv8ACqZNzK1CxXnz+CiMqMFRNkwhLLKS9B6K7huNwoXyXGzRzQkK
+vu8+pR32u+kP6QoxaKeU3HWQW/DIGUE0ui1UEKU8ufTHB2ql2GBEXClXpwIABI3o5GpmpIecQvyx
+THqHm3vP2YqwZ1DJuB/u5eUPfaw+o4ZF7wJ1BsMGz2RRB/A/R7oayZDrMxdmqK8RtsKBUysquI5u
+YIrqWczWFirOIKqBS/cCZycvARrFgt24MRwneiFNpH6W4L1AXGklaLmr1tUVZQrPaS4paLXTHV7z
+mDO9fOE0qP8AZBge5VB/HSP2hUCUBD4/EqP/AADt1pGUGSh0MQKeiF9/7YmHFshOMWZ8w0nFL6Rv
+ZeoaU7jtqdbZK+5gS1QjMM0swG6LX08weRdT1d58ZmGDjXKpZWU0Uu9EN7ZS67bcMKZzUFZf6jo4
++SmRbqxvepgTSp6SkBruj0qC2peWbTpgVFBx6+iFv+kVKHVirBxKWS0CVRbYNc3md8Y40EIgOLx/
+UeqsZQ/uWK0NSvXMbTkXMAjG76CMggCyBO0y086f9ICxV+BQUQFvpmYNMCf6gL9VTpI7A1NzWbp/
+cw8X72YC/SGQ1GXH8KrRIMBVt5Sy4bCH446iI/gj5mYINRLIRrY4hAskuS9rAqjuWGXeXyRwygD0
+LZ8wAeR40hYEtvL6fvCDa1/SWCVqE3/VRg6I6O/D7iLLBaarvUbU8q+HpgBwMHNkxJZl9lbIYmAe
+CajbFVbjMSi7AA5hJ2zPMFVWSrQl/pWg5ttBW5IBsP6RAloJfSX56GQgKCJCDoNW3MC5mTj5h3tn
+nvNUEQVy6aDHtZcga5FtQ5lWg1ZIQBaQvtCAOiJbXl7naSUXuCXGKnzBQmTCoKXmw+eogGzmHZLB
+HWEpfQajAlbPsh0IpqCXMsFYuYUbCGlEwmDm4mLc835U2AnKRA3EsGVh4AinGHit9MShYrFnMrpA
+kALcW1UIqtk8i7RsSIrXFbXAeGUBU2ywWApE0MMOBAnmu47QmR9VkiomFkJEvsDOyBhGKN6zLOpK
+tyf0w0FoqrY+Jl9xFNdZGAWFQacal2wtVfKVLW0fLgI2HyOqVfvCb4hyuWH6Ogbq4A+Bkdhld4iE
+MtRSxf8AkSL4+1lBmc2/vA5ZdPfKJZoKov1KBvj4gQ0dfLGMmLQm3ywhV2DZAX9US9s353G8Gamg
+PJkMIUOc4SLhOU+qlQuQfZMM7ZiBZQFFaGJscKFvljDiym8x2VgdsvIKPr6uDjsfMWJF76YFBX7G
+GoS8NQBvER+EGVqeU+NExl2rDRNEtWjSKZCFqtfcriWt0IUPNBzD0I5e4h76hWw3OLGUUTF5ILtt
+M5FGdLs99Q0XHF2awc/JGQMgDq9TInafNx9jWhxeD+jLpUVHeNVCAxoKfaF1Aky58RnUlfSpW2uC
+8+JgIWW6awywRbssl5tt8PELPwKpVcwl/LghVAoaLEMtt+iWKeQouggk7rmEykVq20RKqUaS452C
++Rc4IOAPoJZOBQ6iAEtiX2IKClvSupYOha/IRqUcGfUU9rvwzs1a1B6FuZkR2/qWoBYVxNqhQdaY
+aLXRvxBR1AAaYEdVSuSJy0C7O/U7qasGni4qw7aBt9zJiBSxb3MhFn8COARqw01MFsqyXAKWqt6/
+cJdUCCbBDal2M04IjCxkAPl2VGMOCNlf6sb3SmwjXgqUibRKWqI8A8lS1XDRTUoHFWZT7RXiSs/+
+RDW+OGBWMeSPKFrfZKVHemLSZloc4B2QD18dyz9OgcPA8zUKQHjIkZCsZmdjlZL2bh1F6n4OkmTP
+g9ZjyyjZ3TUVzbt+mBcz17Kmd80B3iJta/8AxIogeAvLETAweZWSv3E1ZGpmZFG2BQP0L1YrcvK0
+ly1Dt2vJ2ibAAVESueWI1us/MRsIjhXcTMHJ0yiSXoA76lFXT9zuIwct+iLCk1UrUy0X5mr8iUgK
+yykRsqUElPXl9RF3RbBDpaYYOh8mK0vo+JVLbO2uY0ytB/dHUqITDxte2CIcjwHxLbQHdXXrzLwG
+8gXB8QcpQNpkviAvtoS3Wbajtw1LVY9TEiW678sAFQTXgIsJBWKzcVNFFVdVFZ+V7O4VCqD1XV1C
+LBWmnkIDplFHA4eI1LshsThX/pl14SN0j35JiFTvYPGuIaxF5OD+yUVcCyRqteo13NXhYUA7HRve
+YapQXY79yt4a47Rig8i8AwEUnJlhwQC5NXRmUOKJWuHmDatD7WH/AHBKU0H/AL9QGDOvgAxu6P2a
+EzsUrDshch/Bc1HsdHxcpeY+aEPrKCDZbPqX2iRekSoFEyuzDdIz+iOyiXcsUevnUjak9ECjciqt
+eIWKbJ3mY9lLV8DuLGxcr45Yxpm27i+5sHlY6NlJ6OoEPP6NXDyS1txMNgcRQazkeIANbkV6dy5q
+hGz0ELLl/dMWppqR4IUc9MJQAQ3e9REgmitHLEWiLD2bsD92AORRPEvNaoV0tZ2xhQoVW3nK4kuu
+FBGnIjmEApbXgeCOHd+fgauUOAMl0n9yjjQm5rguNKWIBrdCGK1YHguNKb3GWsJC1baw1kIgJXMQ
+02vmZFqZYoTWWWlQVTM8G4cBuApBs/shgInAuOx4jegWyFKjl2X8PvuCK761WPdQoUb/AB3vuKKG
+nfg7mdSxFTcIY5OwbNQ23gXsBgEhlUiyfDLL4N9xrIJtdcftgw5CWQwQNXktnfEBfRm+o8sqmhoj
+x1aoc9ksXC+B9MqA26Z+fmHYGW1aoliQPbQ2wFKmh2dT98q55OIytDK/Q5ADmeCYMrtsqJqsNFy1
+1ofzCxt5eAmKrVrquos0gFWQ7MpwEwhLr9xfXAB2tMsWhWCvbMA02eajCFAvGkLJnrgWLwxhFhpY
+LYLePuogDXuWGIbBG6q53lDXITw/9gbLJQvCRyQX4iIogRybMSaWdrZyy5IBXr9HggiOQrCj4Iei
+CWaafbxBzYstOSJS9U00UgC1wPBE8rXvwx1+B4g9AY5LJesRspPK1q2tzBGcrZQtB/8ACF2Zs1eC
+3+YuoWGIZit5ty4FDdOD/ZDmS+AX8zg5CJzziWZEI0wpi1VF/lLa4pmCs2+C8fDMyUZnl1Zy9NRB
+DD9oivdftGIKx5W+SqqXqy+CKPmFMRhr1tYH5I47Q9otDQS/MGwyg96ljiusPPZDewP9EZW2m866
+iss3ctDdD3CObH9QDaDcszLQGksf0Dh0EOKNLaWAS6GJSgtuPmKEtb5EEJkCo3ypFMhTTgiFlysR
+i5QDO61GauWe0xidxEqsKWvLM9chPKr/AFKCltgC7TTexINYr78esG3Fv2Liv41vYn2EFW8nTrZN
+h4F/lmAFTNVM1t9RbkoGx/aXrGrexcq1BZp4h0K8fLLlmUF9D1KCnZWGDDiUo2YCIBBYAuad41UU
+MX8xdtgeAlrNOFoUAotrn1AzVbzERQNV3cIjQx5qo2BlZ1kYynqA7PHqGAyHvUYO5RqqGLUpB4s0
+qUJwF8ZyssFgtq+YLiP9FwjDfwAZZQ0NxnPEb2l9sCUGoM3wTJUh1T3DcympUWs1dquSVBsG+B/q
+WNRR6BpidJCeUY/mAYJCEGGjpiQVqR+gSBIIeEjnIrvUwBtzRRUS1EaemCU7YY0zkT3MWCxfqEdv
+E4riF+lt8o8NwYG82y5mkeRGvaHPmoJVMWn/AOGmUb0LHTUCU4GLjpjVrS2OTmpqGUPAbqD2CzvY
+lPsioec73Lwwa23fZCbVI+QTIxrDDS+uIMN0M/sS83ZQfAy/mGqrT2WaQcFvMbXZSIsGvDHFgN6P
+GEx6vzGoq/qO0Pj/AHKaWeQDMoDrabz4CFAtBgt1aGIRpmjw0xhk3in/ALzAGt0FbAuC/DDuK6nm
+Elu8pNGNwHGil8ImR8y3xUa6uZILBhhSwoKBd9qItKKvyxyKp29bYbOMGHEIc0PzCphOQdxbSi37
+z+4wbVK8cglVaNwD95W8CsTlGA7KTzieaqpEmZrPaEqmY5hOobFzFisL/wB7pMBCykGkApNIlWdG
+4htNJV7oMOplcV5iW73KHk8fSx1EKVfsjrxEnzbREXz+JZA3hTbzmyImNgJjtch3/rY6y3SX5h57
+XxOSFVs2B8OZV0I+C1wACtTLwNMDaiaDsmUtYK5xH7eHRqURQWvhhwlTKEMYSkCAnjVtLKiQNhW0
+1dU4gBdZi2qLjGGYcrRAXATlZqYbUQYIp3L2UMKSbKp/eUAlyHKv9R2OCBbiyKJu+W3hGESIGl07
+QAou4DUyWDRjVPuAwwo9tM0mMzDbC3yj6dvll1y6xeCWlVavxVx9eW/uKgbY8RkCHLzRVTupVrzH
+dQg9iX7AQUg+by5Uxp9kdmxGuyEx2GErUatUBLYu/TqAACg/998G0jhUusPXQKd+JZPHKbLqJvis
+PKSy1FS9MKA7HxFaLJc9EwyiirzKCUB6JknbF06Mp6mVQTd2VcOUMuvPiF1ClPPqKsLQnKdy+2rh
+glc/iD8MYurIbRGpnY5lOwGG9UxDMAFsYu+JsdcpLKFtcOmpdgslejIYqbR5yVCI92UePLDXMdCF
++CVj6eiawq6qWBYzMslSxUxTy7gW5lKwkMuNwDlMyiOXB/OWoYXlmu3zGwauyw/aNHl40wwpAlsA
+dr0kKNm153UHitiPR6qJKJYHcYG+42OrUjBFysx2G5vasXVkWKHBmG92AhWMDxUa3Vf7Zlii3+Wz
+QFD1uMaAKTyMOas7kN6gDCxg5xzGtIR11WtzLWBSCKsQhzisoz+gJBjIV2RaAC1zJUG26/oxbcDi
+HtAFCTM1q+oJ5i891DYZobgGuq/SopDJWnjAYvTqn6PqDgYBhsc2St3WEcgrmDhsE6W5h5Le8uJ5
+8UcSyK12NuEGFYcVix59wrc5OCS8sot9Jp/3FVhtYtUAadsBOU1R4IKaxe8HTKRfmjquDwQVd+iN
+H0URk2Q1Tn1G2GJVlfcqgK87Jril7cRxQ8sWKwJvQWjjaxcvYTXE2JHdSgKjBmGzTTXp6Y3TZijk
+nnQQBFRs5KeJmThVw2VDy8Mt3RvDTveUdSTAN0xqZBGG101FUKqdbJc/JVbB8pKp62u/RMXtnWNs
+/TEUcAp9RYJYe0sRd7uJDarJ0Q4SyzH3uV8gAy4rvR44jW1Y6Ck9bOcZhRL0s1FEsgJUJ5jKdyJ4
+sP0KWVFQBxEbbZtGyOmMJhRSghlMUsEvmdo0GwFLCVWB9RVTGF48SlLocB4R6rNgIJhkxs/dTy0s
+GNJ0Ii8vZKxlZR7HqEytMewv7qbJFA73B7IHPMj87pgo20DxWmV3kL5CMKYV1XcHzlIrivR0DkgE
+a7Zri+IohacF74tKiYLUlq4i4l27JAruEK3cK1ojs5eiFmaP2EWastGdRywVwHnJKCVGwpuvRFs6
+G0MdHslKbUIwJ4UndPpcLgaaHiyOBAGu4E2HFmq1MwcDjl7loQSzAAeHuD7AwKUj5DE1Rm5QeuHA
+tlUiHdajCtAWhlBziUVBfee48UX0xVWyLK/8EUtIpus3f7y5+dntxDRfSDaREeHEard83xBbBvC+
+UioAwu6x4lWvBTv5mwBF2sYuGwBCFyTl0WohoHk8S2m7D0xc8j/th+iYT40uGIL1pYlazcFojpO8
+olJuDyOcxNkBA53HFsFuyYJnKjGN5PDcxwOi/Nr8wkUgF5O6idpZ91EDgr8NTMtFKOGHQoojjPMN
+U77dVkSN1GkQZsZcXsxd1SR8H+mFSKUzX94l2VoVyJphsIhZGcjm4ttL0pi2BUwXZKQWmOQXmr/Y
+ywri6HC9vzBsMLHBDMDa30eCXcO1RaxXVHgZXUNHli1Zd24ARVKQFvCeNwxaIAYKsUXysrlc5Ppr
+uBNFNIZigUugS3pmW0VVgweqmYIw6im7IFeRtadPgQpUS4XTG10vMGzVVErjyN17iMNW5XghUAc+
++RjzzMbwh2jOvDBqImnqJegmYAF+gwzQCK5suIQFi3zCpHLb4Bj0l0DEykYt1LzAgusXOH1GDmE5
+NkJUOxzshADML0k1gkD+ioqKBbL9wli2EFzplwlDVLEat0UcQZANg8izArekRVhb+7gU9INQOIZn
+oAOq6giFXcPH/TKMLZ4kwPdRFRYi/GNMbtlFh6ePiMkQSjhGY+sjy8nTMmwyrKuQ+IPnb5ckFDEL
+yBEDXFw/k9zAiCpW3slGMVv86SYhktXaOpoaXmpVS5IwNhYBGyaWhe6yxhgNocngiQDJXgjW0SrL
+txDZatLLo81Mw958XMmbEr4lNUPDhp4jcQ1h6dTI+AdNyyCdDIf7hcLMSNhqUFmjF58MvMqR5PZi
+5Bw3MpZnoKxWlqNALZUF05J1N4ZcstGJIr/UtKKXS8kyh4g4XXT5aH2S7uH88P0zFNYepYzEtUC0
+gUbsOdIoHaz6mXfgRmvJ8vEAG7WwaXBcDRsvBuXkhbaZ741c+5XZjxCADWpdmcJ54ipSL5xApWdy
+Civ/AHMU7E+HMMBoAhpC5ymK3LH3E9PY/EGtA8B3AujZUQL4iJJZbfnuI0abHUSmFOc9xKsICjvk
+mUm8hcZdPiGohKTZHzqtExgYq9A1z4HsuNpRApalCsAcESOsZGcR9Ji4pZHDyh7hMDbY6g9K8KHl
+hh5AKZ53MpueSA7bh4lwjNoUA9xihtNmGJgLhtTtPLKOOaF8ry9Ezpxi7PJ7jDf+yLLQ80vbcU/R
+RG5Olc+Y5Kcaaaz9RA72Bu43IAFLXi46WjL9csYIbC32UElzSlwHfpgF473Yu/DDgEBVl5lca+gu
+z3KgzYHxKiMBYXGB0AwcrCLIMrtqWiLN4btplu+WblFpBVOaWmUoUWPlgTq1u228ftDIuKXduPqI
+ZK+RbNUDM8heJQbywfapcjpeJb/s4q5WHBeyKYHNKEZ6NLhKUAq5dEA8/oL2honK/AYlCPTcsgZP
+5QAIVC5Bo5vzEF1BeBcoMipMNbr+4kVXrthGKNNpxWmIooQdi/34Ybm2YQ0Thw8SvzZC0+twVdw5
+MCir1w4MQ3C2bseIrqXgeCaliRoLk7dxYRTalNQ0nINQ+EX7jHDbZa46l0DSYAdBCubLCrXKTUQE
+AtAdTWSSxxktWBRJlh6g7ImztQ3QV16lBtonzLxRolir3cIbQBIYO5ZpHi4U2g6NRK6YEs9eHmNR
+4dOz5jeYQGcsIVptC57js8Kj2xhjA74GOXeQs1LMXNExfAt4rxANHo+Ig1TcVmAtpJYL1C6yNh78
+kDOUN2HKuIXLwb6vEG0gQNWTOcvbWvMsqNuH2ajHJuCiHQ+GVXuflMqfVHS2YHzBwBG25Z/QtkGb
+4GYY2zZBpjZiVMW++gwgqVR4TMiwAnKeQ7RCJUp8y408OerjcgRaO/E5BTolSDFlRNMsAxYHnh/1
+Nvd56eoooO6OfqADVMqHsoOkSA4SGZC7NqmUqJHCXwZjjUh2PpBuscjR8QaoKrBvogPCq4YSgtK4
+NeGIhlYGz+8rCSsjx33HCIVa3oqqgjt3HAd+2auFcuQ7WIMbwvxXJMljRbwZlGwAF5kYalK7mOU7
+LsEQnQXRWWibJMNFuEHJgvSlz6epuuG3r5QpVE4cKeI+TWcQFJyRitS28RK1sLsVjpkjDszG+Oaj
+zzB4TdvNzV3YOkbj64FKDpZww7ftS+Bg3SzkOj5JaAdHnaY3W7C3mNK8PTED+JRQYzI7jt7sVCFp
+jLjogeO4noALDzQV4lzdw/QJTsYupahEI3bdyky21il7uBErsJZLINTUsQnGVp18iVZu2C6+tRjF
+l6If4AwQitmgoiLF0S3IcriKyXhX9kflOBC1pEqlkC8kuU5p9vRlI2GxS8KCSzBaepiQoJxLsLAR
+t6ohGhdPWo/Gw4tBTIpSFXOWH+2OtiMLeLwwhxWW8NLhXqQFcqQtnNOxYrStjrcz2dORxeoKUTh3
+owhRgksaQRO+YXbRmAgJvNa0mNPUVTQOBcU1bOJR9ZdLLrbG2UxarEReWfCY4YrJeqiz+kqvcsLg
+UtxFRcULh8xGRTj2jAEdhVWPHSACsZVBqXT6TZjsEOzL9McRgCHdRw+4/ERjYPDFVtjvsck7hf2o
+q+iSx6MV9uULxcRXCzDuZbB5cL3TiySxA0RCCRfwfoaGUiEDgrCMIGNEVUyQcaSgNpLR9ImDX1/g
+itWC7viLRFLGoxAQEP6hrVOI5y4CGIGNDJ4QuhdbOSJqLYMYrvPEYTkZ4XeicUgaF3M1HNSCu4tr
+6gUJdXqFVG7xxlnBbUgIpvDMoOfFcSx/QqPgtnXfUuA3+7kfeJumQso83uXCwzBo/wCmEOuG3qZO
+XFaBBuL5MIS/YVFcB5zggBtFUzypdEwo+pkOu/3g1WyFjqFKAvfmZ5WicCMVwAdCkm7NNqccKkBt
+aeiUDGY9GEaxQTwXfkwtAsPNzZZITw3T9M6Kxex3GLFQtGAfZAWRwZJhsj6MstPkuz46nIlsYBS9
+FVg5gXdEXwWFLAqU8wErIC1naxCLl3jQjWyfpRZHBHdFtPMV4DYCNmAcuCHB8D4d+0JSkMeytMab
+DUGAmKwmhTiyYrUbzv8AUbAE5X3FFOB0zDoFF4hRKkA/vcA6y0/VRHBelxN6UBgiDdMgy4vLMtDN
+hw6R2ixo1CGsgaZVIAwMML3lkj3AE0VaFahYXd+JvVYa/cIEKgbeV2XqBVSTOzmlgZ2OHcCxRNDR
+ASGhRSpTOSvuEsEgVNJy5SigtVfEwS9CzjmZAC08n2xqujAuDwQxiyxh0L96YGamXXqvEXBHRHPg
+jWyByi1AVVK0z6EEHk1xcDi/ogc9C2zWAvdJgB3G4ug+dtC0M6YnAKJTeKgQilOv0xD8EEcKY8Fm
+0IjmSBC92MtCroEAWNbIJbsIy6OCZTmjUGTG1BKKvmCtsOsyhR2d4hQAVVg8rL9ugHuVsMq6Zf8A
+omTE4egqBX7CgGFKK2H2zFmXLONQtLJY03LTmK5I1bwXZL81B0BBcWeMI3BADhmPEBCEYXH3LVBD
+wBPmGExr8ssZhEOaPgl5ziDk4uHcCJ0NPLuNk4jXWZ8UDCRF8pQQhJj5Nl/+FE4xf6ZQFUA2s5+e
+bFd9ZGrPXPLcws5q37hSsXRFtsKeoBREOgObQrUTkUU3GjLSV5Blwdq7lDoL/wCkFcyBZCxsZcGW
+Z17jDbAoV5YwfJAIEqYozeQhauBU0+UrTBweXzOXrbdsINSiMDESjRUpcP4ekCmiCIEJiyd5iEjp
+cehLPwEq4DBE+CGgu3XwMwR0fzMkVMrdepe0Hl/gjFC042lEGtF5I7OpVmEgUbQNcD4I5N0JEBHt
+LAuG4wg1Pz/cCe71r2fqXqpUHFv0JYPUqpwI00EcCob3DM4o4XtQmwouIIo+5aBxjAs1l59EvzoB
+OJS2di5bKsguYjZelHUY2bqUxSJ3XWVlCd69Yg2C9gdFcjqIAWlC+2EflzfmaH8CEBlVwssDEfD7
+jrpgwHglsYgS+WDEP4GMRxglrzBFLDIZQtKFXrCaIUn7RYUUja1atcSwmHDlQqvdjhGvYFYIE1Jt
+yMrM9LIEwFppuX1omTlVE7h4YWF+1Qqcerw+yBhLqj9KsBOSIn0yKwPUXOzuYxqZ0LiJEO4aTadQ
+LVM6mKixvaxXB1ll6ly+bziXmFAJBCEWAS7FBgcy9QLSW7uakq36YxuI2+VogCbDPG+ZvsBuWmsB
+mea/xUCGuYZEtmSCAwsKQUxog7bIG1lQx3DnUoCUN11CediPxBuKIqyc1IHuPnlbTnMosiF59wCs
+q8tRtMOCaAV/Z3GsAEyjmHTWhCPmxSgpjxGsUyqzXFlza8zUkgFY8P8AeV58yJWFv5E2f+1n4oCX
+o74hivPWnfo9BKXvJKipkmZKlDDpeSOLI8SqcRLImhJANq6m2mfcINp6iOSIVQhQU0HmJBLKswAI
+9CgOiB5b2vEbUgr2LMpRoTbAqQdtEQRetSkNMAjcvogExGclwyt/Ckp5lzmcLgGhMuyASGcEcn5I
+Lt/FRAacmPJZTGxVpcoNnJPH/GOtAP8A2JUljfMLCvr2RS/ssjVHKiMLYCmyEjwrKG+Bg4e46FYN
+nSUg3EW0lYurFFgYyFubyQUH2mH0/wDpICK1NBAggOO19Et6Pqn8CLO8Er7Yyqw6qJLK3ErAFKy3
+ctAanCMRmCtxVbLyxYaAYjVrQjMjVMzDo7a+Io0W6w1mM2I+9HlltN9Lme617fDFcMLMJpiFx2QK
+4hfmKVzS7ROYhE/APQSvMILMoUInI3AtVPUupcLLtm85Z4gwYW1s9XFK+0ZAeTnxLg0NH9xb3v5w
+J08iLMOXlCI2xF0pRBkOHZAlFCuW2Ud8xzZiYqYnBGKnIMJi5pYb55cUr/8APQqehGYqyl0XLuZi
+pgTIjFEF0WFdsHmAtYltYixjMRFWfMu5jlqU+C7YirU5grV858SgTIMkIoalIDfa5l2w3t4gpUUU
+8VYNKLNV1CWyxPDC2xHiGQpiHFqHwKjBCIRHqErxNpRZAFiJgFSpzgmFItRExtalc3BH8RJbGINN
+xwt6+E3x8pvqXGbh2FqN0tdywsySz1JvnqWNuo1SmUZXHbYVpUZZTEMREwYTZplVUsQ/YZTl5BZB
+XdA3/wCN3mItHyhr8Yohg1G2sEFZln8SiXL1gDWO3cVAuVi7hMFgTyIClSeS2Hx5R4glTpKZAfEN
+FEPVQpQ9LI0Q1KXxEwSrYRQj6RDwMvMhtMAYYwA/A/Ct2heHMvyw1ack8IamQWUGInLXEo2vnMfP
+hD/EJk3llMdTNIuI0FaIiNJ6IkDjfiVKWykHBK3MA1cq3ySwrUTeIA3MblrqYDjMsqG0LMWmZGoG
+2GHl/hjwY+hh5T8J/wDDlMq3iEDmeImYAYXjU4obRQskDLEz7USkcgqYhBMCc3A1Q2zBXlKHE6Zz
+WqZwJcUqrmbgkTjGE+1yx4GTNSjofOoGMOrGJlsegxsdkBLsmT/NMmfugBwjKLRVS7Yleo2GUILl
+j9IO2oiPEyO38WJqIRS5fExGCrswpyws0wirVRLLaMCyPoSe4o+iXH4Nzk/E6W0U/hWQIVw1Ijhc
+piEuMGJULPDJrxvNqCxVOzbDcqMXTqc0gukAdQUqy1sPwClv4FWa0QU3McovMADF73MZPbGkshLF
+OJSisSm74gU7ldSpB2cxqBvzAHHMo7uI4zBre4UqYiUqORqAoescSLZ8tn/12BFhfLFVaObwFAH1
+ADoPESf3jDes6lAW/QlLwNRaPOJZeAu4x2RI491iZF34hojSNkqjUpEOOwisBoI6KDb3IL8om6gM
+tgBYYF+BuPhEgTDvDqXbX4+SIi/wwQWsuVNGWVNfw1EzNqIJVKFOGdIHEAShQxEVuOPA3KjolNUy
+sIdSlQ4QsShggmqcEBKgv4JAjB4G4soU1cVRdeIm8Tx4l3zKlbYBshGKmTrE6MwlBqIsjbU6IQKc
+tSuiLsm+4lYnAkptllleCUYr6gKPxfGZVltCZfkgTEdQBmRzFbI2Kd6gkWCiRSFURibfEiRXARgt
+RGBIyZw6G5RqTFAMcF88w0CbGDdWDGKupaKYcRHlDkFZlUG38HJKl1QUkHEwKGb/ADMXqZBREtZl
+HMQSYziWe26lAp1qXRdoCoYltJuRS7rMCksh+6CLuZ0krZBRMqoXMobrFR3ueePwuywVM4msEzcQ
+VCzJgiJiVxUqODHTcKDNK4m15g5jKTGYVhqZEchrmyV2wFZgqcJMGBZcJTQ/jGLAYyIKIQZSiOIp
+JZIVJcc0hqUJiYbOJYBGouWAjAW1NeZzRK3MzUCiFOIEDOZkztKEaEArfEdbNy6y4C0RLFagA3X4
+BwC4VySlVlJAFUWECtXMdDDiIVgzZ7NSnjaNsINAg5ZtFRRgLjBWkbuNQDV1LXEqGkZSuZSEuWAY
+TZNhHhBXiP6m5WCZgecxVSTMQLDcXIhAuJxVQIMMGfmbsMCNQFiJG5qXIhqiOPxWqjCnIpHMZVcz
+m6gRKiYlaBhFtwNZnImzME1Zl5TG7jweJTIyqhDc2YDaOXMsBTLcksKDG/DHmDGQUhMLZlcxKrFx
+pu42MXnExcFDEJpMEzGNr7iLlmMWA1HG7gzL4q2QhZAWX4AXoliXxLfNMjd/hIaFwURkqzNhRA1D
+MSVbMFSGA7jQzL8TCVFjOGWbFlfhpMAymonEdJVMKgczzEiJKzELSptic5MxqysgLriB+LzBgqBb
+UtMy9iBZViEFYQzGoPFSjNQVUqWNqYQSaMb/AAMx8RuocoxaXpcOVmyXUUUoYJIx6uPbMErHAjYz
+gj8QlCIqGJQDMoyoT//EAC0RAAICAQQBAwMDBQEBAAAAAAABAhEQAxIhMSAwQVETIkAEMmEUQlBS
+kTNx/9oACAECAQE/AP8AM74r3QpRfT/wstVLhDmxtvG+aVWQ1OFY9Q3s3P5FqyRGSl1+bqat8R6w
+vBF+HMeUzT1FNfz+VdE25M2j8WJ4to4eE9srRFqSTX5OpIQztiWGNjkRfIn46MqdfkTltizllDZF
+DkkOaQ9VEtUcxT5IzN6E8UdMjLcvxm6RKTkxDeJOkT1SWq2b2WWbmKZHWITQhEl0yGptl/H42rO+
+ELLNbVHJtl4svNkJmlO+BD6xpStV+JOVI7beWSlSsm+R+KyjTk0yErSYz3NN1L8TUlbpCy2ak7Je
+iiLpmi/YZ7iIO1+FqypZRRqEmMfivCz9LPkfYyPJpv8ABZqO5NZSGyY+x4rFCXl+mlWqiWIkHT/B
+lKk2e+EWM1GN4oaKKKKKHnQ/9I//AEeFiL9dk3byhvkfTNln9PfTP6b+R6DQ9JocShIUbPpM+gfQ
+JaD9jSTjqKztIo9yyEhP1m7dEu/D3xVCaRuiNok0Tq8JEUhVRSOCkS0ldkY1FYYxEX6rJuo0PylJ
+sUX7i0iWm4kkySGyDRYk2Q0LrkloNK02PciMrWWVjTd2L1O2amEsvrCJzFrySqh60mbhk3yRk0KQ
+ptdC19RH9RqNdinfZDmSom6oQyI0QtMi79RftJu0vGRLolOjebizcSkS7xGbiKaZY5EJGh8s1n90
+CPSwsJC4lXqeyRN3LwsZP9pPsZZuLES7EUVRbxE0+JRX8Guv2sj+1eFnZF36cnUX40SJ/tJDRRQl
+h94oaylyjneT+7TRpv7VfgyDFw/T1H93k0TXCJIayhsoWHhEez+5sj90WvkSpLPvhcP1Ju5eFZn0
+TXYyjaxLgooSNrY00KJtER5RDFYrnPx6UumT78UsTVomhRsWmSgRgj6aa6PotMhofPRJRiqSHGyK
+o2qhxIKih9CKHlelOfsh5WXiSsUaKxwi1i+Ds2orMVS5E7YyOKwi79GcqJO8LCxZeWWOQ7HfyKUk
+NyYmy6Fq80biKsYix8PLI/I0qE7XoO5zJRVUh4Yuhl8eDQ0StM3S+Rtm6RukLd8jshHkjEWUNWsW
+M0y/b3EqXoSThK0KcWiXeU68WsNEomw2yfsfSn8C0pfBskbKIx5Ej3x74j0x5g6I8zb9FpMnppPg
+cK7EIqlivJoaFKjcjcORViiIrnwiMedN1d+l3I1FwxIjwN2/JDxRJc4tiEIQpXKhMYjdQ5FlisSt
+iSRXoR4bRPpiFD7qbJx2s5EuBrNDHho2m0oQlStmpr/2x/6ackmrFReH4JkEux+i0mbCWnzaFFop
+tlULFZ1H9pHUrh9CcX0xo2ii7NpcYdmrrOfHSxG9yIjGLNEUiJfqOUfk+ovgck/GRqOkWKTQtaR9
+aR9dol+olzyObZYhMg7rHuyiKPpL5FpL5Ppm30pSUUOcjvsryRI1nbxZY2NjYnizcaEreKKEzc10
+yOovf0nOK9x6vwhybdsvwSw+Hmbom7xZZuGyyzcWWfpova2ReG82JtMWrNEdRPvjxnqt9HL7fgsr
+LRRRSNbTcHfsNljZebzoab1J0iEVCKihototvyRHU2qn0KUX0/Gyxem0mqaNX9K+4f8ACUJxfMXi
+n8eCTNP9Lqz7VL5ZpacdKNRy8PwQh4jqyX8i1IvxXlfobY30ikbI/wCqPpaT7hE+jpf6IUIrqKzZ
+fkleLH4vN5v0nheT82J0NeSH5Lxv1X4Lxixrx//EADARAAICAQIFAgUEAgMBAAAAAAABAhEDEBIE
+ICExQTBREyIyQGEUQlJxUIEjM5Gx/9oACAEDAQE/AP8AMJNixZH2gx45x7xf+FxcM5K5EMEY+X/o
+UVFdBjw4m72KzNw73ul3IcPXgXDRPgY/YnwkGvldMyYp43Ul94k26SOH4Xb80118LW9EVbKovWUY
+zVSRxGB4pdPpf3STk0kcNjjBP38vkoooSJIaEWtJwWSDi/JODhJxfj7nh8VJ+78lKKpcqViiKJKL
+oaKZWvF4t0d67r7jBjc5pCSiqXIosWNsjhZHEfDHAnjaY4DVaWNKSpmXG8c2vtoxcmkjDiWOP517
+kI2yGFEcSrsKH4NptNg8aJ4DJiaQxiM+FZI2vqQ006+14TDXzyQ9YIw4klZGNCRRRQ9GicLM+Kuq
+GLTisW2W77TDjc5pJEVtilyY43SILohC5JMtaNGWNpk41JrXiIKWNjVOvskcLi2Rt93yRVmKFIgI
+XIymIZKNo4iFdStGZ47Z/ZcLDdkTOi5MSILoRELkfI0cVD5bGteLj81/YpWcNBKClyIxkRCE9Wxs
+XJxCvFLVnEQ3Q+xxY97UfHdsj2VduSJhQkITIsT1rXcJmf8A65D86tWjNjcW/XijBBpJeXq9Idxz
+21QuK/B+rfsR4peSGZMjOy9HOiWeKHxSP1KIcTFsySUsbMnST5M8LtrwSVP1oLak2ur7Iwp7dz76
+IeiE7NrZskKLI2jE2JkpGWUiSkxxkVI+YhllVMySuT5MnRp+OzMsKcl5T9VIwxc8l+EiKpavRCSR
+uoeWjHljIVURIk06EvcnS8E86TaojnUnQtrJRSPOi0cU1TOKjt2Ml39TtD8s4ZNuvflSEiiEEPhY
+t3ZHhoo2UJGOPQrdaHAeJPuS4bGyPC44u6snCn0MjqLMcd1j7vRiZxCjKHUyRcfTXckv+RL2OHjU
+n+EPkiiPchCxYxIocSMTGvlP3koJjWlE49DiPYwx6SJ/UxD0yfQya3493s6fpruj98mYYbMcUPRa
+Ih9RjqkJG02jWkPpG/nGyUjejciRk67n+TD3kif1MQ9GrTQ7huXhmSO1+kjEm8i/PItEQ+pEOhB6
+yZZB9D9zEyatDixRY30H9Jj+WbMn1vlzxfV/kfWH9eku5wkfk68qEyLISISLGyTIoT6F/MJ9BMdE
+ibH2ol0aZJ2+TsTe5O/dpjVWvSXc4eNY1o+RETGyLPiI+In5LIyEyUadlpG72ZLKfFRJ2T6Nk3yL
+Rw7q+rX/AMP5fj0sa+eJhdw5WWJmOQ8lIeayE6Y8h8dpkOIi13MnE0unVkck5PqxTonOxSpm/oZJ
+DdrRl6WZPf2TG/I/f0cOG0m/YjHauV6Ii6JytF6dWbS2mU2zsWy2XYibuQ065EMzNKHVjg4dX1H6
+GLG5sxQUF1dsv0as2kMdkcSI4o+xLh4y8EcCXgeBD4dsyYFFG2mSdC7j5s7tuLISd0+z7onHbJr0
+I1gwuXdmLLJzTl5Ir5dGeeZOhSRja6EFFkIRZ8PGvA1jj+0tPtFJE5JGaVpjkN8ti04x1JCim977
+E5bpN867mNrNjpkuHyQlaVr8EL2K1z3qiEyGdojxUEfrcX8h8Zi/kS4uHglm3mSQzxp45FpxeNyS
+kvBk+XBjj7+jGUou0zDxMpL5vBHOptJaPtYpOU+n0+/JXIiJss2PybTbSG6HJsb0evgQteJxtqLj
+2XpP5MSXucO7nHScdyq6IxUVSL5WWITojIRSGSY1RZtqNsa0ZRQkPoKSkuhllsTY5zfUbb9DJcox
+fijC2px/s8E81YnOKMOT4kLeluy+RJi0ixSo3FjZbbpGPBXWRONolYihckrSe1HESk3VC9m/Rhkl
+A+M66RSMPFKqmfFxyummb4QXVpIUlJWuwyy9YRtksSZKLXdCNxZYoSn2RiwqCt9WUT6Jk70vV0Wk
+2ZJZH9MkkZV7y6jXYfpK/BDDltPYxcHkf1NIx45Y+lrbolqjGrZtNqfRjwxPgRP06I8PD2sWNLwb
+aGNE1TelaZJSirjGz9dLzBEuMk+0UhcXKqkkPI34Rfo4sUssqXbyyPDYYr6b/sSUeySRYh9BFaxR
+iVLSihIURIejQ0Z1QxdtZYMU73QX9mXgpx64/mXt5GmnTVegk26SsjwuaX7a/sjwUv3TX+iGKGNV
+FaoXQchWLWKIKhCRRQiiihrTiGrSJIpiXI4qSqST/snweGXZbX+DLwmXH1XzL8cuHhIx65Or9vBG
+MY/TFLV6UtJdEJXouwnonTRimpr8iQiiiuSjLNQi2yUnKTbLOgxdtK0embhFkblF1Jk8WTH9UGvT
+fUXYrRaptO0YuKXaf/pGcJLo1zWjLxOOHm2ZMkskreq0WtjYxDqjJwmGfZbX+DJweaHZbl+PQoo7
+egm0bpe7N0vc3zXaTPjZf5s+Pl/mxzk+8nzI7PRDO6ELSvQSHpX2LQtWJaSQtHq+atH6K9Fcy1a6
+8lCP/9k=
+
+------MultipartBoundary--49AQQbyXquX9TZKVOtv4p0sdYqml2sNca3pkzzjEFP----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://addyosmani.com/assets/css/highlight.css
+
+@charset "utf-8";
+
+.hljs { display: block; overflow-x: auto; background: rgb(39, 43, 45); colo=
+r: rgb(208, 208, 208); text-size-adjust: none; }
+
+.hljs-shebang, .hljs-comment { color: rgb(119, 114, 121); }
+
+.hljs-keyword, .hljs-tag, .tex .hljs-command, .hljs-request, .hljs-status, =
+.clojure .hljs-attribute { color: rgb(235, 222, 104); }
+
+.hljs-sub .hljs-keyword, .method, .hljs-list .hljs-title, .nginx .hljs-titl=
+e { color: rgb(255, 255, 182); }
+
+.hljs-string, .hljs-tag .hljs-value, .hljs-cdata, .hljs-filter .hljs-argume=
+nt, .hljs-attr_selector, .apache .hljs-cbracket, .hljs-date, .coffeescript =
+.hljs-attribute { color: rgb(193, 239, 101); }
+
+.hljs-subst { color: rgb(218, 239, 163); }
+
+.hljs-regexp { color: rgb(233, 192, 98); }
+
+.hljs-title, .hljs-sub .hljs-identifier, .hljs-pi, .hljs-decorator, .tex .h=
+ljs-special, .hljs-type, .hljs-constant, .smalltalk .hljs-class, .hljs-doct=
+ag, .nginx .hljs-built_in { color: rgb(193, 239, 101); }
+
+.hljs-symbol, .ruby .hljs-symbol .hljs-string, .hljs-number, .hljs-variable=
+, .vbscript, .hljs-literal, .hljs-name { color: rgb(119, 188, 215); }
+
+.css .hljs-tag { color: rgb(150, 203, 254); }
+
+.css .hljs-rule .hljs-property, .css .hljs-id { color: rgb(255, 255, 182); =
+}
+
+.css .hljs-class { color: rgb(255, 255, 255); }
+
+.hljs-hexcolor { color: rgb(198, 197, 254); }
+
+.hljs-number { color: rgb(119, 188, 215); }
+
+.coffeescript .javascript, .javascript .xml, .tex .hljs-formula, .xml .java=
+script, .xml .vbscript, .xml .css, .xml .hljs-cdata { opacity: 0.7; }
+------MultipartBoundary--49AQQbyXquX9TZKVOtv4p0sdYqml2sNca3pkzzjEFP----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://addyosmani.com/assets/css/post-page.css
+
+@charset "utf-8";
+
+#post-list, #archive-list { margin-top: 100px; }
+
+#post-list li, #archive-list li { list-style-type: none; }
+
+#post-list li:last-child { margin-bottom: 0px; }
+
+#post-list li + li { padding-top: 20px; border-top: 1px solid rgb(238, 238,=
+ 238); }
+
+#post-list a { color: rgb(51, 51, 51); display: block; font: bold 19px / 1.=
+7 "Helvetica Neue", helvetica, Arial, sans-serif; }
+
+#post-list .dates { float: right; position: relative; top: 1px; font: 300 1=
+7px / 1.8 "Helvetica Neue", helvetica, Arial, sans-serif; color: rgb(187, 1=
+87, 187); }
+
+#post-list-footer { border-top: 1px solid rgb(238, 238, 238); margin-top: 2=
+0px; padding-top: 100px; }
+
+#archive-link { display: inline-block; font-size: 13px; font-weight: bold; =
+border-radius: 4px; padding: 3px 10px 6px; box-shadow: rgb(162, 208, 246) 0=
+px 0px 0px 1px; }
+
+#archive-link:hover { background: rgb(69, 118, 192); color: rgb(255, 255, 2=
+55); box-shadow: rgb(69, 118, 192) 0px 0px 0px 1px; }
+
+#archive-link span { position: relative; top: 0px; font-size: 17px; }
+
+.post { margin: 40px 0px 0px; }
+
+#post-meta { font-size: 13px; font-weight: bold; line-height: 1.4; border-t=
+op: 1px solid rgb(238, 238, 238); padding-top: 40px; margin-bottom: 40px; p=
+adding-bottom: 40px; margin-top: 40px; color: rgb(68, 68, 68); border-botto=
+m: 1px solid rgb(238, 238, 238); }
+
+#post-meta div span { color: rgb(170, 170, 170); font-weight: 500; display:=
+ block; }
+
+#post-meta div span.dark { color: rgb(30, 32, 37); }
+
+#post-meta div { margin: 0px 25px 0px 0px; float: left; }
+
+#sharing { float: right; margin: 20px -2px -2px; }
+
+#sharing a { font-size: 23px; margin-left: 1px; margin-top: 4px; color: rgb=
+(212, 212, 212); display: inline-block; vertical-align: middle; }
+
+#sharing a:hover { opacity: 0.8; }
+
+#post-nav { border-top: 1px solid rgb(238, 238, 238); text-align: center; p=
+adding-top: 20px; font-size: 13px; font-weight: 500; margin-top: 40px; }
+
+#post-nav span { transition: 0.1s linear; position: relative; }
+
+#post-nav span.prev { float: left; }
+
+#post-nav span.next { float: right; }
+
+#post-nav span .arrow { position: relative; padding: 1px; }
+
+#post-nav span.prev:hover .arrow { left: -4px; }
+
+#post-nav span.next:hover .arrow { right: -4px; }
+
+#post-nav span.prev:hover { left: -3px; }
+
+#post-nav span.next:hover { right: -3px; }
+
+h1.archive { margin-bottom: 0px; }
+
+h2.month { width: 100%; font: bold 13px / 1 "Helvetica Neue", helvetica, Ar=
+ial, sans-serif; text-transform: uppercase; margin-top: 40px; margin-bottom=
+: 10px; padding-bottom: 10px; border-bottom: 1px solid rgb(238, 238, 238); =
+}
+
+#archive-list li:last-child { margin-bottom: 0px; }
+
+#archive-list a { display: block; font: bold 17px / 1.7 "Helvetica Neue", h=
+elvetica, Arial, sans-serif; color: rgb(51, 51, 51); }
+
+#archive-list .dates { float: right; position: relative; top: 1px; font: 30=
+0 17px / 1.7 "Helvetica Neue", helvetica, Arial, sans-serif; color: rgb(187=
+, 187, 187); }
+
+#archive-list li a:hover, #archive-list li:hover .dates { color: rgb(69, 11=
+8, 192); }
+
+#post-meta img.avatar { height: 36px; width: 36px; float: left; border-radi=
+us: 50%; margin-top: 3px; margin-right: 20px; box-shadow: rgb(255, 255, 255=
+) 0px 0px 0px 3px, rgb(238, 238, 238) 0px 0px 0px 4px; }
+
+#post-list.archive.readmore h3 { font: 400 20px "Helvetica Neue", Helvetica=
+, Arial, sans-serif; margin-bottom: 30px; }
+
+#post-list.archive.readmore a { font: 400 16px / 1.6 "Helvetica Neue", helv=
+etica, Arial, sans-serif; color: rgb(69, 118, 192); }
+
+#post-list.archive.readmore a:hover { opacity: 0.8; }
+
+#post-list.archive.readmore .dates { font: 300 16px / 1.6 "Helvetica Neue",=
+ helvetica, Arial, sans-serif; }
+
+#sharing a.facebook { background: rgb(67, 97, 179); }
+
+#sharing a.twitter { background: rgb(79, 175, 237); }
+
+#sharing a.bluesky { background: rgb(0, 133, 255); }
+
+#sharing a.mastodon { background: rgb(99, 100, 255); }
+
+#sharing a.threads { background: rgb(0, 0, 0); }
+
+#sharing a.linkedin { background: rgb(0, 119, 181); }
+
+#sharing a { font-size: 13px; font-weight: bold; color: rgb(255, 255, 255);=
+ padding: 6px 10px; border-radius: 4px; margin-left: 2px; }
+
+p > code { font-family: Consolas, "Liberation Mono", Menlo, Courier, monosp=
+ace; padding: 0.2em 0px; margin: 0px; font-size: 85%; background-color: rgb=
+a(0, 0, 0, 0.04); border-radius: 3px; }
+
+figure > figcaption { font-size: 0.7em; }
+
+#post-body iframe[src*=3D"youtube.com"], #post-body iframe[src*=3D"player.v=
+imeo.com"], #post-body iframe[src*=3D"vimeo.com/video"] { width: 100%; aspe=
+ct-ratio: 16 / 9; }
+
+.addy-note { -webkit-font-smoothing: antialiased; text-size-adjust: 100%; -=
+webkit-box-direction: normal; box-sizing: inherit; display: block; backgrou=
+nd: rgb(225, 245, 254); color: rgb(1, 87, 155); margin: 16px -40px; padding=
+: 16px 40px 16px 76px; border-radius: 3px; }
+
+.addy-note::before { content: "=F0=9F=93=98"; float: left; margin-left: -36=
+px; }
+
+@media only screen and (max-width: 1200px) {
+  .addy-note { margin: 16px 0px; }
+}
+
+@media only screen and (max-width: 640px) {
+  .mobile-hidden { display: none; }
+}
+------MultipartBoundary--49AQQbyXquX9TZKVOtv4p0sdYqml2sNca3pkzzjEFP----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://addyosmani.com/assets/css/style.css
+
+@charset "utf-8";
+
+.clearfix::after { content: ""; display: table; clear: both; }
+
+.hidden { display: none; }
+
+@font-face { font-family: icons; src: url("../fonts/icons.woff") format("wo=
+ff"), url("../fonts/icons.ttf") format("truetype"); font-weight: normal; fo=
+nt-style: normal; }
+
+[class^=3D"icon-"]::before, [class*=3D" icon-"]::before { font-family: icon=
+s; font-style: normal; font-weight: normal; speak: none; display: inline-bl=
+ock; text-decoration: inherit; text-align: center; font-variant: normal; te=
+xt-transform: none; line-height: 1em; padding-right: 6px; }
+
+.icon-facebook::before { content: "=EE=A0=82"; }
+
+.icon-facebook-squared::before { content: "=EE=A0=80"; }
+
+.icon-twitter::before { content: "=EE=A0=81"; }
+
+.icon-twitter-1::before { content: "=EE=A0=84"; }
+
+.icon-facebook-circled::before { content: "=EE=A0=85"; }
+
+.icon-twitter-circled::before { content: "=EE=A0=86"; }
+
+.icon-facebook-rect::before { content: "=EE=A0=83"; }
+
+.icon-bluesky::before { content: "=F0=9F=A6=8B "; }
+
+.icon-mastodon::before { content: "=F0=9F=90=98 "; }
+
+.icon-threads::before { content: "=E3=80=B0=EF=B8=8F "; }
+
+.icon-linkedin::before { content: "=F0=9F=92=BC "; }
+
+.post h1, h3, h4, h5, p, .post-body ul, #post-list li, pre { margin-bottom:=
+ 20px; }
+
+html, body { height: 100%; }
+
+body { font: 16px / 1 "Helvetica Neue", Helvetica, Arial, sans-serif; color=
+: rgb(0, 0, 0); -webkit-font-smoothing: antialiased; text-rendering: optimi=
+zelegibility; }
+
+h1 { font-size: 30px; color: rgb(34, 34, 34); font-weight: bold; }
+
+h2 { font: italic 19px / 1.3em Georgia, serif; color: rgb(187, 187, 187); }
+
+.profile #wrapper { padding: 100px 40px 0px; max-width: 600px; margin: 0px =
+auto; }
+
+@media only screen and (max-width: 640px) {
+  .profile #wrapper { padding: 60px 40px 0px; }
+}
+
+.profile #header { border-bottom: 1px solid rgb(238, 238, 238); margin-bott=
+om: 40px; padding-bottom: 40px; text-align: center; position: relative; }
+
+@media only screen and (max-width: 640px) {
+  .profile #header { margin-bottom: 0px; padding-bottom: 0px; border-bottom=
+: 0px; }
+}
+
+.profile #avatar { display: inline-block; width: 80px; height: 80px; border=
+-radius: 50%; margin-bottom: 20px; }
+
+.profile h1 { font-weight: 600; letter-spacing: -2px; font-size: 3em; color=
+: rgb(34, 34, 34); }
+
+@media only screen and (max-width: 640px) {
+  .profile h1 { font-size: 2em; }
+}
+
+.profile h2 { font-size: 20px; font-weight: 300; color: rgb(170, 170, 170);=
+ margin-top: 10px; font-family: "Helvetica Neue", Helvetica, Arial, sans-se=
+rif; font-style: normal; }
+
+@media only screen and (max-width: 640px) {
+  h2 { font-size: 24px; }
+}
+
+.profile #header h3 { font-size: 14px; margin-top: 10px; font-family: "Helv=
+etica Neue", Helvetica, Arial, sans-serif; font-style: normal; color: rgb(1=
+28, 128, 128); }
+
+nav.main-nav { padding: 20px 20px 0px; background: rgba(255, 255, 255, 0.9)=
+; margin: 0px auto; text-align: right; z-index: 100; }
+
+nav.main-nav a { top: 8px; right: 6px; padding: 8px 12px; color: rgb(91, 17=
+3, 240); font-size: 13px; line-height: 1.35; border-radius: 3px; }
+
+nav.main-nav a:hover { color: rgb(105, 145, 255); }
+
+@media only screen and (max-width: 640px) {
+  nav.main-nav { padding: 20px 5px 0px; }
+  nav.main-nav a { padding: 8px; }
+}
+
+nav.main-nav a.cta { background: rgb(91, 173, 240); color: rgb(28, 28, 28);=
+ margin-left: 12px; }
+
+#wrapper { max-width: 720px; margin: 0px auto; padding: 60px 40px 100px; }
+
+#wrapper.home { max-width: 600px; margin: 0px auto; padding: 0px 40px 20px;=
+ }
+
+.home #avatar { float: right; width: 40px; height: 40px; border-radius: 50%=
+; }
+
+a, #title, #post-list a:hover, #post-list li:hover .dates, #title:hover { t=
+ext-decoration: none; color: rgb(69, 118, 192); }
+
+p a { color: rgb(69, 118, 192); }
+
+p a:hover { text-decoration: underline; }
+
+a, #post-nav a, #post-list a { transition: 0.15s; }
+
+#post-body, p { line-height: 1.7; }
+
+b, strong { font-weight: 500; color: rgb(30, 32, 37); }
+
+em, i { font-style: italic; }
+
+#title { display: inline-block; line-height: 100%; font-weight: 500; font-s=
+ize: 19px; margin: 0px; padding-bottom: 20px; }
+
+.description { float: right; font: italic 14px / 1.4em Georgia, serif; colo=
+r: rgb(170, 170, 170); }
+
+.home h1 { font-size: 30px; letter-spacing: -1px; color: rgb(34, 34, 34); f=
+ont-weight: bold; }
+
+.home h2 { font: italic 19px / 1.3em Georgia, serif; color: rgb(117, 117, 1=
+17); }
+
+.post header { text-align: center; }
+
+.post h1 { margin-bottom: 20px; color: rgb(34, 34, 34); font: 300 32px / 1.=
+4em "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+.post h2 { margin-bottom: 30px; margin-top: 30px; font: 300 24px / 1.5 "Hel=
+vetica Neue", Helvetica, Arial, sans-serif; color: rgb(17, 17, 17); }
+
+.post h2.headline { font: 13px / 1.5em "Helvetica Neue", Helvetica, Arial, =
+sans-serif; margin: -5px 0px 20px; color: rgb(178, 185, 190); text-transfor=
+m: uppercase; letter-spacing: 2px; display: inline-block; }
+
+#post-list h2 { font: 17px / 1.5em "Helvetica Neue", Helvetica, Arial, sans=
+-serif; color: rgb(170, 170, 170); max-width: 400px; margin-top: 2px; }
+
+#post-body small { font-size: 0.75em; }
+
+h3, h4, h5 { color: rgb(51, 51, 51); }
+
+h3 { font-size: 20px; font-weight: 400; }
+
+h4 { font-size: 16px; font-weight: bold; }
+
+h5 { font-size: 15px; font-weight: bold; }
+
+h6 { font-size: 13px; font-weight: bold; color: rgb(102, 102, 102); margin-=
+bottom: 6px; }
+
+p.small { color: rgb(88, 88, 88); font-size: 14px; line-height: 1.5; displa=
+y: block; }
+
+blockquote { padding-left: 15px; border-left: 3px solid rgb(238, 238, 238);=
+ }
+
+hr { display: block; border: none; height: 1px; margin: 40px auto; backgrou=
+nd: rgb(238, 238, 238); }
+
+span.code { font-family: Menlo, Monaco, Courier; background-color: rgb(238,=
+ 238, 238); font-size: 14px; }
+
+pre { white-space: pre-wrap; padding: 20px; overflow: auto; border-radius: =
+3px; background: rgb(39, 43, 45); font-family: "Source Code Pro", Menlo, mo=
+nospace; font-size: 13px; line-height: 1.5em; font-weight: 500; color: rgb(=
+208, 212, 215); }
+
+table { width: 100%; margin: 40px 0px; border-collapse: collapse; font-size=
+: 13px; line-height: 1.5em; }
+
+th, td { text-align: left; padding-right: 20px; vertical-align: top; }
+
+table td, td { border-style: solid; padding: 10px 15px; border-width: 1px 0=
+px 0px; }
+
+tr > td { border-top: 1px solid rgb(234, 234, 234); }
+
+tr:nth-child(2n+1) > td { background: rgb(252, 252, 252); }
+
+thead th, th { text-align: left; padding: 10px 15px; height: 20px; font-siz=
+e: 13px; font-weight: bold; color: rgb(68, 68, 68); border-bottom: 1px soli=
+d rgb(218, 218, 220); cursor: default; white-space: nowrap; }
+
+img { width: 100%; max-width: 100%; border-radius: 3px; }
+
+#badge { position: absolute; bottom: 8px; right: 8px; height: 48px; width: =
+48px; }
+
+#footer { box-shadow: rgb(238, 238, 238) 0px 1px 0px inset; padding: 40px 0=
+px 0px; margin-top: 100px; }
+
+#header { border-bottom: 1px solid rgb(238, 238, 238); }
+
+.highlight { color: rgb(235, 41, 140); }
+
+.list-view { display: table; width: 100%; margin: 0px; }
+
+@media only screen and (min-width: 793px) {
+  .list-view { padding: 0px 0px 24px; }
+}
+
+@media only screen and (max-width: 792px) {
+  .list-view { padding: 0px 16px 64px; }
+}
+
+@media only screen and (max-width: 640px) {
+  .list-view { padding: 32px 0px 64px; }
+}
+
+.list-item { display: table-row; }
+
+.list-header { display: table-cell; vertical-align: top; }
+
+@media only screen and (max-width: 792px) {
+  .list-header { padding-top: 16px; }
+}
+
+@media only screen and (max-width: 640px) {
+}
+
+.list-header ._bubble { width: 72px; height: 72px; border-radius: 35px; bac=
+kground-size: cover; background-repeat: no-repeat; background-position: cen=
+ter center; margin-top: 14px; margin-right: 16px; }
+
+@media only screen and (min-width: 793px) {
+  .list-header ._bubble { margin-top: 20px; margin-right: 32px; }
+}
+
+@media only screen and (max-width: 792px) {
+  .list-header ._bubble { margin-top: 0px; margin-right: 16px; width: 56px;=
+ height: 56px; }
+}
+
+.list-detail { width: 100%; padding: 25px 0px 39px; }
+
+@media only screen and (min-width: 793px) {
+  .list-detail { display: table-cell; }
+}
+
+@media only screen and (max-width: 792px) {
+  .list-detail { display: table-cell; }
+}
+
+@media only screen and (max-width: 640px) {
+  .list-detail { display: block; }
+}
+
+@media screen and (max-width: 540px) {
+  #wrapper { padding: 20px; }
+  #header { margin-bottom: 60px; border-bottom: 1px solid rgb(238, 238, 238=
+); }
+  .post { margin: 40px 0px; }
+  #footer { margin-top: 60px; }
+  #post-list, #archive-list { margin-top: 0px; }
+  #post-meta { margin-top: 60px; }
+  #title { font-size: 17px; }
+  #post-list .dates { display: none; }
+  #post-list-footer { margin-top: 20px; padding-top: 40px; }
+  h1 { font-size: 26px; }
+  .post h2.headline { font-size: 13px; }
+  .post h1 { font-size: 24px; }
+  .post h2 { font-size: 20px; }
+}
+------MultipartBoundary--49AQQbyXquX9TZKVOtv4p0sdYqml2sNca3pkzzjEFP----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: cid:css-524803c8-7507-4c16-b55d-9c10699aca29@mhtml.blink
+
+@charset "utf-8";
+
+@media only screen and (max-width: 700px) {
+  .mobile-hidden { display: none; }
+}
+------MultipartBoundary--49AQQbyXquX9TZKVOtv4p0sdYqml2sNca3pkzzjEFP----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: cid:css-91df058a-0d9a-4aca-85d7-76dec730477b@mhtml.blink
+
+@charset "utf-8";
+
+.custom-substack-widget, .custom-substack-widget + * { font-family: system-=
+ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple=
+ Color Emoji", "Segoe UI Emoji"; }
+
+.custom-substack-widget svg { display: block; vertical-align: middle; }
+
+.custom-substack-widget .mx-auto { margin-left: auto; margin-right: auto; }
+
+.custom-substack-widget .mx-\[14px\] { margin-left: 14px; margin-right: 14p=
+x; }
+
+.custom-substack-widget .mr-1 { margin-right: 4px; }
+
+.custom-substack-widget .-mt-1 { margin-top: -4px; }
+
+.custom-substack-widget .mr-2 { margin-right: 8px; }
+
+.custom-substack-widget .box-border { box-sizing: border-box; }
+
+.custom-substack-widget .flex { display: flex; }
+
+.custom-substack-widget .inline-flex { display: inline-flex; }
+
+.custom-substack-widget .hidden { display: none; }
+
+.custom-substack-widget .h-20 { height: 80px; }
+
+.custom-substack-widget .h-3 { height: 12px; }
+
+.custom-substack-widget .h-6 { height: 24px; }
+
+.custom-substack-widget .h-5 { height: 20px; }
+
+.custom-substack-widget .w-full { width: 100%; }
+
+.custom-substack-widget .w-20 { width: 80px; }
+
+.custom-substack-widget .w-5 { width: 20px; }
+
+.custom-substack-widget .flex-1 { flex: 1 1 0%; }
+
+.custom-substack-widget .transform { transform: translate(var(--tw-translat=
+e-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)=
+) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y=
+)); }
+
+@-webkit-keyframes spin {=20
+  100% { transform: rotate(1turn); }
+}
+
+@keyframes spin {=20
+  100% { transform: rotate(1turn); }
+}
+
+.custom-substack-widget .animate-spin { animation: 1s linear 0s infinite no=
+rmal none running spin; }
+
+.custom-substack-widget .select-none { user-select: none; }
+
+.custom-substack-widget .flex-row { flex-direction: row; }
+
+.custom-substack-widget .flex-row-reverse { flex-direction: row-reverse; }
+
+.custom-substack-widget .flex-col { flex-direction: column; }
+
+.custom-substack-widget .flex-wrap { flex-wrap: wrap; }
+
+.custom-substack-widget .flex-nowrap { flex-wrap: nowrap; }
+
+.custom-substack-widget .items-center { align-items: center; }
+
+.custom-substack-widget .gap-4 { gap: 16px; }
+
+.custom-substack-widget .gap-1 { gap: 4px; }
+
+.custom-substack-widget .text-ellipsis { text-overflow: ellipsis; }
+
+.custom-substack-widget .whitespace-nowrap { white-space: nowrap; }
+
+.custom-substack-widget .rounded { border-radius: 4px; }
+
+.custom-substack-widget .bg-red-300 { --tw-bg-opacity: 1; background-color:=
+ rgb(252 165 165/var(--tw-bg-opacity)); }
+
+.custom-substack-widget .bg-transparent { background-color: initial; }
+
+.custom-substack-widget .bg-gray-200 { --tw-bg-opacity: 1; background-color=
+: rgb(229 231 235/var(--tw-bg-opacity)); }
+
+.custom-substack-widget .bg-current { background-color: currentcolor; }
+
+.custom-substack-widget .bg-cover { background-size: cover; }
+
+.custom-substack-widget .bg-center { background-position: 50% center; }
+
+.custom-substack-widget .bg-no-repeat { background-repeat: no-repeat; }
+
+.custom-substack-widget .p-2 { padding: 8px; }
+
+.custom-substack-widget .p-1 { padding: 4px; }
+
+.custom-substack-widget .px-3 { padding-left: 12px; padding-right: 12px; }
+
+.custom-substack-widget .py-3 { padding-top: 12px; padding-bottom: 12px; }
+
+.custom-substack-widget .pb-\[56\.25\%\] { padding-bottom: 56.25%; }
+
+.custom-substack-widget .text-lg { font-size: 18px; line-height: 28px; }
+
+.custom-substack-widget .text-xs { font-size: 12px; line-height: 16px; }
+
+.custom-substack-widget .font-light { font-weight: 300; }
+
+.custom-substack-widget .font-bold { font-weight: 700; }
+
+.custom-substack-widget .uppercase { text-transform: uppercase; }
+
+.custom-substack-widget .leading-6 { line-height: 24px; }
+
+.custom-substack-widget .leading-7 { line-height: 28px; }
+
+.custom-substack-widget .tracking-wider { letter-spacing: 0.05em; }
+
+.custom-substack-widget .opacity-25 { opacity: 0.25; }
+
+.custom-substack-widget .filter { filter: var(--tw-blur) var(--tw-brightnes=
+s) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-inv=
+ert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow); }
+
+.custom-substack-widget .transition-all { transition-property: all; transit=
+ion-timing-function: cubic-bezier(0.4, 0, 0.2, 1); transition-duration: 0.1=
+5s; }
+
+.custom-substack-widget .line-clamp-3 { overflow: hidden; display: -webkit-=
+box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; }
+
+.csw-theme-default { --csw-primary-color: #000; --csw-input-color: #fff; --=
+csw-text-color: #fff; --csw-input-text-color: #000; }
+
+.custom-substack-widget { border-top-color: ; border-top-style: ; border-ri=
+ght-color: ; border-right-style: ; border-bottom-color: ; border-bottom-sty=
+le: ; border-left-color: ; border-left-style: ; border-image-source: ; bord=
+er-image-slice: ; border-image-width: ; border-image-outset: ; border-image=
+-repeat: ; display: inline-flex; height: auto; width: 100%; max-width: 384p=
+x; flex-flow: wrap; overflow: hidden; border-radius: 4px; border-width: 2px=
+; padding: 0px; font-size: 16px; line-height: 24px; }
+
+.custom-substack-widget button { color: var(--csw-text-color); background-c=
+olor: var(--csw-primary-color); flex: 1 1 0%; cursor: pointer; justify-cont=
+ent: center; white-space: nowrap; padding: 10px 16px; font-size: 14px; line=
+-height: 20px; font-weight: 600; }
+
+.custom-substack-widget button, .custom-substack-widget input { margin: 0px=
+; height: auto; border-style: none; outline: transparent solid 2px; outline=
+-offset: 2px; }
+
+.custom-substack-widget input { background-color: var(--csw-input-color); c=
+olor: var(--csw-input-text-color); width: 100%; min-width: 0px; flex: 1 1 1=
+70px; padding: 10px 12px 10px 16px; font-size: 16px; line-height: 24px; }
+
+.csw-theme-custom input::-webkit-input-placeholder, .csw-theme-default inpu=
+t::-webkit-input-placeholder { color: var(--csw-input-text-color); opacity:=
+ 0.8; }
+
+.csw-theme-custom input::placeholder, .csw-theme-default input::placeholder=
+ { color: var(--csw-input-text-color); opacity: 0.8; }
+
+.custom-substack-widget + .success { color: rgb(5, 150, 105); margin: 0.5re=
+m 0px 0px; }
+
+.custom-substack-widget + .error { color: rgb(220, 38, 38); margin: 0.5rem =
+0px 0px; }
+
+.csw-theme-green, .csw-theme-orange, .csw-theme-purple { border-style: none=
+; padding: 2px; --tw-text-opacity: 1; color: rgb(255 255 255/var(--tw-text-=
+opacity)); }
+
+.csw-theme-green input, .csw-theme-orange input, .csw-theme-purple input { =
+border-radius: 4px 0px 0px 4px; --tw-bg-opacity: 1; background-color: rgb(0=
+ 0 0/var(--tw-bg-opacity)); --tw-text-opacity: 1; color: rgb(255 255 255/va=
+r(--tw-text-opacity)); }
+
+.csw-theme-orange { --start-color: #ff4d4d; --end-color: #f9cb28; }
+
+.csw-theme-orange, .csw-theme-purple { background: linear-gradient(140deg,v=
+ar(--start-color),var(--end-color)); }
+
+.csw-theme-purple { --start-color: #00f3fc; --end-color: #ff00fd; }
+
+.csw-theme-green { --start-color: #00c9ff; --end-color: #21d14e; }
+
+.csw-theme-green, .csw-theme-sub { background: linear-gradient(140deg,var(-=
+-start-color),var(--end-color)); }
+
+.csw-theme-sub { --start-color: #00f3fc; --end-color: #ff00fd; }
+
+.custom-substack-widget .padding-2px { padding: 2px; }
+
+.custom-substack-widget .hover\:text-\[\#000\]\/5:hover { color: rgba(0, 0,=
+ 0, 0.05); }
+
+@media (min-width: 640px) {
+  .custom-substack-widget .sm\:px-4 { padding-left: 16px; padding-right: 16=
+px; }
+}
+
+@media (min-width: 768px) {
+  .custom-substack-widget .md\:h-\[100px\] { height: 100px; }
+  .custom-substack-widget .md\:w-\[130px\] { width: 130px; }
+}
+
+@media (min-width: 1024px) {
+  .custom-substack-widget .lg\:h-\[124px\] { height: 124px; }
+  .custom-substack-widget .lg\:w-\[164px\] { width: 164px; }
+}
+------MultipartBoundary--49AQQbyXquX9TZKVOtv4p0sdYqml2sNca3pkzzjEFP------
