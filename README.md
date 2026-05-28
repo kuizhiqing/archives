@@ -10,6 +10,7 @@ Learning from the internet.
 * [Physics with Elliot](https://www.physicswithelliot.com/)
 * [科学空间](https://spaces.ac.cn/)
 * [Life Is Computation](https://www.lifeiscomputation.com/)
+* [Aleksa Gordić](https://www.aleksagordic.com/)
 
 * [Medium](https://medium.com/)
 * [Substack](https://substack.com/)
